@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Site Web Tim</title>
-</head>
-<body class="fond_loader">
-    <header>
-        
-    </header>
+<?php get_header(); ?>
     <main>
         
         <div style="text-align:center">
@@ -26,11 +15,7 @@
     </main>
     <script>
         setTimeout(function() {
-            window.location.href = "index.htm";
+            window.location.href = "frontpage.php";
         }, 6000); // Délais de 6 seconde pour le changement de page
     </script>
-    <footer>
-        
-    </footer>
-</body>
-</html>
+<?php get_footer(); ?>
