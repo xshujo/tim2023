@@ -10,12 +10,14 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: TIM
 */
-/* ---------------------------------------- Importation des feuilles de style */
 
+//////////////////////////////////////////////// IMPORTATION DES FEUILLES DE STYLE
+
+/* --------------------------------------------- Normalize */
 @import "variables/root";
 @import "normalize/normalize";
 
-/* --------------------------------------------- base */
+/* --------------------------------------------- Base */
 @import "base/html";
 @import "base/heading";
 @import "base/body";
@@ -23,5 +25,5 @@ Text Domain: TIM
 @import "base/list";
 @import "base/markdown";
 
-/* --------------------------------------------- composant */
+/* --------------------------------------------- Composants */
 @import "composant/header-nav";

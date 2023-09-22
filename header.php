@@ -16,7 +16,7 @@
     <header>
         <section class="header__nav">
             <?php wp_nav_menu(array(
-                "menu" => "header",
+                "menu" => "entete",
                 "container" => "nav"
             )) ?>
 
