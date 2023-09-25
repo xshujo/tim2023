@@ -26,6 +26,5 @@ Text Domain: TIM
 @import "base/markdown";
 
 /* --------------------------------------------- Composants */
-@import "composant/header-nav";
-@import "wp-content/plugins/loader/sass/_loader.scss";
-
+@import "composant/entete";
+// @import "wp-content/plugins/loader/sass/_loader.scss";
