@@ -1,10 +1,8 @@
-<?php get_header(); ?>
 
 <main>
-    <div class="loader-tim">
-        <!-- <?php //include('wp-content/plugins/loader/loader.html'); 
-                ?> Pas le droit d'appeler un plugin comme ça -->
-    </div>
+<div class="loader-tim">
+    <?php include('wp-content/themes/tim2023/loader/loader.html'); ?>
+</div>
     <h1>Test</h1>
 
 </main>
