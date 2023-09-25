@@ -106,6 +106,18 @@ function cidweb_modifie_requete_principal($query)
 }
 add_action('pre_get_posts', 'cidweb_modifie_requete_principal');
 
+
+
+// Loader
+function custom_loading_script() {
+    wp_enqueue_script('loader', get_template_directory_uri() . './loader.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('loader', get_template_directory_uri() . './loader.css', array('css'), '1.0', true);
+    
+  }
+  
+  add_action('wp_enqueue_scripts', 'custom_loading_script');
+
+
 /* --------------------------------------------------- Enregistrer le sidebar */
 /*function enregistrer_sidebar()
 {
