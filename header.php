@@ -14,17 +14,12 @@
 
 <body>
     <header>
-        <section class="header__nav">
+        <?php the_custom_logo() ?>
+
+        <section class="entete__nav">
             <?php wp_nav_menu(array(
-                "menu" => "header",
+                "menu" => "entete",
                 "container" => "nav"
             )) ?>
-
-            <?php the_custom_logo() ?>
-
-            <?php get_search_form(); ?>
-        </section>
-        <section class="header__gallery">
-
         </section>
     </header>
