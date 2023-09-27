@@ -382,6 +382,19 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-site {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
 /* --------------------------------------------------------------------- Body */
 body {
   background-color: #051934;
@@ -420,4 +433,12 @@ header .entete__nav .menu-entete-container ul {
   flex-flow: row nowrap;
   align-items: center;
   gap: 1rem;
+}
+
+footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
