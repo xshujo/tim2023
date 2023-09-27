@@ -14,12 +14,18 @@
 
 <body>
     <header>
-        <?php the_custom_logo() ?>
-
-        <section class="entete__nav">
+    <section class="site__header__logo">
+         <?php the_custom_logo()?> 
+        <div class="menu-site">
             <?php wp_nav_menu(array(
                 "menu" => "entete",
                 "container" => "nav"
-            )) ?>
-        </section>
+                )) ?>
+            
+        </div>
+    </section>
+        <!-- <div class="loader-tim">
+        <?php include('wp-content/themes/tim2023/loader/loader.php'); ?>
+        </div> -->
+        
     </header>

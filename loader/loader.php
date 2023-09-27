@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta http-equiv="refresh" content="5;url=front-page.php">
     <title>Site Web Tim</title>
 </head>
 <body class="fond_loader">
-    <header>
-        
-    </header>
+   <header>
+
+   </header>
     <main>
         <style>
 
@@ -153,11 +154,7 @@
 
      
     </main>
-    <script>
-        setTimeout(function() {
-            window.location.href = "front-page.php";
-        }, 5000); // Délais de 6 seconde pour le changement de page
-    </script>
+   
     <footer>
         
     </footer>

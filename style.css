@@ -382,7 +382,24 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-site {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
 /* --------------------------------------------------------------------- Body */
+body {
+  background-color: #051934;
+}
+
 /* -------------------------------------------------------------------- Liens */
 a {
   color: #888;
@@ -399,38 +416,29 @@ a:active, a:visited, a:hover, a:link {
 
 /* --------------------------------------------- Composants */
 header {
-  background-color: red;
-  height: 8vh;
+  width: 100vw;
+}
+header .entete__nav {
+  width: 100%;
+  padding: 1rem;
   display: flex;
-  justify-content: flex-end;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
-header .menu-burger {
+header .entete__nav .menu-entete-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  cursor: pointer;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1rem;
 }
-header .menu-burger .bar {
-  width: 30px;
-  height: 3px;
-  background-color: white;
-  margin: 3px 0;
-  transition: 0.4s;
-}
-header .menu-burger.active .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-header .menu-burger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-header .menu-burger.active .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-header nav {
-  margin: 0 50px;
-  display: none;
-}
-header nav a {
-  text-decoration: none;
+
+footer {
   color: white;
-  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=style.css.map */
