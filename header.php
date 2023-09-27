@@ -1,3 +1,6 @@
+<!-- <div class="loader-tim">
+    <?php include('wp-content/themes/tim2023/loader/loader.php'); ?>
+</div> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,8 +27,5 @@
             
         </div>
     </section>
-        <!-- <div class="loader-tim">
-        <?php include('wp-content/themes/tim2023/loader/loader.php'); ?>
-        </div> -->
         
     </header>

@@ -1,10 +1,13 @@
-
+<?php
+// Wait for 5 seconds (5000 milliseconds) and then redirect to a new page
+header("refresh:5;url=front-page.php");
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="5;url=front-page.php">
+   
     <title>Site Web Tim</title>
 </head>
 <body class="fond_loader">
