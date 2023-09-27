@@ -14,12 +14,32 @@
 
 <body>
     <header>
-        <?php the_custom_logo() ?>
-
-        <section class="entete__nav">
+    <section class="site__header__logo">
+         <?php the_custom_logo()?> 
+        <div class="menu__recherche">
             <?php wp_nav_menu(array(
                 "menu" => "entete",
                 "container" => "nav"
+                )) ?>
+            
+            <?php get_search_form() ?>
+        </div>
+    </section>
+        <!-- <section class="header__nav">
+            <?php wp_nav_menu(array(
+                "menu" => "header",
+                "container" => "nav"
             )) ?>
+
+            <?php the_custom_logo() ?>
+
+            <?php get_search_form(); ?>
+        </section> -->
+        <section class="header__gallery">
+
         </section>
+        <!-- <div class="loader-tim">
+        <?php include('wp-content/themes/tim2023/loader/loader.php'); ?>
+        </div> -->
+        
     </header>
