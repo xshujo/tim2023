@@ -50,3 +50,18 @@ h6 {
 p {
   font-family: "Roboto", sans-serif;
 }
+
+.site__header__logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-site{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    
+}
+

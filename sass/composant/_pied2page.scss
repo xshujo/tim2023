@@ -1,0 +1,13 @@
+footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (min-width: $largeur__bureau) {
+        flex-direction: row;
+    }
+    
+    
+}
+
