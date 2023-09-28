@@ -1,6 +1,40 @@
 /* --------------------------------------------------------------------- Body */
 body{
     background-color: #051934;
+    color: white;
+    
     
 }
 
+.contenu_accueil{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.contenu1,.contenu2,.contenu3,.contenu4,.contenu5,.contenu6{
+    min-height: 100vh;
+    
+    background-clip: content-box;
+    border: 2px solid white;
+}
+
+.contenu1{
+    background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0,#051934 50%,#051934 100%); 
+}
+.contenu2{
+    background: repeating-radial-gradient(farthest-corner at 0% 100%, #0d3a76 0,#051934 50%,#051934 100%); 
+}
+.contenu3{
+    background: repeating-radial-gradient(farthest-corner at 20% 20%, #0d3a76 0,#051934 50%,#051934 100%); 
+}
+.contenu4{
+    background: repeating-radial-gradient(farthest-corner at 100% 100%, #0d3a76 0,#051934 50%,#051934 100%); 
+}
+.contenu5{
+    background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0,#051934 50%,#051934 100%); 
+}
+.contenu6{
+    background: repeating-radial-gradient(farthest-corner at 0% 100%, #0d3a76 0,#051934 50%,#051934 100%); 
+}
