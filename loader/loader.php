@@ -1,7 +1,4 @@
-<?php
-// Wait for 5 seconds (5000 milliseconds) and then redirect to a new page
-header("refresh:5;url=front-page.php");
-?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

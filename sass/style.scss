@@ -28,4 +28,9 @@ Text Domain: TIM
 /* --------------------------------------------- Composants */
 @import "composant/entete";
 @import "composant/pied2page";
+
+/* --------------------------------------------- Variables */
+@import "variables/dimension";
+@import "variables/root";
+
 // @import "wp-content/plugins/loader/sass/_loader.scss";
