@@ -15,6 +15,7 @@ Text Domain: TIM
 
 /* --------------------------------------------- Normalize */
 @import "variables/root";
+@import "variables/dimension";
 @import "normalize/normalize";
 
 /* --------------------------------------------- Base */
@@ -28,4 +29,6 @@ Text Domain: TIM
 /* --------------------------------------------- Composants */
 @import "composant/entete";
 @import "composant/pied2page";
+
+
 // @import "wp-content/plugins/loader/sass/_loader.scss";

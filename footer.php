@@ -3,7 +3,7 @@
 <section class="colonne1">
         <div class="c1">
             <h1>Adresse</h1>
-            <p>33800 Sherbrooke St E, Montreal, Quebec H1X 2A2</p>
+            <p>3800 Sherbrooke St E, Montreal, Quebec H1X 2A2</p>
             <p>6220 Sherbrooke St E, Montreal, Quebec H1N 1C1</p>
         </div>
 </section>
