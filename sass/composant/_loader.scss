@@ -1,0 +1,115 @@
+.fond_loader{
+    background-color: #051934;
+    overflow-y: hidden;
+}
+
+.loadAnim{
+    animation: anim_logo_tim_flash 4s infinite ease-in-out;
+    position:sticky;
+    
+    
+}
+
+.img_1,.img_2,.img_3,.img_4,.img_5,.img_6{
+    display:inline-flex;
+ 
+}
+
+.img_1{
+    animation: anim_img1 1s ease-in-out 1 forwards;
+    
+    
+}
+
+.img_2{
+    animation: anim_img2 1s ease-in-out 1 forwards;
+    
+}
+
+.img_3{
+    animation: anim_img3 1s ease-in-out 1 forwards;
+}
+
+.img_4{
+    animation: anim_img4 1s ease-in-out 1 forwards;
+}
+
+.img_5{
+    animation: anim_img5 1s ease-in-out forwards ;
+    filter: drop-shadow(0 0 3rem rgb(69, 208, 246));
+    
+    
+}
+
+.img_6{
+    animation: anim_img6 1s ease-in-out 1 forwards;
+}
+
+@keyframes anim_logo_tim_flash {
+    from,to{
+        filter: opacity(100%);
+        transform: scale(100%);
+    }
+
+    50%{
+        filter: opacity(0%);
+        transform: scale(105%);
+    }
+}
+
+@keyframes anim_img1 {
+    from{
+        transform:translate3d(-1000px,-1000px,-1000px);
+        
+    }
+
+    to{
+        transform:translate3d(0px,-100px,0px);
+        mix-blend-mode: screen;
+    }
+}
+
+@keyframes anim_img2 {
+    from{
+        transform:translate3d(-1000px,1000px,-1000px);
+        
+    }
+
+    to{
+        transform:translate3d(0px,-1100px,0px);
+        mix-blend-mode: screen;
+    }
+}
+
+@keyframes anim_img3 {
+    from{
+        transform:translate3d(1000px,2000px,1000px);
+        
+    }
+
+    to{
+        transform:translate3d(0px,-2100px,0px);
+        mix-blend-mode: screen;
+        
+    }
+}
+
+@keyframes anim_img5 {
+    from{
+        transform:translate3d(1000px,-8000px,1000px) scale(0);
+        
+        
+    }
+
+    50%{
+        transform:scale(0.5);
+    }
+
+    to{
+        transform:translate3d(0px,-4110px,0px) scale(1);
+        mix-blend-mode: screen;
+        
+    }
+}
+
+
