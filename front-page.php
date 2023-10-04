@@ -104,7 +104,7 @@
 
     <section class="contenu6">
         <h1>Envie de venir étudier?</h1>
-        <p>Soummets dès maintenant une demande d'admission</p>
+        <h2>Soummets dès maintenant une demande d'admission</h2>
         <button>soumettre</button>
     </section>
 

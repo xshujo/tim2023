@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const menuBurger = document.querySelector(".menu-burger");
-  const nav = document.querySelector(".menu-nav");
+  const nav = document.querySelector(".menu-site");
 
   // Ajoutez un gestionnaire d'événement de clic au menu-burger
   menuBurger.addEventListener("click", function () {
