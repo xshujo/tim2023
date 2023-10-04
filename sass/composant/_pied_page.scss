@@ -1,0 +1,28 @@
+footer {
+  background-color: black;
+  padding: 10px 0;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  h2,
+  ul {
+    padding: 0 20px;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .iconRS {
+    a {
+      margin: 10px;
+    }
+  }
+}
