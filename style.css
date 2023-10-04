@@ -3,15 +3,15 @@
 Theme Name: TIM 2023
 Theme URI: https://referenced.ca
 Author: DiversiTIM
-Author URI:  https://github.com/Diversitim
-Description: Thème du site de la technique d'intégration multimédia au collège de Maisonneuve
+Author URI: https://github.com/Diversitim
+Description: Le thème du futur site du TIM
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: TIM
+Text Domain: tim-2023
 */
-/* --------------------------------------------- Normalize */
+/* ---------------------------------------- Importation des feuilles de style */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -321,165 +321,249 @@ template {
   display: none;
 }
 
-/* --------------------------------------------- Base */
-html {
-  box-sizing: border-box;
-}
-html * {
-  box-sizing: border-box;
-}
-
-/*
-  CSS font-size clamp generator
-  https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTRweCIsIm1heEZvbnRTaXplIjoiNTJweCJ9
-*/
-/* ------------------------------------------------------ Polices de l'entête */
-h1 {
-  font-size: clamp(2.25rem, 1.9375rem + 1vw, 2.5rem);
-}
-
-h2 {
-  font-size: clamp(2rem, 1.6875rem + 1vw, 2.25rem);
-}
-
-h3 {
-  font-size: clamp(1.75rem, 1.4375rem + 1vw, 2rem);
-}
-
-h4 {
-  font-size: clamp(1.5rem, 1.1875rem + 1vw, 1.75rem);
-}
-
-h5 {
-  font-size: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem);
-}
-
-h6 {
-  font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
-}
-
-P {
-  font-size: clamp(0.75rem, 0.5625rem + 0.6vw, 0.9rem);
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-}
-
-h2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* font-family: "Slackey", cursive; */
-}
-
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-}
-
-.site__header__logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-site {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: row;
-}
-
-/* --------------------------------------------------------------------- Body */
+/* --------------------------------------------- base */
 body {
-  background-color: #051934;
-  color: white;
-}
-
-.contenu_accueil {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.contenu1, .contenu2, .contenu3, .contenu4, .contenu5, .contenu6 {
-  min-height: 100vh;
-  background-clip: content-box;
-}
-
-.contenu1 {
-  background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 40%, #051934 100%);
-}
-
-.contenu2 {
-  background: repeating-radial-gradient(farthest-corner at 0% 100%, #0d3a76 0, #051934 50%, #051934 100%);
-}
-
-.contenu3 {
-  background: repeating-radial-gradient(farthest-corner at 0% 0%, #0d3a76 0, #051934 50%, #051934 100%);
-}
-
-.contenu4 {
-  background: repeating-radial-gradient(farthest-corner at 100% 100%, #0d3a76 0, #051934 50%, #051934 100%);
-}
-
-.contenu5 {
-  background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 50%, #051934 100%);
-}
-
-.contenu6 {
-  background: repeating-radial-gradient(farthest-corner at 0% 100%, #0d3a76 0, #051934 50%, #051934 100%);
-}
-
-/* -------------------------------------------------------------------- Liens */
-a {
-  color: #888;
-}
-a:visited {
-  color: rgb(212, 125, 122);
-}
-a:hover {
-  color: #555;
-}
-a:active, a:visited, a:hover, a:link {
-  text-decoration: none;
-}
-
-/* --------------------------------------------- Composants */
-header {
   width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #051934;
+  color: #f7f7f7;
 }
-header .entete__nav {
-  width: 100%;
-  padding: 1rem;
+
+/* --------------------------------------------- composant */
+header {
+  height: 10vh;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
-}
-header .entete__nav .menu-entete-container ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row nowrap;
   align-items: center;
-  gap: 1rem;
+  margin: auto 30px;
+}
+header .menu-burger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 3;
+}
+header .menu-burger .bar {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 3px 0;
+}
+@media screen and (min-width: 976px) {
+  header .menu-burger {
+    display: none;
+  }
+}
+header nav {
+  display: none;
+}
+header nav a {
+  background-color: rgba(35, 58, 111, 0.536);
+  text-decoration: none;
+  color: white;
+  padding: 3px;
+  margin: 4px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 976px) {
+  header nav {
+    display: block;
+  }
+  header nav a {
+    background-color: transparent;
+  }
+}
+
+.menu-nav.active {
+  position: absolute;
+  display: flex;
+  top: 90px;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.86);
+  flex-direction: column;
+  width: 100vw;
+  left: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+main {
+  background-color: #051934;
+}
+main h1 {
+  margin: 0;
+  font-size: 4em;
+}
+main p {
+  margin: 40px;
+}
+main section:not(section:nth-of-type(1)) {
+  padding: 40px 0;
+}
+main section {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 976px) {
+  main section {
+    height: 60vh;
+  }
+}
+main section:nth-of-type(1) {
+  background-image: url("/medias/photo5w5/pic04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+  padding: 100px 10px;
+}
+main section:nth-of-type(1) #texteIntro {
+  border-top: 1px solid #f7f7f7; /* Ajoute une bordure supérieure de 2 pixels */
+  padding-top: 10px; /* Espace entre la bordure et le texte */
+}
+main section:nth-of-type(1) p {
+  margin: 20px 0;
+}
+main section:nth-of-type(2) {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+main section:nth-of-type(2) blockquote {
+  font-size: 3em;
+}
+main section:nth-of-type(2) #auteur {
+  font-size: 2em;
+  margin: 0 40px;
+  color: #9ec9e7;
+}
+main section:nth-of-type(5) p {
+  margin: 0 40px;
+}
+main section:nth-of-type(7) p {
+  color: #c7afec;
 }
 
 footer {
-  color: white;
+  background-color: black;
+  padding: 10px 0;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 1000px) {
-  footer {
-    flex-direction: row;
+footer h2,
+footer ul {
+  padding: 0 20px;
+}
+footer li {
+  list-style: none;
+}
+footer li a {
+  text-decoration: none;
+}
+footer .iconRS a {
+  margin: 10px;
+}
+
+.fond_loader {
+  background-color: #051934;
+  overflow-y: hidden;
+}
+
+.loadAnim {
+  animation: anim_logo_tim_flash 4s infinite ease-in-out;
+  position: sticky;
+}
+
+.img_1, .img_2, .img_3, .img_4, .img_5, .img_6 {
+  display: inline-flex;
+}
+
+.img_1 {
+  animation: anim_img1 1s ease-in-out 1 forwards;
+}
+
+.img_2 {
+  animation: anim_img2 1s ease-in-out 1 forwards;
+}
+
+.img_3 {
+  animation: anim_img3 1s ease-in-out 1 forwards;
+}
+
+.img_4 {
+  animation: anim_img4 1s ease-in-out 1 forwards;
+}
+
+.img_5 {
+  animation: anim_img5 1s ease-in-out forwards;
+  filter: drop-shadow(0 0 3rem rgb(69, 208, 246));
+}
+
+.img_6 {
+  animation: anim_img6 1s ease-in-out 1 forwards;
+}
+
+@keyframes anim_logo_tim_flash {
+  from, to {
+    filter: opacity(100%);
+    transform: scale(100%);
   }
-}/*# sourceMappingURL=style.css.map */
+  50% {
+    filter: opacity(0%);
+    transform: scale(105%);
+  }
+}
+@keyframes anim_img1 {
+  from {
+    transform: translate3d(-1000px, -1000px, -1000px);
+  }
+  to {
+    transform: translate3d(0px, -100px, 0px);
+    mix-blend-mode: screen;
+  }
+}
+@keyframes anim_img2 {
+  from {
+    transform: translate3d(-1000px, 1000px, -1000px);
+  }
+  to {
+    transform: translate3d(0px, -1100px, 0px);
+    mix-blend-mode: screen;
+  }
+}
+@keyframes anim_img3 {
+  from {
+    transform: translate3d(1000px, 2000px, 1000px);
+  }
+  to {
+    transform: translate3d(0px, -2100px, 0px);
+    mix-blend-mode: screen;
+  }
+}
+@keyframes anim_img5 {
+  from {
+    transform: translate3d(1000px, -8000px, 1000px) scale(0);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: translate3d(0px, -4110px, 0px) scale(1);
+    mix-blend-mode: screen;
+  }
+}
+/* --------------------------------------------- layout */
+/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
