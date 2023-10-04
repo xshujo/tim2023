@@ -83,7 +83,7 @@ add_filter( 'walker_nav_menu_start_el', 'add_menu_description_and_thumbnail', 10
 /* ------------------------------------------------------ add_theme_support() */
 add_theme_support('title-tag');
 add_theme_support('custom-logo', array(
-    'height' => 50,
+    'height' => 100,
     'width' => 150
 ));
 add_theme_support('post-thumbnails');
@@ -109,13 +109,13 @@ add_action('pre_get_posts', 'cidweb_modifie_requete_principal');
 
 
 // Loader
-function custom_loading_script() {
+function custom_loading_script()
+{
     wp_enqueue_script('loader', get_template_directory_uri() . './loader.js', array('jquery'), '1.0', true);
     wp_enqueue_script('loader', get_template_directory_uri() . './loader.css', array('css'), '1.0', true);
-    
-  }
-  
-  add_action('wp_enqueue_scripts', 'custom_loading_script');
+}
+
+add_action('wp_enqueue_scripts', 'custom_loading_script');
 
 
 /* --------------------------------------------------- Enregistrer le sidebar */
