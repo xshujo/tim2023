@@ -6,6 +6,7 @@
  */
 ?>
 <?php get_header(); ?>
+
 <main class="contenu_accueil">
 
     <section class="contenu1">
