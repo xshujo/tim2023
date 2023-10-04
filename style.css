@@ -387,12 +387,32 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-
-.menu-site {
+.site__header__logo .menu-site ul {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   flex-direction: row;
+}
+.site__header__logo .menu-site ul li {
+  display: flex;
+  justify-content: space-around;
+}
+.site__header__logo .menu-site a {
+  display: flex;
+  font-size: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  justify-content: space-around;
+  padding: 1.5vw;
+  padding-left: 2vw;
+  background: linear-gradient(to right, rgb(107, 172, 237), rgb(107, 172, 237)), linear-gradient(to right, rgb(182, 211, 240), rgb(182, 211, 240));
+  background-size: 100% 0px, 0 0px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+.site__header__logo .menu-site a:hover {
+  color: lightblue;
+  background-size: 50% 3px, 100% 3px;
 }
 
 /* --------------------------------------------------------------------- Body */
