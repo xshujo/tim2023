@@ -1,4 +1,5 @@
 <?php
+// Référence au fichier de styles
 function ajouter_styles()
 {
     wp_enqueue_style(
@@ -12,9 +13,7 @@ add_action('wp_enqueue_scripts', 'ajouter_styles');
 
 
 
-/* Enregistrement des menus */
-// if (!function_exists('enregistrement_nav_menu')) {
-
+// Enregistrement des menus
 function enregistrement_nav_menu()
 {
     register_nav_menus(array(
@@ -23,7 +22,44 @@ function enregistrement_nav_menu()
     ));
 }
 add_action('after_setup_theme', 'enregistrement_nav_menu', 0);
-// }
+
+
+// Enregistrement du logo, de post thumbnails, de l'image d'arrière-plan et du titre
+add_theme_support('title-tag');
+add_theme_support('custom-logo', array(
+    'height' => 100,
+    'width' => 150
+));
+add_theme_support('post-thumbnails');
+add_theme_support('custom-background');
+
+/**
+ * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
+ * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
+ * Dépendant de la condition initiale on peut filtrer un type particulier de requête
+ * Dans ce cas-ci, nous filtrons la requête de la page d'accueil
+ * @param WP_query  $query la requête principal de WP
+ */
+function cidweb_modifie_requete_principal($query)
+{
+    if ($query->is_home() && $query->is_main_query() && !is_admin()) {
+        $query->set('category_name', 'accueil');
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+    }
+}
+add_action('pre_get_posts', 'cidweb_modifie_requete_principal');
+
+
+
+// Loader
+function custom_loading_script()
+{
+    wp_enqueue_script('loader', get_template_directory_uri() . './loader.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('loader', get_template_directory_uri() . './loader.css', array('css'), '1.0', true);
+}
+
+add_action('wp_enqueue_scripts', 'custom_loading_script');
 
 /* Modification des choix de menu "cours" */
 /*function personnalisation_menu_item_title($title, $item, $args)
@@ -79,44 +115,6 @@ add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);*/
     return $item_output;
 }
 add_filter( 'walker_nav_menu_start_el', 'add_menu_description_and_thumbnail', 10, 4 );*/
-
-/* ------------------------------------------------------ add_theme_support() */
-add_theme_support('title-tag');
-add_theme_support('custom-logo', array(
-    'height' => 100,
-    'width' => 150
-));
-add_theme_support('post-thumbnails');
-add_theme_support('custom-background');
-
-/**
- * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
- * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
- * Dépendant de la condition initiale on peut filtrer un type particulier de requête
- * Dans ce cas-ci, nous filtrons la requête de la page d'accueil
- * @param WP_query  $query la requête principal de WP
- */
-function cidweb_modifie_requete_principal($query)
-{
-    if ($query->is_home() && $query->is_main_query() && !is_admin()) {
-        $query->set('category_name', 'accueil');
-        $query->set('orderby', 'title');
-        $query->set('order', 'ASC');
-    }
-}
-add_action('pre_get_posts', 'cidweb_modifie_requete_principal');
-
-
-
-// Loader
-function custom_loading_script()
-{
-    wp_enqueue_script('loader', get_template_directory_uri() . './loader.js', array('jquery'), '1.0', true);
-    wp_enqueue_script('loader', get_template_directory_uri() . './loader.css', array('css'), '1.0', true);
-}
-
-add_action('wp_enqueue_scripts', 'custom_loading_script');
-
 
 /* --------------------------------------------------- Enregistrer le sidebar */
 /*function enregistrer_sidebar()
