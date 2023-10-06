@@ -36,7 +36,7 @@
     </section>
 
     <section  class="contenu3">
-        <img src="medias/photo5w5/pic07.jpg" alt="imgFrontPage" width="325" height="200" style="border-radius: 10px" />
+        <img src="wp-content/themes/tim2023/medias/photo5w5/pic06.jpg" alt="imgFrontPage" width="325" height="200" style="border-radius: 10px" />
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
             iusto assumenda ipsum magni deserunt minima, quo, debitis, voluptates
@@ -49,7 +49,7 @@
 
     <section class="contenu4">
         <h2>Une équipe d'enseignants dévoués</h2>
-        <img src="medias/photo5w5/pic05.jpg" alt="image d'une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 10px" />
+        <img src="wp-content/themes/tim2023/medias/photo5w5/pic05.jpg" alt="image d'une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 10px" />
         <div>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
@@ -100,7 +100,7 @@
 
     <section class="contenu6">
         <h2>Un apprentissage par projet</h2>
-        <img src="medias/photo5w5/pic06.jpg" alt="" width="325" height="200" style="border-radius: 10px" />
+        <img src="wp-content/themes/tim2023/medias/photo5w5/pic06.jpg" alt="" width="325" height="200" style="border-radius: 10px" />
         <div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam
