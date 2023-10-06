@@ -470,7 +470,7 @@ contenu_accueil {
 .contenu {
   position: relative;
   z-index: 1;
-  padding: 1em;
+  padding: 2em;
   text-align: right;
   align-items: flex-start;
   font-family: Montserrat bold;
@@ -481,6 +481,8 @@ contenu_accueil {
   position: relative;
   text-align: left;
   align-items: flex-start;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .titre-accueil1 {
@@ -501,16 +503,16 @@ contenu_accueil {
 .titre-accueil1::before {
   content: "";
   position: absolute;
-  top: -5vh;
-  left: 25vw;
+  top: -10vh;
+  left: 30vw;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background-color: #68afed;
-  filter: blur(4px);
   border-radius: 50%;
   z-index: -3;
-  opacity: 0.8;
+  opacity: 0.6;
+  filter: blur(2px);
 }
 
 .titre-accueil3::before {
@@ -519,13 +521,13 @@ contenu_accueil {
   top: 50%;
   left: 15%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  height: 600px;
+  width: 800px;
+  height: 800px;
   background-color: #0074d9;
-  filter: blur(4px);
   border-radius: 50%;
   z-index: -5;
-  opacity: 0.8;
+  opacity: 0.6;
+  filter: blur(2px);
 }
 
 #texteIntro {
