@@ -25,7 +25,7 @@
         <p id="auteur"></p>
     </section>
 
-    <section>
+    <section  class="contenu3">
         <img src="medias/photo5w5/pic07.jpg" alt="imgFrontPage" width="325" height="200" style="border-radius: 10px" />
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
@@ -37,7 +37,7 @@
         </p>
     </section>
 
-    <section class="contenu3">
+    <section class="contenu4">
         <h2>Une équipe d'enseignants dévoués</h2>
         <img src="medias/photo5w5/pic05.jpg" alt="image d'une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 10px" />
         <div>
@@ -51,7 +51,7 @@
         </div>
     </section>
 
-    <section class="contenu4">
+    <section class="contenu5">
         <h2>Des cours selon vos intérêts</h2>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
@@ -88,7 +88,7 @@
         <button>voir plus</button>
     </section>
 
-    <section class="contenu5">
+    <section class="contenu6">
         <h2>Un apprentissage par projet</h2>
         <img src="medias/photo5w5/pic06.jpg" alt="" width="325" height="200" style="border-radius: 10px" />
         <div>
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section class="contenu6">
+    <section class="contenu7">
         <h1>Envie de venir étudier?</h1>
         <h2>Soummets dès maintenant une demande d'admission</h2>
         <button>soumettre</button>
