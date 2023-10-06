@@ -9,15 +9,25 @@
 
 <main class="contenu_accueil">
 
-    <section class="contenu1">
-        <h1>Création</h1>
-        <h1>Intégration</h1>
-        <h1>Programmation</h1>
-        <div id="ligne" style="line-height: 1; color: white"></div>
-        <p id="texteIntro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti
-            temporibus quaerat, cumque dignissimos numquam.
-        </p>
+    <section class="video-section">
+        <video autoplay muted loop id="background-video">
+            <source src="<?php echo get_template_directory_uri(); ?>/medias/loop.mp4" type="video/mp4">
+        
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="contenu">
+            <div class="conteneur-titre">
+                <h1 class="titre-accueil1">Création</h1>
+                <h1 class="titre-accueil2">Intégration</h1>
+                <h1 class="titre-accueil3">Programmation</h1>
+            </div>
+                <div id="ligne" style="line-height: 1; color: white"></div>
+                <p id="texteIntro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti
+                    temporibus quaerat, cumque dignissimos numquam.
+                </p>
+        </div>
     </section>
 
     <section class="contenu2">
