@@ -2,32 +2,34 @@
 Theme Name: TIM 2023
 Theme URI: https://referenced.ca
 Author: DiversiTIM
-Author URI:  https://github.com/Diversitim
-Description: Thème du site de la technique d'intégration multimédia au collège de Maisonneuve par DiversiTIM
+Author URI: https://github.com/Diversitim
+Description: Le thème du futur site du TIM
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: TIM
+Text Domain: tim-2023
 */
+/* ---------------------------------------- Importation des feuilles de style */
 
-//////////////////////////////////////////////// IMPORTATION DES FEUILLES DE STYLE
-
-/* --------------------------------------------- Normalize */
-@import "variables/root";
 @import "variables/dimension";
+@import "variables/root";
+@import "variables/couleur";
 @import "normalize/normalize";
 
-/* --------------------------------------------- Base */
+/* --------------------------------------------- base */
 @import "base/html";
 @import "base/heading";
 @import "base/body";
 @import "base/link";
-@import "base/list";
 @import "base/markdown";
 
-/* --------------------------------------------- Composants */
+/* --------------------------------------------- composant */
 @import "composant/entete";
-@import "composant/pied2page";
+@import "composant/main";
+@import "composant/pied_page";
+@import "composant/loader";
 
-// @import "wp-content/plugins/loader/sass/_loader.scss";
+/* --------------------------------------------- layout */
+
+/* --------------------------------------------- autres */
