@@ -1,3 +1,9 @@
+<?php
+
+/**
+ * Template name: Professeurs
+ */
+?>
 <?php get_header(); ?>
 <main>
 

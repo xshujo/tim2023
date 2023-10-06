@@ -1,3 +1,9 @@
+<?php
+
+/**
+ * Template name: Vie etudiante
+ */
+?>
 <?php get_header(); ?>
 <main>
 
