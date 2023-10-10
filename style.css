@@ -448,14 +448,14 @@ contenu_accueil {
 .contenu1, .contenu2, .contenu3, .contenu4, .contenu5, .contenu6 {
   min-height: 100vh;
   background-clip: content-box;
-  border: 2px solid white;
 }
 
 .video-section {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
+  border: white 3px solid;
 }
 
 #background-video {
@@ -469,7 +469,6 @@ contenu_accueil {
 
 .contenu {
   position: relative;
-  z-index: 1;
   padding: 2em;
   text-align: right;
   align-items: flex-start;
@@ -532,6 +531,12 @@ contenu_accueil {
 
 #texteIntro {
   z-index: 5;
+}
+
+.contenu2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* --------------------------------------------- composant */

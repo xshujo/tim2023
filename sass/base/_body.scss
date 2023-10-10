@@ -17,15 +17,18 @@ contenu_accueil{
 .contenu1,.contenu2,.contenu3,.contenu4,.contenu5,.contenu6{
   min-height: 100vh;
   background-clip: content-box;
-  border: 2px solid white;
+  
   
 }
 
 .video-section {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
+  border: white 3px solid;
+  
+  
 }
 
 #background-video {
@@ -39,12 +42,12 @@ contenu_accueil{
 
 .contenu {
   position: relative;
-  z-index: 1;
   padding: 2em;
   text-align:right;
   align-items: flex-start;
   font-family: Montserrat bold;
   color: #fff;
+  
 }
 
 .conteneur-titre{
@@ -105,10 +108,11 @@ contenu_accueil{
 }
 
 
-// .contenu1{
-//   background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0,#051934 50%,#051934 100%); 
-//   background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0,#051934 40%,#051934 100%); 
-// }
+.contenu2{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+}
 // .contenu2{
 //   background: repeating-radial-gradient(farthest-corner at 0% 100%, #0d3a76 0,#051934 50%,#051934 100%); 
 // }
