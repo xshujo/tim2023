@@ -10,6 +10,7 @@
 <main class="contenu_accueil">
 
     <section class="video-section">
+        
         <video autoplay muted loop id="background-video">
             <source src="<?php echo get_template_directory_uri(); ?>/medias/loop.mp4" type="video/mp4">
         
@@ -28,40 +29,51 @@
                     temporibus quaerat, cumque dignissimos numquam.
                 </p>
         </div>
+        
     </section>
 
     <section class="contenu2">
-        <blockquote id="citation"></blockquote>
-        <p id="auteur"></p>
-    </section>
+        <blockquote id="citation">Étudier en TIM c'est...</blockquote>
+        <p id="auteur"> - Nom,cohorte</p>
 
-    <section  class="contenu3">
-        <img src="wp-content/themes/tim2023/medias/photo5w5/pic06.jpg" alt="imgFrontPage" width="325" height="200" style="border-radius: 10px" />
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-            iusto assumenda ipsum magni deserunt minima, quo, debitis, voluptates
-            impedit illum tenetur voluptas quibusdam distinctio consequatur porro
-            cupiditate! Molestias, libero fugiat!Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Consequuntur iusto assumenda ipsum
-            magni deserunt minima!
-        </p>
-    </section>
-
-    <section class="contenu4">
-        <h2>Une équipe d'enseignants dévoués</h2>
-        <img src="wp-content/themes/tim2023/medias/photo5w5/pic05.jpg" alt="image d'une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 10px" />
-        <div>
+        <div class="image_texte">
+            
+            <img src="wp-content/themes/tim2023/medias/photo5w5/pic02.jpg" alt="imgFrontPage" width="325" height="200" style="border-radius: 10px" />
+            <div class="bordure_image"></div>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-                pariatur odio exercitationem dolorum quis tenetur laboriosam dolores
-                ipsa, optio numquam nulla iusto repellendus commodi perferendis at
-                dolore sunt, quaerat quae.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+                iusto assumenda ipsum magni deserunt minima, quo, debitis, voluptates
+                impedit illum tenetur voluptas quibusdam distinctio consequatur porro
+                cupiditate! Molestias, libero fugiat!Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Consequuntur iusto assumenda ipsum
+                magni deserunt minima!
             </p>
-            <button>voir plus</button>
+        </div>
+        
+    </section>
+
+    
+
+    <section class="contenu3">
+        <h2>Une équipe de professeurs dévoués</h2>
+        
+        <div class="image_texte">
+            <img src="wp-content/themes/tim2023/medias/photo5w5/pic05.jpg" alt="image d'une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 10px" />
+            <div class="bordure_image"></div>
+            <div class="bouton_prof">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
+                    pariatur odio exercitationem dolorum quis tenetur laboriosam dolores
+                    ipsa, optio numquam nulla iusto repellendus commodi perferendis at
+                    dolore sunt, quaerat quae.
+                </p>
+                <button>voir plus</button>
+            </div>
+            
         </div>
     </section>
 
-    <section class="contenu5">
+    <section class="contenu4">
         <h2>Des cours selon vos intérêts</h2>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
@@ -98,7 +110,7 @@
         <button>voir plus</button>
     </section>
 
-    <section class="contenu6">
+    <section class="contenu5">
         <h2>Un apprentissage par projet</h2>
         <img src="wp-content/themes/tim2023/medias/photo5w5/pic06.jpg" alt="" width="325" height="200" style="border-radius: 10px" />
         <div>
@@ -112,7 +124,7 @@
         </div>
     </section>
 
-    <section class="contenu7">
+    <section class="contenu6">
         <h1>Envie de venir étudier?</h1>
         <h2>Soummets dès maintenant une demande d'admission</h2>
         <button>soumettre</button>
