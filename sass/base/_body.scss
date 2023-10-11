@@ -112,6 +112,110 @@ contenu_accueil{
   display: flex;
   flex-direction:column;
   justify-content: space-evenly;
+
+  .image_texte{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    text-align: left;
+    width: 100vw;
+    height: 100vh;
+
+    img{
+      width: 50vw;
+      height: 60vh;
+      padding-left: 4em;
+      
+      
+    }
+
+    p{
+      width: 25%;
+      padding: 2em;
+
+      background:
+      linear-gradient(to right, white 4px, transparent 4px) 0 100%,
+      linear-gradient(to left, white 4px, transparent 4px) 100% 0,
+      linear-gradient(to top, white 4px, transparent 4px) 0 100%,
+      linear-gradient(to bottom, white 4px, transparent 4px) 100% 0;
+  
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+    }
+    
+    
+    .bordure_image{
+      border: white 2px solid;
+      z-index: 100;
+      position:absolute;
+      margin-left: 5em;
+      margin-bottom: 5em;
+      width: 50vw;
+      height: 60vh;
+      border-radius: 15px;
+    }
+    
+    
+  
+  }
+}
+
+.contenu3{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+
+  .image_texte{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    text-align: left;
+    width: 100vw;
+    height: 100vh;
+
+    img{
+      width: 50vw;
+      height: 60vh;
+      padding-right: 4em;
+      
+      
+    }
+
+    p{
+      width: 50%;
+      padding: 2em;
+      text-align: left;
+
+      background:
+      linear-gradient(to right, white 4px, transparent 4px) 0 0,
+      linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+      linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+      linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+  
+      background-repeat: no-repeat;
+      background-size: 30px 30px;
+    }
+    
+    
+    
+    .bordure_image{
+      border: white 2px solid;
+      z-index: 100;
+      position:absolute;
+      margin-right: 5em;
+      margin-bottom: 5em;
+      width: 50vw;
+      height: 60vh;
+      border-radius: 15px;
+    }
+    
+    .bouton_prof{
+      display: flex;
+      flex-direction: column;
+      
+    }
+  
+  }
 }
 // .contenu2{
 //   background: repeating-radial-gradient(farthest-corner at 0% 100%, #0d3a76 0,#051934 50%,#051934 100%); 
