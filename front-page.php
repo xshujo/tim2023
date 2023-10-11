@@ -60,14 +60,14 @@
         <div class="image_texte">
             <img src="wp-content/themes/tim2023/medias/photo5w5/pic05.jpg" alt="image d'une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 10px" />
             <div class="bordure_image"></div>
-            <div class="bouton_prof">
+            <div class="section_prof">
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
                     pariatur odio exercitationem dolorum quis tenetur laboriosam dolores
                     ipsa, optio numquam nulla iusto repellendus commodi perferendis at
                     dolore sunt, quaerat quae.
                 </p>
-                <button>voir plus</button>
+                <button class="bouton_prof">voir plus</button>
             </div>
             
         </div>
@@ -89,22 +89,23 @@
                 <img src="" alt="" />
                 <h3>Jeux vidéo</h3>
             </div>
+            <div id="web">
+                <img src="" alt="" />
+                <h3>Web</h3>
+            </div>
+            <div id="design">
+                <img src="" alt="" />
+                <h3>Design</h3>
+            </div>
             <div id="montage">
                 <img src="" alt="" />
                 <h3>Montage vidéo</h3>
             </div>
-            <div id="prog">
-                <img src="" alt="" />
-                <h3>Programmation</h3>
-            </div>
             <div id="vr">
                 <img src="" alt="" />
-                <h3>VR</h3>
+                <h3>Réalité virtuelle</h3>
             </div>
-            <div id="design">
-                <img src="" alt="" />
-                <h3>design</h3>
-            </div>
+           
         </div>
 
         <button>voir plus</button>
