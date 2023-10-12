@@ -437,7 +437,7 @@ body {
   color: #f7f7f7;
 }
 
-contenu_accueil {
+.contenu_accueil {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -445,7 +445,12 @@ contenu_accueil {
   background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 50%, #051934 100%);
 }
 
-.contenu1, .contenu2, .contenu3, .contenu4, .contenu5, .contenu6 {
+.contenu1,
+.contenu2,
+.contenu3,
+.contenu4,
+.contenu5,
+.contenu6 {
   min-height: 100vh;
   background-clip: content-box;
 }
@@ -550,6 +555,7 @@ contenu_accueil {
   width: 50vw;
   height: 60vh;
   padding-left: 4em;
+  border-radius: 15px;
 }
 .contenu2 .image_texte p {
   width: 25%;

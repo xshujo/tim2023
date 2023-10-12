@@ -10,34 +10,34 @@
 <main class="contenu_accueil">
 
     <section class="video-section">
-        
+
         <video autoplay muted loop id="background-video">
             <source src="<?php echo get_template_directory_uri(); ?>/medias/loop.mp4" type="video/mp4">
-        
+
             Your browser does not support the video tag.
         </video>
-        
+
         <div class="contenu">
             <div class="conteneur-titre">
                 <h1 class="titre-accueil1">Création</h1>
                 <h1 class="titre-accueil2">Intégration</h1>
                 <h1 class="titre-accueil3">Programmation</h1>
             </div>
-                <div id="ligne" style="line-height: 1; color: white"></div>
-                <p id="texteIntro">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti
-                    temporibus quaerat, cumque dignissimos numquam.
-                </p>
+            <div id="ligne" style="line-height: 1; color: white"></div>
+            <p id="texteIntro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti
+                temporibus quaerat, cumque dignissimos numquam.
+            </p>
         </div>
-        
+
     </section>
 
     <section class="contenu2">
-        <blockquote id="citation">Étudier en TIM c'est...</blockquote>
-        <p id="auteur"> - Nom,cohorte</p>
+        <blockquote id="citation"></blockquote>
+        <p id="auteur"></p>
 
         <div class="image_texte">
-            
+
             <img src="wp-content/themes/tim2023/medias/photo5w5/pic02.jpg" alt="imgFrontPage" width="325" height="200" style="border-radius: 10px" />
             <div class="bordure_image"></div>
             <p>
@@ -49,14 +49,14 @@
                 magni deserunt minima!
             </p>
         </div>
-        
+
     </section>
 
-    
+
 
     <section class="contenu3">
         <h2>Une équipe de professeurs dévoués</h2>
-        
+
         <div class="image_texte">
             <img src="wp-content/themes/tim2023/medias/photo5w5/pic05.jpg" alt="image d'une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 10px" />
             <div class="bordure_image"></div>
@@ -69,7 +69,7 @@
                 </p>
                 <button>voir plus</button>
             </div>
-            
+
         </div>
     </section>
 
