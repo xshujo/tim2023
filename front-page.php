@@ -38,7 +38,7 @@
 
         <div class="image_texte">
             
-            <img src="wp-content/themes/tim2023/medias/photo5w5/pic02.jpg" alt="imgFrontPage" width="325" height="200" style="border-radius: 10px" />
+            <img src="wp-content/themes/tim2023/medias/2048/Photo10_2048.jpg" alt="imgFrontPage" width="325" height="200" style="border-radius: 25px" />
             <div class="bordure_image"></div>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
@@ -58,7 +58,7 @@
         <h2>Une équipe de professeurs dévoués</h2>
         
         <div class="image_texte">
-            <img src="wp-content/themes/tim2023/medias/photo5w5/pic05.jpg" alt="image d'une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 10px" />
+            <img src="wp-content/themes/tim2023/medias/2048/ImageEquipeProf1_2048.jpg" alt="image des profs du TIM" width="325" height="200" style="border-radius: 25px" />
             <div class="bordure_image"></div>
             <div class="section_prof">
                 <p>
@@ -82,46 +82,49 @@
         </p>
         <div class="elmtCours">
             <div id="3d">
-                <img src="" alt="" />
+                <img src="wp-content/themes/tim2023/medias/SVG/3d.svg" alt="" />
                 <h3>3D</h3>
             </div>
             <div id="jeu">
-                <img src="" alt="" />
+                <img src="wp-content/themes/tim2023/medias/SVG/manette.svg" alt="" />
                 <h3>Jeux vidéo</h3>
             </div>
             <div id="web">
-                <img src="" alt="" />
+                <img src="wp-content/themes/tim2023/medias/SVG/prog.svg" alt="" />
                 <h3>Web</h3>
             </div>
             <div id="design">
-                <img src="" alt="" />
+                <img src="wp-content/themes/tim2023/medias/SVG/illust.svg" alt="" />
                 <h3>Design</h3>
             </div>
             <div id="montage">
-                <img src="" alt="" />
+                <img src="wp-content/themes/tim2023/medias/SVG/video.svg" alt="" />
                 <h3>Montage vidéo</h3>
             </div>
             <div id="vr">
-                <img src="" alt="" />
+                <img src="wp-content/themes/tim2023/medias/SVG/vr.svg" alt="" />
                 <h3>Réalité virtuelle</h3>
             </div>
            
         </div>
 
-        <button>voir plus</button>
+        <buttonm class="bouton_cours">voir plus</button>
     </section>
 
     <section class="contenu5">
         <h2>Un apprentissage par projet</h2>
-        <img src="wp-content/themes/tim2023/medias/photo5w5/pic06.jpg" alt="" width="325" height="200" style="border-radius: 10px" />
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam
-                quibusdam, nulla facere distinctio, nobis asperiores veniam rem iste
-                impedit vel dolor ratione. Corporis quas labore voluptate quibusdam
-                ex tempore?
-            </p>
-            <button>voir plus</button>
+        <div class="image_texte">
+            <img src="wp-content/themes/tim2023/medias/2048/Photo8_2048.jpg" alt="Une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 25px" />
+            <div class="bordure_image"></div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquam
+                    quibusdam, nulla facere distinctio, nobis asperiores veniam rem iste
+                    impedit vel dolor ratione. Corporis quas labore voluptate quibusdam
+                    ex tempore?
+                </p>
+                <button>voir plus</button>
+            </div>
         </div>
     </section>
 

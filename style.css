@@ -556,24 +556,26 @@ contenu_accueil {
 .contenu2 .image_texte img {
   width: 50vw;
   height: 60vh;
-  padding-left: 4em;
+  margin-left: 5vw;
 }
 .contenu2 .image_texte p {
   width: 25%;
   padding: 2em;
+  margin-right: 5em;
   background: linear-gradient(to right, white 4px, transparent 4px) 0 100%, linear-gradient(to left, white 4px, transparent 4px) 100% 0, linear-gradient(to top, white 4px, transparent 4px) 0 100%, linear-gradient(to bottom, white 4px, transparent 4px) 100% 0;
   background-repeat: no-repeat;
   background-size: 30px 30px;
+  border-radius: 5px;
 }
 .contenu2 .image_texte .bordure_image {
   border: white 2px solid;
   z-index: 100;
   position: absolute;
-  margin-left: 5em;
+  margin-left: 6em;
   margin-bottom: 5em;
   width: 50vw;
   height: 60vh;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .contenu3 {
@@ -592,7 +594,7 @@ contenu_accueil {
 .contenu3 .image_texte img {
   width: 50vw;
   height: 60vh;
-  padding-right: 4em;
+  margin-right: 5vw;
 }
 .contenu3 .image_texte p {
   width: 50%;
@@ -606,11 +608,11 @@ contenu_accueil {
   border: white 2px solid;
   z-index: 100;
   position: absolute;
-  margin-right: 5em;
+  margin-right: 6em;
   margin-bottom: 5em;
   width: 50vw;
   height: 60vh;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 .contenu3 .image_texte .section_prof {
   display: flex;
@@ -627,8 +629,7 @@ contenu_accueil {
 }
 .contenu3 .image_texte .bouton_prof:hover {
   border-radius: 50px;
-  width: 6em;
-  height: 2em;
+  transform: scale();
   color: #ffffff;
   font-size: 1.2em;
   margin-right: 15vw;
@@ -640,10 +641,79 @@ contenu_accueil {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 220px;
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  gap: 15vw;
+  grid-auto-flow: column;
+  grid-auto-columns: 100px;
+  padding-top: 10vh;
 }
 .elmtCours div {
   padding: 2em;
   display: flex;
+}
+.elmtCours img {
+  width: 8vw;
+}
+
+.bouton_cours {
+  color: black;
+  border-radius: 50px;
+  width: 6em;
+  height: 3em;
+  font-size: 1.2em;
+  margin-top: 35vh;
+  background: linear-gradient(#ffffff, #b7bcea);
+  border: inset 2px #b7bcea;
+  text-align: center;
+}
+
+.bouton_cours:hover {
+  border-radius: 50px;
+  transform: scale();
+  color: #ffffff;
+  font-size: 1.2em;
+  background: linear-gradient(#042b44, #3c87ff);
+  border: inset 2px #b7bcea;
+}
+
+.contenu5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.contenu5 .image_texte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+}
+.contenu5 .image_texte img {
+  width: 50vw;
+  height: 60vh;
+  margin-left: 5vw;
+}
+.contenu5 .image_texte p {
+  width: 50%;
+  padding: 2em;
+  margin-right: 5em;
+  background: linear-gradient(to right, white 4px, transparent 4px) 0 100%, linear-gradient(to left, white 4px, transparent 4px) 100% 0, linear-gradient(to top, white 4px, transparent 4px) 0 100%, linear-gradient(to bottom, white 4px, transparent 4px) 100% 0;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  border-radius: 5px;
+}
+.contenu5 .image_texte .bordure_image {
+  border: white 2px solid;
+  z-index: 100;
+  position: absolute;
+  margin-left: 6em;
+  margin-bottom: 5em;
+  width: 50vw;
+  height: 60vh;
+  border-radius: 25px;
 }
 
 .contenu2 {
