@@ -17,7 +17,7 @@
             Your browser does not support the video tag.
         </video>
         
-        <div class="contenu">
+        <div class="contenu" id="contenu">
             <div class="conteneur-titre">
                 <h1 class="titre-accueil1">Création</h1>
                 <h1 class="titre-accueil2">Intégration</h1>
@@ -32,7 +32,7 @@
         
     </section>
 
-    <section class="contenu2">
+    <section class="contenu2"  id="contenu2">
         <blockquote id="citation">Étudier en TIM c'est...</blockquote>
         <p id="auteur"> - Nom,cohorte</p>
 
@@ -54,7 +54,7 @@
 
     
 
-    <section class="contenu3">
+    <section class="contenu3"  id="contenu">
         <h2>Une équipe de professeurs dévoués</h2>
         
         <div class="image_texte">
@@ -73,7 +73,7 @@
         </div>
     </section>
 
-    <section class="contenu4">
+    <section class="contenu4"  id="contenu2">
         <h2>Des cours selon vos intérêts</h2>
         <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
@@ -111,7 +111,7 @@
         <buttonm class="bouton_cours">voir plus</button>
     </section>
 
-    <section class="contenu5">
+    <section class="contenu5"  id="contenu">
         <h2>Un apprentissage par projet</h2>
         <div class="image_texte">
             <img src="wp-content/themes/tim2023/medias/2048/Photo8_2048.jpg" alt="Une étudiante TIM qui travaille" width="325" height="200" style="border-radius: 25px" />
@@ -128,12 +128,33 @@
         </div>
     </section>
 
-    <section class="contenu6">
+    <section class="contenu6"  id="contenu2">
         <h1>Envie de venir étudier?</h1>
         <h2>Soummets dès maintenant une demande d'admission</h2>
         <button>soumettre</button>
     </section>
 
+    <script>
+        const section = document.querySelectorAll('#contenu, #contenu2');
+
+        function checkScroll() {
+            section.forEach(section => {
+                const sectionPosition = section.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+
+                if (sectionPosition < screenHeight) {
+                    section.style.opacity = 1;
+                    section.style.transform = 'translateX(0)';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll); // To handle items initially in the viewport
+
+        checkScroll(); // Check on initial page load
+
+    </script>
 
 </main>
 <?php get_footer(); ?>
