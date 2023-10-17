@@ -237,7 +237,6 @@ contenu_accueil{
     }
 
     .bouton_prof{
-     
       border-radius: 50px;
       width: 6em;
       height: 2em;
@@ -248,14 +247,10 @@ contenu_accueil{
     }
 
     .bouton_prof:hover{
-     
-      border-radius: 50px;
-      transform:scale();
+      transform:scale(110%);
+      transition: transform 0.2s;
       color: #ffffff;
-      font-size: 1.2em;
-      margin-right: 15vw;
       background: linear-gradient(#042b44, #3c87ff);
-      border:inset 2px #b7bcea;
     }
 
     
@@ -293,7 +288,7 @@ contenu_accueil{
   
   border-radius: 50px;
   width: 6em;
-  height: 3em;
+  height: 2em;
   font-size: 1.2em;
   margin-top:35vh;
   background: linear-gradient(#ffffff, #b7bcea);
@@ -302,13 +297,11 @@ contenu_accueil{
 }
 
 .bouton_cours:hover{
- 
-  border-radius: 50px;
-  transform:scale();
+  transform:scale(110%);
+  transition: transform 0.2s;
   color: #ffffff;
-  font-size: 1.2em;
   background: linear-gradient(#042b44, #3c87ff);
-  border:inset 2px #b7bcea;
+
 }
 
 .contenu5{
@@ -337,10 +330,11 @@ contenu_accueil{
       padding: 2em;
       margin-right: 5em;
       background:
-      linear-gradient(to right, white 4px, transparent 4px) 0 100%,
-      linear-gradient(to left, white 4px, transparent 4px) 100% 0,
-      linear-gradient(to top, white 4px, transparent 4px) 0 100%,
-      linear-gradient(to bottom, white 4px, transparent 4px) 100% 0;
+      linear-gradient(to right, white 4px, transparent 4px) 0 0,
+      linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+      linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+      linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+  
       background-repeat: no-repeat;
       background-size: 30px 30px;
       border-radius: 5px;
@@ -357,10 +351,69 @@ contenu_accueil{
       height: 60vh;
       border-radius: 25px;
     }
+
+    .bouton_projet{
+     
+      border-radius: 50px;
+      width: 6em;
+      height: 2em;
+      font-size: 1.2em;
+      margin-right: 20vw;
+      margin-top: 1em;
+      background: linear-gradient(#ffffff, #b7bcea);
+      border:inset 2px #b7bcea;
+    }
+
+    .bouton_projet:hover{
+      transform:scale(110%);
+      transition: transform 0.2s;
+      color: #ffffff;
+      background: linear-gradient(#042b44, #3c87ff);
+
+    }
     
     
   
   }
+}
+
+.bouton_admission{
+  color: black;
+  border-radius: 50px;
+  width: 6em;
+  height: 2em;
+  font-size: 1.2em;
+  background: linear-gradient(#ffffff, #b7bcea);
+  border:inset 2px #b7bcea;
+  text-align: center;
+}
+
+.bouton_admission:hover{
+  transform:scale(110%);
+  transition: transform 0.2s;
+  color: #ffffff;
+  background: linear-gradient(#042b44, #3c87ff);
+
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0b3874;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#scrollToTopBtn:hover {
+  background-color: white;
+  color: black;
 }
 
 .contenu2{

@@ -123,7 +123,7 @@
                     impedit vel dolor ratione. Corporis quas labore voluptate quibusdam
                     ex tempore?
                 </p>
-                <button>voir plus</button>
+                <button class="bouton_projet">voir plus</button>
             </div>
         </div>
     </section>
@@ -131,10 +131,14 @@
     <section class="contenu6"  id="contenu2">
         <h1>Envie de venir étudier?</h1>
         <h2>Soummets dès maintenant une demande d'admission</h2>
-        <button>soumettre</button>
+        <a href="https://admission.sram.qc.ca/"><button class="bouton_admission">Soumettre</button></a>
+        <button id="scrollToTopBtn" class="hidden">&#8593;</button>
+
     </section>
 
     <script>
+
+        // Apparition gauche à droite des éléments
         const section = document.querySelectorAll('#contenu, #contenu2');
 
         function checkScroll() {
@@ -153,6 +157,24 @@
         window.addEventListener('load', checkScroll); // To handle items initially in the viewport
 
         checkScroll(); // Check on initial page load
+
+        // Scroll Top
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        // Show the button when the user scrolls down 300px from the top of the document
+        window.addEventListener('scroll', () => {
+            if (document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Scroll to the top of the page when the button is clicked
+        scrollToTopBtn.addEventListener('click', () => {
+            document.documentElement.scrollIntoView({ behavior: 'smooth' });
+        });
+
 
     </script>
 
