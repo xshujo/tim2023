@@ -1,8 +1,7 @@
 <?php
 
 /**
- * Modèle par défaut
- * 
+ * Template name: Front page
  */
 ?>
 <?php get_header(); ?>
