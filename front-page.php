@@ -154,14 +154,13 @@
         }
 
         window.addEventListener('scroll', checkScroll);
-        window.addEventListener('load', checkScroll); // To handle items initially in the viewport
+        window.addEventListener('load', checkScroll);
+        checkScroll();
 
-        checkScroll(); // Check on initial page load
-
-        // Scroll Top
+        
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-        // Show the button when the user scrolls down 300px from the top of the document
+       
         window.addEventListener('scroll', () => {
             if (document.documentElement.scrollTop > 300) {
                 scrollToTopBtn.style.display = 'block';
@@ -170,7 +169,7 @@
             }
         });
 
-        // Scroll to the top of the page when the button is clicked
+        
         scrollToTopBtn.addEventListener('click', () => {
             document.documentElement.scrollIntoView({ behavior: 'smooth' });
         });
