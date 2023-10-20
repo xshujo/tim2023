@@ -51,89 +51,97 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-.site__header__logo{
+.site__header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 
-  .menu-site{
-    
-    ul{
+
+  .menu-site {
+
+    ul {
       display: flex;
       flex-direction: row;
-      list-style: none; /* Remove default list bullets */
-      justify-content:space-evenly;
+      list-style: none;
+      /* Remove default list bullets */
+      justify-content: space-evenly;
       position: absolute;
       left: 50vw;
       top: 0.5vh;
 
 
-      li{
+      li {
         display: flex;
         justify-content: space-around;
-        position: relative; /* Positioning context for pseudo-element */
-        font-size: 10px; /* Adjust font size as needed */
-        font-weight: bold; /* Adjust font weight as needed */
-        
+        position: relative;
+        /* Positioning context for pseudo-element */
+        font-size: 10px;
+        /* Adjust font size as needed */
+        font-weight: bold;
+        /* Adjust font weight as needed */
 
-        
+
+
       }
 
       li::before {
-        content: ""; /* Create an empty content box */
-        width: 5px; /* Adjust the width of the circle */
-        height: 5px; /* Adjust the height of the circle */
-        background-color: #ffffff; /* Set the background color of the circle */
-        border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
-        position: absolute; /* Position it absolutely within the list item */
-        bottom: 10px; /* Adjust this value to control the distance between text and circle */
-        left: 52%; /* Center the circle horizontally */
-        transform: translateX(-50%); /* Center the circle horizontally */
-    }
-    li:hover::before  {
-      border-radius: 0%;
-      width: 10vw; /* Adjust the width of the circle */
-      height: 0.5vh;
-      transition: ease-in-out 0.2s;
-      
-      
-  }
+        content: "";
+        /* Create an empty content box */
+        width: 5px;
+        /* Adjust the width of the circle */
+        height: 5px;
+        /* Adjust the height of the circle */
+        background-color: #ffffff;
+        /* Set the background color of the circle */
+        border-radius: 50%;
+        /* Make it a circle by setting border-radius to 50% */
+        position: absolute;
+        /* Position it absolutely within the list item */
+        bottom: 10px;
+        /* Adjust this value to control the distance between text and circle */
+        left: 52%;
+        /* Center the circle horizontally */
+        transform: translateX(-50%);
+        /* Center the circle horizontally */
+      }
+
+      li:hover::before {
+        border-radius: 0%;
+        width: 10vw;
+        /* Adjust the width of the circle */
+        height: 0.5vh;
+        transition: ease-in-out 0.2s;
+      }
 
     }
-    a{
+
+    a {
       display: flex;
       font-size: 1.5em;
       color: white;
       text-transform: uppercase;
-      text-decoration:none;
+      text-decoration: none;
       justify-content: space-around;
       padding: 1.5vw;
       padding-left: 2vw;
       background:
-    linear-gradient(
-      to right,
-      rgb(107, 172, 237),
-      rgb(107, 172, 237)
-    ),
-    linear-gradient(
-      to right,
-      rgb(182, 211, 240),
-      rgb(182, 211, 240)
-    );
-  background-size: 100% 0px, 0 0px;
-  
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-      
-  }
-  
+        linear-gradient(to right,
+          rgb(107, 172, 237),
+          rgb(107, 172, 237)),
+        linear-gradient(to right,
+          rgb(182, 211, 240),
+          rgb(182, 211, 240));
+      background-size: 100% 0px, 0 0px;
 
-   
-    
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+
+    }
+
+
+
+
   }
 
 }
-
-

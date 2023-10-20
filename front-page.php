@@ -7,11 +7,12 @@
 <?php get_header(); ?>
 
 <main class="contenu_accueil">
-
-    <section class="video-section">
+    <?php the_content(); ?>
+    <!-- <section class="video-section">
         
         <video autoplay muted loop id="background-video">
-            <source src="<?php echo get_template_directory_uri(); ?>/medias/loop.mp4" type="video/mp4">
+            <source src="<?php //echo get_template_directory_uri(); 
+                            ?>/medias/loop.mp4" type="video/mp4">
         
             Your browser does not support the video tag.
         </video>
@@ -153,14 +154,13 @@
         }
 
         window.addEventListener('scroll', checkScroll);
-        window.addEventListener('load', checkScroll); // To handle items initially in the viewport
+        window.addEventListener('load', checkScroll);
+        checkScroll();
 
-        checkScroll(); // Check on initial page load
-
-        // Scroll Top
+        
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-        // Show the button when the user scrolls down 300px from the top of the document
+       
         window.addEventListener('scroll', () => {
             if (document.documentElement.scrollTop > 300) {
                 scrollToTopBtn.style.display = 'block';
@@ -169,13 +169,13 @@
             }
         });
 
-        // Scroll to the top of the page when the button is clicked
+        
         scrollToTopBtn.addEventListener('click', () => {
             document.documentElement.scrollIntoView({ behavior: 'smooth' });
         });
 
 
-    </script>
+    </script> -->
 
 </main>
 <?php get_footer(); ?>
