@@ -7,11 +7,12 @@
 <?php get_header(); ?>
 
 <main class="contenu_accueil">
-
-    <section class="video-section">
+    <?php the_content(); ?>
+    <!-- <section class="video-section">
         
         <video autoplay muted loop id="background-video">
-            <source src="<?php echo get_template_directory_uri(); ?>/medias/loop.mp4" type="video/mp4">
+            <source src="<?php //echo get_template_directory_uri(); 
+                            ?>/medias/loop.mp4" type="video/mp4">
         
             Your browser does not support the video tag.
         </video>
@@ -174,7 +175,7 @@
         });
 
 
-    </script>
+    </script> -->
 
 </main>
 <?php get_footer(); ?>
