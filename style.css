@@ -451,7 +451,7 @@ body {
   color: #f7f7f7;
 }
 
-contenu_accueil {
+.contenu_accueil {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -471,7 +471,12 @@ contenu_accueil {
   transition: opacity 1s, transform 0.5s;
 }
 
-.contenu1, .contenu2, .contenu3, .contenu4, .contenu5, .contenu6 {
+.contenu1,
+.contenu2,
+.contenu3,
+.contenu4,
+.contenu5,
+.contenu6 {
   min-height: 100vh;
   background-clip: content-box;
 }
