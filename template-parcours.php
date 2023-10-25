@@ -5,7 +5,7 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="contenu_parcours">
     <?php get_the_title(); ?>
     <?php the_content(); ?>
 </main>
