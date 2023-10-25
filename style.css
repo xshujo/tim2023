@@ -1039,4 +1039,17 @@ footer .iconRS a {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- autres */
+figure.wp-block-gallery.has-nested-images.columns-7.is-cropped.galerie.wp-block-gallery-1.is-layout-flex.wp-block-gallery-is-layout-flex {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  flex-wrap: nowrap;
+  margin: 0 47px;
+}
+
+figure.wp-block-image.size-large {
+  flex: 0 0 auto;
+  border-radius: 50%;
+  scroll-snap-align: start;
+}/*# sourceMappingURL=style.css.map */
