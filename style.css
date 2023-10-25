@@ -1060,6 +1060,16 @@ footer .iconRS a {
   .contenu_parcours .titrage {
     color: #9ec9e7;
   }
+  .contenu_parcours .programmation .un {
+    list-style-type: none;
+  }
+  .contenu_parcours .programmation li::after {
+    display: block;
+    content: "";
+    width: 3px;
+    height: 5px;
+    background: transparent url("/wp-content/themes/tim2023/medias/SVG/3d.svg") no-repeat;
+  }
   .contenu_parcours .environnement {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);

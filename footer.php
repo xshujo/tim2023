@@ -16,10 +16,10 @@
 <section class="colonne3">
         <div class="c3">
             <h1>Suivez-nous</h1>
-            <a href="https://www.youtube.com/@TIMaisonneuve/featured"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=youtube&color=ffffff" width="32" height="32"></a>
-            <a href="https://www.instagram.com/maisonneuvetim/"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=ffffff" width="32" height="32"></a>
-            <a href="https://www.facebook.com/groups/170302146254" target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=ffffff" width="32" height="32"></a>
-            <a href="https://discord.com/invite/rZUr5X4dcF"  target="_blank"><img src="https://s2.svgbox.net/social.svg?ic=discord&color=ffffff" width="32" height="32"></a>
+            <a href="https://www.youtube.com/@TIMaisonneuve/featured"  target="_blank"><img src="wp-content/themes/tim2023/medias/logo-rs/logo-youtube.png" width="32" height="32"></a>
+            <a href="https://www.instagram.com/maisonneuvetim/"  target="_blank"><img src="wp-content/themes/tim2023/medias/logo-rs/logo-instagram.png" width="32" height="32"></a>
+            <a href="https://www.facebook.com/groups/170302146254" target="_blank"><img src="wp-content/themes/tim2023/medias/logo-rs/logo-facebook.png" width="32" height="32"></a>
+            <a href="https://discord.com/invite/rZUr5X4dcF"  target="_blank"><img src="wp-content/themes/tim2023/medias/logo-rs/logo-discord.png" width="32" height="32"></a>
         </div>
 </section>
     
