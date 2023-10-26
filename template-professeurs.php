@@ -8,17 +8,19 @@
 <h1><?php the_title(); ?></h1>
 <?php the_content(); ?>
 <main>
+
     <?php
     $args = array(
         'category_name' => 'professeurs',
         'posts_per_page' => 1,
+        'orderby'        => 'title', // Tri par titre
+        'order'          => 'ASC',   // Dans l'ordre alphabétique croissant
     );
 
     $query = new WP_Query($args);
     //Affichage des articles (descriptions des professeurs)
     if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post();
-            the_title();
             the_content();
         endwhile;
         wp_reset_postdata();
