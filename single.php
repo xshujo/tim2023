@@ -9,7 +9,7 @@
 
 <!------------------------------------MAIN----------------------------------->
 <main class="single">
-    <h1>HOLA</h1>
+    <h1>titre</h1>
     <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
             <article>

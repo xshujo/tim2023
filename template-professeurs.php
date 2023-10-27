@@ -6,12 +6,12 @@
 ?>
 <?php get_header(); ?>
 <h1><?php the_title(); ?></h1>
+<?php the_content(); ?>
 
 <div class="galerie">
     <?php
     $args = array(
         'category_name' => 'professeurs',
-        'posts_per_page' => 13,
         'orderby'        => 'title', // Tri par titre
         'order'          => 'ASC',   // Dans l'ordre alphabétique croissant
     );
@@ -38,6 +38,10 @@
 </div>
 
 <main>
-
+    <?php if (have_posts()) :
+        while (have_posts()) : the_post();
+            get_template_part("template-parts/professeur");
+        endwhile;
+    endif; ?>
 </main>
 <?php get_footer(); ?>
