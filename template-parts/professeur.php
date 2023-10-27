@@ -7,20 +7,21 @@
     );
 
     $query = new WP_Query($args);
+
+    $is_first_post = true;
+
     //Affichage des articles (descriptions des professeurs)
     if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post();
             if (has_post_thumbnail()) {
-    ?>
-                <h1><?php the_title('<h1>', '</h1>') ?></h1>
-
-                <!--affiche images des articles-->
-                <div>
-                    <?php the_post_thumbnail('thumbnail');
-                    ?>
-                </div>
-                <p><?php the_content() ?></p>
-    <?php
+                //$post_id = get_the_ID();
+                // echo 'ID de l\'article : ' . $post_id . '<br>';
+                if ($is_first_post) {
+                    echo '<h1>' . get_the_title() . '</h1>';
+                    echo '<div>' . get_the_post_thumbnail(null, 'thumbnail') . '</div>';
+                    echo '<p>' . get_the_content() . '</p>';
+                    $is_first_post = false;
+                }
             }
         endwhile;
         wp_reset_postdata();

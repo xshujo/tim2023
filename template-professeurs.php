@@ -22,6 +22,10 @@
         while ($query->have_posts()) : $query->the_post();
             if (has_post_thumbnail()) {
     ?>
+                <?php
+                $post_id = get_the_ID(); // Obtenez l'ID de l'article 
+                echo 'ID de l\'article : ' . $post_id . '<br>';
+                ?>
                 <!--affiche images des articles-->
                 <div>
                     <?php the_post_thumbnail('thumbnail');
