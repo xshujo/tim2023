@@ -1,0 +1,31 @@
+@media screen and (min-width:$largeur__bureau){
+
+    .barre__titre__projet{
+        gap: 1.713rem;
+    }
+
+    .titre__projet{
+        font-size: 52px;
+    }
+
+    .caroussel__3d{
+        width: 80vw;
+        max-width: 70vw;
+        display: flex;
+        justify-content: center;
+        background: red;
+        padding: 31px;
+        
+    }
+
+    .caroussel__3d > *{
+        width: 342px;
+        height: 438px;
+        background: rgb(0, 26, 255);
+        padding: 10px 10px 163px 10px;
+        border-radius: 20px;
+        
+    }
+
+    
+}
