@@ -9,9 +9,7 @@
     <?php 
         $category = get_queried_object();
         $args = array(
-            'category_name' => 'Evenements',
-            'orderby' => 'title',
-            'order' => 'ASC'
+            'category_name' => 'Evenements'
         );
         $query = new WP_Query( $args );
         if ( $query->have_posts() ) :
