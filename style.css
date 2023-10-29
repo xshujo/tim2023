@@ -1008,6 +1008,14 @@ footer .iconRS a {
     mix-blend-mode: screen;
   }
 }
+main {
+  width: 90vw;
+  margin: 0 auto;
+}
+main .article_vie_etudiante {
+  background-color: #c7afec;
+}
+
 /* --------------------------------------------- layout */
 /* --------------------------------------------- autres */
 figure.wp-block-gallery.has-nested-images.columns-7.is-cropped.galerie.wp-block-gallery-1.is-layout-flex.wp-block-gallery-is-layout-flex {
@@ -1022,4 +1030,4 @@ figure.wp-block-image.size-large {
   flex: 0 0 auto;
   border-radius: 50%;
   scroll-snap-align: start;
-}/*# sourceMappingURL=style.css.map */
+}
