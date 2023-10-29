@@ -1000,34 +1000,55 @@ footer .iconRS a {
   }
 }
 main {
-  width: 95vw;
+  width: 92vw;
   margin: 0 auto;
   background-color: transparent;
+  margin-top: 2.9rem;
+  margin-bottom: 4rem;
   z-index: 30;
+}
+main .encadre_page {
+  width: 110%;
+  height: 130rem;
+  border: 0.3rem #f7f7f7 solid;
+  border-radius: 2rem;
+  position: absolute;
+  top: 8rem;
+  left: 1rem;
+  z-index: -1;
 }
 main .degrades {
   filter: blur(7rem);
   width: 70rem;
-  height: 110rem;
+  height: 100rem;
   position: absolute;
   border-radius: 50%;
-  z-index: -1;
+  z-index: -5;
 }
 main .degrade_1 {
   background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
-  right: -30rem;
-  top: -25rem;
-  transform: rotateZ(320deg);
+  right: -5rem;
+  top: -40rem;
+  transform: rotateZ(295deg);
 }
 main .degrade_2 {
   background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
   left: -25rem;
-  top: 35rem;
+  top: 30rem;
   transform: rotateZ(35deg);
+}
+main .degrade_3 {
+  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+  width: 40rem;
+  height: 70rem;
+  right: -20rem;
+  top: 70rem;
+  transform: rotateZ(295deg);
 }
 main h1 {
   text-transform: uppercase;
   z-index: 30;
+  margin-bottom: 2rem;
 }
 main p {
   margin: 0;
@@ -1090,13 +1111,13 @@ main .zone_evenements .article_vie_etudiante .informations_evenements .date_even
 main .texte_a_venir {
   position: relative;
   z-index: 20;
-  right: 13vw;
-  bottom: -3rem;
+  right: 8vw;
+  bottom: -4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 16rem;
+  width: 25rem;
   height: 8rem;
 }
 main .texte_a_venir h3 {
@@ -1106,9 +1127,10 @@ main .texte_a_venir h3 {
 }
 main .texte_a_venir .texte_1 {
   color: #c7afec;
+  font-size: 2.7rem;
 }
 main .texte_a_venir .texte_2 {
-  font-size: 2.7rem;
+  font-size: 3.7rem;
 }
 
 /* --------------------------------------------- layout */

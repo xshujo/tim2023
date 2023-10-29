@@ -5,8 +5,10 @@
 ?>
 <?php get_header(); ?>
 <main>
+    <div class="encadre_page"></div>
     <div class="degrades degrade_1"></div>
     <div class="degrades degrade_2"></div>
+    <div class="degrades degrade_3"></div>
     <h1>Vie étudiante</h1>
     <!-- Affichage de la galerie Vie étudiante sur la page -->
     <div class="zone_galerie">
