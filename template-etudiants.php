@@ -48,8 +48,8 @@
         <?php endif;
         wp_reset_postdata();?>
         <div class="texte_a_venir">
-            <h3>Encore plus</h3>
-            <h3>À venir</h3>
+            <h3 class="texte_1">Encore plus</h3>
+            <h3 class="texte_2">À venir</h3>
         </div>
     </div>
 </main>
