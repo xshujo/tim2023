@@ -375,74 +375,6 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-.site__header__logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.site__header__logo .menu-site ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  /* Remove default list bullets */
-  justify-content: space-evenly;
-  position: absolute;
-  left: 50vw;
-  top: 0.5vh;
-}
-.site__header__logo .menu-site ul li {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  /* Positioning context for pseudo-element */
-  font-size: 10px;
-  /* Adjust font size as needed */
-  font-weight: bold;
-  /* Adjust font weight as needed */
-}
-.site__header__logo .menu-site ul li::before {
-  content: "";
-  /* Create an empty content box */
-  width: 5px;
-  /* Adjust the width of the circle */
-  height: 5px;
-  /* Adjust the height of the circle */
-  background-color: #ffffff;
-  /* Set the background color of the circle */
-  border-radius: 50%;
-  /* Make it a circle by setting border-radius to 50% */
-  position: absolute;
-  /* Position it absolutely within the list item */
-  bottom: 10px;
-  /* Adjust this value to control the distance between text and circle */
-  left: 52%;
-  /* Center the circle horizontally */
-  transform: translateX(-50%);
-  /* Center the circle horizontally */
-}
-.site__header__logo .menu-site ul li:hover::before {
-  border-radius: 0%;
-  width: 10vw;
-  /* Adjust the width of the circle */
-  height: 0.5vh;
-  transition: ease-in-out 0.2s;
-}
-.site__header__logo .menu-site a {
-  display: flex;
-  font-size: 1.5em;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  justify-content: space-around;
-  padding: 1.5vw;
-  padding-left: 2vw;
-  background: linear-gradient(to right, rgb(107, 172, 237), rgb(107, 172, 237)), linear-gradient(to right, rgb(182, 211, 240), rgb(182, 211, 240));
-  background-size: 100% 0px, 0 0px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 400ms;
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -818,62 +750,86 @@ body {
 }
 
 /* --------------------------------------------- composant */
-header {
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto 30px;
-}
-header .menu-burger {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  z-index: 3;
-}
-header .menu-burger .bar {
-  width: 20px;
-  height: 2px;
-  background-color: white;
-  margin: 3px 0;
-}
-@media screen and (min-width: 976px) {
-  header .menu-burger {
-    display: none;
+@media only screen and (min-width: 976px) {
+  header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .site__header__logo {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .site__header__logo .menu-site {
+    height: 100%;
+  }
+  header .site__header__logo .menu-site .menu-entete-container {
+    height: 100%;
+  }
+  header .site__header__logo .menu-site .menu-entete-container ul {
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    /* Remove default list bullets */
+    gap: 2rem;
+  }
+  header .site__header__logo .menu-site .menu-entete-container ul li {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    /* Positioning context for pseudo-element */
+    font-size: 10px;
+    /* Adjust font size as needed */
+    font-weight: bold;
+    /* Adjust font weight as needed */
+  }
+  header .site__header__logo .menu-site .menu-entete-container ul li a {
+    display: flex;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    background: linear-gradient(to right, rgb(107, 172, 237), rgb(107, 172, 237)), linear-gradient(to right, rgb(182, 211, 240), rgb(182, 211, 240));
+    background-size: 100% 0px, 0 0px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  header .site__header__logo .menu-site .menu-entete-container ul li::before {
+    content: "";
+    /* Create an empty content box */
+    width: 4px;
+    /* Adjust the width of the circle */
+    height: 4px;
+    /* Adjust the height of the circle */
+    background-color: #ffffff;
+    /* Set the background color of the circle */
+    border-radius: 50%;
+    /* Make it a circle by setting border-radius to 50% */
+    position: absolute;
+    /* Position it absolutely within the list item */
+    bottom: 10px;
+    /* Adjust this value to control the distance between text and circle */
+  }
+  header .site__header__logo .menu-site .menu-entete-container ul li:hover::before {
+    border-radius: 0%;
+    width: 100%;
+    /* Adjust the width of the circle */
+    height: 2px;
+    transition: ease-in-out 0.2s;
   }
 }
-header nav {
-  display: none;
-}
-header nav a {
-  background-color: rgba(35, 58, 111, 0.536);
-  text-decoration: none;
-  color: white;
-  padding: 3px;
-  margin: 4px;
-  border-radius: 10px;
-}
-@media screen and (min-width: 976px) {
-  header nav {
-    display: block;
-  }
-  header nav a {
-    background-color: transparent;
-  }
-}
-
-.menu-nav.active {
-  position: absolute;
-  display: flex;
-  top: 90px;
-  padding: 15px 0;
-  background-color: rgba(0, 0, 0, 0.86);
-  flex-direction: column;
-  width: 100vw;
-  left: 0;
-  border-radius: 0 0 20px 20px;
-}
-
 main {
   background-color: #051934;
 }
@@ -1054,3 +1010,16 @@ footer .iconRS a {
 }
 /* --------------------------------------------- layout */
 /* --------------------------------------------- autres */
+figure.wp-block-gallery.has-nested-images.columns-7.is-cropped.galerie.wp-block-gallery-1.is-layout-flex.wp-block-gallery-is-layout-flex {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  flex-wrap: nowrap;
+  margin: 0 47px;
+}
+
+figure.wp-block-image.size-large {
+  flex: 0 0 auto;
+  border-radius: 50%;
+  scroll-snap-align: start;
+}/*# sourceMappingURL=style.css.map */
