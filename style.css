@@ -355,24 +355,14 @@ P {
   font-size: clamp(0.75rem, 0.5625rem + 0.6vw, 0.9rem);
 }
 
-h1 {
-  font-family: Montserrat bold;
-}
-
-h2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* font-family: "Slackey", cursive; */
-}
-
+h1,
+h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
+h6,
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -1009,11 +999,29 @@ footer .iconRS a {
   }
 }
 main {
-  width: 90vw;
+  width: 95vw;
   margin: 0 auto;
 }
-main .article_vie_etudiante {
+main .zone_evenements {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .zone_evenements .article_vie_etudiante {
+  width: 48.5%;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  display: flex;
   background-color: #c7afec;
+}
+main .zone_evenements .article_vie_etudiante .informations_evenements h3 {
+  text-transform: uppercase;
+}
+main .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
+  font-size: 2rem;
 }
 
 /* --------------------------------------------- layout */

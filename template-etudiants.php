@@ -38,8 +38,10 @@
                         the_post_thumbnail('thumbnail');
                     } ?>
                     <?php get_the_title(); ?>
-                    <?php the_title(); ?>
-                    <?php the_content(); ?>
+                    <div class="informations_evenements">
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
+                    </div>
                 </div>
             <?php endwhile; ?>
         <?php endif;

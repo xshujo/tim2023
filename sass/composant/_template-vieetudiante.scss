@@ -1,11 +1,36 @@
 main {
-    width: 90vw;
+    width: 95vw;
     margin: 0 auto;
 
-    .article_vie_etudiante {
-        background-color: $couleurElmtDeux;
-    }
+    .zone_evenements {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
+        .article_vie_etudiante {
+            width: 48.5%;
+            margin: 0.5rem;
+            border-radius: 1rem;
+            display: flex;
+            background-color: $couleurElmtDeux;
+
+            .informations_evenements {
+                h3 {
+                    text-transform: uppercase;
+                }
+
+                .date_evenement {
+                    font-size: 2rem;
+                }
+                // .description_evenement {
+
+                // }
+            }
+        }
+    }
 
     // .galerie_vie_etudiante {
     //     .wp-block-image {
