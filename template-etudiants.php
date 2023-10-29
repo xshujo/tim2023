@@ -5,6 +5,7 @@
 ?>
 <?php get_header(); ?>
 <main>
+    <h1>Vie étudiante</h1>
     <!-- Affichage de la galerie Vie étudiante sur la page -->
     <div class="zone_galerie">
         <?php
@@ -25,7 +26,7 @@
 
     <!-- Affichage des événements sur la page -->
     <div class="zone_evenements">
-    <?php 
+        <?php 
         $category = get_queried_object();
         $args = array(
             'category_name' => 'Evenements'
@@ -39,13 +40,17 @@
                     } ?>
                     <?php get_the_title(); ?>
                     <div class="informations_evenements">
-                        <h3><?php the_title(); ?></h3>
+                        <h4><?php the_title(); ?></h4>
                         <?php the_content(); ?>
                     </div>
                 </div>
             <?php endwhile; ?>
         <?php endif;
         wp_reset_postdata();?>
+        <div class="texte_a_venir">
+            <h3>Encore plus</h3>
+            <h3>À venir</h3>
+        </div>
     </div>
 </main>
 <?php get_footer(); ?>

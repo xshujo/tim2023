@@ -2,6 +2,14 @@ main {
     width: 95vw;
     margin: 0 auto;
 
+    h1 {
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 0;
+    }
+
     .zone_evenements {
         width: 95%;
         margin: 0 auto;
@@ -16,14 +24,24 @@ main {
             border-radius: 1rem;
             display: flex;
             background-color: $couleurElmtDeux;
+            align-items: center;
+            justify-content: space-evenly;
+            // background-blend-mode: soft-light;
+            
+            img {
+                border-radius: 0.4rem;  
+            }
 
             .informations_evenements {
-                h3 {
+                width: 60%;
+
+                h4 {
                     text-transform: uppercase;
+                    margin: 0;
                 }
 
                 .date_evenement {
-                    font-size: 2rem;
+                    font-size: 1.3rem;
                 }
                 // .description_evenement {
 

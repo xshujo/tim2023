@@ -1002,6 +1002,12 @@ main {
   width: 95vw;
   margin: 0 auto;
 }
+main h1 {
+  text-transform: uppercase;
+}
+main p {
+  margin: 0;
+}
 main .zone_evenements {
   width: 95%;
   margin: 0 auto;
@@ -1016,12 +1022,21 @@ main .zone_evenements .article_vie_etudiante {
   border-radius: 1rem;
   display: flex;
   background-color: #c7afec;
+  align-items: center;
+  justify-content: space-evenly;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements h3 {
+main .zone_evenements .article_vie_etudiante img {
+  border-radius: 0.4rem;
+}
+main .zone_evenements .article_vie_etudiante .informations_evenements {
+  width: 60%;
+}
+main .zone_evenements .article_vie_etudiante .informations_evenements h4 {
   text-transform: uppercase;
+  margin: 0;
 }
 main .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 /* --------------------------------------------- layout */
