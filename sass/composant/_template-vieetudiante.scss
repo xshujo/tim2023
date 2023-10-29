@@ -10,6 +10,14 @@ main {
         margin: 0;
     }
 
+    .zone_galerie {
+        display: flex;
+
+        img {
+            border-radius: 0.4rem;  
+        }
+    }
+
     .zone_evenements {
         width: 95%;
         margin: 0 auto;
@@ -18,30 +26,48 @@ main {
         flex-wrap: wrap;
         justify-content: space-between;
 
-        .article_vie_etudiante {
-            width: 48.5%;
-            margin: 0.5rem;
+        .article_vie_etudiante::before {
+            content: "";
+            width: 41.8rem;
+            height: 14.3rem;
             border-radius: 1rem;
-            display: flex;
             background-color: $couleurElmtDeux;
+            mix-blend-mode: soft-light;
+            position: absolute;
+            box-shadow: 1rem 1rem 3rem rgba(5,25,52, 0.4);
+        }
+
+        .article_vie_etudiante {
+            width: 49%;
+            height: 14.3rem;
+            margin-bottom: 1.4rem;
+            margin-top: 0.2rem;
+            display: flex;
             align-items: center;
             justify-content: space-evenly;
-            // background-blend-mode: soft-light;
-            
+            position: relative;
+
             img {
                 border-radius: 0.4rem;  
+                z-index: 10;
             }
 
             .informations_evenements {
                 width: 60%;
+                
 
                 h4 {
                     text-transform: uppercase;
                     margin: 0;
+                    font-size: 1.4rem;
                 }
 
                 .date_evenement {
                     font-size: 1.3rem;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    color: $couleurElmtDeux;
+                    font-weight: 500;
                 }
                 // .description_evenement {
 
