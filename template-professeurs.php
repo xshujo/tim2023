@@ -7,17 +7,18 @@
 <?php
 get_header(); // Inclure l'en-tête du site 
 ?>
+<div class="zoneProfs">
+    <?php
+    query_posts('category_name=professeurs'); // Utilisez le nom de la catégorie "professeurs"
 
-<?php
-query_posts('category_name=professeurs'); // Utilisez le nom de la catégorie "professeurs"
-
-if (have_posts()) :
-    while (have_posts()) : the_post(); ?>
-        <figure class="prof__figure" id="fig_<?php the_id() ?>">
-            <?php the_post_thumbnail('thumbnail'); ?>
-        </figure>
-    <?php endwhile; ?>
-<?php endif; ?>
+    if (have_posts()) :
+        while (have_posts()) : the_post(); ?>
+            <figure class="prof__figure" id="fig_<?php the_id() ?>">
+                <?php the_post_thumbnail('thumbnail'); ?>
+            </figure>
+        <?php endwhile; ?>
+    <?php endif; ?>
+</div>
 <?php
 wp_reset_postdata();
 if (have_posts()) :  while (have_posts()) : the_post(); ?>
