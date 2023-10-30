@@ -11,6 +11,7 @@
     <div class="degrades degrade_3"></div>
     <div class="bulle_modele_1 bulle_m1_position_1"></div>
     <div class="bulle_modele_2 bulle_m2_position_1"></div>
+    <div class="bulle_modele_2 bulle_m2_position_2"></div>
 
     <h1>Vie étudiante</h1>
     <!-- Affichage de la galerie Vie étudiante sur la page -->

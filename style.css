@@ -1013,7 +1013,7 @@ main .encadre_page {
   border: 0.3rem #f7f7f7 solid;
   border-radius: 2rem;
   position: absolute;
-  top: 8rem;
+  top: 8.2rem;
   left: 1rem;
   z-index: -1;
 }
@@ -1057,12 +1057,13 @@ main .bulle_modele_1 {
 main .bulle_m1_position_1 {
   width: 25rem;
   height: 25rem;
-  top: -3rem;
+  top: 20rem;
+  right: -4rem;
 }
 main .bulle_modele_2 {
   background-color: #33488e;
   mix-blend-mode: lighten;
-  backdrop-filter: brightness(170%) saturate(95%) blur(6rem);
+  backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
   opacity: 75%;
   border-radius: 50%;
   position: absolute;
@@ -1071,8 +1072,14 @@ main .bulle_modele_2 {
 main .bulle_m2_position_1 {
   width: 35rem;
   height: 35rem;
-  top: -8rem;
+  top: -12rem;
   left: -5rem;
+}
+main .bulle_m2_position_2 {
+  width: 14rem;
+  height: 14rem;
+  top: 1.3rem;
+  left: 25rem;
 }
 main h1 {
   text-transform: uppercase;
