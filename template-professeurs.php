@@ -4,16 +4,30 @@
  * Template name: Professeurs
  */
 ?>
-<?php get_header(); ?>
-<main>
-    <h1><?php the_title(); ?></h1>
+<?php
+get_header(); // Inclure l'en-tête du site 
+?>
 
-    <div class="galerieContenue">
-        <?php
-        get_template_part('template-parts/categorie-professeurs');
-        ?>
+<?php
+query_posts('category_name=professeurs'); // Utilisez le nom de la catégorie "professeurs"
 
-    </div>
+if (have_posts()) :
+    while (have_posts()) : the_post(); ?>
+        <figure class="prof__figure" id="fig_<?php the_id() ?>">
+            <?php the_post_thumbnail('thumbnail'); ?>
+        </figure>
+    <?php endwhile; ?>
+<?php endif; ?>
+<?php
+wp_reset_postdata();
+if (have_posts()) :  while (have_posts()) : the_post(); ?>
+        <section class="prof__section" id="des_<?php the_id(); ?>">
+            <?php the_title(); ?>
+            <?php the_content(); ?>
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>
 
-</main>
-<?php get_footer(); ?>
+<?php
+get_footer(); // Inclure le pied de page
+?>
