@@ -8,6 +8,13 @@ function ajouter_styles()
         array(), // Les fichiers CSS qui dépendent de style.css
         filemtime(get_template_directory() . '/style.css') // Version de notre style.css
     );
+    wp_enqueue_script(
+        'script-description-profs',
+        get_template_directory_uri() . '/code/profs.js',
+        array(),
+        filemtime(get_template_directory() . '/code/profs.js'), // Version de notre style.css
+        true
+    );
 }
 add_action('wp_enqueue_scripts', 'ajouter_styles');
 
