@@ -31,24 +31,14 @@ P {
   font-size: clamp(0.75rem, 0.5625rem + 0.6vw, 0.9rem);
 }
 
-h1 {
-  font-family: Montserrat bold;
-}
-
-h2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  /* font-family: "Slackey", cursive; */
-}
-
+h1,
+h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
+h6,
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 // .site__header__logo {
