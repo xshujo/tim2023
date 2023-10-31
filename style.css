@@ -999,6 +999,102 @@ footer .iconRS a {
     mix-blend-mode: screen;
   }
 }
+.zoneProfs {
+  display: grid;
+  grid-gap: 60px;
+  grid-auto-flow: column;
+  box-sizing: border-box;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+}
+.zoneProfs .prof__figure {
+  cursor: pointer;
+}
+.zoneProfs .prof__figure img {
+  padding: 10px;
+  cursor: pointer;
+  width: 85px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.zoneProfs .prof__figure img:hover {
+  background-color: #33488e;
+}
+
+.maria {
+  border-radius: 15px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  margin: 0 50px;
+}
+
+.titreProf {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.description {
+  background-color: #33488e;
+  border-radius: 15px;
+  height: 40vh;
+  width: auto;
+  padding: 15px;
+  margin: 15px;
+}
+.description p {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  background-color: #051934;
+  border-radius: 15px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel {
+  width: fit-content;
+  overflow: auto;
+  margin: 40px 50px;
+  scroll-behavior: smooth;
+}
+
+.precedent,
+.suivant {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 15px;
+  cursor: pointer;
+  align-items: center;
+  height: fit-content;
+}
+
+.precedent {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.suivant {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+@media only screen and (min-width: 976px) {
+  .maria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .titreProf {
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+  }
+}
 main {
   width: 92vw;
   background-color: transparent;
@@ -1170,100 +1266,4 @@ main .texte_a_venir .texte_2 {
 }
 
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres */
-.zoneProfs {
-  display: grid;
-  grid-gap: 60px;
-  grid-auto-flow: column;
-  box-sizing: border-box;
-  align-items: center;
-  grid-template-columns: auto auto auto;
-}
-.zoneProfs .prof__figure {
-  cursor: pointer;
-}
-.zoneProfs .prof__figure img {
-  padding: 10px;
-  cursor: pointer;
-  width: 85px;
-  height: 90px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.zoneProfs .prof__figure img:hover {
-  background-color: #33488e;
-}
-
-.maria {
-  border-radius: 15px;
-  border-top: 2px solid;
-  border-left: 2px solid;
-  margin: 0 50px;
-}
-
-.titreProf {
-  text-align: center;
-  font-size: 5rem;
-}
-
-.description {
-  background-color: #33488e;
-  border-radius: 15px;
-  height: 40vh;
-  width: auto;
-  padding: 15px;
-  margin: 15px;
-}
-.description p {
-  width: 50%;
-  height: auto;
-  padding: 20px;
-  background-color: #051934;
-  border-radius: 15px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carousel {
-  width: fit-content;
-  overflow: auto;
-  margin: 40px 50px;
-  scroll-behavior: smooth;
-}
-
-.precedent,
-.suivant {
-  display: flex;
-  justify-content: center;
-  background: white;
-  border: none;
-  padding: 8px;
-  border-radius: 15px;
-  cursor: pointer;
-  align-items: center;
-  height: fit-content;
-}
-
-.precedent {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.suivant {
-  grid-column-start: 5;
-  grid-column-end: 6;
-}
-
-@media only screen and (min-width: 976px) {
-  .maria {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .titreProf {
-    writing-mode: vertical-lr;
-    white-space: nowrap;
-  }
-}/*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
