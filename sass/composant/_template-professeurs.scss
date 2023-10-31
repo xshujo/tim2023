@@ -30,7 +30,7 @@
 
 .description {
   background-color: #0e152fe8;
-  border-radius: 15px;
+  border-radius: 20px;
   height: 40vh;
   width: auto;
   padding: 15px;
@@ -49,11 +49,7 @@
   }
 }
 .carousel {
-  width: fit-content;
-  overflow: hidden; /* Masquer le débordement de la zone de contenu */
-  position: relative;
   margin: 40px 50px;
-  scroll-behavior: smooth;
 }
 
 .precedent,
@@ -93,6 +89,10 @@
   .titreProf {
     writing-mode: vertical-lr;
     white-space: nowrap;
+  }
+
+  .description {
+    width: 60vw;
   }
 }
 

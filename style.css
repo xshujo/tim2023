@@ -1032,7 +1032,7 @@ footer .iconRS a {
 
 .description {
   background-color: rgba(14, 21, 47, 0.9098039216);
-  border-radius: 15px;
+  border-radius: 20px;
   height: 40vh;
   width: auto;
   padding: 15px;
@@ -1052,11 +1052,7 @@ footer .iconRS a {
 }
 
 .carousel {
-  width: fit-content;
-  overflow: hidden; /* Masquer le débordement de la zone de contenu */
-  position: relative;
   margin: 40px 50px;
-  scroll-behavior: smooth;
 }
 
 .precedent,
@@ -1091,6 +1087,9 @@ footer .iconRS a {
   .titreProf {
     writing-mode: vertical-lr;
     white-space: nowrap;
+  }
+  .description {
+    width: 60vw;
   }
 }
 .degrades {
