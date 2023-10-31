@@ -913,26 +913,68 @@ footer .iconRS a {
   .blockflex__projet {
     max-width: 70vw;
     margin: 0 auto;
+    margin-bottom: 7.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  .blockflex__projet h1 {
+    color: #9ec9e7;
+  }
+  .blockflex__projet .projet__general::before {
+    content: "";
+    width: 70vw;
+    background-color: #c7afec;
+    backdrop-filter: saturate(130%) blur(2rem);
+    mix-blend-mode: soft-light;
+    border-radius: 1rem;
+    position: absolute;
+    box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
   .blockflex__projet .projet__general {
+    position: relative;
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    background-color: aqua;
     padding: 23px;
     border-radius: 47px;
   }
   .blockflex__projet .projet__general .carte__categorie {
     width: fit-content;
-    background-color: red;
-    align-content: center;
-    padding: 10px 10px 50px 10px;
+    background-color: #33488E;
+    padding: 10px 50px 50px 50px;
+    border-radius: 17px;
   }
   .blockflex__projet .projet__general .carte__categorie p {
+    display: flex;
+    justify-content: center;
     color: blue;
+    white-space: wrap;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .blockflex__projet .projet__general .carte__categorie .titre__projet {
+    width: 10rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: bold;
+    top: 50%;
+  }
+  .blockflex__projet .projet__general .carte__categorie .date__projet {
+    width: 10rem;
+    color: #c7afec;
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  .blockflex__projet .projet__general .carte__categorie img {
+    display: flex;
+    align-items: center;
+    border-radius: 17px;
   }
 }
 /* --------------------------------------------- layout */
