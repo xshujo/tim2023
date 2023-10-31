@@ -1,10 +1,7 @@
 .zoneProfs {
-  display: grid;
-  grid-gap: 60px;
-  grid-auto-flow: column;
-  box-sizing: border-box;
+  display: flex;
   align-items: center;
-  grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
   .prof__figure {
     cursor: pointer;
     img {
@@ -32,17 +29,18 @@
 }
 
 .description {
-  background-color: $degradeFondSiteDeux;
+  background-color: #0e152fe8;
   border-radius: 15px;
   height: 40vh;
   width: auto;
   padding: 15px;
   margin: 15px;
   p {
-    width: 50%;
+    width: auto;
     height: auto;
     padding: 20px;
-    background-color: $couleurFond;
+    font-size: auto;
+    background-color: $degradeFondSiteDeux;
     border-radius: 15px;
     display: flex;
     align-items: flex-start;
@@ -52,7 +50,8 @@
 }
 .carousel {
   width: fit-content;
-  overflow: auto;
+  overflow: hidden; /* Masquer le débordement de la zone de contenu */
+  position: relative;
   margin: 40px 50px;
   scroll-behavior: smooth;
 }
@@ -76,9 +75,13 @@
 }
 
 .suivant {
-  grid-column-start: 5;
-  grid-column-end: 6;
+  grid-column-start: 12;
+  grid-column-end: 13;
 }
+
+////////////////////////////////////////////////////////
+///               ZONE GRAND ECRAN                   ///
+/// ///////////////////////////////////////////////////
 
 @media only screen and (min-width: $largeur__bureau) {
   .contenuProf {
@@ -91,4 +94,99 @@
     writing-mode: vertical-lr;
     white-space: nowrap;
   }
+}
+
+///////////////  ZONE DEGRADE EN ARRIERE-PLAN ///////////////////////
+
+// Styles généraux des dégradés en fond
+.degrades {
+  filter: blur(7rem);
+  width: 70rem;
+  height: 100rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -6;
+}
+
+// Styles du dégradé en fond en haut à droite
+.degrade_1 {
+  background: radial-gradient(
+    circle,
+    rgba(119, 78, 186, 1) 0%,
+    rgba(119, 78, 186, 0) 100%
+  );
+  right: -5rem;
+  top: -40rem;
+  transform: rotateZ(295deg);
+}
+
+// Styles du dégradé en fond au milieu à gauche
+.degrade_2 {
+  background: radial-gradient(
+    circle,
+    rgba(51, 72, 142, 1) 0%,
+    rgba(51, 72, 142, 0) 100%
+  );
+  left: -25rem;
+  top: 30rem;
+  transform: rotateZ(35deg);
+}
+
+// Styles du dégradé en fond en bas à droite
+.degrade_3 {
+  width: 40rem;
+  height: 70rem;
+  background: radial-gradient(
+    circle,
+    rgba(119, 78, 186, 1) 0%,
+    rgba(119, 78, 186, 0) 100%
+  );
+  right: -20rem;
+  top: 70rem;
+  transform: rotateZ(295deg);
+}
+
+// Styles généraux du modèle de bulles de couleur mauve
+.bulle_modele_1 {
+  background-color: $degradeFondSiteUn;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  opacity: 75%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -4;
+}
+
+// Styles spécifiques du modèle de bulles de couleur mauve
+.bulle_m1_position_1 {
+  width: 25rem;
+  height: 25rem;
+  top: 20rem;
+  right: -4rem;
+}
+
+// Styles généraux du modèle de bulles de couleur bleu
+.bulle_modele_2 {
+  background-color: $degradeFondSiteDeux;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+  opacity: 75%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -4;
+}
+
+// Styles spécifiques du modèle de bulles de couleur bleu
+.bulle_m2_position_1 {
+  width: 35rem;
+  height: 35rem;
+  top: -12rem;
+  left: -5rem;
+}
+
+.bulle_m2_position_2 {
+  width: 14rem;
+  height: 14rem;
+  top: 1.3rem;
+  left: 25rem;
 }

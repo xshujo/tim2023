@@ -999,12 +999,9 @@ footer .iconRS a {
   }
 }
 .zoneProfs {
-  display: grid;
-  grid-gap: 60px;
-  grid-auto-flow: column;
-  box-sizing: border-box;
+  display: flex;
   align-items: center;
-  grid-template-columns: auto auto auto;
+  flex-wrap: wrap;
 }
 .zoneProfs .prof__figure {
   cursor: pointer;
@@ -1034,7 +1031,7 @@ footer .iconRS a {
 }
 
 .description {
-  background-color: #33488e;
+  background-color: rgba(14, 21, 47, 0.9098039216);
   border-radius: 15px;
   height: 40vh;
   width: auto;
@@ -1042,10 +1039,11 @@ footer .iconRS a {
   margin: 15px;
 }
 .description p {
-  width: 50%;
+  width: auto;
   height: auto;
   padding: 20px;
-  background-color: #051934;
+  font-size: auto;
+  background-color: #33488e;
   border-radius: 15px;
   display: flex;
   align-items: flex-start;
@@ -1055,7 +1053,8 @@ footer .iconRS a {
 
 .carousel {
   width: fit-content;
-  overflow: auto;
+  overflow: hidden; /* Masquer le débordement de la zone de contenu */
+  position: relative;
   margin: 40px 50px;
   scroll-behavior: smooth;
 }
@@ -1079,8 +1078,8 @@ footer .iconRS a {
 }
 
 .suivant {
-  grid-column-start: 5;
-  grid-column-end: 6;
+  grid-column-start: 12;
+  grid-column-end: 13;
 }
 
 @media only screen and (min-width: 976px) {
@@ -1094,6 +1093,79 @@ footer .iconRS a {
     white-space: nowrap;
   }
 }
+.degrades {
+  filter: blur(7rem);
+  width: 70rem;
+  height: 100rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -6;
+}
+
+.degrade_1 {
+  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+  right: -5rem;
+  top: -40rem;
+  transform: rotateZ(295deg);
+}
+
+.degrade_2 {
+  background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
+  left: -25rem;
+  top: 30rem;
+  transform: rotateZ(35deg);
+}
+
+.degrade_3 {
+  width: 40rem;
+  height: 70rem;
+  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+  right: -20rem;
+  top: 70rem;
+  transform: rotateZ(295deg);
+}
+
+.bulle_modele_1 {
+  background-color: #774eba;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  opacity: 75%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -4;
+}
+
+.bulle_m1_position_1 {
+  width: 25rem;
+  height: 25rem;
+  top: 20rem;
+  right: -4rem;
+}
+
+.bulle_modele_2 {
+  background-color: #33488e;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+  opacity: 75%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -4;
+}
+
+.bulle_m2_position_1 {
+  width: 35rem;
+  height: 35rem;
+  top: -12rem;
+  left: -5rem;
+}
+
+.bulle_m2_position_2 {
+  width: 14rem;
+  height: 14rem;
+  top: 1.3rem;
+  left: 25rem;
+}
+
 main {
   width: 92vw;
   background-color: transparent;
