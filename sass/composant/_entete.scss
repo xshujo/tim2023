@@ -27,7 +27,6 @@
             display: flex;
             flex-flow: row nowrap;
             list-style: none;
-            /* Remove default list bullets */
             gap: 2rem;
 
             li {
@@ -35,12 +34,9 @@
               display: flex;
               justify-content: space-around;
               position: relative;
-              /* Positioning context for pseudo-element */
               font-size: 10px;
-              /* Adjust font size as needed */
               font-weight: bold;
 
-              /* Adjust font weight as needed */
               a {
                 display: flex;
                 font-size: 1.5em;
@@ -68,25 +64,17 @@
 
             li::before {
               content: "";
-              /* Create an empty content box */
               width: 4px;
-              /* Adjust the width of the circle */
               height: 4px;
-              /* Adjust the height of the circle */
               background-color: #ffffff;
-              /* Set the background color of the circle */
               border-radius: 50%;
-              /* Make it a circle by setting border-radius to 50% */
               position: absolute;
-              /* Position it absolutely within the list item */
               bottom: 10px;
-              /* Adjust this value to control the distance between text and circle */
             }
 
             li:hover::before {
               border-radius: 0%;
               width: 100%;
-              /* Adjust the width of the circle */
               height: 2px;
               transition: ease-in-out 0.2s;
             }

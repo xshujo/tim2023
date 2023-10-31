@@ -20,7 +20,7 @@
     }
   }
 }
-.maria {
+.contenuProf {
   border-radius: 15px;
   border-top: 2px solid;
   border-left: 2px solid;
@@ -81,7 +81,7 @@
 }
 
 @media only screen and (min-width: $largeur__bureau) {
-  .maria {
+  .contenuProf {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

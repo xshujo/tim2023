@@ -769,7 +769,6 @@ body {
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
-    /* Remove default list bullets */
     gap: 2rem;
   }
   header .site__header__logo .menu-site .menu-entete-container ul li {
@@ -777,11 +776,8 @@ body {
     display: flex;
     justify-content: space-around;
     position: relative;
-    /* Positioning context for pseudo-element */
     font-size: 10px;
-    /* Adjust font size as needed */
     font-weight: bold;
-    /* Adjust font weight as needed */
   }
   header .site__header__logo .menu-site .menu-entete-container ul li a {
     display: flex;
@@ -799,24 +795,16 @@ body {
   }
   header .site__header__logo .menu-site .menu-entete-container ul li::before {
     content: "";
-    /* Create an empty content box */
     width: 4px;
-    /* Adjust the width of the circle */
     height: 4px;
-    /* Adjust the height of the circle */
     background-color: #ffffff;
-    /* Set the background color of the circle */
     border-radius: 50%;
-    /* Make it a circle by setting border-radius to 50% */
     position: absolute;
-    /* Position it absolutely within the list item */
     bottom: 10px;
-    /* Adjust this value to control the distance between text and circle */
   }
   header .site__header__logo .menu-site .menu-entete-container ul li:hover::before {
     border-radius: 0%;
     width: 100%;
-    /* Adjust the width of the circle */
     height: 2px;
     transition: ease-in-out 0.2s;
   }
@@ -887,10 +875,16 @@ main section:nth-of-type(7) h2 {
 
 footer {
   background-color: black;
+  color: white;
   padding: 10px 0;
   height: auto;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   justify-content: space-around;
+  position: relative;
+  bottom: 0;
 }
 footer section {
   display: flex;
@@ -911,6 +905,11 @@ footer .iconRS a {
   margin: 10px;
 }
 
+@media screen and (min-width: 976px) {
+  footer {
+    flex-direction: row;
+  }
+}
 .fond_loader {
   background-color: #051934;
   overflow-y: hidden;
@@ -1022,7 +1021,7 @@ footer .iconRS a {
   background-color: #33488e;
 }
 
-.maria {
+.contenuProf {
   border-radius: 15px;
   border-top: 2px solid;
   border-left: 2px solid;
@@ -1085,7 +1084,7 @@ footer .iconRS a {
 }
 
 @media only screen and (min-width: 976px) {
-  .maria {
+  .contenuProf {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

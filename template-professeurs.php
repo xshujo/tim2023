@@ -5,12 +5,14 @@
  */
 ?>
 <?php
-get_header(); // Inclure l'en-tête du site 
+get_header();
 ?>
-<div class="maria">
-    <?php the_content(); ?>
+<!----- CONTENUE AFFICHER DANS LA PAGE PROFESSEURS ---->
+<div class="contenuProf">
+    <?php the_content(); ?> <!----- Titre principale page professeurs ---->
 
     <div class="contenuCarr">
+        <!----- Zone carrousel d'images des professeurs ---->
         <div class="carousel">
             <div class="zoneProfs">
 
@@ -30,15 +32,19 @@ get_header(); // Inclure l'en-tête du site
             </div>
 
         </div>
+
+        <!----- Zone textes des professeurs ---->
         <div class="description">
             <?php
             wp_reset_postdata();
             if (have_posts()) :  while (have_posts()) : the_post(); ?>
                     <section class="prof__section" id="des_<?php the_id(); ?>">
-                        <?php the_title(); ?>
+                        <?php the_title(); ?> <!----- titre profs ---->
+                        <!----- images (thumbnails) profs ---->
                         <figure class="prof__figure" id="fig_<?php the_id() ?>">
                             <?php the_post_thumbnail('thumbnail'); ?>
                         </figure>
+                        <!----- descriptions profs ---->
                         <?php the_content(); ?>
                     </section>
                 <?php endwhile; ?>
@@ -46,6 +52,7 @@ get_header(); // Inclure l'en-tête du site
         </div>
     </div>
 </div>
+<!----- ///////////////////////////////////////////////////////// ---->
 <?php
-get_footer(); // Inclure le pied de page
+get_footer();
 ?>
