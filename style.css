@@ -166,7 +166,8 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -175,7 +176,8 @@ input { /* 1 */
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -183,9 +185,9 @@ select { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -193,9 +195,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -204,9 +206,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -250,8 +252,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -259,8 +261,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -268,7 +270,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -276,7 +278,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -378,7 +380,12 @@ body {
   justify-content: space-between;
   flex-direction: column;
   margin: 2rem;
-  background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 50%, #051934 100%);
+  background: repeating-radial-gradient(
+    farthest-corner at 100% 0%,
+    #0d3a76 0,
+    #051934 50%,
+    #051934 100%
+  );
 }
 
 #contenu {
@@ -515,7 +522,10 @@ body {
   width: 25%;
   padding: 2em;
   margin-right: 5em;
-  background: linear-gradient(to right, white 4px, transparent 4px) 0 100%, linear-gradient(to left, white 4px, transparent 4px) 100% 0, linear-gradient(to top, white 4px, transparent 4px) 0 100%, linear-gradient(to bottom, white 4px, transparent 4px) 100% 0;
+  background: linear-gradient(to right, white 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, white 4px, transparent 4px) 0 100%,
+    linear-gradient(to bottom, white 4px, transparent 4px) 100% 0;
   background-repeat: no-repeat;
   background-size: 30px 30px;
   border-radius: 5px;
@@ -553,7 +563,10 @@ body {
   width: 50%;
   padding: 2em;
   text-align: left;
-  background: linear-gradient(to right, white 4px, transparent 4px) 0 0, linear-gradient(to left, white 4px, transparent 4px) 100% 100%, linear-gradient(to bottom, white 4px, transparent 4px) 0 0, linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+  background: linear-gradient(to right, white 4px, transparent 4px) 0 0,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+    linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
 }
@@ -648,7 +661,10 @@ body {
   width: 50%;
   padding: 2em;
   margin-right: 5em;
-  background: linear-gradient(to right, white 4px, transparent 4px) 0 0, linear-gradient(to left, white 4px, transparent 4px) 100% 100%, linear-gradient(to bottom, white 4px, transparent 4px) 0 0, linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
+  background: linear-gradient(to right, white 4px, transparent 4px) 0 0,
+    linear-gradient(to left, white 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, white 4px, transparent 4px) 0 0,
+    linear-gradient(to top, white 4px, transparent 4px) 100% 100%;
   background-repeat: no-repeat;
   background-size: 30px 30px;
   border-radius: 5px;
@@ -719,24 +735,54 @@ body {
 }
 
 .contenu2 {
-  background: repeating-radial-gradient(farthest-corner at 0% 100%, #0d3a76 0, #051934 50%, #051934 100%);
+  background: repeating-radial-gradient(
+    farthest-corner at 0% 100%,
+    #0d3a76 0,
+    #051934 50%,
+    #051934 100%
+  );
 }
 
 .contenu3 {
-  background: repeating-radial-gradient(farthest-corner at 20% 20%, #0d3a76 0, #051934 50%, #051934 100%);
-  background: repeating-radial-gradient(farthest-corner at 0% 0%, #0d3a76 0, #051934 50%, #051934 100%);
+  background: repeating-radial-gradient(
+    farthest-corner at 20% 20%,
+    #0d3a76 0,
+    #051934 50%,
+    #051934 100%
+  );
+  background: repeating-radial-gradient(
+    farthest-corner at 0% 0%,
+    #0d3a76 0,
+    #051934 50%,
+    #051934 100%
+  );
 }
 
 .contenu4 {
-  background: repeating-radial-gradient(farthest-corner at 100% 100%, #0d3a76 0, #051934 50%, #051934 100%);
+  background: repeating-radial-gradient(
+    farthest-corner at 100% 100%,
+    #0d3a76 0,
+    #051934 50%,
+    #051934 100%
+  );
 }
 
 .contenu5 {
-  background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 50%, #051934 100%);
+  background: repeating-radial-gradient(
+    farthest-corner at 100% 0%,
+    #0d3a76 0,
+    #051934 50%,
+    #051934 100%
+  );
 }
 
 .contenu6 {
-  background: repeating-radial-gradient(farthest-corner at 0% 100%, #0d3a76 0, #051934 50%, #051934 100%);
+  background: repeating-radial-gradient(
+    farthest-corner at 0% 100%,
+    #0d3a76 0,
+    #051934 50%,
+    #051934 100%
+  );
 }
 
 /* --------------------------------------------- composant */
@@ -787,7 +833,12 @@ body {
     text-decoration: none;
     justify-content: space-around;
     padding: 1.5rem 0;
-    background: linear-gradient(to right, rgb(107, 172, 237), rgb(107, 172, 237)), linear-gradient(to right, rgb(182, 211, 240), rgb(182, 211, 240));
+    background: linear-gradient(
+        to right,
+        rgb(107, 172, 237),
+        rgb(107, 172, 237)
+      ),
+      linear-gradient(to right, rgb(182, 211, 240), rgb(182, 211, 240));
     background-size: 100% 0px, 0 0px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
@@ -802,7 +853,12 @@ body {
     position: absolute;
     bottom: 10px;
   }
-  header .site__header__logo .menu-site .menu-entete-container ul li:hover::before {
+  header
+    .site__header__logo
+    .menu-site
+    .menu-entete-container
+    ul
+    li:hover::before {
     border-radius: 0%;
     width: 100%;
     height: 2px;
@@ -920,7 +976,12 @@ footer .iconRS a {
   position: sticky;
 }
 
-.img_1, .img_2, .img_3, .img_4, .img_5, .img_6 {
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6 {
   display: inline-flex;
 }
 
@@ -950,7 +1011,8 @@ footer .iconRS a {
 }
 
 @keyframes anim_logo_tim_flash {
-  from, to {
+  from,
+  to {
     filter: opacity(100%);
     transform: scale(100%);
   }
@@ -1079,7 +1141,34 @@ footer .iconRS a {
 }
 
 @media only screen and (min-width: 976px) {
-  .contenuProf {
+  .contenu_parcours {
+    padding-top: 6rem;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    border-radius: 20px;
+    margin-left: 1rem;
+    background: repeating-radial-gradient(
+      farthest-corner at 100% 0%,
+      #0d3a76 0,
+      #051934 50%,
+      #051934 100%
+    );
+  }
+  .contenu_parcours .titrage {
+    color: #9ec9e7;
+  }
+  .contenu_parcours .grille_cours {
+    height: 100vh;
+    padding: 0 10rem;
+    position: relative;
+  }
+  .contenu_parcours .grille_cours .grille_contenu {
+    height: 90vh;
+    background-color: rgba(30, 45, 76, 0.845);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1102,14 +1191,22 @@ footer .iconRS a {
 }
 
 .degrade_1 {
-  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(119, 78, 186) 0%,
+    rgba(119, 78, 186, 0) 100%
+  );
   right: -5rem;
   top: -40rem;
   transform: rotateZ(295deg);
 }
 
 .degrade_2 {
-  background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(51, 72, 142) 0%,
+    rgba(51, 72, 142, 0) 100%
+  );
   left: -25rem;
   top: 30rem;
   transform: rotateZ(35deg);
@@ -1118,7 +1215,11 @@ footer .iconRS a {
 .degrade_3 {
   width: 40rem;
   height: 70rem;
-  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(119, 78, 186) 0%,
+    rgba(119, 78, 186, 0) 100%
+  );
   right: -20rem;
   top: 70rem;
   transform: rotateZ(295deg);
@@ -1192,13 +1293,21 @@ main .degrades {
   z-index: -6;
 }
 main .degrade_1 {
-  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(119, 78, 186) 0%,
+    rgba(119, 78, 186, 0) 100%
+  );
   right: -5rem;
   top: -40rem;
   transform: rotateZ(295deg);
 }
 main .degrade_2 {
-  background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(51, 72, 142) 0%,
+    rgba(51, 72, 142, 0) 100%
+  );
   left: -25rem;
   top: 30rem;
   transform: rotateZ(35deg);
@@ -1206,7 +1315,11 @@ main .degrade_2 {
 main .degrade_3 {
   width: 40rem;
   height: 70rem;
-  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+  background: radial-gradient(
+    circle,
+    rgb(119, 78, 186) 0%,
+    rgba(119, 78, 186, 0) 100%
+  );
   right: -20rem;
   top: 70rem;
   transform: rotateZ(295deg);
@@ -1303,7 +1416,11 @@ main .zone_evenements .article_vie_etudiante .informations_evenements h4 {
   margin: 0;
   font-size: 1.4rem;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
+main
+  .zone_evenements
+  .article_vie_etudiante
+  .informations_evenements
+  .date_evenement {
   color: #c7afec;
   font-weight: 500;
   font-size: 1.3rem;
@@ -1336,4 +1453,4 @@ main .texte_a_venir .texte_2 {
 }
 
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- autres */ /*# sourceMappingURL=style.css.map */
