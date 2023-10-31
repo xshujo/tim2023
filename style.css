@@ -976,6 +976,20 @@ footer .iconRS a {
     align-items: center;
     border-radius: 17px;
   }
+  .bulle_1 {
+    background-color: #774eba;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+    opacity: 75%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+  }
+  .bulle_1_position {
+    width: 25rem;
+    height: 25rem;
+    top: 20rem;
+  }
 }
 /* --------------------------------------------- layout */
 /* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */

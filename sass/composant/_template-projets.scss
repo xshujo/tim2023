@@ -80,25 +80,23 @@
         }
         
     }    
-    
-    
-    
 
-    
+    .bulle_1{
+        background-color: $degradeFondSiteUn;
+        mix-blend-mode: lighten;
+        backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+        opacity: 75%;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -4;
+    }
 
-    //.carte__jeux::before {
-    //        content: "";
-    //        width: 7%;
-    //        height: 14.3rem;
-    //        background-color: $couleurElmtDeux;
-    //        // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
-    //        padding: 3rem;
-    //        mix-blend-mode: soft-light;
-    //        border-radius: 1rem;
-    //        position: absolute;
-    //        box-shadow: 1rem 1rem 3rem rgba(5,25,52, 0.4);
-    //        // z-index: 10;
-    //    }
+    .bulle_1_position{
+        width: 25rem;
+        height: 25rem;
+        top: 20rem;
+    }
+    
 
     
 }

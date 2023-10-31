@@ -7,6 +7,9 @@
 <?php get_header(); ?>
 
 <main>
+
+<div class='bulle_1 bulle_1_position'></div>
+<div class='bulle_2 bulle_2_position'></div>
     
 <div class='blockflex__projet'>
     <h1>Jeux Vidéo</h1>
