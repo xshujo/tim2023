@@ -1,31 +1,52 @@
 @media screen and (min-width:$largeur__bureau){
 
-    .barre__titre__projet{
-        gap: 1.713rem;
-    }
+    .blockflex__projet{
+            max-width: 70vw;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-    .titre__projet{
-        font-size: 52px;
-    }
+            .projet__general{
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+            background-color: aqua;
+            padding: 23px;
+            border-radius: 47px;
 
-    .caroussel__3d{
-        width: 80vw;
-        max-width: 70vw;
-        display: flex;
-        justify-content: center;
-        background: red;
-        padding: 31px;
+            .carte__categorie{
+                width: fit-content;
+                background-color: red;
+                align-content: center;
+                padding: 10px 10px 50px 10px;
+
+                p{
+                    color: blue;
+                }
+            }
+        }
         
-    }
+    }    
+    
+    
+    
 
-    .caroussel__3d > *{
-        width: 342px;
-        height: 438px;
-        background: rgb(0, 26, 255);
-        padding: 10px 10px 163px 10px;
-        border-radius: 20px;
-        
-    }
+    
+
+    //.carte__jeux::before {
+    //        content: "";
+    //        width: 7%;
+    //        height: 14.3rem;
+    //        background-color: $couleurElmtDeux;
+    //        // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
+    //        padding: 3rem;
+    //        mix-blend-mode: soft-light;
+    //        border-radius: 1rem;
+    //        position: absolute;
+    //        box-shadow: 1rem 1rem 3rem rgba(5,25,52, 0.4);
+    //        // z-index: 10;
+    //    }
 
     
 }

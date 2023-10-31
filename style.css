@@ -910,26 +910,29 @@ footer .iconRS a {
   }
 }
 @media screen and (min-width: 976px) {
-  .barre__titre__projet {
-    gap: 1.713rem;
-  }
-  .titre__projet {
-    font-size: 52px;
-  }
-  .caroussel__3d {
-    width: 80vw;
+  .blockflex__projet {
     max-width: 70vw;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background: red;
-    padding: 31px;
   }
-  .caroussel__3d > * {
-    width: 342px;
-    height: 438px;
-    background: rgb(0, 26, 255);
-    padding: 10px 10px 163px 10px;
-    border-radius: 20px;
+  .blockflex__projet .projet__general {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    background-color: aqua;
+    padding: 23px;
+    border-radius: 47px;
+  }
+  .blockflex__projet .projet__general .carte__categorie {
+    width: fit-content;
+    background-color: red;
+    align-content: center;
+    padding: 10px 10px 50px 10px;
+  }
+  .blockflex__projet .projet__general .carte__categorie p {
+    color: blue;
   }
 }
 /* --------------------------------------------- layout */
