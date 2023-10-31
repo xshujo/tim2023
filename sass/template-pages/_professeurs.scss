@@ -1,18 +1,51 @@
 .zoneProfs {
-  //display: flex;
-  //overflow-x: scroll;
-  //scroll-snap-type: x mandatory;
-  // flex-wrap: nowrap;
-  // margin: 0 47px;
   display: grid;
+  grid-gap: 60px;
+  grid-auto-flow: column;
+  box-sizing: border-box;
+  align-items: center;
   grid-template-columns: auto auto auto;
-  margin: 0 47px;
-  justify-content: center;
-  justify-items: center;
+  .prof__figure {
+    cursor: pointer;
+  }
+  .prof__figure:hover {
+    background-color: white;
+  }
 }
 
-figure.wp-block-image.size-large {
-  flex: 0 0 auto;
-  border-radius: 50%;
-  //scroll-snap-align: start;
+.description {
+  background-color: $degradeFondSiteDeux;
+  border-radius: 15px;
+  height: 40vh;
+  padding: 15px;
+  margin: 15px;
+}
+.carousel {
+  width: fit-content;
+  overflow: auto;
+  margin: 0 50px;
+  scroll-behavior: smooth;
+}
+
+.precedent,
+.suivant {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 15px;
+  cursor: pointer;
+  align-items: center;
+  height: fit-content;
+}
+
+.precedent {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.suivant {
+  grid-column-start: 5;
+  grid-column-end: 6;
 }

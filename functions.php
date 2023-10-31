@@ -15,6 +15,13 @@ function ajouter_styles()
         filemtime(get_template_directory() . '/code/profs.js'), // Version de notre style.css
         true
     );
+    wp_enqueue_script(
+        'script-carrousel-image',
+        get_template_directory_uri() . '/code/carousel.js',
+        array(),
+        filemtime(get_template_directory() . '/code/carousel.js'),
+        true
+    );
 }
 add_action('wp_enqueue_scripts', 'ajouter_styles');
 
