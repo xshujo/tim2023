@@ -914,12 +914,88 @@ footer .iconRS a {
     max-width: 70vw;
     margin: 0 auto;
     margin-bottom: 7.5rem;
+    margin-top: 4.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .blockflex__projet h1 {
     color: #9ec9e7;
+  }
+  .blockflex__projet .jeux:before {
+    content: url(medias/SVG/manette.svg);
+    position: absolute;
+    width: 3rem;
+    margin-left: -4rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .blockflex__projet .jeux {
+    position: relative;
+    margin-right: 2rem;
+    margin-left: 4rem;
+  }
+  .blockflex__projet .video::before {
+    content: url(medias/SVG/video.svg);
+    position: absolute;
+    width: 3rem;
+    margin-left: -4rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .blockflex__projet .video {
+    position: relative;
+    margin-right: 2rem;
+    margin-left: 4rem;
+  }
+  .blockflex__projet .troisd::before {
+    content: url(medias/SVG/3d.svg);
+    position: absolute;
+    width: 3rem;
+    margin-left: -4rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .blockflex__projet .troisd {
+    position: relative;
+    margin-right: 2rem;
+    margin-left: 4rem;
+  }
+  .blockflex__projet .web:before {
+    content: url(medias/SVG/prog.svg);
+    position: absolute;
+    width: 3rem;
+    margin-left: -4rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .blockflex__projet .web {
+    position: relative;
+    margin-right: 2rem;
+    margin-left: 4rem;
+  }
+  .blockflex__projet .design::before {
+    content: url(medias/SVG/illust.svg);
+    position: absolute;
+    width: 3rem;
+    margin-left: -4rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .blockflex__projet .design {
+    position: relative;
+    margin-right: 2rem;
+    margin-left: 4rem;
   }
   .blockflex__projet .projet__general::before {
     content: "";
@@ -961,6 +1037,7 @@ footer .iconRS a {
   .blockflex__projet .projet__general .carte__categorie .titre__projet {
     width: 10rem;
     color: rgb(255, 255, 255);
+    font-family: Montserrat;
     font-size: 1.3rem;
     font-weight: bold;
     top: 50%;
@@ -968,6 +1045,7 @@ footer .iconRS a {
   .blockflex__projet .projet__general .carte__categorie .date__projet {
     width: 10rem;
     color: #c7afec;
+    font-family: Montserrat;
     font-size: 1.2rem;
     font-style: italic;
   }

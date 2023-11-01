@@ -5,6 +5,7 @@
             max-width: 70vw;
             margin: 0 auto;
             margin-bottom: 7.5rem;
+            margin-top: 4.5rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -12,6 +13,101 @@
             // Titre de chaque catégorie
             h1{
                 color: $couleurElmtUn;
+            }
+
+            // Ajout de l'icône jeux
+            .jeux:before{
+                content: url(medias/SVG/manette.svg);
+                position: absolute;
+                width: 3rem;
+                margin-left: -4rem;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            // Style du titre jeux
+            .jeux{
+                position: relative;
+                margin-right: 2rem;
+                margin-left: 4rem;
+            }
+
+            // Ajout de l'icône vidéo
+            .video::before{
+                content: url(medias/SVG/video.svg);
+                position: absolute;
+                width: 3rem;
+                margin-left: -4rem;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            // Style du titre vidéo
+            .video{
+                position: relative;
+                margin-right: 2rem;
+                margin-left: 4rem;
+            }
+
+            // Ajout de l'icône 3D
+            .troisd::before{
+                content: url(medias/SVG/3d.svg);
+                position: absolute;
+                width: 3rem;
+                margin-left: -4rem;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            // Style du titre 3D
+            .troisd{
+                position: relative;
+                margin-right: 2rem;
+                margin-left: 4rem;
+            }
+
+            // Ajout de l'icône Web
+            .web:before{
+                content: url(medias/SVG/prog.svg);
+                position: absolute;
+                width: 3rem;
+                margin-left: -4rem;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            // Style du titre web
+            .web{
+                position: relative;
+                margin-right: 2rem;
+                margin-left: 4rem;
+            }
+
+            // Ajout de l'icône Design
+            .design::before{
+                content: url(medias/SVG/illust.svg);
+                position: absolute;
+                width: 3rem;
+                margin-left: -4rem;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            // Style du titre design
+            .design{
+                position: relative;
+                margin-right: 2rem;
+                margin-left: 4rem;
             }
 
             // Rectangle qui se place derrière chaque catégories
@@ -62,6 +158,7 @@
                 .titre__projet{
                     width: 10rem;
                     color: rgb(255, 255, 255);
+                    font-family: Montserrat;
                     font-size: 1.3rem;
                     font-weight: bold;
                     top: 50%;
@@ -71,6 +168,7 @@
                 .date__projet{
                     width: 10rem;
                     color: $couleurElmtDeux;
+                    font-family: Montserrat;
                     font-size: 1.2rem;
                     font-style: italic;
                 }

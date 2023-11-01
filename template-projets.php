@@ -18,7 +18,7 @@
     
 <!-- Encadrer tous les sections à l'aide d'une div générale -->
 <div class='blockflex__projet'>
-    <h1>Jeux Vidéo</h1>
+    <h1 class='jeux'>Jeux Vidéo</h1>
     <div class='projet__general'>
 
 
@@ -57,7 +57,7 @@
  
 
 
-    <h1>Vidéo</h1>
+    <h1 class='video'>Vidéo</h1>
     <div class='projet__general'>
                         
 
@@ -93,7 +93,7 @@
 
 
       
-    <h1>3D</h1>    
+    <h1 class='troisd'>3D</h1>    
     <div class='projet__general'>
                                 
                                 
@@ -125,7 +125,7 @@
           wp_reset_postdata();?>
     </div>  
 
-    <h1>Web</h1>    
+    <h1 class='web'>Web</h1>    
     <div class='projet__general'>
                                 
                                 
@@ -157,7 +157,7 @@
           wp_reset_postdata();?>
     </div>  
 
-    <h1>Design</h1>    
+    <h1 class='design'>Design</h1>    
     <div class='projet__general'>
                                 
                                 
