@@ -1108,25 +1108,36 @@ main .texte_a_venir .texte_2 {
 .main_accueil {
   width: 100vw;
   margin: 0;
-  padding: 0;
+  padding: 0 0 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* sélecteur pas assez précis */
 }
-.main_accueil figure:nth-of-type(1) {
+.main_accueil h2 {
+  width: 70vw;
+  font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
+  letter-spacing: 0.05rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5rem 0 0 0;
+}
+.main_accueil > p {
+  width: 70vw;
+  margin: 1rem 0;
+}
+.main_accueil .fp-video {
   width: 100vw;
   height: 25vh;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
-.main_accueil figure:nth-of-type(1) video {
+.main_accueil .fp-video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.main_accueil figure:nth-of-type(1)::before {
+.main_accueil .fp-video::before {
   width: 100vw;
   height: calc(25vh + 1.5rem);
   background-color: transparent;
@@ -1137,16 +1148,14 @@ main .texte_a_venir .texte_2 {
   position: absolute;
   transform: translateX(-1.25rem) translateY(-1rem);
 }
-.main_accueil h2:nth-of-type(1) {
+.main_accueil .fp-tim-cest:nth-of-type(1) {
   width: 75vw;
   font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
-  text-transform: uppercase;
-  text-align: right;
   letter-spacing: 0.075rem;
-  margin: 0;
-  padding-top: 3rem;
+  text-align: right;
+  margin: 3rem 0 0 0;
 }
-.main_accueil h2:nth-of-type(2) {
+.main_accueil .fp-tim-cest:nth-of-type(2) {
   width: 75vw;
   font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
   text-transform: uppercase;
@@ -1154,16 +1163,101 @@ main .texte_a_venir .texte_2 {
   letter-spacing: 0.075rem;
   margin: 0;
 }
-.main_accueil p:nth-of-type(1) {
+.main_accueil .fp-nom-cohorte {
   width: 75vw;
   font-style: italic;
   text-align: right;
-  margin: 0;
-  padding-top: 1rem;
+  margin: 1rem 0 0 0;
 }
-.main_accueil figure:nth-of-type(2) {
-  width: 55vw;
+.main_accueil .fp-image-1 {
+  width: 50vw;
   height: 20vh;
+  overflow: hidden;
+  margin: 3rem 0 1rem 0;
+}
+.main_accueil .fp-image-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.main_accueil .fp-image-1::before {
+  width: 50vw;
+  height: 20vh;
+  background-color: transparent;
+  content: "";
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  display: block;
+  position: absolute;
+  transform: translateX(-0.5rem) translateY(0.25rem);
+}
+.main_accueil .fp-h2-profs {
+  margin-top: 4rem;
+}
+.main_accueil .fp-image-2 {
+  width: 65vw;
+  height: 17vh;
+  overflow: hidden;
+  margin: 1.5rem 0 0 0;
+}
+.main_accueil .fp-image-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.main_accueil .fp-image-2::before {
+  width: 65vw;
+  height: 17vh;
+  background-color: transparent;
+  content: "";
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  display: block;
+  position: absolute;
+  transform: translateX(-0.5rem) translateY(-0.5rem);
+}
+.main_accueil .fp-icones {
+  width: 100vw !important;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: space-around !important;
+  gap: 2rem !important;
+}
+.main_accueil .fp-icones figure {
+  width: 100% !important;
+  max-width: 30vw !important;
+  height: inherit !important;
+}
+.main_accueil .fp-image-3 {
+  width: 65vw;
+  height: 25vh;
+  overflow: hidden;
+  margin: 1.5rem 0 0 0;
+}
+.main_accueil .fp-image-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.main_accueil .fp-image-3::before {
+  width: 65vw;
+  height: 25vh;
+  background-color: transparent;
+  content: "";
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  display: block;
+  position: absolute;
+  transform: translateX(0.25rem) translateY(-0.5rem);
+}
+.main_accueil .fp-p-admission {
+  text-align: center;
 }
 
 /* --------------------------------------------- layout */
@@ -1178,5 +1272,4 @@ main .texte_a_venir .texte_2 {
 
 figure.wp-block-image.size-large {
   flex: 0 0 auto;
-  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

@@ -13,6 +13,6 @@
 
 figure.wp-block-image.size-large {
   flex: 0 0 auto;
-  border-radius: 50%;
+  // border-radius: 50%; // Utilise un sélecteur plus précis. Also this should probably be nested in .zoneProfs
   //scroll-snap-align: start;
 }
