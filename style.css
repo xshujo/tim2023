@@ -990,6 +990,36 @@ footer .iconRS a {
     height: 25rem;
     top: 20rem;
   }
+  .bulle_1_1 {
+    background-color: #774eba;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+    opacity: 75%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+  }
+  .bulle_1_1_position {
+    width: 25rem;
+    height: 25rem;
+    top: 10rem;
+    right: -1rem;
+  }
+  .bulle_2 {
+    background-color: #33488e;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+    opacity: 75%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+  }
+  .bulle_2_position {
+    width: 25rem;
+    height: 25rem;
+    top: 70rem;
+    left: -10rem;
+  }
 }
 /* --------------------------------------------- layout */
 /* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */

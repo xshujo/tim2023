@@ -1,5 +1,6 @@
 @media screen and (min-width:$largeur__bureau){
 
+    // Style de l'ensemble des catégories
     .blockflex__projet{
             max-width: 70vw;
             margin: 0 auto;
@@ -8,10 +9,12 @@
             flex-direction: column;
             justify-content: center;
 
+            // Titre de chaque catégorie
             h1{
                 color: $couleurElmtUn;
             }
 
+            // Rectangle qui se place derrière chaque catégories
             .projet__general::before {
             content: "";
             width: 70vw;
@@ -28,6 +31,7 @@
             z-index: -1;
         }
 
+            // Style général des catégories
             .projet__general{
             position: relative;
             display: flex;
@@ -37,13 +41,14 @@
             border-radius: 47px;
 
             
-
+            // Style des encadrés des projets
             .carte__categorie{
                 width: fit-content;
                 background-color: #33488E;
                 padding: 10px 50px 50px 50px;
                 border-radius: 17px;
 
+                // Style des textes en généraux des encadrés des projets
                 p{
                     display: flex;
                     justify-content: center;
@@ -53,6 +58,7 @@
                     text-transform: uppercase;
                 }
 
+                // Style des titres des encadrés des projets
                 .titre__projet{
                     width: 10rem;
                     color: rgb(255, 255, 255);
@@ -61,6 +67,7 @@
                     top: 50%;
                 }
 
+                // Style du texte des dates des encadrés des projets
                 .date__projet{
                     width: 10rem;
                     color: $couleurElmtDeux;
@@ -68,6 +75,7 @@
                     font-style: italic;
                 }
 
+                // Style des images des projets
                 img{
                     display: flex;
                     align-items: center;
@@ -81,6 +89,7 @@
         
     }    
 
+    // Style général des bulles de couleur mauve
     .bulle_1{
         background-color: $degradeFondSiteUn;
         mix-blend-mode: lighten;
@@ -91,12 +100,50 @@
         z-index: -4;
     }
 
+    // Style spécifique des bulles de couleur mauve
     .bulle_1_position{
         width: 25rem;
         height: 25rem;
         top: 20rem;
     }
-    
 
+    .bulle_1_1{
+        background-color: $degradeFondSiteUn;
+        mix-blend-mode: lighten;
+        backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+        opacity: 75%;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -4;
+    }
+
+    
+    .bulle_1_1_position{
+        width: 25rem;
+        height: 25rem;
+        top: 10rem;
+        right: -1rem;
+    }
+    
+    // Style général des bulles de couleur bleu
+    .bulle_2{
+        background-color: $degradeFondSiteDeux;
+        mix-blend-mode: lighten;
+        backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+        opacity: 75%;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -4;
+    }
+
+    // Style spécifique des bulles de couleur bleu
+    .bulle_2_position{
+        width: 25rem;
+        height: 25rem;
+        top: 70rem;
+        left: -10rem;
+    }
+
+    
     
 }
