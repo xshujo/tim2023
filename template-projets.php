@@ -12,6 +12,9 @@
 <div class='bulle_1 bulle_1_position'></div> 
 <div class='bulle_1_1 bulle_1_1_position'></div> 
 <div class='bulle_2 bulle_2_position'></div>
+<div class='degrades degrade_1'></div>
+<div class='degrades degrade_2'></div>
+<div class='degrades degrade_3'></div>
     
 <!-- Encadrer tous les sections à l'aide d'une div générale -->
 <div class='blockflex__projet'>
