@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 
-<main class="contenu_accueil">
+<main class="main_accueil">
     <?php the_content(); ?>
     <!-- <section class="video-section">
         
