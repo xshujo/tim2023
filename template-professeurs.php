@@ -15,9 +15,10 @@ get_header();
 
         <!----- Zone carrousel d'images des professeurs ---->
         <div class="carousel">
-            <div class="zoneProfs">
-                <button class="precedent">
-                    < </button>
+            <button class="precedent">
+                < </button>
+                    <div class="zoneProfs">
+
                         <?php
                         query_posts('category_name=professeurs'); // Utilisez le nom de la catégorie "professeurs"
 
@@ -28,9 +29,8 @@ get_header();
                                 </figure>
                             <?php endwhile; ?>
                         <?php endif; ?>
-
-                        <button class="suivant">></button>
-            </div>
+                    </div>
+                    <button class="suivant">></button>
 
         </div>
 

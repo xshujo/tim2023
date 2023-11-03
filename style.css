@@ -1373,9 +1373,12 @@ footer .iconRS a {
   }
 }
 .zoneProfs {
+  width: 70vw;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  height: inherit;
+  object-fit: contain;
+  overflow: hidden;
 }
 .zoneProfs .prof__figure {
   cursor: pointer;
