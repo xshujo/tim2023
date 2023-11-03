@@ -1,125 +1,126 @@
-@media screen and (min-width:$largeur__bureau){
+@media screen and (min-width:$largeur__bureau) {
 
     // Style de l'ensemble des catégories
-    .blockflex__projet{
-            max-width: 70vw;
-            margin: 0 auto;
-            margin-bottom: 7.5rem;
-            margin-top: 4.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+    .blockflex__projet {
+        max-width: 70vw;
+        margin: 0 auto;
+        margin-bottom: 7.5rem;
+        margin-top: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-            // Titre de chaque catégorie
-            h1{
-                color: $couleurElmtUn;
-            }
+        // Titre de chaque catégorie
+        h1 {
+            color: $couleurElmtUn;
+        }
 
-            // Ajout de l'icône jeux
-            .jeux:before{
-                content: url(medias/SVG/manette.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
+        // Ajout de l'icône jeux
+        .jeux:before {
+            content: url(medias/SVG/manette.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
 
-            // Style du titre jeux
-            .jeux{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
-            }
+        // Style du titre jeux
+        .jeux {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
 
-            // Ajout de l'icône vidéo
-            .video::before{
-                content: url(medias/SVG/video.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
+        // Ajout de l'icône vidéo
+        .video::before {
+            content: url(medias/SVG/video.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
 
-            // Style du titre vidéo
-            .video{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
-            }
+        // Style du titre vidéo
+        .video {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
 
-            // Ajout de l'icône 3D
-            .troisd::before{
-                content: url(medias/SVG/3d.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
+        // Ajout de l'icône 3D
+        .troisd::before {
+            content: url(medias/SVG/3d.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
 
-            // Style du titre 3D
-            .troisd{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
-            }
+        // Style du titre 3D
+        .troisd {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
 
-            // Ajout de l'icône Web
-            .web:before{
-                content: url(medias/SVG/prog.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
+        // Ajout de l'icône Web
+        .web:before {
+            content: url(medias/SVG/prog.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
 
-            // Style du titre web
-            .web{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
-            }
+        // Style du titre web
+        .web {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
 
-            // Ajout de l'icône Design
-            .design::before{
-                content: url(medias/SVG/illust.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
+        // Ajout de l'icône Design
+        .design::before {
+            content: url(medias/SVG/illust.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
 
-            // Style du titre design
-            .design{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
-            }
+        // Style du titre design
+        .design {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
 
-            // Rectangle qui se place derrière chaque catégories
-            .projet__general::before {
+        // Rectangle qui se place derrière chaque catégories
+        .projet__general::before {
             content: "";
             width: 70vw;
+            height: inherit;
             background-color: $couleurElmtDeux;
             backdrop-filter: saturate(130%) blur(2rem);
             mix-blend-mode: soft-light;
             border-radius: 1rem;
             position: absolute;
-            box-shadow: 1rem 1rem 3rem rgba(5,25,52, 0.4);
+            box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
             top: 0;
             left: 0;
             right: 0;
@@ -127,25 +128,34 @@
             z-index: -1;
         }
 
-            // Style général des catégories
-            .projet__general{
+        // Style général des catégories
+        .projet__general {
+            width: calc(70vw - 1.5rem);
+            height: inherit;
+            box-sizing: border-box;
+            object-fit: cover;
+            overflow: hidden;
             position: relative;
             display: flex;
             flex-direction: row;
             gap: 4rem;
-            padding: 23px;
-            border-radius: 47px;
+            padding: 1.5rem;
+            border-radius: 2rem;
 
-            
+
             // Style des encadrés des projets
-            .carte__categorie{
+            .carte__categorie {
                 width: fit-content;
                 background-color: #33488E;
                 padding: 10px 50px 50px 50px;
-                border-radius: 17px;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 // Style des textes en généraux des encadrés des projets
-                p{
+                p {
                     display: flex;
                     justify-content: center;
                     color: blue;
@@ -155,7 +165,7 @@
                 }
 
                 // Style des titres des encadrés des projets
-                .titre__projet{
+                .titre__projet {
                     width: 10rem;
                     color: rgb(255, 255, 255);
                     font-family: Montserrat;
@@ -165,7 +175,7 @@
                 }
 
                 // Style du texte des dates des encadrés des projets
-                .date__projet{
+                .date__projet {
                     width: 10rem;
                     color: $couleurElmtDeux;
                     font-family: Montserrat;
@@ -174,21 +184,21 @@
                 }
 
                 // Style des images des projets
-                img{
+                img {
                     display: flex;
                     align-items: center;
                     border-radius: 17px;
-                    
+
                 }
 
-                
+
             }
         }
-        
-    }    
+
+    }
 
     // Style général des bulles de couleur mauve
-    .bulle_1{
+    .bulle_1 {
         background-color: $degradeFondSiteUn;
         mix-blend-mode: lighten;
         backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
@@ -199,13 +209,13 @@
     }
 
     // Style spécifique des bulles de couleur mauve
-    .bulle_1_position{
+    .bulle_1_position {
         width: 25rem;
         height: 25rem;
         top: 20rem;
     }
 
-    .bulle_1_1{
+    .bulle_1_1 {
         background-color: $degradeFondSiteUn;
         mix-blend-mode: lighten;
         backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
@@ -215,16 +225,16 @@
         z-index: -4;
     }
 
-    
-    .bulle_1_1_position{
+
+    .bulle_1_1_position {
         width: 25rem;
         height: 25rem;
         top: 10rem;
         right: -1rem;
     }
-    
+
     // Style général des bulles de couleur bleu
-    .bulle_2{
+    .bulle_2 {
         background-color: $degradeFondSiteDeux;
         mix-blend-mode: lighten;
         backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
@@ -235,13 +245,13 @@
     }
 
     // Style spécifique des bulles de couleur bleu
-    .bulle_2_position{
+    .bulle_2_position {
         width: 25rem;
         height: 25rem;
         top: 70rem;
         left: -10rem;
     }
 
-    
-    
+
+
 }

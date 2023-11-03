@@ -1000,6 +1000,7 @@ footer .iconRS a {
   .blockflex__projet .projet__general::before {
     content: "";
     width: 70vw;
+    height: inherit;
     background-color: #c7afec;
     backdrop-filter: saturate(130%) blur(2rem);
     mix-blend-mode: soft-light;
@@ -1013,18 +1014,27 @@ footer .iconRS a {
     z-index: -1;
   }
   .blockflex__projet .projet__general {
+    width: calc(70vw - 1.5rem);
+    height: inherit;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    padding: 23px;
-    border-radius: 47px;
+    padding: 1.5rem;
+    border-radius: 2rem;
   }
   .blockflex__projet .projet__general .carte__categorie {
     width: fit-content;
     background-color: #33488E;
     padding: 10px 50px 50px 50px;
-    border-radius: 17px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .blockflex__projet .projet__general .carte__categorie p {
     display: flex;
