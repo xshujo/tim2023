@@ -909,6 +909,68 @@ footer .iconRS a {
     mix-blend-mode: screen;
   }
 }
+.blockflex__projet {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 calc(100% - 50px);
+}
+.blockflex__projet h1 {
+  display: none;
+}
+
+.projet__general {
+  width: calc(70vw - 1.5rem);
+  height: inherit;
+  box-sizing: border-box;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+.projet__general .carte__categorie {
+  width: fit-content;
+  background-color: #33488E;
+  padding: 10px 50px 50px 50px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projet__general .carte__categorie p {
+  display: flex;
+  justify-content: center;
+  color: blue;
+  white-space: wrap;
+  text-align: center;
+  text-transform: uppercase;
+}
+.projet__general .carte__categorie .titre__projet {
+  width: 10rem;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 1.3rem;
+  font-weight: bold;
+  top: 50%;
+}
+.projet__general .carte__categorie .date__projet {
+  width: 10rem;
+  color: #c7afec;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.projet__general .carte__categorie img {
+  display: flex;
+  align-items: center;
+  border-radius: 17px;
+}
+
 @media screen and (min-width: 976px) {
   .blockflex__projet {
     max-width: 70vw;
@@ -1022,6 +1084,7 @@ footer .iconRS a {
     position: relative;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: 4rem;
     padding: 1.5rem;
     border-radius: 2rem;

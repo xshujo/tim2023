@@ -1,3 +1,82 @@
+.blockflex__projet {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 calc(100% - 50px);
+
+    h1 {
+        display: none;
+    }
+}
+
+.projet__general {
+    width: calc(70vw - 1.5rem);
+    height: inherit;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+
+
+    // Style des encadrés des projets
+    .carte__categorie {
+        width: fit-content;
+        background-color: #33488E;
+        padding: 10px 50px 50px 50px;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // Style des textes en généraux des encadrés des projets
+        p {
+            display: flex;
+            justify-content: center;
+            color: blue;
+            white-space: wrap;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        // Style des titres des encadrés des projets
+        .titre__projet {
+            width: 10rem;
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 1.3rem;
+            font-weight: bold;
+            top: 50%;
+        }
+
+        // Style du texte des dates des encadrés des projets
+        .date__projet {
+            width: 10rem;
+            color: $couleurElmtDeux;
+            font-family: Montserrat;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        // Style des images des projets
+        img {
+            display: flex;
+            align-items: center;
+            border-radius: 17px;
+
+        }
+
+
+    }
+}
+
+
+
 @media screen and (min-width:$largeur__bureau) {
 
     // Style de l'ensemble des catégories
@@ -138,6 +217,7 @@
             position: relative;
             display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
             gap: 4rem;
             padding: 1.5rem;
             border-radius: 2rem;

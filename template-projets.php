@@ -18,8 +18,11 @@
 
   <!-- Encadrer tous les sections à l'aide d'une div générale -->
   <div class='blockflex__projet'>
+
+    <?php the_content() ?>
+
     <h1 class='jeux'>Jeux Vidéo</h1>
-    <div class='projet__general'>
+    <div class='projet__general div1'>
 
 
       <!-- Intégration de la catégorie Jeux -->
@@ -195,5 +198,8 @@
 
 
 </main>
+
+
+
 <!-- Ajouter le footer -->
 <?php get_footer(); ?>
