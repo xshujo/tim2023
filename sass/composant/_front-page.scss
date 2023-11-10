@@ -19,7 +19,30 @@
     // Tous les paragraphes
     &>p {
         width: 70vw;
+        margin: 2rem 0;
+    }
+
+    // Tous les boutons
+    .wp-block-buttons {
+        all: unset;
         margin: 1rem 0;
+
+        .wp-block-button {
+            all: unset;
+
+            a {
+                all: unset;
+                background: rgb(201, 233, 255);
+                background: linear-gradient(180deg, rgba(201, 233, 255, 1) 0%, rgba(158, 201, 231, 1) 100%);
+                font-family: "Montserrat", sans-serif;
+                font-size: 0.875rem;
+                font-weight: bold;
+                color: $degradeFondSiteDeux;
+                text-transform: uppercase;
+                border-radius: 2rem;
+                padding: 0.5rem 1rem;
+            }
+        }
     }
 
     // Vidéo promotionnelle
@@ -94,11 +117,43 @@
             height: 20vh;
             background-color: transparent;
             content: "";
-            border: 2px solid white;
+            border: 2px solid $couleurTitreTextes;
             border-radius: 0.5rem;
             display: block;
             position: absolute;
             transform: translateX(-0.5rem) translateY(0.25rem);
+        }
+    }
+
+    // Paragraphe 1
+    .fp-p-1 {
+
+        // Top right
+        &::before {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            content: "";
+            border-top: 2px solid $couleurElmtUn;
+            border-right: 2px solid $couleurElmtUn;
+            border-top-right-radius: 0.5rem;
+            position: absolute;
+            right: 0;
+            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+        }
+
+        // Bottom left
+        &::after {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            content: "";
+            border-bottom: 2px solid $couleurElmtUn;
+            border-left: 2px solid $couleurElmtUn;
+            border-bottom-left-radius: 0.5rem;
+            position: absolute;
+            left: 0;
+            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
         }
     }
 
@@ -126,7 +181,7 @@
             height: 17vh;
             background-color: transparent;
             content: "";
-            border: 2px solid white;
+            border: 2px solid $couleurTitreTextes;
             border-radius: 0.5rem;
             display: block;
             position: absolute;
@@ -134,6 +189,39 @@
         }
     }
 
+    // Paragraphe 2
+    .fp-p-profs {
+
+        // Top right
+        &::before {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            content: "";
+            border-top: 2px solid $couleurElmtUn;
+            border-right: 2px solid $couleurElmtUn;
+            border-top-right-radius: 0.5rem;
+            position: absolute;
+            right: 0;
+            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+        }
+
+        // Bottom left
+        &::after {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            content: "";
+            border-bottom: 2px solid $couleurElmtUn;
+            border-left: 2px solid $couleurElmtUn;
+            border-bottom-left-radius: 0.5rem;
+            position: absolute;
+            left: 0;
+            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
+        }
+    }
+
+    // Des cours selon vos intérêts
     // Icônes des cours
     // !important pour écraser les styles par défaut de WordPress...
     .fp-icones {
@@ -153,6 +241,7 @@
         }
     }
 
+    // Un apprentissage par projet
     // Image 3
     .fp-image-3 {
         width: 65vw;
@@ -172,11 +261,43 @@
             height: 25vh;
             background-color: transparent;
             content: "";
-            border: 2px solid white;
+            border: 2px solid $couleurTitreTextes;
             border-radius: 0.5rem;
             display: block;
             position: absolute;
             transform: translateX(0.25rem) translateY(-0.5rem);
+        }
+    }
+
+    // Paragraphe 3
+    .fp-p-projets {
+
+        // Top right
+        &::before {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            content: "";
+            border-top: 2px solid $couleurElmtUn;
+            border-right: 2px solid $couleurElmtUn;
+            border-top-right-radius: 0.5rem;
+            position: absolute;
+            right: 0;
+            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+        }
+
+        // Bottom left
+        &::after {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            content: "";
+            border-bottom: 2px solid $couleurElmtUn;
+            border-left: 2px solid $couleurElmtUn;
+            border-bottom-left-radius: 0.5rem;
+            position: absolute;
+            left: 0;
+            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
         }
     }
 

@@ -1914,7 +1914,26 @@ main .texte_a_venir .texte_2 {
 }
 .main_accueil > p {
   width: 70vw;
+  margin: 2rem 0;
+}
+.main_accueil .wp-block-buttons {
+  all: unset;
   margin: 1rem 0;
+}
+.main_accueil .wp-block-buttons .wp-block-button {
+  all: unset;
+}
+.main_accueil .wp-block-buttons .wp-block-button a {
+  all: unset;
+  background: rgb(201, 233, 255);
+  background: linear-gradient(180deg, rgb(201, 233, 255) 0%, rgb(158, 201, 231) 100%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #33488e;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
 }
 .main_accueil .fp-video {
   width: 100vw;
@@ -1977,11 +1996,35 @@ main .texte_a_venir .texte_2 {
   height: 20vh;
   background-color: transparent;
   content: "";
-  border: 2px solid white;
+  border: 2px solid #f7f7f7;
   border-radius: 0.5rem;
   display: block;
   position: absolute;
   transform: translateX(-0.5rem) translateY(0.25rem);
+}
+.main_accueil .fp-p-1::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  content: "";
+  border-top: 2px solid #9ec9e7;
+  border-right: 2px solid #9ec9e7;
+  border-top-right-radius: 0.5rem;
+  position: absolute;
+  right: 0;
+  transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+}
+.main_accueil .fp-p-1::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  content: "";
+  border-bottom: 2px solid #9ec9e7;
+  border-left: 2px solid #9ec9e7;
+  border-bottom-left-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
 }
 .main_accueil .fp-h2-profs {
   margin-top: 4rem;
@@ -2003,11 +2046,35 @@ main .texte_a_venir .texte_2 {
   height: 17vh;
   background-color: transparent;
   content: "";
-  border: 2px solid white;
+  border: 2px solid #f7f7f7;
   border-radius: 0.5rem;
   display: block;
   position: absolute;
   transform: translateX(-0.5rem) translateY(-0.5rem);
+}
+.main_accueil .fp-p-profs::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  content: "";
+  border-top: 2px solid #9ec9e7;
+  border-right: 2px solid #9ec9e7;
+  border-top-right-radius: 0.5rem;
+  position: absolute;
+  right: 0;
+  transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+}
+.main_accueil .fp-p-profs::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  content: "";
+  border-bottom: 2px solid #9ec9e7;
+  border-left: 2px solid #9ec9e7;
+  border-bottom-left-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
 }
 .main_accueil .fp-icones {
   width: 100vw !important;
@@ -2041,11 +2108,35 @@ main .texte_a_venir .texte_2 {
   height: 25vh;
   background-color: transparent;
   content: "";
-  border: 2px solid white;
+  border: 2px solid #f7f7f7;
   border-radius: 0.5rem;
   display: block;
   position: absolute;
   transform: translateX(0.25rem) translateY(-0.5rem);
+}
+.main_accueil .fp-p-projets::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  content: "";
+  border-top: 2px solid #9ec9e7;
+  border-right: 2px solid #9ec9e7;
+  border-top-right-radius: 0.5rem;
+  position: absolute;
+  right: 0;
+  transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+}
+.main_accueil .fp-p-projets::after {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  content: "";
+  border-bottom: 2px solid #9ec9e7;
+  border-left: 2px solid #9ec9e7;
+  border-bottom-left-radius: 0.5rem;
+  position: absolute;
+  left: 0;
+  transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
 }
 .main_accueil .fp-p-admission {
   text-align: center;
