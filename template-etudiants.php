@@ -13,7 +13,9 @@
     <div class="bulle_modele_2 bulle_m2_position_1"></div>
     <div class="bulle_modele_2 bulle_m2_position_2"></div>
 
-    <h1>Vie étudiante</h1>
+    <h1>
+        <?php the_title(); ?>
+    </h1>
     <!-- Affichage de la galerie Vie étudiante sur la page -->
     <div class="zone_galerie">
         <?php

@@ -1,214 +1,217 @@
-main {
-    width: 92vw;
-    background-color: transparent;
-    margin: 0 auto;
-    margin-top: 2.9rem;
-    margin-bottom: 4rem;
-    z-index: 30;
-
-    // Styles du grand encadré sur la page
-    .encadre_page {
-        width: 110%;
-        height: 130rem;
-        border: 0.3rem $couleurTitreTextes solid;
-        border-radius: 2rem;
-        position: absolute;
-        top: 8.2rem;
-        left: 1rem;
-        z-index: -1;
-    }
-
-    // Styles généraux des dégradés en fond
-    .degrades {
-        filter: blur(7rem);
-        width: 70rem;
-        height: 100rem;
-        border-radius: 50%;
-        position: absolute;
-        z-index: -6;
-    }
-    
-    // Styles du dégradé en fond en haut à droite
-    .degrade_1 {
-        background: radial-gradient(circle, rgba(119,78,186,1) 0%, rgba(119,78,186,0) 100%);
-        right: -5rem;
-        top: -40rem;
-        transform: rotateZ(295deg);
-    }
-    
-    // Styles du dégradé en fond au milieu à gauche
-    .degrade_2 {
-        background: radial-gradient(circle, rgba(51,72,142,1) 0%, rgba(51,72,142,0) 100%);
-        left: -25rem;
-        top: 30rem;
-        transform: rotateZ(35deg);
-    }
-
-    // Styles du dégradé en fond en bas à droite
-    .degrade_3 {
-        width: 40rem;
-        height: 70rem;
-        background: radial-gradient(circle, rgba(119,78,186,1) 0%, rgba(119,78,186,0) 100%);
-        right: -20rem;
-        top: 70rem;
-        transform: rotateZ(295deg);
-    }
-
-    // Styles généraux du modèle de bulles de couleur mauve
-    .bulle_modele_1 {
-        background-color: $degradeFondSiteUn;
-        mix-blend-mode: lighten;
-        backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-        opacity: 75%;
-        border-radius: 50%;
-        position: absolute;
-        z-index: -4;
-    }
-
-    // Styles spécifiques du modèle de bulles de couleur mauve
-    .bulle_m1_position_1 {   
-        width: 25rem;
-        height: 25rem;  
-        top: 20rem;
-        right: -4rem;
-    }
-
-    // Styles généraux du modèle de bulles de couleur bleu
-    .bulle_modele_2 {
-        background-color: $degradeFondSiteDeux;
-        mix-blend-mode: lighten;
-        backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
-        opacity: 75%;
-        border-radius: 50%;
-        position: absolute;
-        z-index: -4;
-    }
-
-    // Styles spécifiques du modèle de bulles de couleur bleu
-    .bulle_m2_position_1 {  
-        width: 35rem;
-        height: 35rem;
-        top: -12rem;
-        left: -5rem;
-    }
-
-    .bulle_m2_position_2 {  
-        width: 14rem;
-        height: 14rem;
-        top: 1.3rem;
-        left: 25rem;
-    }
-
-    // Styles du titre "Vie étudiante"
-    h1 {
-        text-transform: uppercase;
-        margin-bottom: 2rem;
-        z-index: 30;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    // Styles de la zone où la galerie est affichée
-    .zone_galerie {
-        display: flex;
-        z-index: 10;
-
-        img {
-            border-radius: 0.4rem;  
-        }
-    }
-
-    // Styles de la zone où les événements sont affichés
-    .zone_evenements {
-        width: 95%;
+@media (min-width:$largeur__bureau) {
+    main {
+        width: 92vw;
+        background-color: transparent;
         margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        z-index: 20;
-
-        // Styles pour chaque article
-        .article_vie_etudiante::before {
-            content: "";
-            width: 100%;
-            height: 14.3rem;
-            background-color: $couleurElmtDeux;
-            // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
-            mix-blend-mode: soft-light;
-            border-radius: 1rem;
+        margin-top: 2.9rem;
+        margin-bottom: 4rem;
+        z-index: 30;
+    
+        // Styles du grand encadré sur la page
+        .encadre_page {
+            width: 110%;
+            height: 130rem;
+            border: 0.3rem $couleurTitreTextes solid;
+            border-radius: 2rem;
             position: absolute;
-            box-shadow: 1rem 1rem 3rem rgba(5,25,52, 0.4);
-            // z-index: 10;
+            top: 8.2rem;
+            left: 1rem;
+            z-index: -1;
         }
-
-        .article_vie_etudiante {
-            width: 49%;
-            height: 14.3rem;
-            margin-bottom: 1.4rem;
-            margin-top: 0.2rem;
+    
+        // Styles généraux des dégradés en fond
+        .degrades {
+            filter: blur(7rem);
+            width: 70rem;
+            height: 100rem;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -6;
+        }
+        
+        // Styles du dégradé en fond en haut à droite
+        .degrade_1 {
+            background: radial-gradient(circle, rgba(119,78,186,1) 0%, rgba(119,78,186,0) 100%);
+            right: -5rem;
+            top: -40rem;
+            transform: rotateZ(295deg);
+        }
+        
+        // Styles du dégradé en fond au milieu à gauche
+        .degrade_2 {
+            background: radial-gradient(circle, rgba(51,72,142,1) 0%, rgba(51,72,142,0) 100%);
+            left: -25rem;
+            top: 30rem;
+            transform: rotateZ(35deg);
+        }
+    
+        // Styles du dégradé en fond en bas à droite
+        .degrade_3 {
+            width: 40rem;
+            height: 70rem;
+            background: radial-gradient(circle, rgba(119,78,186,1) 0%, rgba(119,78,186,0) 100%);
+            right: -20rem;
+            top: 70rem;
+            transform: rotateZ(295deg);
+        }
+    
+        // Styles généraux du modèle de bulles de couleur mauve
+        .bulle_modele_1 {
+            background-color: $degradeFondSiteUn;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 75%;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -4;
+        }
+    
+        // Styles spécifiques du modèle de bulles de couleur mauve
+        .bulle_m1_position_1 {   
+            width: 25rem;
+            height: 25rem;  
+            top: 20rem;
+            right: -4rem;
+        }
+    
+        // Styles généraux du modèle de bulles de couleur bleu
+        .bulle_modele_2 {
+            background-color: $degradeFondSiteDeux;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+            opacity: 75%;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -4;
+        }
+    
+        // Styles spécifiques du modèle de bulles de couleur bleu
+        .bulle_m2_position_1 {  
+            width: 35rem;
+            height: 35rem;
+            top: -12rem;
+            left: -5rem;
+        }
+    
+        .bulle_m2_position_2 {  
+            width: 14rem;
+            height: 14rem;
+            top: 1.3rem;
+            left: 25rem;
+        }
+    
+        // Styles du titre "Vie étudiante"
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            z-index: 30;
+        }
+    
+        p {
+            margin: 0;
+        }
+    
+        // Styles de la zone où la galerie est affichée
+        .zone_galerie {
             display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            position: relative;
-            // z-index: 20; En mettant ce z-index, on perd le mode de fusion
-
+            z-index: 10;
+    
             img {
                 border-radius: 0.4rem;  
-                z-index: 20;
-            }
-
-            .informations_evenements {
-                width: 58%;
-
-                h4 {
-                    text-transform: uppercase;
-                    margin: 0;
-                    font-size: 1.4rem;
-                }
-
-                .date_evenement {
-                    color: $couleurElmtDeux;
-                    font-weight: 500;
-                    font-size: 1.3rem;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                }
-
-                // .description_evenement {
-                // }
             }
         }
-    }
-
-    // Styles pour le texte "Encore plus à venir"
-    .texte_a_venir {
-        width: 25rem;
-        height: 8rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        right: 8vw;
-        bottom: -4rem;
-        z-index: 20;
-        
-        h3 {
-            text-transform: uppercase;
-            text-align: center;
-            margin: 0.3rem;
+    
+        // Styles de la zone où les événements sont affichés
+        .zone_evenements {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            z-index: 20;
+    
+            // Styles pour chaque article
+            .article_vie_etudiante::before {
+                content: "";
+                width: 100%;
+                height: 14.3rem;
+                background-color: $couleurElmtDeux;
+                // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
+                mix-blend-mode: soft-light;
+                border-radius: 1rem;
+                position: absolute;
+                box-shadow: 1rem 1rem 3rem rgba(5,25,52, 0.4);
+                // z-index: 10;
+            }
+    
+            .article_vie_etudiante {
+                width: 49%;
+                height: 14.3rem;
+                margin-bottom: 1.4rem;
+                margin-top: 0.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                position: relative;
+                // z-index: 20; En mettant ce z-index, on perd le mode de fusion
+    
+                img {
+                    border-radius: 0.4rem;  
+                    z-index: 20;
+                }
+    
+                .informations_evenements {
+                    width: 58%;
+    
+                    h4 {
+                        text-transform: uppercase;
+                        margin: 0;
+                        font-size: 1.4rem;
+                    }
+    
+                    .date_evenement {
+                        color: $couleurElmtDeux;
+                        font-weight: 500;
+                        font-size: 1.3rem;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                    }
+    
+                    // .description_evenement {
+                    // }
+                }
+            }
         }
-        
-        .texte_1 {
-            color: $couleurElmtDeux;
-            font-size: 2.7rem;
-        }
-
-        .texte_2 {
-            font-size: 3.7rem;
+    
+        // Styles pour le texte "Encore plus à venir"
+        .texte_a_venir {
+            width: 25rem;
+            height: 8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            right: 8vw;
+            bottom: -4rem;
+            z-index: 20;
+            
+            h3 {
+                text-transform: uppercase;
+                text-align: center;
+                margin: 0.3rem;
+            }
+            
+            .texte_1 {
+                color: $couleurElmtDeux;
+                font-size: 2.7rem;
+            }
+    
+            .texte_2 {
+                font-size: 3.7rem;
+            }
         }
     }
 }
+
