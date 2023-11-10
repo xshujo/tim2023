@@ -1,85 +1,98 @@
-.zoneProfs {
-  width: 70vw;
-  display: flex;
-  align-items: center;
-  height: inherit;
-  object-fit: contain;
-  overflow: hidden;
-  .prof__figure {
-    cursor: pointer;
-    img {
-      padding: 10px;
-      cursor: pointer;
-      width: 85px;
-      height: 90px;
-      overflow: hidden;
-      border-radius: 50%;
-    }
-    img:hover {
-      background-color: $degradeFondSiteDeux;
-    }
-  }
-}
+////////////////////////////////////////////////////////
+///               VERSION MOBILE                    ///
+/// ///////////////////////////////////////////////////
+
 .contenuProf {
+  margin: 0 50px;
   border-radius: 15px;
   border-top: 2px solid;
   border-left: 2px solid;
-  margin: 0 50px;
-}
-.titreProf {
-  text-align: center;
-  font-size: 5rem;
-}
 
-.description {
-  background-color: #0e152fe8;
-  border-radius: 20px;
-  height: 40vh;
-  width: auto;
-  padding: 15px;
-  margin: 15px;
-  p {
+  .carousel {
+    margin: 40px 50px;
+
+    //////////////////Zone carrousel d'images des professeurs//////////////////
+    .zoneProfs {
+      width: 70vw;
+      display: flex;
+      align-items: center;
+      height: inherit;
+      object-fit: contain;
+      overflow: hidden;
+
+      //zone des boutons suivant et precedent pour carrousel image
+      .precedent,
+      .suivant {
+        height: fit-content;
+        background: white;
+        padding: 8px;
+        border: none;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .precedent {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .suivant {
+        grid-column-start: 12;
+        grid-column-end: 13;
+      }
+
+      .prof__figure {
+        cursor: pointer;
+
+        img {
+          width: 85px;
+          height: 90px;
+          padding: 10px;
+          border-radius: 50%;
+          cursor: pointer;
+          overflow: hidden;
+        }
+
+        img:hover {
+          background-color: $degradeFondSiteDeux;
+        }
+      }
+    }
+  }
+  //////////////////Zone descriptions des professeurs//////////////////
+  .description {
     width: auto;
-    height: auto;
-    padding: 20px;
-    font-size: auto;
-    background-color: $degradeFondSiteDeux;
-    border-radius: 15px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+    height: 40vh;
+    background-color: #0e152fe8;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+
+    p {
+      width: auto;
+      height: auto;
+      background-color: $degradeFondSiteDeux;
+      font-size: auto;
+      padding: 20px;
+      border-radius: 15px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 }
-.carousel {
-  margin: 40px 50px;
-}
 
-.precedent,
-.suivant {
-  display: flex;
-  justify-content: center;
-  background: white;
-  border: none;
-  padding: 8px;
-  border-radius: 15px;
-  cursor: pointer;
-  align-items: center;
-  height: fit-content;
-}
-
-.precedent {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.suivant {
-  grid-column-start: 12;
-  grid-column-end: 13;
+//titre dans descripions des profs
+.titreProf {
+  font-size: 5rem;
+  text-align: center;
 }
 
 ////////////////////////////////////////////////////////
-///               ZONE GRAND ECRAN                   ///
+///              VERSION GRAND ECRAN                ///
 /// ///////////////////////////////////////////////////
 
 @media only screen and (min-width: $largeur__bureau) {
@@ -87,15 +100,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    .description {
+      width: 60vw;
+    }
   }
 
   .titreProf {
     writing-mode: vertical-lr;
     white-space: nowrap;
-  }
-
-  .description {
-    width: 60vw;
   }
 }
 

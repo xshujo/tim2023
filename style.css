@@ -1372,7 +1372,16 @@ footer .iconRS a {
     text-align: center;
   }
 }
-.zoneProfs {
+.contenuProf {
+  margin: 0 50px;
+  border-radius: 15px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+.contenuProf .carousel {
+  margin: 40px 50px;
+}
+.contenuProf .carousel .zoneProfs {
   width: 70vw;
   display: flex;
   align-items: center;
@@ -1380,47 +1389,54 @@ footer .iconRS a {
   object-fit: contain;
   overflow: hidden;
 }
-.zoneProfs .prof__figure {
+.contenuProf .carousel .zoneProfs .precedent,
+.contenuProf .carousel .zoneProfs .suivant {
+  height: fit-content;
+  background: white;
+  padding: 8px;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
-.zoneProfs .prof__figure img {
-  padding: 10px;
+.contenuProf .carousel .zoneProfs .precedent {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.contenuProf .carousel .zoneProfs .suivant {
+  grid-column-start: 12;
+  grid-column-end: 13;
+}
+.contenuProf .carousel .zoneProfs .prof__figure {
   cursor: pointer;
+}
+.contenuProf .carousel .zoneProfs .prof__figure img {
   width: 85px;
   height: 90px;
-  overflow: hidden;
+  padding: 10px;
   border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
 }
-.zoneProfs .prof__figure img:hover {
+.contenuProf .carousel .zoneProfs .prof__figure img:hover {
   background-color: #33488e;
 }
-
-.contenuProf {
-  border-radius: 15px;
-  border-top: 2px solid;
-  border-left: 2px solid;
-  margin: 0 50px;
-}
-
-.titreProf {
-  text-align: center;
-  font-size: 5rem;
-}
-
-.description {
+.contenuProf .description {
+  width: auto;
+  height: 40vh;
   background-color: rgba(14, 21, 47, 0.9098039216);
   border-radius: 20px;
-  height: 40vh;
-  width: auto;
-  padding: 15px;
   margin: 15px;
+  padding: 15px;
 }
-.description p {
+.contenuProf .description p {
   width: auto;
   height: auto;
-  padding: 20px;
-  font-size: auto;
   background-color: #33488e;
+  font-size: auto;
+  padding: 20px;
   border-radius: 15px;
   display: flex;
   align-items: flex-start;
@@ -1428,31 +1444,9 @@ footer .iconRS a {
   flex-direction: column;
 }
 
-.carousel {
-  margin: 40px 50px;
-}
-
-.precedent,
-.suivant {
-  display: flex;
-  justify-content: center;
-  background: white;
-  border: none;
-  padding: 8px;
-  border-radius: 15px;
-  cursor: pointer;
-  align-items: center;
-  height: fit-content;
-}
-
-.precedent {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.suivant {
-  grid-column-start: 12;
-  grid-column-end: 13;
+.titreProf {
+  font-size: 5rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 976px) {
@@ -1461,12 +1455,12 @@ footer .iconRS a {
     flex-direction: row;
     flex-wrap: nowrap;
   }
+  .contenuProf .description {
+    width: 60vw;
+  }
   .titreProf {
     writing-mode: vertical-lr;
     white-space: nowrap;
-  }
-  .description {
-    width: 60vw;
   }
 }
 .degrades {
@@ -1903,5 +1897,160 @@ footer .iconRS a {
     left: -10rem;
   }
 }
+.main_accueil {
+  width: 100vw;
+  margin: 0;
+  padding: 0 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_accueil h2 {
+  width: 70vw;
+  font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
+  letter-spacing: 0.05rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5rem 0 0 0;
+}
+.main_accueil > p {
+  width: 70vw;
+  margin: 1rem 0;
+}
+.main_accueil .fp-video {
+  width: 100vw;
+  height: 25vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.main_accueil .fp-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main_accueil .fp-video::before {
+  width: 100vw;
+  height: calc(25vh + 1.5rem);
+  background-color: transparent;
+  content: "";
+  border: 2px solid white;
+  border-radius: 1rem;
+  display: block;
+  position: absolute;
+  transform: translateX(-1.25rem) translateY(-1rem);
+}
+.main_accueil .fp-tim-cest:nth-of-type(1) {
+  width: 75vw;
+  font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
+  letter-spacing: 0.075rem;
+  text-align: right;
+  margin: 3rem 0 0 0;
+}
+.main_accueil .fp-tim-cest:nth-of-type(2) {
+  width: 75vw;
+  font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
+  text-transform: uppercase;
+  text-align: right;
+  letter-spacing: 0.075rem;
+  margin: 0;
+}
+.main_accueil .fp-nom-cohorte {
+  width: 75vw;
+  font-style: italic;
+  text-align: right;
+  margin: 1rem 0 0 0;
+}
+.main_accueil .fp-image-1 {
+  width: 50vw;
+  height: 20vh;
+  overflow: hidden;
+  margin: 3rem 0 1rem 0;
+}
+.main_accueil .fp-image-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.main_accueil .fp-image-1::before {
+  width: 50vw;
+  height: 20vh;
+  background-color: transparent;
+  content: "";
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  display: block;
+  position: absolute;
+  transform: translateX(-0.5rem) translateY(0.25rem);
+}
+.main_accueil .fp-h2-profs {
+  margin-top: 4rem;
+}
+.main_accueil .fp-image-2 {
+  width: 65vw;
+  height: 17vh;
+  overflow: hidden;
+  margin: 1.5rem 0 0 0;
+}
+.main_accueil .fp-image-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.main_accueil .fp-image-2::before {
+  width: 65vw;
+  height: 17vh;
+  background-color: transparent;
+  content: "";
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  display: block;
+  position: absolute;
+  transform: translateX(-0.5rem) translateY(-0.5rem);
+}
+.main_accueil .fp-icones {
+  width: 100vw !important;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  padding: 0 2rem;
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: space-around !important;
+  gap: 2rem !important;
+}
+.main_accueil .fp-icones figure {
+  width: 100% !important;
+  max-width: 30vw !important;
+  height: inherit !important;
+}
+.main_accueil .fp-image-3 {
+  width: 65vw;
+  height: 25vh;
+  overflow: hidden;
+  margin: 1.5rem 0 0 0;
+}
+.main_accueil .fp-image-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.main_accueil .fp-image-3::before {
+  width: 65vw;
+  height: 25vh;
+  background-color: transparent;
+  content: "";
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  display: block;
+  position: absolute;
+  transform: translateX(0.25rem) translateY(-0.5rem);
+}
+.main_accueil .fp-p-admission {
+  text-align: center;
+}
+
 /* --------------------------------------------- layout */
 /* --------------------------------------------- autres */
