@@ -17,6 +17,12 @@
     <div class="bulle_modele_1 bulle_m1_position_2"></div>
     <div class="bulle_modele_2 bulle_m2_position_1"></div>
     <div class="bulle_modele_2 bulle_m2_position_2"></div>
+    <div class="bulle_modele_3 bulle_m3_position_1"></div>
+    <div class="bulle_modele_3 bulle_m3_position_2"></div>
+    <div class="bulle_modele_4 bulle_m4_position_1"></div>
+    <div class="bulle_modele_4 bulle_m4_position_2"></div>
+    
+   
    
 </main>
 
