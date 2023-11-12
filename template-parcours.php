@@ -5,10 +5,10 @@
  */
 ?>
 <?php get_header(); ?>
-
-<main class="contenu_parcours">
+<main>
     <?php get_the_title(); ?>
     <?php the_content(); ?>
+
     <div class="encadre_page"></div>
     <div class="degrades degrade_1"></div>
     <div class="degrades degrade_2"></div>
@@ -24,6 +24,6 @@
     
    
    
-</main>
 
+</main>
 <?php get_footer(); ?>

@@ -1955,6 +1955,7 @@
 
 @media only screen and (min-width:$largeur__bureau) {
 
+
     .contenu_parcours {
         width: 92vw;
         background-color: transparent;
@@ -2047,6 +2048,25 @@
             border-radius: 50%;
             position: absolute;
             z-index: -4;
+
+    .contenu_parcours{
+        
+        padding-top: 6rem;
+        border-left: 2px solid white;
+        border-top: 2px solid white;
+        border-radius: 20px;
+        margin-left: 1rem;
+
+        background: repeating-radial-gradient(
+            farthest-corner at 100% 0%,
+            #0d3a76 0,
+            #051934 50%,
+            #051934 100%
+        );
+        
+        .titrage{
+        color: #9ec9e7;
+
         }
 
         // Styles spécifiques du modèle de bulles de couleur bleu

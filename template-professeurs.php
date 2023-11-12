@@ -15,12 +15,14 @@ get_header();
 
         <!----- Zone carrousel d'images des professeurs ---->
         <div class="carousel">
-            <div class="zoneProfs">
-                <button class="precedent">
-                    < </button>
+            <button class="precedent">
+                < </button>
+                    <div class="zoneProfs">
+
                         <?php
                         query_posts('category_name=professeurs'); // Utilisez le nom de la catégorie "professeurs"
 
+                        // Boucle Wordpress pour afficher les images miniatures des publications disponibles. 
                         if (have_posts()) :
                             while (have_posts()) : the_post(); ?>
                                 <figure class="prof__figure" id="fig_<?php the_id() ?>">
@@ -28,9 +30,8 @@ get_header();
                                 </figure>
                             <?php endwhile; ?>
                         <?php endif; ?>
-
-                        <button class="suivant">></button>
-            </div>
+                    </div>
+                    <button class="suivant">></button>
 
         </div>
 
@@ -38,6 +39,9 @@ get_header();
         <div class="description">
             <?php
             wp_reset_postdata();
+            /**Boucle WordPress qui verifie si des publications sont disponibles (avec have_posts()) 
+            et commence à parcourir chaque publication avec while (have_posts()). À chaque itération de la boucle, 
+            the_post() est appelé pour configurer les données de la publication en cours.*/
             if (have_posts()) :  while (have_posts()) : the_post(); ?>
                     <section class="prof__section" id="des_<?php the_id(); ?>">
                         <!----- images (thumbnails) profs ---->
