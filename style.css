@@ -1064,6 +1064,10 @@ footer .iconRS a {
   align-items: center;
   border-radius: 17px;
 }
+.blockflex__projet .projet__general .carte__categorie:hover img {
+  transform: translateY(20%);
+  transition: transform 0.5s ease-out;
+}
 
 .bulle_1 {
   background-color: #774eba;
