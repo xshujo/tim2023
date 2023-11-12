@@ -1536,7 +1536,7 @@ footer .iconRS a {
   left: 25rem;
 }
 
-main {
+.main_etudiant {
   width: 91vw;
   background-color: transparent;
   margin: 0 auto;
@@ -1546,7 +1546,7 @@ main {
   padding-right: 0.4rem;
   z-index: 30;
 }
-main .encadre_page {
+.main_etudiant .encadre_page {
   width: 110%;
   height: 230rem;
   border: 0.15rem #f7f7f7 solid;
@@ -1556,49 +1556,49 @@ main .encadre_page {
   left: 0.3rem;
   z-index: -1;
 }
-main .degrades {
+.main_etudiant .degrades {
   display: none;
 }
-main .degrade_1 {
+.main_etudiant .degrade_1 {
   display: none;
 }
-main .degrade_2 {
+.main_etudiant .degrade_2 {
   display: none;
 }
-main .degrade_3 {
+.main_etudiant .degrade_3 {
   display: none;
 }
-main .bulle_modele_1 {
+.main_etudiant .bulle_modele_1 {
   display: none;
 }
-main .bulle_m1_position_1 {
+.main_etudiant .bulle_m1_position_1 {
   display: none;
 }
-main .bulle_modele_2 {
+.main_etudiant .bulle_modele_2 {
   display: none;
 }
-main .bulle_m2_position_1 {
+.main_etudiant .bulle_m2_position_1 {
   display: none;
 }
-main .bulle_m2_position_2 {
+.main_etudiant .bulle_m2_position_2 {
   display: none;
 }
-main h1 {
+.main_etudiant h1 {
   text-transform: uppercase;
   margin-bottom: 2rem;
   z-index: 30;
 }
-main p {
+.main_etudiant p {
   margin: 0;
 }
-main .zone_galerie {
+.main_etudiant .zone_galerie {
   display: flex;
   z-index: 10;
 }
-main .zone_galerie img {
+.main_etudiant .zone_galerie img {
   border-radius: 0.4rem;
 }
-main .zone_evenements {
+.main_etudiant .zone_evenements {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1607,7 +1607,7 @@ main .zone_evenements {
   justify-content: space-between;
   z-index: 20;
 }
-main .zone_evenements .article_vie_etudiante::before {
+.main_etudiant .zone_evenements .article_vie_etudiante::before {
   content: "";
   width: 100%;
   height: 14.3rem;
@@ -1617,7 +1617,7 @@ main .zone_evenements .article_vie_etudiante::before {
   position: absolute;
   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
 }
-main .zone_evenements .article_vie_etudiante {
+.main_etudiant .zone_evenements .article_vie_etudiante {
   width: 100%;
   height: 14.3rem;
   margin-bottom: 1.4rem;
@@ -1627,31 +1627,31 @@ main .zone_evenements .article_vie_etudiante {
   justify-content: space-around;
   position: relative;
 }
-main .zone_evenements .article_vie_etudiante img {
+.main_etudiant .zone_evenements .article_vie_etudiante img {
   width: 6.5rem;
   height: auto;
   border-radius: 0.4rem;
   z-index: 20;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements {
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
   width: 54%;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements h4 {
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
   text-transform: uppercase;
   margin: 0;
   font-size: 1.1rem;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
   color: #c7afec;
   font-weight: 500;
   font-size: 1rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
   font-size: 0.85rem;
 }
-main .texte_a_venir {
+.main_etudiant .texte_a_venir {
   width: 25rem;
   height: 8rem;
   display: flex;
@@ -1663,21 +1663,21 @@ main .texte_a_venir {
   bottom: -0.8rem;
   z-index: 20;
 }
-main .texte_a_venir h3 {
+.main_etudiant .texte_a_venir h3 {
   text-transform: uppercase;
   text-align: center;
   margin: 0.3rem;
 }
-main .texte_a_venir .texte_1 {
+.main_etudiant .texte_a_venir .texte_1 {
   color: #c7afec;
   font-size: 1.7rem;
 }
-main .texte_a_venir .texte_2 {
+.main_etudiant .texte_a_venir .texte_2 {
   font-size: 2.7rem;
 }
 
 @media only screen and (min-width: 976px) {
-  main {
+  .main_etudiant {
     width: 92vw;
     background-color: transparent;
     margin: 0 auto;
@@ -1685,7 +1685,7 @@ main .texte_a_venir .texte_2 {
     margin-bottom: 4rem;
     z-index: 30;
   }
-  main .encadre_page {
+  .main_etudiant .encadre_page {
     display: block;
     width: 110%;
     height: 130rem;
@@ -1696,7 +1696,7 @@ main .texte_a_venir .texte_2 {
     left: 1rem;
     z-index: -1;
   }
-  main .degrades {
+  .main_etudiant .degrades {
     display: block;
     filter: blur(7rem);
     width: 70rem;
@@ -1705,19 +1705,19 @@ main .texte_a_venir .texte_2 {
     position: absolute;
     z-index: -6;
   }
-  main .degrade_1 {
+  .main_etudiant .degrade_1 {
     background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
     right: -5rem;
     top: -40rem;
     transform: rotateZ(295deg);
   }
-  main .degrade_2 {
+  .main_etudiant .degrade_2 {
     background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
     left: -25rem;
     top: 30rem;
     transform: rotateZ(35deg);
   }
-  main .degrade_3 {
+  .main_etudiant .degrade_3 {
     width: 40rem;
     height: 70rem;
     background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
@@ -1725,7 +1725,7 @@ main .texte_a_venir .texte_2 {
     top: 70rem;
     transform: rotateZ(295deg);
   }
-  main .bulle_modele_1 {
+  .main_etudiant .bulle_modele_1 {
     display: block;
     background-color: #774eba;
     mix-blend-mode: lighten;
@@ -1735,13 +1735,13 @@ main .texte_a_venir .texte_2 {
     position: absolute;
     z-index: -4;
   }
-  main .bulle_m1_position_1 {
+  .main_etudiant .bulle_m1_position_1 {
     width: 25rem;
     height: 25rem;
     top: 20rem;
     right: -4rem;
   }
-  main .bulle_modele_2 {
+  .main_etudiant .bulle_modele_2 {
     display: block;
     background-color: #33488e;
     mix-blend-mode: lighten;
@@ -1751,34 +1751,34 @@ main .texte_a_venir .texte_2 {
     position: absolute;
     z-index: -4;
   }
-  main .bulle_m2_position_1 {
+  .main_etudiant .bulle_m2_position_1 {
     width: 35rem;
     height: 35rem;
     top: -12rem;
     left: -5rem;
   }
-  main .bulle_m2_position_2 {
+  .main_etudiant .bulle_m2_position_2 {
     width: 14rem;
     height: 14rem;
     top: 1.3rem;
     left: 25rem;
   }
-  main h1 {
+  .main_etudiant h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
     z-index: 30;
   }
-  main p {
+  .main_etudiant p {
     margin: 0;
   }
-  main .zone_galerie {
+  .main_etudiant .zone_galerie {
     display: flex;
     z-index: 10;
   }
-  main .zone_galerie img {
+  .main_etudiant .zone_galerie img {
     border-radius: 0.4rem;
   }
-  main .zone_evenements {
+  .main_etudiant .zone_evenements {
     width: 95%;
     margin: 0 auto;
     display: flex;
@@ -1787,7 +1787,7 @@ main .texte_a_venir .texte_2 {
     justify-content: space-between;
     z-index: 20;
   }
-  main .zone_evenements .article_vie_etudiante::before {
+  .main_etudiant .zone_evenements .article_vie_etudiante::before {
     content: "";
     width: 100%;
     height: 14.3rem;
@@ -1797,7 +1797,7 @@ main .texte_a_venir .texte_2 {
     position: absolute;
     box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
   }
-  main .zone_evenements .article_vie_etudiante {
+  .main_etudiant .zone_evenements .article_vie_etudiante {
     width: 49%;
     height: 14.3rem;
     margin-bottom: 1.4rem;
@@ -1807,31 +1807,31 @@ main .texte_a_venir .texte_2 {
     justify-content: space-evenly;
     position: relative;
   }
-  main .zone_evenements .article_vie_etudiante img {
+  .main_etudiant .zone_evenements .article_vie_etudiante img {
     width: 10rem;
     height: auto;
     border-radius: 0.4rem;
     z-index: 20;
   }
-  main .zone_evenements .article_vie_etudiante .informations_evenements {
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
     width: 58%;
   }
-  main .zone_evenements .article_vie_etudiante .informations_evenements h4 {
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
     text-transform: uppercase;
     margin: 0;
     font-size: 1.4rem;
   }
-  main .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
     color: #c7afec;
     font-weight: 500;
     font-size: 1.3rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
-  main .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
     font-size: 1.1rem;
   }
-  main .texte_a_venir {
+  .main_etudiant .texte_a_venir {
     width: 25rem;
     height: 8rem;
     display: flex;
@@ -1843,16 +1843,16 @@ main .texte_a_venir .texte_2 {
     bottom: -4rem;
     z-index: 20;
   }
-  main .texte_a_venir h3 {
+  .main_etudiant .texte_a_venir h3 {
     text-transform: uppercase;
     text-align: center;
     margin: 0.3rem;
   }
-  main .texte_a_venir .texte_1 {
+  .main_etudiant .texte_a_venir .texte_1 {
     color: #c7afec;
     font-size: 2.7rem;
   }
-  main .texte_a_venir .texte_2 {
+  .main_etudiant .texte_a_venir .texte_2 {
     font-size: 3.7rem;
   }
 }

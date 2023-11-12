@@ -4,7 +4,7 @@
  */
 ?>
 <?php get_header(); ?>
-<main>
+<main class="main_etudiant">
     <div class="encadre_page"></div>
     <div class="degrades degrade_1"></div>
     <div class="degrades degrade_2"></div>

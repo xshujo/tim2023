@@ -1,5 +1,5 @@
 // Version mobile de la page Vie étudiante
-main {
+.main_etudiant {
     width: 91vw;
     background-color: transparent;
     margin: 0 auto;
@@ -231,7 +231,7 @@ main {
 }
 
 @media only screen and (min-width:$largeur__bureau) {
-    main {
+    .main_etudiant {
         width: 92vw;
         background-color: transparent;
         margin: 0 auto;
