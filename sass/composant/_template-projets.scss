@@ -161,6 +161,12 @@
                 white-space: wrap;
                 text-align: center;
                 text-transform: uppercase;
+                
+            }
+
+            .titre__date__projet{
+                height: 8rem;
+                // transition: transform .5s;
             }
 
             // Style des titres des encadrés des projets
@@ -171,6 +177,7 @@
                 font-size: 1.3rem;
                 font-weight: bold;
                 top: 50%;
+                // transition: transform 0.5s;
             }
 
             // Style du texte des dates des encadrés des projets
@@ -180,26 +187,23 @@
                 font-family: Montserrat;
                 font-size: 1.2rem;
                 font-style: italic;
+                // transition: transform 0.5s;
             }
 
             // Style des images des projets
             img {
+                width: 18rem;
+                height: 15rem;
                 display: flex;
                 align-items: center;
                 border-radius: 17px;
-
+                // transition: transform 0.5s ease;
             }
 
 
         }
 
-        .carte__categorie:hover{
-            img{
-                transform: translateY(20%);
-                transition: transform 0.5s ease-out;
-                
-            }
-        }
+        
     }
 
 }
@@ -409,12 +413,13 @@
             .carte__categorie {
                 width: fit-content;
                 background-color: #33488E;
-                padding: 10px 50px 50px 50px;
+                padding: 10px 10px 0px 10px;
                 border-radius: 1rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                gap: 2rem;
 
                 // Style des textes en généraux des encadrés des projets
                 p {
@@ -426,6 +431,10 @@
                     text-transform: uppercase;
                 }
 
+                .titre__date__projet{
+                    transition: transform 0.2s;
+                }
+
                 // Style des titres des encadrés des projets
                 .titre__projet {
                     width: 10rem;
@@ -434,6 +443,8 @@
                     font-size: 1.3rem;
                     font-weight: bold;
                     top: 50%;
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;
                 }
 
                 // Style du texte des dates des encadrés des projets
@@ -447,13 +458,38 @@
 
                 // Style des images des projets
                 img {
+                    position: relative;
+                    width: 22rem;
+                    height: 20rem;
                     display: flex;
                     align-items: center;
                     border-radius: 17px;
-
+                    transition:bottom 2s, height .2s;
+                    object-fit: cover;
+                    background-size: 2px;
                 }
 
 
+            }
+
+            .carte__categorie:hover{
+
+                .titre__date__projet{
+                        transform: translateY(-170%);
+                    }
+                
+                    img{
+                        height: (18rem);
+                        filter: blur(2px) brightness(0.5);
+                        bottom: 2rem;
+                        // animation: ;
+                    }
+            }
+
+            @keyframes animImg {
+                100%{
+                    bottom: 2rem;
+                }
             }
         }
 
@@ -513,6 +549,8 @@
         top: 70rem;
         left: -10rem;
     }
+
+    
 
 
 

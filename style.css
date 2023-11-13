@@ -1044,6 +1044,9 @@ footer .iconRS a {
   text-align: center;
   text-transform: uppercase;
 }
+.blockflex__projet .projet__general .carte__categorie .titre__date__projet {
+  height: 8rem;
+}
 .blockflex__projet .projet__general .carte__categorie .titre__projet {
   width: 10rem;
   color: rgb(255, 255, 255);
@@ -1060,13 +1063,11 @@ footer .iconRS a {
   font-style: italic;
 }
 .blockflex__projet .projet__general .carte__categorie img {
+  width: 18rem;
+  height: 15rem;
   display: flex;
   align-items: center;
   border-radius: 17px;
-}
-.blockflex__projet .projet__general .carte__categorie:hover img {
-  transform: translateY(20%);
-  transition: transform 0.5s ease-out;
 }
 
 .bulle_1 {
@@ -1240,12 +1241,13 @@ footer .iconRS a {
   .blockflex__projet .projet__general .carte__categorie {
     width: fit-content;
     background-color: #33488E;
-    padding: 10px 50px 50px 50px;
+    padding: 10px 10px 0px 10px;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
   }
   .blockflex__projet .projet__general .carte__categorie p {
     display: flex;
@@ -1255,6 +1257,9 @@ footer .iconRS a {
     text-align: center;
     text-transform: uppercase;
   }
+  .blockflex__projet .projet__general .carte__categorie .titre__date__projet {
+    transition: transform 0.2s;
+  }
   .blockflex__projet .projet__general .carte__categorie .titre__projet {
     width: 10rem;
     color: rgb(255, 255, 255);
@@ -1262,6 +1267,8 @@ footer .iconRS a {
     font-size: 1.3rem;
     font-weight: bold;
     top: 50%;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
   }
   .blockflex__projet .projet__general .carte__categorie .date__projet {
     width: 10rem;
@@ -1271,9 +1278,28 @@ footer .iconRS a {
     font-style: italic;
   }
   .blockflex__projet .projet__general .carte__categorie img {
+    position: relative;
+    width: 22rem;
+    height: 20rem;
     display: flex;
     align-items: center;
     border-radius: 17px;
+    transition: bottom 2s, height 0.2s;
+    object-fit: cover;
+    background-size: 2px;
+  }
+  .blockflex__projet .projet__general .carte__categorie:hover .titre__date__projet {
+    transform: translateY(-170%);
+  }
+  .blockflex__projet .projet__general .carte__categorie:hover img {
+    height: 18rem;
+    filter: blur(2px) brightness(0.5);
+    bottom: 2rem;
+  }
+  @keyframes animImg {
+    100% {
+      bottom: 2rem;
+    }
   }
   .bulle_1 {
     background-color: #774eba;
