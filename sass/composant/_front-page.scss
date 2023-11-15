@@ -1,3 +1,5 @@
+// Mode mobile
+// De 320px à 767px
 .main_accueil {
     width: 100vw;
     margin: 0;
@@ -20,6 +22,45 @@
     &>p {
         width: 70vw;
         margin: 2rem 0;
+
+        // Crochets pour certains paragraphes
+        // Top right
+        &::before {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            content: "";
+            border-top: 2px solid $couleurElmtUn;
+            border-right: 2px solid $couleurElmtUn;
+            border-top-right-radius: 0.5rem;
+            position: absolute;
+            right: 0;
+            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+        }
+
+        // Bottom left
+        &::after {
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: transparent;
+            content: "";
+            border-bottom: 2px solid $couleurElmtUn;
+            border-left: 2px solid $couleurElmtUn;
+            border-bottom-left-radius: 0.5rem;
+            position: absolute;
+            left: 0;
+            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
+        }
+
+        &:first-of-type,
+        &:nth-of-type(2),
+        &:last-of-type {
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
     }
 
     // Tous les boutons
@@ -48,7 +89,7 @@
     // Vidéo promotionnelle
     .fp-video {
         width: 100vw;
-        height: 25vh;
+        height: clamp(15rem, 4.2857rem + 53.5714vw, 30rem);
         overflow: hidden;
         margin: 0;
         padding: 0;
@@ -61,7 +102,7 @@
 
         &::before {
             width: 100vw;
-            height: calc(25vh + 1.5rem);
+            height: clamp(16.5rem, 5.7857rem + 53.5714vw, 31.5rem);
             background-color: transparent;
             content: "";
             border: 2px solid white;
@@ -73,35 +114,40 @@
     }
 
     // Étudier en TIM, c'est [...]
+    // Titre
     .fp-tim-cest:nth-of-type(1) {
-        width: 75vw;
+        width: 100%;
         font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
         letter-spacing: 0.075rem;
         text-align: right;
         margin: 3rem 0 0 0;
+        padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
     }
 
     .fp-tim-cest:nth-of-type(2) {
-        width: 75vw;
+        width: 100%;
         font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
-        text-transform: uppercase;
         text-align: right;
         letter-spacing: 0.075rem;
         margin: 0;
+        padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
     }
 
     // - Nom, cohorte
+    // Paragraphe
     .fp-nom-cohorte {
-        width: 75vw;
+        width: 100%;
         font-style: italic;
+        color: $couleurElmtUn;
         text-align: right;
         margin: 1rem 0 0 0;
+        padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
     }
 
     // Image 1
     .fp-image-1 {
         width: 50vw;
-        height: 20vh;
+        height: clamp(8rem, 2.2857rem + 28.5714vw, 16rem);
         overflow: hidden;
         margin: 3rem 0 1rem 0;
 
@@ -114,7 +160,7 @@
 
         &::before {
             width: 50vw;
-            height: 20vh;
+            height: clamp(8rem, 2.2857rem + 28.5714vw, 16rem);
             background-color: transparent;
             content: "";
             border: 2px solid $couleurTitreTextes;
@@ -125,39 +171,8 @@
         }
     }
 
-    // Paragraphe 1
-    .fp-p-1 {
-
-        // Top right
-        &::before {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-top: 2px solid $couleurElmtUn;
-            border-right: 2px solid $couleurElmtUn;
-            border-top-right-radius: 0.5rem;
-            position: absolute;
-            right: 0;
-            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
-        }
-
-        // Bottom left
-        &::after {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-bottom: 2px solid $couleurElmtUn;
-            border-left: 2px solid $couleurElmtUn;
-            border-bottom-left-radius: 0.5rem;
-            position: absolute;
-            left: 0;
-            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
-        }
-    }
-
     // Une équipe de professeurs dévoués
+    // Titre
     .fp-h2-profs {
         margin-top: 4rem;
     }
@@ -165,7 +180,7 @@
     // Image 2
     .fp-image-2 {
         width: 65vw;
-        height: 17vh;
+        height: clamp(7rem, 2rem + 25vw, 14rem);
         overflow: hidden;
         margin: 1.5rem 0 0 0;
 
@@ -178,7 +193,7 @@
 
         &::before {
             width: 65vw;
-            height: 17vh;
+            height: clamp(7rem, 2rem + 25vw, 14rem);
             background-color: transparent;
             content: "";
             border: 2px solid $couleurTitreTextes;
@@ -189,54 +204,24 @@
         }
     }
 
-    // Paragraphe 2
-    .fp-p-profs {
-
-        // Top right
-        &::before {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-top: 2px solid $couleurElmtUn;
-            border-right: 2px solid $couleurElmtUn;
-            border-top-right-radius: 0.5rem;
-            position: absolute;
-            right: 0;
-            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
-        }
-
-        // Bottom left
-        &::after {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-bottom: 2px solid $couleurElmtUn;
-            border-left: 2px solid $couleurElmtUn;
-            border-bottom-left-radius: 0.5rem;
-            position: absolute;
-            left: 0;
-            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
-        }
-    }
-
     // Des cours selon vos intérêts
     // Icônes des cours
     // !important pour écraser les styles par défaut de WordPress...
     .fp-icones {
-        width: 100vw !important;
+        width: 70vw !important;
         box-sizing: border-box;
         margin-top: 2rem;
-        padding: 0 2rem;
-        display: flex !important;
-        flex-flow: row wrap !important;
-        justify-content: space-around !important;
-        gap: 2rem !important;
+        display: grid !important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 2rem !important;
+        grid-row-gap: 2rem !important;
+        justify-items: center;
+        align-items: center;
 
         figure {
-            width: 100% !important;
-            max-width: 30vw !important;
+            width: clamp(5rem, 1.4206rem + 17.8971vw, 10rem) !important;
             height: inherit !important;
         }
     }
@@ -245,7 +230,7 @@
     // Image 3
     .fp-image-3 {
         width: 65vw;
-        height: 25vh;
+        height: clamp(9rem, 2.5714rem + 32.1429vw, 18rem);
         overflow: hidden;
         margin: 1.5rem 0 0 0;
 
@@ -258,7 +243,7 @@
 
         &::before {
             width: 65vw;
-            height: 25vh;
+            height: clamp(9rem, 2.5714rem + 32.1429vw, 18rem);
             background-color: transparent;
             content: "";
             border: 2px solid $couleurTitreTextes;
@@ -269,40 +254,100 @@
         }
     }
 
-    // Paragraphe 3
-    .fp-p-projets {
-
-        // Top right
-        &::before {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-top: 2px solid $couleurElmtUn;
-            border-right: 2px solid $couleurElmtUn;
-            border-top-right-radius: 0.5rem;
-            position: absolute;
-            right: 0;
-            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
-        }
-
-        // Bottom left
-        &::after {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-bottom: 2px solid $couleurElmtUn;
-            border-left: 2px solid $couleurElmtUn;
-            border-bottom-left-radius: 0.5rem;
-            position: absolute;
-            left: 0;
-            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
-        }
-    }
-
     // Soumets une demande d’admission dès maintenant.
+    // Paragraphe
     .fp-p-admission {
         text-align: center;
+    }
+}
+
+// Mode tablette
+// De 768px à 1024px
+@media only screen and (min-width:768px) {
+    .main_accueil {
+
+        // Tous les titres
+        h2 {
+            width: 60vw;
+            font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
+            letter-spacing: 0.1rem;
+            margin: 6rem 0 0 0;
+        }
+
+        // Tous les paragraphes
+        &>p {
+            width: 60vw;
+            margin: 3rem 0;
+
+            // Crochets pour certains paragraphes
+            // Top right
+            &::before {
+                width: 2rem;
+                height: 2rem;
+                border-top: 4px solid $couleurElmtUn;
+                border-right: 4px solid $couleurElmtUn;
+                transform: translateX(calc(-20vw + 2rem)) translateY(-1.5rem);
+            }
+
+            // Bottom left
+            &::after {
+                width: 2rem;
+                height: 2rem;
+                border-bottom: 4px solid $couleurElmtUn;
+                border-left: 4px solid $couleurElmtUn;
+                transform: translateX(calc(20vw - 2rem)) translateY(1rem);
+            }
+
+            &:last-of-type {
+                margin: 1rem 0;
+            }
+        }
+
+        // Étudier en TIM, c'est [...]
+        // Titre
+        .fp-tim-cest:nth-of-type(1) {
+            font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
+            letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
+            margin: 3rem 0 0 0;
+            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
+        }
+
+        .fp-tim-cest:nth-of-type(2) {
+            font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
+            letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
+            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
+        }
+
+        // - Nom, cohorte
+        // Paragraphe
+        .fp-nom-cohorte {
+            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
+            margin: 1rem 0 0 0;
+            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
+        }
+
+        // Des cours selon vos intérêts
+        // Icônes des cours
+        // !important pour écraser les styles par défaut de WordPress...
+        .fp-icones {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 4rem !important;
+            grid-row-gap: 4rem !important;
+
+            figure {
+                width: clamp(6rem, 1.4286rem + 9.5238vw, 10rem) !important;
+                height: inherit !important;
+            }
+        }
+    }
+}
+
+// Mode ordinateur
+@media only screen and (min-width:1024px) {
+    .main_accueil {
+        .fp-icones {
+            max-width: 50vw;
+        }
     }
 }
