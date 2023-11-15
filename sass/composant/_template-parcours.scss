@@ -12,7 +12,7 @@
 
     .encadre_page {
         width: 100%;
-        height: 850vh;
+        height: 800vh;
         border: 0.3rem $couleurTitreTextes solid;
         border-radius: 2rem;
         position: absolute;
@@ -21,9 +21,32 @@
         z-index: -1;
     }
 
+    .scroll-to-top-button {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 0.5rem;
+        z-index: 99;
+        font-size: 24px;
+        border: none;
+        width: 50px;
+        height: 50px;
+        background-color: $couleurElmtDeux;
+        color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      
+      .scroll-to-top-button:hover {
+        background-color: $couleurElmtUn;
+        transform: scale(1.2);
+      }
+
 
     .titrage {
         color: #9ec9e7;
+        
         
     }
 
@@ -47,7 +70,7 @@
 
             // size
             height: auto;
-            /* Adjust height to auto for smaller screens */
+          
             margin: 0 auto;
             // style
             background-color: rgba(30, 45, 76, 0.468);
@@ -59,7 +82,7 @@
 
             // structure
             border-radius: 20px;
-            /* Adjust border-radius for smaller screens */
+            margin-bottom: 5rem;
 
 
             // display
@@ -91,9 +114,7 @@
                     border-radius: 50%;
                     margin: 0.2rem;
                     font-size: 1rem;
-                    
-
-                    
+        
                     
                 }
 
@@ -128,6 +149,8 @@
                     background-color: #8275c4;
                     font-size: 3vw;
                 }
+
+                
 
                 .creation_video {
 
@@ -218,6 +241,7 @@
         // font
 
         // structure
+        margin-bottom: 5rem;
         // grid-template-columns: repeat(6, 1fr);
         // grid-template-rows: repeat(4, 1fr);
         // grid-column-gap: 1rem;
@@ -227,6 +251,7 @@
 
         // display
         display: flexbox;
+        justify-content: space-evenly;
 
 
 
@@ -238,12 +263,13 @@
         .programmation {
             
             list-style-type: none;
-            /* Remove the default list marker */
             font-size: 1rem;
             white-space: nowrap;
             display: flex;
             flex-direction: column;
             margin-left: -3rem;
+            
+            
 
 
             li {
@@ -487,7 +513,7 @@
     .colonne1 {
         // size
         
-        // style
+        // style//
         width: 100%;
         height: auto;
         padding-left: 2rem;
@@ -504,10 +530,12 @@
 
         h4 {
             color: #9ec9e7;
+            padding-left: 1.5rem;
         }
 
         p {
             text-align: left;
+            margin:0 1.5rem;
             font-size: 1rem;
             white-space: wrap;
         }
@@ -533,7 +561,7 @@
         // structure
         border-radius: 50px 50px;
         padding: 1em;
-        margin: 6rem;
+        margin:  1rem 6rem;
 
         // display
 
@@ -568,7 +596,7 @@
         // structure
         border-radius: 50px 50px;
         padding: 1em;
-        margin: 6rem;
+        margin: 1rem 6rem;
 
         // display
 
@@ -602,7 +630,7 @@
         // structure
         border-radius: 50px 50px;
         padding: 1em;
-        margin: 6rem;
+        margin: 1rem 6rem;
 
 
 
@@ -646,7 +674,7 @@
             width: 75%;
             margin: 0 auto;
             display: flex;
-           padding-left: 2rem;
+            padding-left: 2rem;
             padding-top: 5rem;
             padding-bottom: 10rem;
 
@@ -899,6 +927,7 @@
     .futur {
         height: 90vh;
         padding: 0 3.5rem;
+        
 
         .etudes {
             // size
@@ -965,10 +994,10 @@
     }
 
     .bourse {
-        height: 70vh;
+        height: 75vh;
         padding: 0 3.5rem;
         padding-top: 16rem;
-        
+       
        
 
 
@@ -998,6 +1027,17 @@
 
             // position
 
+            .bouton_bourse{
+                    background-color: $couleurElmtDeux;
+                    color: white;
+                    border: none;
+                    
+                    padding: 0.5rem 2rem;
+                    border-radius: 25px;
+                    margin: 1rem;
+                    font-size: 1rem;
+        
+            }
 
 
 
@@ -1202,7 +1242,7 @@
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 1rem;
         grid-row-gap: 1rem;
-        padding-left: 5rem;
+        
 
 
         // display
@@ -1486,12 +1526,12 @@
 
         p {
             text-align: left;
+            margin:1.5rem;
             font-size: 1rem;
             white-space: wrap;
-
-
-
         }
+
+        
 
     }
 
@@ -2164,6 +2204,14 @@
                         border: none;
                         padding: 0.5rem;
                         width: 6rem;
+                        transition: transform 1s;
+                    }
+
+                    button:hover {
+                        background-color: white;
+                        color: black;
+                        transform: scale(120%);
+                        cursor: pointer;
                     }
                 }
 
@@ -2185,7 +2233,7 @@
                     display: flex;
                     flex-direction: column;
                     margin-left: -4rem;
-
+                   
 
                     li {
                         padding: 1rem;
@@ -2194,11 +2242,20 @@
                         background-color: #8275c4;
                     }
 
+                    li:hover {
+                        cursor: pointer;
+                        background-color: white;
+                        color: black;
+                    }
+
+                    
                     .creation_video {
 
                         display: flex;
                         align-items: center;
                     }
+
+                    
 
                     .creation_video::before {
                         content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Calque_1' data-name='Calque 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: none; stroke: %239dc9e9; stroke-miterlimit: 10; stroke-width: 16px; %7D .cls-2 %7B fill: %239ec9e8; %7D .cls-2, .cls-3 %7B isolation: isolate; %7D .cls-3 %7B fill: %23729db7; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-3' d='m384.04,208.62c5.62,19.17-54.22,39.14-133.67,44.61-79.45,5.47-148.41-5.64-154.04-24.8'/%3E%3Ccircle class='cls-1' cx='62.53' cy='172.46' r='51.37'/%3E%3Ccircle class='cls-1' cx='112.49' cy='294.67' r='51.37'/%3E%3Cpath class='cls-2' d='m392.99,89.23l-97.2-51.23c-5.4-2.85-12.07-.78-14.91,4.62l-111.1,210.76c-2.84,5.39-.76,12.07,4.63,14.92l97.19,51.23c5.39,2.84,12.07.76,14.92-4.63l111.09-210.75c2.84-5.39.78-12.07-4.62-14.91Zm-129.34,3.8l21.84-41.43c.59-1.13,2-1.57,3.13-.98l9.92,5.23c1.12.59,1.55,2,.96,3.13l-21.84,41.43c-.59,1.13-2,1.57-3.13.98l-9.92-5.23c-1.13-.59-1.57-2-.96-3.13Zm-48.11,125.23l-21.84,41.44c-.59,1.13-2,1.57-3.13.96l-9.92-5.23c-1.13-.59-1.57-2-.96-3.13l21.84-41.43c.59-1.13,1.99-1.57,3.13-.96l9.91,5.22c1.12.61,1.55,2,.96,3.13Zm27.87-52.89l-21.83,41.44c-.61,1.12-2.01,1.56-3.13.96l-9.92-5.23c-1.13-.59-1.57-2-.98-3.13l21.84-41.43c.6-1.13,2-1.57,3.13-.98l9.92,5.23c1.13.6,1.57,2,.96,3.13Zm3.24-11.09l-9.92-5.23c-1.13-.59-1.57-2-.98-3.13l21.84-41.43c.6-1.13,2-1.57,3.13-.98l9.92,5.23c1.13.59,1.57,2,.98,3.13l-21.84,41.43c-.6,1.13-2.01,1.57-3.13.98Zm57.96,105.84l-21.84,41.44c-.59,1.13-2,1.57-3.13.96l-9.92-5.23c-1.13-.59-1.55-2-.96-3.13l21.84-41.43c.59-1.13,2-1.57,3.13-.96l9.92,5.22c1.13.6,1.57,2,.96,3.13Zm27.89-52.89l-21.84,41.44c-.6,1.13-2.01,1.56-3.13.96l-9.92-5.23c-1.13-.59-1.57-2-.98-3.13l21.84-41.43c.6-1.13,2-1.57,3.13-.96l9.91,5.22c1.13.6,1.57,2,.98,3.13Zm28.2-53.49l-21.84,41.44c-.61,1.12-2,1.55-3.13.96l-9.92-5.23c-1.13-.59-1.57-2-.98-3.13l21.84-41.43c.6-1.13,2-1.57,3.13-.98l9.92,5.23c1.13.6,1.57,2,.98,3.13Zm26.97-51.75l-21.84,41.43c-.59,1.13-2,1.57-3.13.98l-9.92-5.23c-1.12-.61-1.55-2-.96-3.13l21.84-41.44c.59-1.12,2-1.55,3.13-.96l9.92,5.23c1.13.59,1.57,2,.96,3.13Z'/%3E%3Cpath class='cls-3' d='m97.37,231.27c-7.96-18.38,38.92-68.33,104.7-111.56,65.79-43.23,125.57-63.37,133.53-44.99'/%3E%3Ccircle class='cls-2' cx='100.14' cy='227.99' r='13.51'/%3E%3C/svg%3E");
