@@ -2024,12 +2024,16 @@ main .texte_a_venir .texte_2 {
   margin: 0;
   padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
 }
+.main_accueil .fp-citation {
+  text-align: center;
+  margin: 2rem 0;
+}
 .main_accueil .fp-nom-cohorte {
   width: 100%;
   font-style: italic;
   color: #9ec9e7;
   text-align: right;
-  margin: 1rem 0 0 0;
+  margin: 0;
   padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
 }
 .main_accueil .fp-h2-profs {
@@ -2053,6 +2057,10 @@ main .texte_a_venir .texte_2 {
   height: inherit !important;
 }
 .main_accueil .fp-p-admission {
+  font-size: clamp(0.75rem, 0.3929rem + 1.7857vw, 1.25rem);
+  font-weight: 600;
+  color: #c7afec;
+  letter-spacing: 0.075rem;
   text-align: center;
 }
 
@@ -2135,7 +2143,6 @@ main .texte_a_venir .texte_2 {
     padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
   }
   .main_accueil .fp-nom-cohorte {
-    margin: 1rem 0 0 0;
     padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
   }
   .main_accueil .fp-icones {
@@ -2148,10 +2155,141 @@ main .texte_a_venir .texte_2 {
     width: clamp(6rem, 1.4286rem + 9.5238vw, 10rem) !important;
     height: inherit !important;
   }
+  .main_accueil .fp-p-admission {
+    font-size: clamp(1.25rem, 0.6786rem + 1.1905vw, 1.75rem);
+  }
 }
 @media only screen and (min-width: 1024px) {
+  .main_accueil {
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .main_accueil h2 {
+    width: 90vw;
+    font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
+    letter-spacing: 0.1rem;
+    margin: 10rem 0 0 0;
+  }
+  .main_accueil > p {
+    width: 42vw;
+    font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
+    margin: 4rem 0;
+  }
+  .main_accueil > p::before {
+    width: 2rem;
+    height: 2rem;
+    border-top: 4px solid #9ec9e7;
+    border-right: 4px solid #9ec9e7;
+    border-top-right-radius: 0.75rem;
+    transform: translateX(calc(-5.3333333333vw + 2rem)) translateY(-1rem);
+  }
+  .main_accueil > p::after {
+    width: 2rem;
+    height: 2rem;
+    border-bottom: 4px solid #9ec9e7;
+    border-left: 4px solid #9ec9e7;
+    border-bottom-left-radius: 0.75rem;
+    right: 0;
+    left: inherit;
+    transform: translateX(calc(-47.3333333333vw + 2rem)) translateY(1rem);
+  }
+  .main_accueil .fp-p-centre {
+    width: 50vw;
+    font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
+    margin: 4rem 0;
+  }
+  .main_accueil .fp-p-centre::before {
+    width: 2rem;
+    height: 2rem;
+    border-top: 4px solid #9ec9e7;
+    border-right: 4px solid #9ec9e7;
+    border-top-right-radius: 0.75rem;
+    transform: translateX(calc(-25vw + 2rem)) translateY(-1rem);
+  }
+  .main_accueil .fp-p-centre::after {
+    width: 2rem;
+    height: 2rem;
+    border-bottom: 4px solid #9ec9e7;
+    border-left: 4px solid #9ec9e7;
+    border-bottom-left-radius: 0.75rem;
+    left: 0;
+    right: inherit;
+    transform: translateX(calc(25vw - 2rem)) translateY(1rem);
+  }
+  .main_accueil .fp-p-centre:last-of-type {
+    margin: 1rem 0;
+  }
+  .main_accueil .fp-image {
+    width: 42vw;
+    height: clamp(18rem, 3rem + 31.25vw, 23rem);
+    overflow: hidden;
+    margin: 1.5rem 0 0 0;
+  }
+  .main_accueil .fp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .main_accueil .fp-image::before {
+    width: 42vw;
+    height: clamp(18rem, 3rem + 31.25vw, 23rem);
+    border: 6px solid white;
+    border-radius: 1.5rem;
+    transform: translateX(1rem) translateY(1rem);
+  }
+  .main_accueil .wp-block-buttons {
+    margin: 5rem 25vw 0 25vw;
+  }
+  .main_accueil .wp-block-buttons .wp-block-button a {
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+  }
+  .main_accueil .wp-block-buttons:last-of-type {
+    margin-top: 2rem;
+  }
+  .main_accueil .fp-video {
+    height: clamp(30rem, 9rem + 43.75vw, 37rem);
+  }
+  .main_accueil .fp-video::before {
+    height: clamp(33rem, 12rem + 43.75vw, 40rem);
+    border: 8px solid white;
+    border-radius: 2rem;
+    transform: translateX(-2.5rem) translateY(-2rem);
+  }
+  .main_accueil .fp-tim-cest:nth-of-type(1) {
+    width: 80vw;
+    font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
+    letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
+    margin: 8rem 0 0 0;
+    padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
+  }
+  .main_accueil .fp-tim-cest:nth-of-type(2) {
+    width: 80vw;
+    font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
+    letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
+    padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
+  }
+  .main_accueil .fp-nom-cohorte {
+    width: 80vw;
+    margin-bottom: 2rem;
+    padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
+  }
+  .main_accueil .fp-h2-profs {
+    margin-top: 10rem;
+  }
   .main_accueil .fp-icones {
     max-width: 50vw;
+    margin: 0 10vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 4rem !important;
+    grid-row-gap: 4rem !important;
+  }
+  .main_accueil .fp-icones figure {
+    width: clamp(6rem, 1.4286rem + 9.5238vw, 10rem) !important;
+    height: inherit !important;
   }
 }
 /* --------------------------------------------- layout */
