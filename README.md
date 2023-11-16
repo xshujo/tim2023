@@ -1,20 +1,61 @@
 # TIM2023
 
-# TIM2023
-
 Thème WordPress du site TIM de l'équipe DiversiTIM
 
 ## Informations
 
 - Theme URI: https://github.com/Diversitim/tim2023
 - Lien du site: https://cidweb38.sg-host.com/
-- Description: Thème élaboré dans le cadre du cours 5W5 destiné à la conception d'un site vitrine pour le programme Techniques d'intégration multimédia du collège de Maisonneuve.
+- Description: Thème élaboré dans le cadre du cours 5W5 destiné au site vitrine du programme Techniques d'intégration multimédia du collège de Maisonneuve.
 
+## Objecif du sprint 0 (complété)
 
-## Réalisations des membres de l'équipe
+Analyser la demande de service.
 
-- Taïsha: Création de textes et de contenu pour le site web, code CSS de la page d'accueil
-- Stéphanie: Intégration et programmation (PHP et CSS) du contenu de la page Professeurs, programmation de la base de données qui génère les témoignages, programmation du plug-in du carroussel
-- Gregory: Réalisation des maquettes finales sur Adobe XD, intégration et programmation (PHP et CSS) du contenu de la page Projets, création du document de conclusion des tests utilisateurs
-- Kajanthan: Intégration du contenu de la page Parcours, code des styles de l'entête et du pied de page, création de textes
-- Marie-Ève: Réalisation des maquettes finales sur Adobe XD, intégration et programmation (PHP et CSS) du contenu de la page Vie étudiante, création du document de conclusion des tests utilisateurs
+### Réalisations du sprint 0
+
+- Création d'un rapport d'analyse
+- Création du backlog
+- Distribution des rôles
+- Création d'un croquis de design
+- Début de la création des maquettes
+
+## Objectif du sprint 1 (complété)
+
+Concevoir l'identité visuelle de notre thème WordPress.
+
+### Réalisations du sprint 1
+
+- Avancement des maquettes
+- Création d'un prototype HTML/CSS
+- Début de l'intégration sur WordPress
+
+## Objectif du sprint 2 (complété)
+
+Finaliser les maquettes suite aux tests utilisateur et continuer l'intégration sur WordPress.
+
+### Réalisations du sprint 2
+
+- Finalisation des maquettes
+- Avancement de l'intégration sur WordPress (structure)
+- Création du contenu du site
+- Tests utilisateurs
+- Début de la création des extensions
+
+## Objectif du sprint 3 (en cours)
+
+Créer les extensions et avanacer l'intégration du thème sur WordPress pour les tests d'utilisabilités.
+
+### Réalisations du sprint 3
+
+- Avancement de l'intégration (adaptabilité)
+- Avancement de la création des extensions
+- 
+
+## Objectif du sprint 4 (à venir)
+
+Terminer la création des extensions et l'intégration du thème sur WordPress.
+
+### Réalisations du sprint 4
+
+- 
