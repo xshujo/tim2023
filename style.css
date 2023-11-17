@@ -1945,7 +1945,7 @@ main .texte_a_venir .texte_2 {
 }
 .main_accueil .fp-image {
   width: 65vw;
-  height: clamp(9rem, 2.5714rem + 32.1429vw, 18rem);
+  height: 40vw;
   overflow: hidden;
   margin: 1.5rem 0 0 0;
 }
@@ -1957,7 +1957,7 @@ main .texte_a_venir .texte_2 {
 }
 .main_accueil .fp-image::before {
   width: 65vw;
-  height: clamp(9rem, 2.5714rem + 32.1429vw, 18rem);
+  height: 40vw;
   background-color: transparent;
   content: "";
   border: 2px solid #f7f7f7;
@@ -2097,7 +2097,7 @@ main .texte_a_venir .texte_2 {
   }
   .main_accueil .fp-image {
     width: 55vw;
-    height: clamp(18rem, 3rem + 31.25vw, 23rem);
+    height: 35vw;
     overflow: hidden;
     margin: 1.5rem 0 0 0;
   }
@@ -2109,7 +2109,7 @@ main .texte_a_venir .texte_2 {
   }
   .main_accueil .fp-image::before {
     width: 55vw;
-    height: clamp(18rem, 3rem + 31.25vw, 23rem);
+    height: 35vw;
     border: 4px solid white;
     border-radius: 1rem;
     transform: translateX(0.5rem) translateY(0.5rem);
@@ -2221,7 +2221,7 @@ main .texte_a_venir .texte_2 {
   }
   .main_accueil .fp-image {
     width: 42vw;
-    height: clamp(18rem, 3rem + 31.25vw, 23rem);
+    height: 26vw;
     overflow: hidden;
     margin: 1.5rem 0 0 0;
   }
@@ -2233,7 +2233,7 @@ main .texte_a_venir .texte_2 {
   }
   .main_accueil .fp-image::before {
     width: 42vw;
-    height: clamp(18rem, 3rem + 31.25vw, 23rem);
+    height: 26vw;
     border: 6px solid white;
     border-radius: 1.5rem;
     transform: translateX(1rem) translateY(1rem);
