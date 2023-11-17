@@ -481,11 +481,11 @@ body {
     background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 50%, #051934 100%);
   }
   main .contenu1,
-main .contenu2,
-main .contenu3,
-main .contenu4,
-main .contenu5,
-main .contenu6 {
+  main .contenu2,
+  main .contenu3,
+  main .contenu4,
+  main .contenu5,
+  main .contenu6 {
     background-clip: content-box;
   }
   main .contenu {
