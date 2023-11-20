@@ -1240,6 +1240,7 @@ footer .iconRS a {
   }
   .blockflex__projet .projet__general .carte__categorie {
     width: fit-content;
+    height: inherit;
     background-color: #33488E;
     padding: 10px 10px 0px 10px;
     border-radius: 1rem;
@@ -1252,7 +1253,6 @@ footer .iconRS a {
   .blockflex__projet .projet__general .carte__categorie p {
     display: flex;
     justify-content: center;
-    color: blue;
     white-space: wrap;
     text-align: center;
     text-transform: uppercase;
@@ -1284,22 +1284,42 @@ footer .iconRS a {
     display: flex;
     align-items: center;
     border-radius: 17px;
-    transition: bottom 2s, height 0.2s;
+    transition: height 0.2s;
     object-fit: cover;
     background-size: 2px;
   }
+  .blockflex__projet .projet__general .carte__categorie .desc__projet {
+    width: 22rem;
+    display: none;
+    position: absolute;
+    padding: 0.7rem;
+    top: 22rem;
+    color: white;
+  }
+  .blockflex__projet .projet__general .carte__categorie .desc__projet .credits__projet {
+    color: #c7afec;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    font-family: Montserrat;
+    transition: transform 0.2s;
+  }
+  .blockflex__projet .projet__general .carte__categorie .desc__projet .texte__desc__projet {
+    color: white;
+    text-align: left;
+    text-transform: initial;
+    font-family: Montserrat;
+    transition: transform 2s;
+  }
   .blockflex__projet .projet__general .carte__categorie:hover .titre__date__projet {
-    transform: translateY(-170%);
+    transform: translateY(-160%);
   }
   .blockflex__projet .projet__general .carte__categorie:hover img {
     height: 18rem;
     filter: blur(2px) brightness(0.5);
-    bottom: 2rem;
   }
-  @keyframes animImg {
-    100% {
-      bottom: 2rem;
-    }
+  .blockflex__projet .projet__general .carte__categorie:hover .desc__projet {
+    display: block;
   }
   .bulle_1 {
     background-color: #774eba;
