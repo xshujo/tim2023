@@ -20,20 +20,17 @@
 
 <body>
     <header>
-        <section class="site__header__logo">
-            <?php the_custom_logo() ?>
-            <div class="menu-burger">
+        <?php the_custom_logo() ?>
+        <div class="menu-burger">
+            <input type="checkbox" id="burger-checkbox">
+            <label for="burger-checkbox">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
-            </div>
-            <div class="menu-site">
-                <?php wp_nav_menu(array(
-                    "menu" => "entete",
-                    "container" => "nav"
-                )) ?>
-
-            </div>
-        </section>
-
+            </label>
+            <?php wp_nav_menu(array(
+                "menu" => "entete",
+                "container" => "nav"
+            )) ?>
+        </div>
     </header>

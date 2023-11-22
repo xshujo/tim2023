@@ -374,7 +374,89 @@ body {
 }
 
 /* --------------------------------------------- composant */
-@media only screen and (min-width: 976px) {
+header {
+  width: 100vw;
+  height: 10vw;
+  background-color: #051934;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+header .custom-logo-link .custom-logo {
+  width: inherit;
+  height: 12vw;
+}
+header .menu-burger label {
+  width: 7vw;
+  height: 7vw;
+  padding: 0.75vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .menu-burger label .bar {
+  width: 7vw;
+  height: 1vw;
+  background-color: #ffffff;
+  border-radius: 0.5vw;
+}
+header .menu-burger .menu-entete-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 10vw;
+  left: 0;
+}
+header .menu-burger .menu-entete-container #menu-entete {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  list-style: none;
+  margin: 0;
+  border-bottom-left-radius: 7vw;
+  border-bottom-right-radius: 7vw;
+  padding: 4vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5vw;
+  position: fixed;
+  top: 10vw;
+  left: 0;
+}
+header .menu-burger .menu-entete-container #menu-entete li {
+  width: 90%;
+  background-color: rgba(5, 25, 52, 0.6);
+  font-family: "Montserrat", sans-serif;
+  font-size: 4vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 10vw;
+  padding: 2vw 3vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .menu-burger .menu-entete-container #menu-entete li::before {
+  content: "•";
+  font-size: 6vw;
+  margin-right: 3vw;
+}
+header .menu-burger .menu-entete-container #menu-entete li a {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  padding-top: 1vw;
+  display: block;
+}
+
+@media only screen and (min-width: 1024px) {
   header {
     width: 100vw;
     height: 10vh;
@@ -481,11 +563,11 @@ body {
     background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 50%, #051934 100%);
   }
   main .contenu1,
-main .contenu2,
-main .contenu3,
-main .contenu4,
-main .contenu5,
-main .contenu6 {
+  main .contenu2,
+  main .contenu3,
+  main .contenu4,
+  main .contenu5,
+  main .contenu6 {
     background-clip: content-box;
   }
   main .contenu {
