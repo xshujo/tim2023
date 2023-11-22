@@ -43,7 +43,94 @@
                 behavior: 'smooth', // Smooth scrolling animation
             });
         });
+
+      function toggleItem1() {
+      // Get all list items
+      var listItems = document.querySelectorAll(".liste_cours");
+      var list1 = document.getElementById("list1");
+      var list2 = document.getElementById("list2");
+      var list3 = document.getElementById("list3");
+      var list4 = document.getElementById("list4");
+
+      // Toggle the display property for each list item
+      
+        if (list1.style.display = 'none') {
+          list1.style.display = 'flex'; // or 'list-item'
+          list2.style.display = 'none';
+          list3.style.display = 'none';
+          list4.style.display = 'none';
+
+        } 
+
+        
+      
+    }
+
+    function toggleItem2() {
+      // Get all list items
+      var listItems = document.querySelectorAll(".liste_cours");
+      var list1 = document.getElementById("list1");
+      var list2 = document.getElementById("list2");
+      var list3 = document.getElementById("list3");
+      var list4 = document.getElementById("list4");
+
+      // Toggle the display property for each list item
+      listItems.forEach(function(item) {
+       if (list2.style.display = 'none') {
+          item.style.display = 'none';
+          list2.style.display = 'flex';
+          list3.style.display = 'none';
+          list4.style.display = 'none';
+        }
+      });
+    }
+
+    function toggleItem3() {
+      // Get all list items
+      var listItems = document.querySelectorAll(".liste_cours");
+      var list1 = document.getElementById("list1");
+      var list2 = document.getElementById("list2");
+      var list3 = document.getElementById("list3");
+      var list4 = document.getElementById("list4");
+
+      // Toggle the display property for each list item
+      listItems.forEach(function(item) {
+      
+        if (list3.style.display = 'none') {
+          list1.style.display = 'none'; // or 'list-item'
+          list3.style.display = 'flex'; // or 'list-item'
+          list2.style.display = 'none';
+          list4.style.display = 'none';
+
+        } 
+      });
+    }
+
+    function toggleItem4() {
+      // Get all list items
+      var listItems = document.querySelectorAll(".liste_cours");
+      var list1 = document.getElementById("list1");
+      var list2 = document.getElementById("list2");
+      var list3 = document.getElementById("list3");
+      var list4 = document.getElementById("list4");
+
+      // Toggle the display property for each list item
+      listItems.forEach(function(item) {
+      
+        if (list4.style.display = 'none') {
+          list1.style.display = 'none'; // or 'list-item'
+          list2.style.display = 'none';
+          list3.style.display = 'none';
+          list4.style.display = 'flex';
+
+        } 
+      });
+    }
+
+
     </script>
+
+
 
 </main>
 
