@@ -376,8 +376,9 @@ body {
 /* --------------------------------------------- composant */
 header {
   width: 100vw;
-  height: 10vw;
+  height: 12vw;
   background-color: #051934;
+  padding: 0 5vw;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -387,29 +388,51 @@ header {
   left: 0;
   z-index: 10;
 }
+header .custom-logo-link {
+  height: 10vw;
+}
 header .custom-logo-link .custom-logo {
   width: inherit;
-  height: 12vw;
+  height: 10vw;
+}
+header .menu-burger input {
+  display: none;
+}
+header .menu-burger input:checked ~ .menu-entete-container {
+  display: flex;
+}
+header .menu-burger input:checked ~ label .bar:first-child {
+  transform: rotate(45deg) translateX(50%);
+}
+header .menu-burger input:checked ~ label .bar:nth-child(2) {
+  opacity: 0;
+}
+header .menu-burger input:checked ~ label .bar:last-child {
+  transform: rotate(-45deg) translateX(50%);
 }
 header .menu-burger label {
   width: 7vw;
-  height: 7vw;
-  padding: 0.75vw 0;
+  height: 6vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 header .menu-burger label .bar {
   width: 7vw;
   height: 1vw;
   background-color: #ffffff;
+  margin: 0 auto;
   border-radius: 0.5vw;
 }
 header .menu-burger .menu-entete-container {
   width: 100vw;
-  height: 100vh;
+  height: inherit;
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
   position: fixed;
-  top: 10vw;
+  top: 12vw;
   left: 0;
 }
 header .menu-burger .menu-entete-container #menu-entete {
@@ -425,9 +448,6 @@ header .menu-burger .menu-entete-container #menu-entete {
   justify-content: center;
   align-items: center;
   gap: 2.5vw;
-  position: fixed;
-  top: 10vw;
-  left: 0;
 }
 header .menu-burger .menu-entete-container #menu-entete li {
   width: 90%;
@@ -437,7 +457,7 @@ header .menu-burger .menu-entete-container #menu-entete li {
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 10vw;
-  padding: 2vw 3vw;
+  padding: 0 3vw;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -447,12 +467,13 @@ header .menu-burger .menu-entete-container #menu-entete li::before {
   content: "•";
   font-size: 6vw;
   margin-right: 3vw;
+  padding-bottom: 2vw;
 }
 header .menu-burger .menu-entete-container #menu-entete li a {
   all: unset;
   width: 100%;
-  height: 100%;
-  padding-top: 1vw;
+  height: 6vw;
+  padding: 3vw 0 2vw 0;
   display: block;
 }
 
