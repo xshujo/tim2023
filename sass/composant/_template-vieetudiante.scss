@@ -9,7 +9,7 @@
     padding-right: 0.4rem;
     z-index: 30;
 
-    // Styles du grand encadré sur la page
+    // Styles du grand encadré sur la page Vie étudiante
     .encadre_page {
         width: 110%;
         height: 230rem;
@@ -182,19 +182,19 @@
                 h4 {
                     text-transform: uppercase;
                     margin: 0;
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                 }
 
                 .date_evenement {
                     color: $couleurElmtDeux;
                     font-weight: 500;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                     padding-top: 0.4rem;
                     padding-bottom: 0.4rem;
                 }
 
                 .description_evenement {
-                    font-size:0.85rem;
+                    font-size:0.75rem;
                 }
             }
         }
@@ -477,11 +477,11 @@
         .encadre_page {
             display: block;
             width: 110%;
-            height: 130rem;
+            height: 121rem;
             border: 0.3rem $couleurTitreTextes solid;
             border-radius: 2rem;
             position: absolute;
-            top: 8.2rem;
+            top: 6rem;
             left: 1rem;
             z-index: -1;
         }

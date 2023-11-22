@@ -3073,17 +3073,17 @@ footer .iconRS a {
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
   text-transform: uppercase;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
   color: #c7afec;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 .main_etudiant .texte_a_venir {
   width: 25rem;
@@ -3266,11 +3266,11 @@ footer .iconRS a {
   .main_etudiant .encadre_page {
     display: block;
     width: 110%;
-    height: 130rem;
+    height: 121rem;
     border: 0.3rem #f7f7f7 solid;
     border-radius: 2rem;
     position: absolute;
-    top: 8.2rem;
+    top: 6rem;
     left: 1rem;
     z-index: -1;
   }
