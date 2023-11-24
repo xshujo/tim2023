@@ -161,10 +161,10 @@
                 white-space: wrap;
                 text-align: center;
                 text-transform: uppercase;
-                
+
             }
 
-            .titre__date__projet{
+            .titre__date__projet {
                 height: 8rem;
                 // transition: transform .5s;
             }
@@ -203,7 +203,7 @@
 
         }
 
-        
+
     }
 
 }
@@ -431,7 +431,7 @@
                     text-transform: uppercase;
                 }
 
-                .titre__date__projet{
+                .titre__date__projet {
                     transition: transform 0.2s;
                 }
 
@@ -464,7 +464,7 @@
                     display: flex;
                     align-items: center;
                     border-radius: 17px;
-                    transition:bottom 2s, height .2s;
+                    transition: height .2s;
                     object-fit: cover;
                     background-size: 2px;
                 }
@@ -472,25 +472,20 @@
 
             }
 
-            .carte__categorie:hover{
+            .carte__categorie:hover {
 
-                .titre__date__projet{
-                        transform: translateY(-170%);
-                    }
-                
-                    img{
-                        height: (18rem);
-                        filter: blur(2px) brightness(0.5);
-                        bottom: 2rem;
-                        // animation: ;
-                    }
-            }
+                .titre__date__projet {
+                    transform: translateY(-160%);
+                }
 
-            @keyframes animImg {
-                100%{
-                    bottom: 2rem;
+                img {
+                    height: (18rem);
+                    filter: blur(2px) brightness(0.5);
+                    // animation: ;
                 }
             }
+
+
         }
 
     }
@@ -550,7 +545,7 @@
         left: -10rem;
     }
 
-    
+
 
 
 

@@ -1284,22 +1284,16 @@ footer .iconRS a {
     display: flex;
     align-items: center;
     border-radius: 17px;
-    transition: bottom 2s, height 0.2s;
+    transition: height 0.2s;
     object-fit: cover;
     background-size: 2px;
   }
   .blockflex__projet .projet__general .carte__categorie:hover .titre__date__projet {
-    transform: translateY(-170%);
+    transform: translateY(-160%);
   }
   .blockflex__projet .projet__general .carte__categorie:hover img {
     height: 18rem;
     filter: blur(2px) brightness(0.5);
-    bottom: 2rem;
-  }
-  @keyframes animImg {
-    100% {
-      bottom: 2rem;
-    }
   }
   .bulle_1 {
     background-color: #774eba;
