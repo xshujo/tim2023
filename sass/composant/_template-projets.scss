@@ -1,125 +1,391 @@
-@media screen and (min-width:$largeur__bureau){
+// Style de l'ensemble des catégories
+.blockflex__projet {
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-bottom: 7.5rem;
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    // Style de l'ensemble des catégories
-    .blockflex__projet{
-            max-width: 70vw;
-            margin: 0 auto;
-            margin-bottom: 7.5rem;
-            margin-top: 4.5rem;
+    // Titre de chaque catégorie
+    h1 {
+        color: $couleurElmtUn;
+    }
+
+    // Ajout de l'icône jeux
+    .jeux:before {
+        content: url(medias/SVG/manette.svg);
+        position: absolute;
+        width: 3rem;
+        margin-left: -4rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    // Style du titre jeux
+    .jeux {
+        position: relative;
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+
+    // Ajout de l'icône vidéo
+    .video::before {
+        content: url(medias/SVG/video.svg);
+        position: absolute;
+        width: 3rem;
+        margin-left: -4rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    // Style du titre vidéo
+    .video {
+        position: relative;
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+
+    // Ajout de l'icône 3D
+    .troisd::before {
+        content: url(medias/SVG/3d.svg);
+        position: absolute;
+        width: 3rem;
+        margin-left: -4rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    // Style du titre 3D
+    .troisd {
+        position: relative;
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+
+    // Ajout de l'icône Web
+    .web:before {
+        content: url(medias/SVG/prog.svg);
+        position: absolute;
+        width: 3rem;
+        margin-left: -4rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    // Style du titre web
+    .web {
+        position: relative;
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+
+    // Ajout de l'icône Design
+    .design::before {
+        content: url(medias/SVG/illust.svg);
+        position: absolute;
+        width: 3rem;
+        margin-left: -4rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    // Style du titre design
+    .design {
+        position: relative;
+        margin-right: 2rem;
+        margin-left: 4rem;
+    }
+
+    // Rectangle qui se place derrière chaque catégories
+    .projet__general::before {
+        content: "";
+        width: 70vw;
+        height: inherit;
+        background-color: $couleurElmtDeux;
+        backdrop-filter: saturate(130%) blur(2rem);
+        mix-blend-mode: soft-light;
+        border-radius: 1rem;
+        position: absolute;
+        box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    // Style général des catégories
+    .projet__general {
+        width: calc(70vw - 1.5rem);
+        height: inherit;
+        box-sizing: border-box;
+        object-fit: cover;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 4rem;
+        padding: 1.5rem;
+        border-radius: 2rem;
+
+
+        // Style des encadrés des projets
+        .carte__categorie {
+            width: fit-content;
+            background-color: #33488E;
+            padding: 10px 50px 50px 50px;
+            border-radius: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
-            // Titre de chaque catégorie
-            h1{
-                color: $couleurElmtUn;
+            // Style des textes en généraux des encadrés des projets
+            p {
+                display: flex;
+                justify-content: center;
+                color: blue;
+                white-space: wrap;
+                text-align: center;
+                text-transform: uppercase;
+
             }
 
-            // Ajout de l'icône jeux
-            .jeux:before{
-                content: url(medias/SVG/manette.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
+            .titre__date__projet {
+                height: 8rem;
+                // transition: transform .5s;
             }
 
-            // Style du titre jeux
-            .jeux{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
+            // Style des titres des encadrés des projets
+            .titre__projet {
+                width: 10rem;
+                color: rgb(255, 255, 255);
+                font-family: Montserrat;
+                font-size: 1.3rem;
+                font-weight: bold;
+                top: 50%;
+                // transition: transform 0.5s;
             }
 
-            // Ajout de l'icône vidéo
-            .video::before{
-                content: url(medias/SVG/video.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
+            // Style du texte des dates des encadrés des projets
+            .date__projet {
+                width: 10rem;
+                color: $couleurElmtDeux;
+                font-family: Montserrat;
+                font-size: 1.2rem;
+                font-style: italic;
+                // transition: transform 0.5s;
             }
 
-            // Style du titre vidéo
-            .video{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
+            // Style des images des projets
+            img {
+                width: 18rem;
+                height: 15rem;
+                display: flex;
+                align-items: center;
+                border-radius: 17px;
+                // transition: transform 0.5s ease;
             }
 
-            // Ajout de l'icône 3D
-            .troisd::before{
-                content: url(medias/SVG/3d.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
 
-            // Style du titre 3D
-            .troisd{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
-            }
+        }
 
-            // Ajout de l'icône Web
-            .web:before{
-                content: url(medias/SVG/prog.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
 
-            // Style du titre web
-            .web{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
-            }
+    }
 
-            // Ajout de l'icône Design
-            .design::before{
-                content: url(medias/SVG/illust.svg);
-                position: absolute;
-                width: 3rem;
-                margin-left: -4rem;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-            }
+}
 
-            // Style du titre design
-            .design{
-                position: relative;
-                margin-right: 2rem;
-                margin-left: 4rem;
-            }
+// Style général des bulles de couleur mauve
+.bulle_1 {
+    background-color: $degradeFondSiteUn;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+    opacity: 75%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+}
 
-            // Rectangle qui se place derrière chaque catégories
-            .projet__general::before {
+// Style spécifique des bulles de couleur mauve
+.bulle_1_position {
+    width: 25rem;
+    height: 25rem;
+    top: 20rem;
+}
+
+.bulle_1_1 {
+    background-color: $degradeFondSiteUn;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+    opacity: 75%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+}
+
+
+.bulle_1_1_position {
+    width: 25rem;
+    height: 25rem;
+    top: 10rem;
+    right: -1rem;
+}
+
+// Style général des bulles de couleur bleu
+.bulle_2 {
+    background-color: $degradeFondSiteDeux;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+    opacity: 75%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+}
+
+// Style spécifique des bulles de couleur bleu
+.bulle_2_position {
+    width: 25rem;
+    height: 25rem;
+    top: 70rem;
+    left: -10rem;
+}
+
+@media screen and (min-width:$largeur__bureau) {
+
+    // Style de l'ensemble des catégories
+    .blockflex__projet {
+        max-width: 70vw;
+        margin: 0 auto;
+        margin-bottom: 7.5rem;
+        margin-top: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        // Titre de chaque catégorie
+        h1 {
+            color: $couleurElmtUn;
+        }
+
+        // Ajout de l'icône jeux
+        .jeux:before {
+            content: url(medias/SVG/manette.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        // Style du titre jeux
+        .jeux {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
+
+        // Ajout de l'icône vidéo
+        .video::before {
+            content: url(medias/SVG/video.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        // Style du titre vidéo
+        .video {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
+
+        // Ajout de l'icône 3D
+        .troisd::before {
+            content: url(medias/SVG/3d.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        // Style du titre 3D
+        .troisd {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
+
+        // Ajout de l'icône Web
+        .web:before {
+            content: url(medias/SVG/prog.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        // Style du titre web
+        .web {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
+
+        // Ajout de l'icône Design
+        .design::before {
+            content: url(medias/SVG/illust.svg);
+            position: absolute;
+            width: 3rem;
+            margin-left: -4rem;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        // Style du titre design
+        .design {
+            position: relative;
+            margin-right: 2rem;
+            margin-left: 4rem;
+        }
+
+        // Rectangle qui se place derrière chaque catégories
+        .projet__general::before {
             content: "";
             width: 70vw;
+            height: inherit;
             background-color: $couleurElmtDeux;
             backdrop-filter: saturate(130%) blur(2rem);
             mix-blend-mode: soft-light;
             border-radius: 1rem;
             position: absolute;
-            box-shadow: 1rem 1rem 3rem rgba(5,25,52, 0.4);
+            box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
             top: 0;
             left: 0;
             right: 0;
@@ -127,45 +393,62 @@
             z-index: -1;
         }
 
-            // Style général des catégories
-            .projet__general{
+        // Style général des catégories
+        .projet__general {
+            width: calc(70vw - 1.5rem);
+            height: inherit;
+            box-sizing: border-box;
+            object-fit: cover;
+            overflow: hidden;
             position: relative;
             display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
             gap: 4rem;
-            padding: 23px;
-            border-radius: 47px;
+            padding: 1.5rem;
+            border-radius: 2rem;
 
-            
+
             // Style des encadrés des projets
-            .carte__categorie{
+            .carte__categorie {
                 width: fit-content;
+                height: inherit;
                 background-color: #33488E;
-                padding: 10px 50px 50px 50px;
-                border-radius: 17px;
+                padding: 10px 10px 0px 10px;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
 
                 // Style des textes en généraux des encadrés des projets
-                p{
+                p {
                     display: flex;
                     justify-content: center;
-                    color: blue;
                     white-space: wrap;
                     text-align: center;
                     text-transform: uppercase;
                 }
 
+                .titre__date__projet {
+                    transition: transform 0.2s;
+                }
+
                 // Style des titres des encadrés des projets
-                .titre__projet{
+                .titre__projet {
                     width: 10rem;
                     color: rgb(255, 255, 255);
                     font-family: Montserrat;
                     font-size: 1.3rem;
                     font-weight: bold;
                     top: 50%;
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;
                 }
 
                 // Style du texte des dates des encadrés des projets
-                .date__projet{
+                .date__projet {
                     width: 10rem;
                     color: $couleurElmtDeux;
                     font-family: Montserrat;
@@ -174,21 +457,74 @@
                 }
 
                 // Style des images des projets
-                img{
+                img {
+                    position: relative;
+                    width: 22rem;
+                    height: 20rem;
                     display: flex;
                     align-items: center;
                     border-radius: 17px;
-                    
+                    transition: height .2s;
+                    object-fit: cover;
+                    background-size: 2px;
                 }
 
-                
+                .desc__projet {
+                    width: 22rem;
+                    display: none;
+                    position: absolute;
+                    padding: 0.7rem;
+                    top: 22rem;
+                    color: white;
+
+
+
+                    .credits__projet {
+                        color: $couleurElmtDeux;
+                        margin-bottom: 1.2rem;
+                        font-weight: bold;
+                        text-align: left;
+                        font-family: Montserrat;
+                        transition: transform 0.2s;
+                    }
+
+                    .texte__desc__projet {
+                        color: white;
+                        text-align: left;
+                        text-transform: initial;
+                        font-family: Montserrat;
+                        transition: transform 2s;
+                    }
+                }
+
+
             }
+
+            .carte__categorie:hover {
+
+                .titre__date__projet {
+                    transform: translateY(-160%);
+                }
+
+                img {
+                    height: (18rem);
+                    filter: blur(2px) brightness(0.5);
+                    // animation: ;
+                }
+
+                .desc__projet {
+                    display: block;
+
+
+                }
+            }
+
         }
-        
-    }    
+
+    }
 
     // Style général des bulles de couleur mauve
-    .bulle_1{
+    .bulle_1 {
         background-color: $degradeFondSiteUn;
         mix-blend-mode: lighten;
         backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
@@ -199,13 +535,13 @@
     }
 
     // Style spécifique des bulles de couleur mauve
-    .bulle_1_position{
+    .bulle_1_position {
         width: 25rem;
         height: 25rem;
         top: 20rem;
     }
 
-    .bulle_1_1{
+    .bulle_1_1 {
         background-color: $degradeFondSiteUn;
         mix-blend-mode: lighten;
         backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
@@ -215,16 +551,16 @@
         z-index: -4;
     }
 
-    
-    .bulle_1_1_position{
+
+    .bulle_1_1_position {
         width: 25rem;
         height: 25rem;
         top: 10rem;
         right: -1rem;
     }
-    
+
     // Style général des bulles de couleur bleu
-    .bulle_2{
+    .bulle_2 {
         background-color: $degradeFondSiteDeux;
         mix-blend-mode: lighten;
         backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
@@ -235,13 +571,15 @@
     }
 
     // Style spécifique des bulles de couleur bleu
-    .bulle_2_position{
+    .bulle_2_position {
         width: 25rem;
         height: 25rem;
         top: 70rem;
         left: -10rem;
     }
 
-    
-    
+
+
+
+
 }
