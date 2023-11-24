@@ -26,11 +26,11 @@ header {
       display: none;
     }
 
-    input:checked~.menu-entete-container {
+    input:checked ~ .menu-entete-container {
       display: flex;
     }
 
-    input:checked~label {
+    input:checked ~ label {
       .bar:first-child {
         transform: rotate(45deg) translateX(50%);
       }
@@ -91,7 +91,7 @@ header {
         li {
           width: 90%;
           background-color: rgba(5, 25, 52, 0.6);
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-size: 4vw;
           font-weight: 500;
           text-transform: uppercase;
@@ -130,6 +130,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: $couleurFond;
+    display: none;
 
     .site__header__logo {
       width: 100%;
@@ -173,12 +174,16 @@ header {
                 text-decoration: none;
                 justify-content: space-around;
                 padding: 1.5rem 0;
-                background: linear-gradient(to right,
+                background: linear-gradient(
+                    to right,
                     rgb(107, 172, 237),
-                    rgb(107, 172, 237)),
-                  linear-gradient(to right,
+                    rgb(107, 172, 237)
+                  ),
+                  linear-gradient(
+                    to right,
                     rgb(182, 211, 240),
-                    rgb(182, 211, 240));
+                    rgb(182, 211, 240)
+                  );
                 background-size: 100% 0px, 0 0px;
                 background-position: 100% 100%, 0 100%;
                 background-repeat: no-repeat;

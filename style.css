@@ -485,6 +485,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
     justify-content: center;
     align-items: center;
     background-color: #051934;
+    display: none;
   }
   header .site__header__logo {
     width: 100%;
@@ -3228,8 +3229,47 @@ footer .iconRS a {
     text-align: center;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .contenuProf {
   height: 100%;
+}
+
+.bulleBg {
+  filter: blur(25rem);
+  width: 70rem;
+  height: 90rem;
+  border-radius: 50%;
+  position: absolute;
+  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+  right: -25rem;
+  top: -40rem;
+}
+
+.bulleBg_deux {
+  filter: blur(9rem);
+  width: 26rem;
+  height: 40%;
+  border-radius: 50%;
+  position: absolute;
+  top: 60%;
+  left: -7%;
+  background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
+}
+
+.barreBlanc {
+  width: 100%;
+  height: 80%;
+  margin-left: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 3px white solid;
+  border-left: 3px white solid;
+  border-radius: 50px 0;
 }
 
 main {
