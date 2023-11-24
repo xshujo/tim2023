@@ -7,12 +7,9 @@
 <?php
 get_header();
 ?>
-<?php the_content(); ?>
-
 <!----- CONTENUE AFFICHER DANS LA PAGE PROFESSEURS ---->
 <div class="contenuProf">
-    <!----- Titre principale page professeurs ---->
-
+    <?php the_content(); ?>
 
 
     <!-----  ZONE DESIGN EN ARRIERE-PLAN ---->
