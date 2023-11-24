@@ -51,6 +51,8 @@
       var list2 = document.getElementById("list2");
       var list3 = document.getElementById("list3");
       var list4 = document.getElementById("list4");
+      var list5 = document.getElementById("list5");
+      var list6 = document.getElementById("list6");
 
       // Toggle the display property for each list item
       
@@ -59,6 +61,8 @@
           list2.style.display = 'none';
           list3.style.display = 'none';
           list4.style.display = 'none';
+          list5.style.display = 'none';
+          list6.style.display = 'none';
 
         } 
 
@@ -73,6 +77,8 @@
       var list2 = document.getElementById("list2");
       var list3 = document.getElementById("list3");
       var list4 = document.getElementById("list4");
+      var list5 = document.getElementById("list5");
+      var list6 = document.getElementById("list6");
 
       // Toggle the display property for each list item
       listItems.forEach(function(item) {
@@ -81,6 +87,8 @@
           list2.style.display = 'flex';
           list3.style.display = 'none';
           list4.style.display = 'none';
+          list5.style.display = 'none';
+          list6.style.display = 'none';
         }
       });
     }
@@ -92,6 +100,8 @@
       var list2 = document.getElementById("list2");
       var list3 = document.getElementById("list3");
       var list4 = document.getElementById("list4");
+      var list5 = document.getElementById("list5");
+      var list6 = document.getElementById("list6");
 
       // Toggle the display property for each list item
       listItems.forEach(function(item) {
@@ -101,6 +111,8 @@
           list3.style.display = 'flex'; // or 'list-item'
           list2.style.display = 'none';
           list4.style.display = 'none';
+          list5.style.display = 'none';
+          list6.style.display = 'none';
 
         } 
       });
@@ -113,6 +125,8 @@
       var list2 = document.getElementById("list2");
       var list3 = document.getElementById("list3");
       var list4 = document.getElementById("list4");
+      var list5 = document.getElementById("list5");
+      var list6 = document.getElementById("list6");
 
       // Toggle the display property for each list item
       listItems.forEach(function(item) {
@@ -122,6 +136,58 @@
           list2.style.display = 'none';
           list3.style.display = 'none';
           list4.style.display = 'flex';
+          list5.style.display = 'none';
+          list6.style.display = 'none';
+
+        } 
+      });
+    }
+
+    function toggleItem5() {
+      // Get all list items
+      var listItems = document.querySelectorAll(".liste_cours");
+      var list1 = document.getElementById("list1");
+      var list2 = document.getElementById("list2");
+      var list3 = document.getElementById("list3");
+      var list4 = document.getElementById("list4");
+      var list5 = document.getElementById("list5");
+      var list6 = document.getElementById("list6");
+
+      // Toggle the display property for each list item
+      listItems.forEach(function(item) {
+      
+        if (list5.style.display = 'none') {
+          list1.style.display = 'none'; // or 'list-item'
+          list2.style.display = 'none';
+          list3.style.display = 'none';
+          list4.style.display = 'none';
+          list5.style.display = 'flex';
+          list6.style.display = 'none';
+
+        } 
+      });
+    }
+
+    function toggleItem6() {
+      // Get all list items
+      var listItems = document.querySelectorAll(".liste_cours");
+      var list1 = document.getElementById("list1");
+      var list2 = document.getElementById("list2");
+      var list3 = document.getElementById("list3");
+      var list4 = document.getElementById("list4");
+      var list5 = document.getElementById("list5");
+      var list6 = document.getElementById("list6");
+
+      // Toggle the display property for each list item
+      listItems.forEach(function(item) {
+      
+        if (list5.style.display = 'none') {
+          list1.style.display = 'none'; // or 'list-item'
+          list2.style.display = 'none';
+          list3.style.display = 'none';
+          list4.style.display = 'none';
+          list5.style.display = 'none';
+          list6.style.display = 'flex';
 
         } 
       });
