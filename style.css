@@ -4482,7 +4482,7 @@ footer .iconRS a {
 }
 .main_accueil .fp-p-admission {
   font-size: clamp(0.75rem, 0.3929rem + 1.7857vw, 1.25rem);
-  font-weight: 600;
+  font-weight: 500;
   color: #c7afec;
   letter-spacing: 0.075rem;
   text-align: center;
