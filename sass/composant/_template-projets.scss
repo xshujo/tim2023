@@ -29,7 +29,7 @@
     position: relative;
     font-size: 3rem;
     top: 6rem;
-    left: 10rem;
+    left: 5rem;
     z-index: 1;
 }    
 
@@ -242,6 +242,7 @@
                     bottom: 2rem;
                 }
 
+                //Style générale de la description des projets
                 .desc__projet {
                     width: 13rem;
                     height: 5rem;
@@ -252,7 +253,7 @@
                     color: white;
 
 
-
+                    //Style des crédits des projets
                     .credits__projet {
                         color: $couleurElmtDeux;
                         margin-bottom: 1.2rem;
@@ -263,6 +264,7 @@
                         transition: transform 0.2s;
                     }
 
+                    //Style du texte des projets
                     .texte__desc__projet {
                         color: white;
                         text-align: left;
@@ -276,6 +278,7 @@
 
             }
 
+            //Quand on clique sur la carte, la description se dévoile
             .carte__categorie:hover {
 
                 .titre__date__projet {
@@ -355,6 +358,15 @@
     }
 
 @media screen and (min-width:$largeur__tablette) {
+
+        .text__page__projet{
+        position: relative;
+        font-size: 3rem;
+        top: 6rem;
+        left: 5rem;
+        z-index: 1;
+                            }  
+
     // Style de l'ensemble des catégories
     .blockflex__projet {
         max-width: 70vw;
@@ -563,6 +575,7 @@
                     bottom: 1rem;
                 }
 
+                //Style de la description des projets
                 .desc__projet {
                     width: 15rem;
                     display: none;
@@ -572,7 +585,7 @@
                     color: white;
 
 
-
+                    //Style des crédits des projets
                     .credits__projet {
                         color: $couleurElmtDeux;
                         margin-bottom: 1.2rem;
@@ -583,6 +596,7 @@
                         transition: transform 0.2s;
                     }
 
+                    //Style du texte des projets
                     .texte__desc__projet {
                         color: white;
                         text-align: left;
@@ -596,6 +610,7 @@
 
             }
 
+            //Quand on clique sur la carte, la description se dévoile
             .carte__categorie:hover {
 
                 .titre__date__projet {
@@ -676,6 +691,14 @@
 }
 
 @media screen and (min-width:$largeur__bureau) {
+
+    .text__page__projet{
+        position: relative;
+        font-size: 3rem;
+        top: 6rem;
+        left: 10rem;
+        z-index: 1;
+     }  
 
     // Style de l'ensemble des catégories
     .blockflex__projet {
@@ -884,6 +907,7 @@
                     top: 0.05rem;
                 }
 
+                //Style générale de la description des projets
                 .desc__projet {
                     width: 22rem;
                     display: none;
@@ -893,7 +917,7 @@
                     color: white;
 
 
-
+                    //Style des crédits des projets
                     .credits__projet {
                         color: $couleurElmtDeux;
                         margin-bottom: 1.2rem;
@@ -904,6 +928,7 @@
                         transition: transform 0.2s;
                     }
 
+                    //Style du texte des projets
                     .texte__desc__projet {
                         color: white;
                         text-align: left;
@@ -917,6 +942,7 @@
 
             }
 
+            //Quand on passe la souris sur la carte, la description se dévoile
             .carte__categorie:hover {
 
                 .titre__date__projet {

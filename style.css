@@ -3710,7 +3710,7 @@ main .texte_a_venir .texte_2 {
   position: relative;
   font-size: 3rem;
   top: 6rem;
-  left: 10rem;
+  left: 5rem;
   z-index: 1;
 }
 
@@ -3973,6 +3973,13 @@ main .texte_a_venir .texte_2 {
 }
 
 @media screen and (min-width: 770px) {
+  .text__page__projet {
+    position: relative;
+    font-size: 3rem;
+    top: 6rem;
+    left: 5rem;
+    z-index: 1;
+  }
   .blockflex__projet {
     max-width: 70vw;
     margin: 0 auto;
@@ -4213,6 +4220,13 @@ main .texte_a_venir .texte_2 {
   }
 }
 @media screen and (min-width: 976px) {
+  .text__page__projet {
+    position: relative;
+    font-size: 3rem;
+    top: 6rem;
+    left: 10rem;
+    z-index: 1;
+  }
   .blockflex__projet {
     max-width: 70vw;
     margin: 0 auto;
