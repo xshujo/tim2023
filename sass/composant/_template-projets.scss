@@ -1,9 +1,42 @@
 // Style de l'ensemble des catégories
-    .blockflex__projet {
+.main__404{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 10rem;
+    
+}
+
+
+
+.texte__404{
+    color: rgb(114, 16, 16);
+    
+}
+
+.texte__404::after{
+    height: 5rem;
+    position: relative;
+    content: url(medias/SVG/perso404.svg);
+    margin-top: 10rem;
+    top: 3rem;
+}
+
+
+.text__page__projet{
+    position: relative;
+    font-size: 3rem;
+    top: 6rem;
+    left: 10rem;
+    z-index: 1;
+}    
+
+.blockflex__projet {
         max-width: 70vw;
         margin: 0 auto;
         margin-bottom: 7.5rem;
-        margin-top: 4.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -11,6 +44,8 @@
         // Titre de chaque catégorie
         h1 {
             color: $couleurElmtUn;
+            z-index: 1;
+            margin-top: 7rem;
         }
 
         // Ajout de l'icône jeux
@@ -129,9 +164,9 @@
 
         // Style général des catégories
         .projet__general {
-            min-width: calc(70vw - 1.5rem);
+            width: calc(70vw - 1.5rem);
             height: inherit;
-            box-sizing: border-box;
+            // box-sizing: border-box;
             object-fit: cover;
             overflow: hidden;
             position: relative;
@@ -196,7 +231,7 @@
                 // Style des images des projets
                 img {
                     position: relative;
-                    min-width: 13rem;
+                    width: 13rem;
                     height: 11rem;
                     display: flex;
                     align-items: center;
@@ -208,11 +243,12 @@
                 }
 
                 .desc__projet {
-                    width: 15rem;
+                    width: 13rem;
+                    height: 5rem;
                     display: none;
                     position: absolute;
                     padding: 0.7rem;
-                    bottom: 2rem;
+                    top: 12.5rem;
                     color: white;
 
 
@@ -230,7 +266,7 @@
                     .texte__desc__projet {
                         color: white;
                         text-align: left;
-                        font-size: 0.75rem;
+                        font-size: 0.8rem;
                         text-transform: initial;
                         font-family: Montserrat;
                         transition: transform 2s;
@@ -240,7 +276,7 @@
 
             }
 
-            .carte__categorie:active {
+            .carte__categorie:hover {
 
                 .titre__date__projet {
                     transform: translateY(-210%);
@@ -324,7 +360,6 @@
         max-width: 70vw;
         margin: 0 auto;
         margin-bottom: 7.5rem;
-        margin-top: 4.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -450,23 +485,23 @@
 
         // Style général des catégories
         .projet__general {
-            min-width: calc(70vw - 1.5rem);
-            height: inherit;
-            box-sizing: border-box;
-            object-fit: cover;
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            gap: 1rem;
-            padding: 1.5rem;
-            border-radius: 2rem;
+            // width: calc(70vw - 1.5rem);
+            // height: inherit;
+            // box-sizing: border-box;
+            // object-fit: cover;
+            // overflow: hidden;
+            // position: relative;
+            // display: flex;
+            // // flex-direction: row;
+            // // flex-wrap: nowrap;
+            // gap: 1rem;
+            // padding: 1.5rem;
+            // border-radius: 2rem;
 
 
             // Style des encadrés des projets
             .carte__categorie {
-                min-width: 30vw;
+                width: 30vw;
                 height: 24rem;
                 background-color: #33488E;
                 padding: 10px 10px 0px 10px;
@@ -517,7 +552,7 @@
                 // Style des images des projets
                 img {
                     position: relative;
-                    min-width: 15rem;
+                    width: 15rem;
                     height: 13rem;
                     display: flex;
                     align-items: center;
@@ -529,7 +564,7 @@
                 }
 
                 .desc__projet {
-                    width: 17rem;
+                    width: 15rem;
                     display: none;
                     position: absolute;
                     padding: 0.7rem;
@@ -561,7 +596,7 @@
 
             }
 
-            .carte__categorie:active {
+            .carte__categorie:hover {
 
                 .titre__date__projet {
                     transform: translateY(-150%);
@@ -647,7 +682,6 @@
         max-width: 70vw;
         margin: 0 auto;
         margin-bottom: 7.5rem;
-        margin-top: 4.5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -772,23 +806,23 @@
 
         // Style général des catégories
         .projet__general {
-            min-width: calc(70vw - 1.5rem);
-            height: inherit;
-            box-sizing: border-box;
-            object-fit: cover;
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            gap: 4rem;
-            padding: 1.5rem;
-            border-radius: 2rem;
+            // width: calc(70vw - 1.5rem);
+            // height: inherit;
+            // box-sizing: border-box;
+            // object-fit: cover;
+            // overflow: hidden;
+            // position: relative;
+            // display: flex;
+            // // flex-direction: row;
+            // // flex-wrap: nowrap;
+            // gap: 4rem;
+            // padding: 1.5rem;
+            // border-radius: 2rem;
 
 
             // Style des encadrés des projets
             .carte__categorie {
-                min-width: fit-content;
+                max-width: 25rem;
                 height: 32rem;
                 background-color: #33488E;
                 padding: 10px 10px 0px 10px;
@@ -839,7 +873,7 @@
                 // Style des images des projets
                 img {
                     position: relative;
-                    min-width: 22rem;
+                    width: 22rem;
                     height: 20rem;
                     display: flex;
                     align-items: center;
