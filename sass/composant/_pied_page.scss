@@ -13,7 +13,6 @@ footer {
 
   // Divs "Contacts", "Suivez-nous", crédits
   .sidebar {
-
     // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
     div {
       width: fit-content;
@@ -34,7 +33,6 @@ footer {
 
     // Suivez-nous
     &:nth-of-type(2) {
-
       // Div des logos de médias sociaux; Code HTML écrit dans WordPress
       div:last-child {
         display: flex;
@@ -66,15 +64,12 @@ footer {
   }
 }
 
-@media only screen and (min-width:575px) {
+@media only screen and (min-width: 575px) {
   footer {
-
     // Divs "Contacts", "Suivez-nous", crédits
     .sidebar {
-
       // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
       div {
-
         // Titres "Contacts", "Suivez-nous"
         h2 {
           font-size: 4.5vw;
@@ -84,15 +79,12 @@ footer {
   }
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   footer {
-
     // Divs "Contacts", "Suivez-nous", crédits
     .sidebar {
-
       // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
       div {
-
         // Titres "Contacts", "Suivez-nous"
         h2 {
           font-size: 3.5vw;
@@ -101,10 +93,8 @@ footer {
 
       // Suivez-nous
       &:nth-of-type(2) {
-
         // Div des logos de médias sociaux; Code HTML écrit dans WordPress
         div:last-child {
-
           // Logos des médias sociaux
           a {
             width: 5vw;
@@ -121,16 +111,14 @@ footer {
   }
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px) {
   footer {
     gap: 5vw;
 
     // Divs "Contacts", "Suivez-nous", crédits
     .sidebar {
-
       // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
       div {
-
         // Titres "Contacts", "Suivez-nous"
         h2 {
           font-size: 3vw;
@@ -140,15 +128,12 @@ footer {
   }
 }
 
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width: 1440px) {
   footer {
-
     // Divs "Contacts", "Suivez-nous", crédits
     .sidebar {
-
       // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
       div {
-
         // Titres "Contacts", "Suivez-nous"
         h2 {
           font-size: 2vw;
