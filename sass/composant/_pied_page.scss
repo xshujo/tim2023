@@ -1,39 +1,170 @@
 footer {
-  background-color: black;
-  color: white;
-  padding: 10px 0;
+  width: 100vw;
   height: auto;
+  background-color: $couleurFond;
+  color: white;
+  padding: 5vw;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 10vw;
   position: relative;
   bottom: 0;
-  section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  h2,
-  ul {
-    padding: 0 20px;
-  }
-  li {
-    list-style: none;
-    a {
-      text-decoration: none;
-    }
-  }
 
-  .iconRS {
-    a {
-      margin: 10px;
+  // Divs "Contacts", "Suivez-nous", crédits
+  .sidebar {
+
+    // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
+    div {
+      width: fit-content;
+
+      // Titres "Contacts", "Suivez-nous"
+      h2 {
+        font-size: 6vw;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+      }
+
+      // Tous les paragraphes (contacts, crédits)
+      p {
+        margin: 2vw 0;
+      }
+
+      // Paragraphes/sous-titres "Campus", "Téléphone"
+      .sous-titre {
+        font-weight: bold;
+        padding-top: 1vw;
+      }
+    }
+
+    // Suivez-nous
+    &:nth-of-type(2) {
+
+      // Div des logos de médias sociaux; Code HTML écrit dans WordPress
+      div:last-child {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2vw;
+
+        // Logos des médias sociaux
+        a {
+          width: 10vw;
+          height: 10vw;
+          display: block;
+          filter: invert(1);
+
+          svg {
+            width: 10vw;
+            height: inherit;
+          }
+        }
+      }
+    }
+
+    // Crédits
+    &:last-of-type {
+      width: 90vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
-@media screen and (min-width: $largeur__bureau) {
+
+@media only screen and (min-width:575px) {
   footer {
-    flex-direction: row;
+
+    // Divs "Contacts", "Suivez-nous", crédits
+    .sidebar {
+
+      // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
+      div {
+
+        // Titres "Contacts", "Suivez-nous"
+        h2 {
+          font-size: 4.5vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:768px) {
+  footer {
+
+    // Divs "Contacts", "Suivez-nous", crédits
+    .sidebar {
+
+      // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
+      div {
+
+        // Titres "Contacts", "Suivez-nous"
+        h2 {
+          font-size: 3.5vw;
+        }
+      }
+
+      // Suivez-nous
+      &:nth-of-type(2) {
+
+        // Div des logos de médias sociaux; Code HTML écrit dans WordPress
+        div:last-child {
+
+          // Logos des médias sociaux
+          a {
+            width: 5vw;
+            height: 5vw;
+
+            svg {
+              width: 5vw;
+              height: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  footer {
+    gap: 5vw;
+
+    // Divs "Contacts", "Suivez-nous", crédits
+    .sidebar {
+
+      // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
+      div {
+
+        // Titres "Contacts", "Suivez-nous"
+        h2 {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  footer {
+
+    // Divs "Contacts", "Suivez-nous", crédits
+    .sidebar {
+
+      // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
+      div {
+
+        // Titres "Contacts", "Suivez-nous"
+        h2 {
+          font-size: 2vw;
+        }
+
+        // Tous les paragraphes (contacts, crédits)
+        p {
+          font-size: 1vw;
+        }
+      }
+    }
   }
 }

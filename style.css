@@ -901,40 +901,88 @@ header .menu-burger .menu-entete-container #menu-entete li a {
   }
 }
 footer {
-  background-color: black;
-  color: white;
-  padding: 10px 0;
+  width: 100vw;
   height: auto;
+  background-color: #051934;
+  color: white;
+  padding: 5vw;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 10vw;
   position: relative;
   bottom: 0;
 }
-footer section {
+footer .sidebar div {
+  width: fit-content;
+}
+footer .sidebar div h2 {
+  font-size: 6vw;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+footer .sidebar div p {
+  margin: 2vw 0;
+}
+footer .sidebar div .sous-titre {
+  font-weight: bold;
+  padding-top: 1vw;
+}
+footer .sidebar:nth-of-type(2) div:last-child {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  gap: 2vw;
 }
-footer h2,
-footer ul {
-  padding: 0 20px;
+footer .sidebar:nth-of-type(2) div:last-child a {
+  width: 10vw;
+  height: 10vw;
+  display: block;
+  filter: invert(1);
 }
-footer li {
-  list-style: none;
+footer .sidebar:nth-of-type(2) div:last-child a svg {
+  width: 10vw;
+  height: inherit;
 }
-footer li a {
-  text-decoration: none;
-}
-footer .iconRS a {
-  margin: 10px;
+footer .sidebar:last-of-type {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 976px) {
+@media only screen and (min-width: 575px) {
+  footer .sidebar div h2 {
+    font-size: 4.5vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer .sidebar div h2 {
+    font-size: 3.5vw;
+  }
+  footer .sidebar:nth-of-type(2) div:last-child a {
+    width: 5vw;
+    height: 5vw;
+  }
+  footer .sidebar:nth-of-type(2) div:last-child a svg {
+    width: 5vw;
+    height: inherit;
+  }
+}
+@media only screen and (min-width: 1024px) {
   footer {
-    flex-direction: row;
+    gap: 5vw;
+  }
+  footer .sidebar div h2 {
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  footer .sidebar div h2 {
+    font-size: 2vw;
+  }
+  footer .sidebar div p {
+    font-size: 1vw;
   }
 }
 .fond_loader {
