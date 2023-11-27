@@ -2784,9 +2784,7 @@ footer .iconRS a {
     display: flex;
     align-items: center;
     text-align: left;
-    display: flex;
-    align-items: center;
-    text-align: left;
+    
   }
   .contenu_parcours .grille_cours .grille_contenu .bouton_session_bureau {
     display: flex;
