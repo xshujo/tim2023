@@ -361,7 +361,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+figcaption {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -991,7 +992,12 @@ footer .sidebar:last-of-type {
   position: sticky;
 }
 
-.img_1, .img_2, .img_3, .img_4, .img_5, .img_6 {
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6 {
   display: inline-flex;
 }
 
@@ -3394,113 +3400,79 @@ footer .sidebar:last-of-type {
   border-radius: 50px 0;
 }
 
-main {
-  width: 92vw;
+/************* VERSION MOBILE *************/
+.main_etudiant {
+  width: 91vw;
   background-color: transparent;
   margin: 0 auto;
   margin-top: 2.9rem;
   margin-bottom: 4rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
   z-index: 30;
 }
-main .encadre_page {
+.main_etudiant .encadre_page {
   width: 110%;
-  height: 130rem;
-  border: 0.3rem #f7f7f7 solid;
-  border-radius: 2rem;
+  height: 230rem;
+  border: 0.15rem #f7f7f7 solid;
+  border-radius: 1.4rem;
   position: absolute;
-  top: 8.2rem;
-  left: 1rem;
+  top: 10.4rem;
+  left: 0.3rem;
   z-index: -1;
 }
-main .degrades {
-  filter: blur(7rem);
-  width: 70rem;
-  height: 100rem;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -6;
+.main_etudiant .degrades {
+  display: none;
 }
-main .degrade_1 {
-  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
-  right: -5rem;
-  top: -40rem;
-  transform: rotateZ(295deg);
+.main_etudiant .degrade_1 {
+  display: none;
 }
-main .degrade_2 {
-  background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
-  left: -25rem;
-  top: 30rem;
-  transform: rotateZ(35deg);
+.main_etudiant .degrade_2 {
+  display: none;
 }
-main .degrade_3 {
-  width: 40rem;
-  height: 70rem;
-  background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
-  right: -20rem;
-  top: 70rem;
-  transform: rotateZ(295deg);
+.main_etudiant .degrade_3 {
+  display: none;
 }
-main .bulle_modele_1 {
-  background-color: #774eba;
-  mix-blend-mode: lighten;
-  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-  opacity: 75%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -4;
+.main_etudiant .bulle_modele_1 {
+  display: none;
 }
-main .bulle_m1_position_1 {
-  width: 25rem;
-  height: 25rem;
-  top: 20rem;
-  right: -4rem;
+.main_etudiant .bulle_m1_position_1 {
+  display: none;
 }
-main .bulle_modele_2 {
-  background-color: #33488e;
-  mix-blend-mode: lighten;
-  backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
-  opacity: 75%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -4;
+.main_etudiant .bulle_modele_2 {
+  display: none;
 }
-main .bulle_m2_position_1 {
-  width: 35rem;
-  height: 35rem;
-  top: -12rem;
-  left: -5rem;
+.main_etudiant .bulle_m2_position_1 {
+  display: none;
 }
-main .bulle_m2_position_2 {
-  width: 14rem;
-  height: 14rem;
-  top: 1.3rem;
-  left: 25rem;
+.main_etudiant .bulle_m2_position_2 {
+  display: none;
 }
-main h1 {
+.main_etudiant h1 {
   text-transform: uppercase;
   margin-bottom: 2rem;
   z-index: 30;
 }
-main p {
+.main_etudiant p {
   margin: 0;
 }
-main .zone_galerie {
+.main_etudiant .zone_galerie {
   display: flex;
   z-index: 10;
 }
-main .zone_galerie img {
+.main_etudiant .zone_galerie img {
   border-radius: 0.4rem;
 }
-main .zone_evenements {
-  width: 95%;
+.main_etudiant .zone_evenements {
+  width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-between;
   z-index: 20;
 }
-main .zone_evenements .article_vie_etudiante::before {
+.main_etudiant .zone_evenements .article_vie_etudiante::before {
   content: "";
   width: 100%;
   height: 14.3rem;
@@ -3510,36 +3482,41 @@ main .zone_evenements .article_vie_etudiante::before {
   position: absolute;
   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
 }
-main .zone_evenements .article_vie_etudiante {
-  width: 49%;
+.main_etudiant .zone_evenements .article_vie_etudiante {
+  width: 100%;
   height: 14.3rem;
   margin-bottom: 1.4rem;
   margin-top: 0.2rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: relative;
 }
-main .zone_evenements .article_vie_etudiante img {
+.main_etudiant .zone_evenements .article_vie_etudiante img {
+  width: 6.5rem;
+  height: auto;
   border-radius: 0.4rem;
   z-index: 20;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements {
-  width: 58%;
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
+  width: 54%;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements h4 {
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
   text-transform: uppercase;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
-main .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
   color: #c7afec;
   font-weight: 500;
-  font-size: 1.3rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
-main .texte_a_venir {
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
+  font-size: 0.75rem;
+}
+.main_etudiant .texte_a_venir {
   width: 25rem;
   height: 8rem;
   display: flex;
@@ -3548,22 +3525,346 @@ main .texte_a_venir {
   justify-content: center;
   position: relative;
   right: 8vw;
-  bottom: -4rem;
+  bottom: -0.8rem;
   z-index: 20;
 }
-main .texte_a_venir h3 {
+.main_etudiant .texte_a_venir h3 {
   text-transform: uppercase;
   text-align: center;
   margin: 0.3rem;
 }
-main .texte_a_venir .texte_1 {
+.main_etudiant .texte_a_venir .texte_1 {
   color: #c7afec;
+  font-size: 1.7rem;
+}
+.main_etudiant .texte_a_venir .texte_2 {
   font-size: 2.7rem;
 }
-main .texte_a_venir .texte_2 {
-  font-size: 3.7rem;
-}
 
+/************* VERSION TABLETTE *************/
+@media only screen and (min-width: 770px) {
+  .main_etudiant {
+    width: 91vw;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 2.9rem;
+    margin-bottom: 4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    z-index: 30;
+  }
+  .main_etudiant .encadre_page {
+    width: 110%;
+    height: 230rem;
+    border: 0.15rem #f7f7f7 solid;
+    border-radius: 1.4rem;
+    position: absolute;
+    top: 10.4rem;
+    left: 0.3rem;
+    z-index: -1;
+    display: none;
+  }
+  .main_etudiant .degrades {
+    display: none;
+  }
+  .main_etudiant .degrade_1 {
+    display: none;
+  }
+  .main_etudiant .degrade_2 {
+    display: none;
+  }
+  .main_etudiant .degrade_3 {
+    display: none;
+  }
+  .main_etudiant .bulle_modele_1 {
+    display: none;
+  }
+  .main_etudiant .bulle_m1_position_1 {
+    display: none;
+  }
+  .main_etudiant .bulle_modele_2 {
+    display: none;
+  }
+  .main_etudiant .bulle_m2_position_1 {
+    display: none;
+  }
+  .main_etudiant .bulle_m2_position_2 {
+    display: none;
+  }
+  .main_etudiant h1 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    z-index: 30;
+  }
+  .main_etudiant p {
+    margin: 0;
+  }
+  .main_etudiant .zone_galerie {
+    display: flex;
+    z-index: 10;
+  }
+  .main_etudiant .zone_galerie img {
+    border-radius: 0.4rem;
+  }
+  .main_etudiant .zone_evenements {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    z-index: 20;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante::before {
+    content: "";
+    width: 100%;
+    height: 14.3rem;
+    background-color: #c7afec;
+    mix-blend-mode: soft-light;
+    border-radius: 1rem;
+    position: absolute;
+    box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante {
+    width: 100%;
+    height: 14.3rem;
+    margin-bottom: 1.4rem;
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante img {
+    width: 10rem;
+    height: auto;
+    border-radius: 0.4rem;
+    z-index: 20;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
+    width: 54%;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
+    color: #c7afec;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
+    font-size: 1rem;
+  }
+  .main_etudiant .texte_a_venir {
+    width: 25rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    right: 0vw;
+    bottom: -0.8rem;
+    z-index: 20;
+  }
+  .main_etudiant .texte_a_venir h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.3rem;
+  }
+  .main_etudiant .texte_a_venir .texte_1 {
+    color: #c7afec;
+    font-size: 2.2rem;
+  }
+  .main_etudiant .texte_a_venir .texte_2 {
+    font-size: 3.2rem;
+  }
+}
+/************* VERSION ORDINATEUR *************/
+@media only screen and (min-width: 976px) {
+  .main_etudiant {
+    width: 92vw;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 2.9rem;
+    margin-bottom: 4rem;
+    z-index: 30;
+  }
+  .main_etudiant .encadre_page {
+    display: block;
+    width: 110%;
+    height: 121rem;
+    border: 0.3rem #f7f7f7 solid;
+    border-radius: 2rem;
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    z-index: -1;
+  }
+  .main_etudiant .degrades {
+    display: block;
+    filter: blur(7rem);
+    width: 70rem;
+    height: 100rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -6;
+  }
+  .main_etudiant .degrade_1 {
+    background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+    right: -5rem;
+    top: -40rem;
+    transform: rotateZ(295deg);
+  }
+  .main_etudiant .degrade_2 {
+    background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
+    left: -25rem;
+    top: 30rem;
+    transform: rotateZ(35deg);
+  }
+  .main_etudiant .degrade_3 {
+    width: 40rem;
+    height: 70rem;
+    background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
+    right: -20rem;
+    top: 70rem;
+    transform: rotateZ(295deg);
+  }
+  .main_etudiant .bulle_modele_1 {
+    display: block;
+    background-color: #774eba;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+    opacity: 75%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+  }
+  .main_etudiant .bulle_m1_position_1 {
+    width: 25rem;
+    height: 25rem;
+    top: 20rem;
+    right: -4rem;
+  }
+  .main_etudiant .bulle_modele_2 {
+    display: block;
+    background-color: #33488e;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+    opacity: 75%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+  }
+  .main_etudiant .bulle_m2_position_1 {
+    width: 35rem;
+    height: 35rem;
+    top: -12rem;
+    left: -5rem;
+  }
+  .main_etudiant .bulle_m2_position_2 {
+    width: 14rem;
+    height: 14rem;
+    top: 1.3rem;
+    left: 25rem;
+  }
+  .main_etudiant h1 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    z-index: 30;
+  }
+  .main_etudiant p {
+    margin: 0;
+  }
+  .main_etudiant .zone_galerie {
+    display: flex;
+    z-index: 10;
+  }
+  .main_etudiant .zone_galerie img {
+    border-radius: 0.4rem;
+  }
+  .main_etudiant .zone_evenements {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 20;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante::before {
+    content: "";
+    width: 100%;
+    height: 14.3rem;
+    background-color: #c7afec;
+    mix-blend-mode: soft-light;
+    border-radius: 1rem;
+    position: absolute;
+    box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante {
+    width: 49%;
+    height: 14.3rem;
+    margin-bottom: 1.4rem;
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante img {
+    width: 10rem;
+    height: auto;
+    border-radius: 0.4rem;
+    z-index: 20;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
+    width: 58%;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
+    color: #c7afec;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
+    font-size: 1.1rem;
+  }
+  .main_etudiant .texte_a_venir {
+    width: 25rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 8vw;
+    bottom: -4rem;
+    z-index: 20;
+  }
+  .main_etudiant .texte_a_venir h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.3rem;
+  }
+  .main_etudiant .texte_a_venir .texte_1 {
+    color: #c7afec;
+    font-size: 2.7rem;
+  }
+  .main_etudiant .texte_a_venir .texte_2 {
+    font-size: 3.7rem;
+  }
+}
 .main__404 {
   width: 20vw;
   display: flex;
@@ -3713,7 +4014,7 @@ main .texte_a_venir .texte_2 {
 .blockflex__projet .projet__general .carte__categorie {
   width: 45vw;
   height: 22rem;
-  background-color: #33488E;
+  background-color: #33488e;
   padding: 10px 10px 0px 10px;
   border-radius: 1rem;
   display: flex;
@@ -3967,7 +4268,7 @@ main .texte_a_venir .texte_2 {
   .blockflex__projet .projet__general .carte__categorie {
     width: 30vw;
     height: 24rem;
-    background-color: #33488E;
+    background-color: #33488e;
     padding: 10px 10px 0px 10px;
     border-radius: 1rem;
     display: flex;
@@ -4211,7 +4512,7 @@ main .texte_a_venir .texte_2 {
   .blockflex__projet .projet__general .carte__categorie {
     max-width: 25rem;
     height: 32rem;
-    background-color: #33488E;
+    background-color: #33488e;
     padding: 10px 10px 0px 10px;
     border-radius: 1rem;
     display: flex;
@@ -4389,6 +4690,11 @@ main .texte_a_venir .texte_2 {
 .main_accueil > p:first-of-type::before, .main_accueil > p:first-of-type::after, .main_accueil > p:nth-of-type(2)::before, .main_accueil > p:nth-of-type(2)::after, .main_accueil > p:last-of-type::before, .main_accueil > p:last-of-type::after {
   display: none;
 }
+.main_accueil .wp-block-gallery .fp-icone-cours .wp-element-caption {
+  background: transparent;
+  position: relative;
+  font-weight: 500;
+}
 .main_accueil .fp-image {
   width: 65vw;
   height: 40vw;
@@ -4504,7 +4810,7 @@ main .texte_a_venir .texte_2 {
 }
 .main_accueil .fp-p-admission {
   font-size: clamp(0.75rem, 0.3929rem + 1.7857vw, 1.25rem);
-  font-weight: 600;
+  font-weight: 500;
   color: #c7afec;
   letter-spacing: 0.075rem;
   text-align: center;
@@ -4540,6 +4846,9 @@ main .texte_a_venir .texte_2 {
   }
   .main_accueil > p:last-of-type {
     margin: 1rem 0;
+  }
+  .main_accueil .wp-block-gallery .fp-icone-cours .wp-element-caption {
+    font-size: 1.1rem;
   }
   .main_accueil .fp-image {
     width: 55vw;
@@ -4609,6 +4918,7 @@ main .texte_a_venir .texte_2 {
   .main_accueil {
     flex-flow: row wrap;
     justify-content: space-around;
+    margin-bottom: 10rem;
   }
   .main_accueil h2 {
     width: 90vw;
@@ -4665,6 +4975,9 @@ main .texte_a_venir .texte_2 {
   .main_accueil .fp-p-centre:last-of-type {
     margin: 1rem 0;
   }
+  .main_accueil .wp-block-gallery .fp-icone-cours .wp-element-caption {
+    font-size: 1.3rem;
+  }
   .main_accueil .fp-image {
     width: 42vw;
     height: 26vw;
@@ -4680,7 +4993,7 @@ main .texte_a_venir .texte_2 {
   .main_accueil .fp-image::before {
     width: 42vw;
     height: 26vw;
-    border: 6px solid white;
+    border: 0.3rem solid #f7f7f7;
     border-radius: 1.5rem;
     transform: translateX(1rem) translateY(1rem);
   }
@@ -4700,9 +5013,9 @@ main .texte_a_venir .texte_2 {
   }
   .main_accueil .fp-video::before {
     height: clamp(33rem, 12rem + 43.75vw, 40rem);
-    border: 8px solid white;
+    border: 0.3rem solid #f7f7f7;
     border-radius: 2rem;
-    transform: translateX(-2.5rem) translateY(-2rem);
+    transform: translateX(-3.3rem) translateY(-2rem);
   }
   .main_accueil .fp-tim-cest:nth-of-type(1) {
     width: 80vw;
