@@ -3364,6 +3364,9 @@ footer .sidebar:last-of-type {
 
 .contenuProf {
   height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bulleBg {
