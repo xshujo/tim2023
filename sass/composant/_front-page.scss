@@ -67,6 +67,17 @@
         }
     }
 
+    // Toutes les icônes des cours de la page d'accueil
+    .wp-block-gallery {
+        .fp-icone-cours {
+            .wp-element-caption {
+                background: transparent;
+                position: relative;
+                font-weight: 500;
+            }
+        }
+    }
+
     // Toutes les images
     .fp-image {
         width: 65vw;
@@ -105,7 +116,9 @@
             a {
                 all: unset;
                 background: rgb(201, 233, 255);
-                background: linear-gradient(180deg, rgba(201, 233, 255, 1) 0%, rgba(158, 201, 231, 1) 100%);
+                background: linear-gradient(180deg,
+                        rgba(201, 233, 255, 1) 0%,
+                        rgba(158, 201, 231, 1) 100%);
                 font-family: "Montserrat", sans-serif;
                 font-size: 0.875rem;
                 font-weight: bold;
@@ -213,7 +226,7 @@
     // Paragraphe
     .fp-p-admission {
         font-size: clamp(0.75rem, 0.3929rem + 1.7857vw, 1.25rem);
-        font-weight: 600;
+        font-weight: 500;
         color: $couleurElmtDeux;
         letter-spacing: 0.075rem;
         text-align: center;
@@ -222,7 +235,7 @@
 
 // Mode tablette
 // De 768px à 1024px
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
     .main_accueil {
 
         // Tous les titres
@@ -262,6 +275,15 @@
 
             &:last-of-type {
                 margin: 1rem 0;
+            }
+        }
+
+        // Toutes les icônes des cours de la page d'accueil
+        .wp-block-gallery {
+            .fp-icone-cours {
+                .wp-element-caption {
+                    font-size: 1.1rem;
+                }
             }
         }
 
@@ -356,10 +378,11 @@
 }
 
 // Mode ordinateur
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width: 1024px) {
     .main_accueil {
         flex-flow: row wrap;
         justify-content: space-around;
+        margin-bottom: 10rem;
 
         // Tous les titres
         h2 {
@@ -464,6 +487,15 @@
         //     }
         // }
 
+        // Toutes les icônes des cours de la page d'accueil
+        .wp-block-gallery {
+            .fp-icone-cours {
+                .wp-element-caption {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
         // Toutes les images
         .fp-image {
             width: 42vw;
@@ -481,7 +513,7 @@
             &::before {
                 width: 42vw;
                 height: 26vw;
-                border: 6px solid white;
+                border: 0.3rem solid $couleurTitreTextes;
                 border-radius: 1.5rem;
                 transform: translateX(1rem) translateY(1rem);
             }
@@ -510,9 +542,9 @@
 
             &::before {
                 height: clamp(33rem, 12rem + 43.75vw, 40rem);
-                border: 8px solid white;
+                border: 0.3rem solid $couleurTitreTextes;
                 border-radius: 2rem;
-                transform: translateX(-2.5rem) translateY(-2rem);
+                transform: translateX(-3.3rem) translateY(-2rem);
             }
         }
 
