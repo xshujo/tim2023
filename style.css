@@ -3393,10 +3393,10 @@ footer .sidebar:last-of-type {
 
 .barreBlanc {
   width: 100%;
-  height: 80%;
-  margin-left: 20px;
+  height: 100%;
+  margin-left: 7px;
   position: absolute;
-  bottom: 0;
+  top: 15rem;
   left: 0;
   border-top: 3px white solid;
   border-left: 3px white solid;
