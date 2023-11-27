@@ -8,20 +8,6 @@ function ajouter_styles()
         array(), // Les fichiers CSS qui dépendent de style.css
         filemtime(get_template_directory() . '/style.css') // Version de notre style.css
     );
-    wp_enqueue_script(
-        'script-description-profs',
-        get_template_directory_uri() . '/code/profs.js',
-        array(),
-        filemtime(get_template_directory() . '/code/profs.js'), // Version de notre style.css
-        true
-    );
-    wp_enqueue_script(
-        'script-carrousel-image',
-        get_template_directory_uri() . '/code/carousel.js',
-        array(),
-        filemtime(get_template_directory() . '/code/carousel.js'),
-        true
-    );
 }
 add_action('wp_enqueue_scripts', 'ajouter_styles');
 
@@ -75,3 +61,38 @@ function custom_loading_script()
 }
 
 add_action('wp_enqueue_scripts', 'custom_loading_script');
+
+// Sidebar pour le footer
+function enregistrer_sidebar()
+{
+    register_sidebar(array(
+        'name' => __('Footer 1', 'DiversiTIM'),
+        'id' => 'footer_1',
+        'description' => __('Une zone qui affiche des widgets dans le footer.', 'DiversiTIM'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => __('Footer 2', 'DiversiTIM'),
+        'id' => 'footer_2',
+        'description' => __('Une zone qui affiche des widgets dans le footer.', 'DiversiTIM'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+
+    register_sidebar(array(
+        'name' => __('Footer 3', 'DiversiTIM'),
+        'id' => 'footer_3',
+        'description' => __('Une zone qui affiche des widgets dans le footer.', 'DiversiTIM'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+}
+add_action('widgets_init', 'enregistrer_sidebar');
