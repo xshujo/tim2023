@@ -4118,6 +4118,9 @@ main .texte_a_venir .texte_2 {
   width: 70vw;
   margin: 2rem 0;
 }
+.main_accueil > p:nth-of-type(2) {
+  display: none;
+}
 .main_accueil > p::before {
   width: 1.5rem;
   height: 1.5rem;
