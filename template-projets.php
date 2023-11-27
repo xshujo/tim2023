@@ -16,6 +16,8 @@
   <div class='degrades degrade_2'></div>
   <div class='degrades degrade_3'></div>
 
+  <h1 class="text__page__projet">Projet</h1>
+
   <!-- Encadrer tous les sections à l'aide d'une div générale -->
   <div class='blockflex__projet'>
 

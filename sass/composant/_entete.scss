@@ -1,3 +1,4 @@
+///////////////////////////////////////////////// ÉCRANS DE 320PX À 509PX
 header {
   width: 100vw;
   height: 12vw;
@@ -12,6 +13,7 @@ header {
   left: 0;
   z-index: 10;
 
+  // Logo
   .custom-logo-link {
     height: 10vw;
 
@@ -21,7 +23,9 @@ header {
     }
   }
 
+  // Menu
   .menu-burger {
+    // Bouton burger
     input {
       display: none;
     }
@@ -61,6 +65,7 @@ header {
       }
     }
 
+    // Liste du menu
     .menu-entete-container {
       width: 100vw;
       height: inherit;
@@ -84,9 +89,6 @@ header {
         justify-content: center;
         align-items: center;
         gap: 2.5vw;
-        // position: fixed;
-        // top: 12vw;
-        // left: 0;
 
         li {
           width: 90%;
@@ -102,6 +104,7 @@ header {
           justify-content: flex-start;
           align-items: center;
 
+          /* Bullet en mode mobile et tablette */
           &::before {
             content: "\2022";
             font-size: 6vw;
@@ -122,98 +125,228 @@ header {
   }
 }
 
+///////////////////////////////////////////////// ÉCRANS DE 510PX À 767PX
+@media only screen and (min-width: 510px) {
+  header {
+    height: 10vw;
+
+    // Menu
+    .menu-burger {
+      // Bouton burger
+      label {
+        width: 6vw;
+        height: 5vw;
+
+        .bar {
+          width: 6vw;
+          height: 0.75vw;
+        }
+      }
+
+      // Liste du menu
+      .menu-entete-container {
+        top: 10vw;
+
+        #menu-entete {
+          li {
+            font-size: 3vw;
+            padding: 0 1.5vw;
+
+            /* Bullet en mode mobile et tablette */
+            &::before {
+              font-size: 5vw;
+              padding-bottom: 0.5vw;
+            }
+
+            a {
+              height: 5vw;
+              padding: 2vw 0 0.5vw 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////// ÉCRANS DE 768PX À 1023PX
+@media only screen and (min-width: 768px) {
+  header {
+    height: 8vw;
+
+    // Logo
+    .custom-logo-link {
+      height: 8vw;
+
+      .custom-logo {
+        height: 8vw;
+      }
+    }
+
+    // Menu
+    .menu-burger {
+      // Bouton burger
+      label {
+        width: 5vw;
+        height: 4vw;
+
+        .bar {
+          width: 5vw;
+          height: 0.5vw;
+        }
+      }
+
+      // Liste du menu
+      .menu-entete-container {
+        top: 8vw;
+
+        #menu-entete {
+          li {
+            font-size: 2vw;
+            padding: 0 1vw;
+
+            /* Bullet en mode mobile et tablette */
+            &::before {
+              font-size: 4vw;
+            }
+
+            a {
+              height: 4.5vw;
+              padding: 2vw 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   header {
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $couleurFond;
-    display: none;
+    height: 6vw;
 
-    .site__header__logo {
-      width: 100%;
-      height: 100%;
-      padding: 0 2rem;
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-between;
-      align-items: center;
+    // Logo
+    .custom-logo-link {
+      height: 6vw;
 
-      .menu-site {
+      .custom-logo {
+        width: inherit;
+        height: 6vw;
+      }
+    }
+
+    // Menu
+    .menu-burger {
+      // Bouton burger
+      input,
+      label {
+        display: none;
+      }
+
+      // Liste du menu
+      .menu-entete-container {
+        width: inherit;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        top: inherit;
+        left: inherit;
+        bottom: inherit;
+        right: inherit;
 
-        .menu-entete-container {
-          height: 100%;
+        #menu-entete {
+          width: inherit;
+          background-color: transparent;
+          list-style: none;
+          border-radius: 0;
+          padding: 0;
+          display: flex;
+          flex-flow: row nowrap;
+          list-style: none;
+          gap: 2rem;
 
-          ul {
+          li {
+            width: inherit;
+            background-color: transparent;
+            font-size: 1.25vw;
+            border-radius: 0;
             padding: 0;
             display: flex;
-            flex-flow: row nowrap;
-            list-style: none;
-            /* Remove default list bullets */
-            gap: 2rem;
+            justify-content: space-around;
+            position: relative;
+            cursor: pointer;
 
-            li {
-              width: inherit;
+            /* Bullet en mode ordi */
+            &::before {
+              content: "";
+              width: 4px;
+              height: 4px;
+              background-color: #ffffff;
+              font-size: inherit;
+              margin: 0;
+              border-radius: 50%;
+              padding: 0;
+              position: absolute;
+              bottom: 10px;
+            }
+
+            &:hover::before {
+              width: 100%;
+              height: 2px;
+              border-radius: 0;
+              transition: ease-in-out 0.2s;
+            }
+
+            a {
+              height: inherit;
+              background: linear-gradient(
+                  to right,
+                  rgb(107, 172, 237),
+                  rgb(107, 172, 237)
+                ),
+                linear-gradient(
+                  to right,
+                  rgb(182, 211, 240),
+                  rgb(182, 211, 240)
+                );
+              background-size: 100% 0px, 0 0px;
+              background-position: 100% 100%, 0 100%;
+              background-repeat: no-repeat;
+              color: white;
+              text-transform: uppercase;
+              text-decoration: none;
+              padding: 1.5rem 0;
               display: flex;
               justify-content: space-around;
-              position: relative;
-              /* Positioning context for pseudo-element */
-              font-size: 10px;
-              /* Adjust font size as needed */
-              font-weight: bold;
+              transition: background-size 400ms;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-              /* Adjust font weight as needed */
-              a {
-                display: flex;
-                font-size: 1.5em;
-                color: white;
-                text-transform: uppercase;
-                text-decoration: none;
-                justify-content: space-around;
-                padding: 1.5rem 0;
-                background: linear-gradient(
-                    to right,
-                    rgb(107, 172, 237),
-                    rgb(107, 172, 237)
-                  ),
-                  linear-gradient(
-                    to right,
-                    rgb(182, 211, 240),
-                    rgb(182, 211, 240)
-                  );
-                background-size: 100% 0px, 0 0px;
-                background-position: 100% 100%, 0 100%;
-                background-repeat: no-repeat;
-                transition: background-size 400ms;
-              }
+@media only screen and (min-width: 1440px) {
+  header {
+    // Menu
+    .menu-burger {
+      // Liste du menu
+      .menu-entete-container {
+        #menu-entete {
+          li {
+            font-size: 1vw;
+
+            /* Bullet en mode ordi */
+            &::before {
+              width: 6px;
+              height: 6px;
             }
 
-            li::before {
-              content: "";
-              /* Create an empty content box */
-              width: 4px;
-              /* Adjust the width of the circle */
-              height: 4px;
-              /* Adjust the height of the circle */
-              background-color: #ffffff;
-              /* Set the background color of the circle */
-              border-radius: 50%;
-              /* Make it a circle by setting border-radius to 50% */
-              position: absolute;
-              /* Position it absolutely within the list item */
-              bottom: 10px;
-              /* Adjust this value to control the distance between text and circle */
-            }
-
-            li:hover::before {
-              border-radius: 0%;
-              width: 100%;
-              /* Adjust the width of the circle */
-              height: 2px;
-              transition: ease-in-out 0.2s;
+            &:hover::before {
+              height: 3px;
             }
           }
         }
