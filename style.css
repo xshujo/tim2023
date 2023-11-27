@@ -923,8 +923,12 @@ footer .sidebar div h2 {
   margin: 0;
   padding: 0;
 }
+footer .sidebar div p {
+  margin: 2vw 0;
+}
 footer .sidebar div .sous-titre {
   font-weight: bold;
+  padding-top: 1vw;
 }
 footer .sidebar:nth-of-type(2) div:last-child {
   display: flex;

@@ -25,9 +25,15 @@ footer {
         padding: 0;
       }
 
+      // Tous les paragraphes (contacts, crédits)
+      p {
+        margin: 2vw 0;
+      }
+
       // Paragraphes/sous-titres "Campus", "Téléphone"
       .sous-titre {
         font-weight: bold;
+        padding-top: 1vw;
       }
     }
 
