@@ -3357,11 +3357,6 @@ footer .sidebar:last-of-type {
     text-align: center;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .contenuProf {
   height: 100%;
   display: flex;
