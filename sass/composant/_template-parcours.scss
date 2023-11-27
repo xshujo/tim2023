@@ -5,7 +5,7 @@
 ////////////////////////////////////////////////////////
 ///               VERSION MOBILE                    ///
 /// ///////////////////////////////////////////////////
-.contenu_parcours {
+main.contenu_parcours {
 
     width: 100%;
     background-color: transparent;
@@ -1571,8 +1571,12 @@
 
 }
 
+
+////////////////////////////////////////////////////////
+///              VERSION TABLETTE             ///
+/// ///////////////////////////////////////////////////
 @media only screen and (min-width:$largeur__tablette) {
-    .contenu_parcours {
+    main.contenu_parcours {
 
         width: 100%;
         background-color: transparent;
@@ -2573,7 +2577,7 @@
 /// ///////////////////////////////////////////////////
 @media only screen and (min-width:$largeur__bureau) {
 
-    .contenu_parcours {
+    main.contenu_parcours {
         width: 92vw;
         background-color: transparent;
         margin-top: 2.9rem;
