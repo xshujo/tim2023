@@ -554,7 +554,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
     height: 6vw;
   }
   header .menu-burger input,
-header .menu-burger label {
+  header .menu-burger label {
     display: none;
   }
   header .menu-burger .menu-entete-container {
@@ -664,11 +664,11 @@ header .menu-burger label {
     background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 50%, #051934 100%);
   }
   main .contenu1,
-main .contenu2,
-main .contenu3,
-main .contenu4,
-main .contenu5,
-main .contenu6 {
+  main .contenu2,
+  main .contenu3,
+  main .contenu4,
+  main .contenu5,
+  main .contenu6 {
     background-clip: content-box;
   }
   main .contenu {
@@ -2894,7 +2894,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     font-weight: bold;
   }
   main.contenu_parcours .close:hover,
-main.contenu_parcours .close:focus {
+  main.contenu_parcours .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -3888,6 +3888,7 @@ main.contenu_parcours .close:focus {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 20rem;
 }
 
 .bulleBg {
@@ -3924,6 +3925,18 @@ main.contenu_parcours .close:focus {
   border-radius: 50px 0;
 }
 
+@media only screen and (min-width: 976px) {
+  .contenuProf {
+    margin: 0 20rem;
+  }
+  .titrePageProf {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+}
 /************* VERSION MOBILE *************/
 .main_etudiant {
   width: 91vw;
@@ -5585,4 +5598,4 @@ main.contenu_parcours .close:focus {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres */
+/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
