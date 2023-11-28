@@ -4304,7 +4304,7 @@ main.contenu_parcours .close:focus {
   .main_etudiant h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
-    margin-top: 4rem;
+    margin-top: 6rem;
     z-index: 30;
   }
   .main_etudiant p {
