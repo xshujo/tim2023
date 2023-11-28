@@ -3941,9 +3941,10 @@ main.contenu_parcours .close:focus {
   border: 0.15rem #f7f7f7 solid;
   border-radius: 1.4rem;
   position: absolute;
-  top: 10.4rem;
+  top: 4.1rem;
   left: 0.3rem;
   z-index: -1;
+  display: none;
 }
 .main_etudiant .degrades {
   display: none;
@@ -3975,6 +3976,7 @@ main.contenu_parcours .close:focus {
 .main_etudiant h1 {
   text-transform: uppercase;
   margin-bottom: 2rem;
+  margin-top: 5rem;
   z-index: 30;
 }
 .main_etudiant p {
@@ -3990,6 +3992,7 @@ main.contenu_parcours .close:focus {
 .main_etudiant .zone_evenements {
   width: 100%;
   margin: 0 auto;
+  margin-top: 1.3rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -4020,7 +4023,7 @@ main.contenu_parcours .close:focus {
   width: 6.5rem;
   height: auto;
   border-radius: 0.4rem;
-  z-index: 20;
+  z-index: 1;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
   width: 54%;
@@ -4133,6 +4136,7 @@ main.contenu_parcours .close:focus {
   .main_etudiant .zone_evenements {
     width: 100%;
     margin: 0 auto;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -4163,7 +4167,7 @@ main.contenu_parcours .close:focus {
     width: 10rem;
     height: auto;
     border-radius: 0.4rem;
-    z-index: 20;
+    z-index: 1;
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
     width: 54%;
@@ -4228,6 +4232,7 @@ main.contenu_parcours .close:focus {
     top: 6rem;
     left: 1rem;
     z-index: -1;
+    display: none;
   }
   .main_etudiant .degrades {
     display: block;
@@ -4314,6 +4319,7 @@ main.contenu_parcours .close:focus {
   .main_etudiant .zone_evenements {
     width: 95%;
     margin: 0 auto;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -4352,17 +4358,17 @@ main.contenu_parcours .close:focus {
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
     text-transform: uppercase;
     margin: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
     color: #c7afec;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
   .main_etudiant .texte_a_venir {
     width: 25rem;
@@ -4372,9 +4378,8 @@ main.contenu_parcours .close:focus {
     align-items: center;
     justify-content: center;
     position: relative;
-    right: 8vw;
     bottom: -4rem;
-    z-index: 20;
+    z-index: 1;
   }
   .main_etudiant .texte_a_venir h3 {
     text-transform: uppercase;
@@ -5579,4 +5584,4 @@ main.contenu_parcours .close:focus {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- autres */
