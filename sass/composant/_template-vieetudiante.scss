@@ -12,14 +12,14 @@
   // Styles du grand encadré sur la page Vie étudiante
   .encadre_page {
     width: 110%;
-    height: 230rem;
+    height: 230rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
     border: 0.15rem $couleurTitreTextes solid;
     border-radius: 1.4rem;
     position: absolute;
-    top: 10.4rem;
+    top: 4.1rem;
     left: 0.3rem;
     z-index: -1;
-    // display: none;
+    display: none;
   }
 
   // Styles généraux des dégradés en fond
@@ -116,6 +116,7 @@
   h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
+    margin-top: 5rem;
     z-index: 30;
   }
 
@@ -137,6 +138,7 @@
   .zone_evenements {
     width: 100%;
     margin: 0 auto;
+    margin-top: 1.3rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -173,7 +175,7 @@
         width: 6.5rem;
         height: auto;
         border-radius: 0.4rem;
-        z-index: 20;
+        z-index: 1;
       }
 
       .informations_evenements {
@@ -245,7 +247,7 @@
     // Styles du grand encadré sur la page
     .encadre_page {
       width: 110%;
-      height: 230rem;
+      height: 230rem;  //Il faudrait trouver un moyen que la hauteur suit le contenu
       border: 0.15rem $couleurTitreTextes solid;
       border-radius: 1.4rem;
       position: absolute;
@@ -370,6 +372,7 @@
     .zone_evenements {
       width: 100%;
       margin: 0 auto;
+      margin-top: 1.5rem;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -405,7 +408,7 @@
           width: 10rem;
           height: auto;
           border-radius: 0.4rem;
-          z-index: 20;
+          z-index: 1;
         }
 
         .informations_evenements {
@@ -477,13 +480,14 @@
     .encadre_page {
       display: block;
       width: 110%;
-      height: 121rem;
+      height: 121rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
       border: 0.3rem $couleurTitreTextes solid;
       border-radius: 2rem;
       position: absolute;
       top: 6rem;
       left: 1rem;
       z-index: -1;
+      display: none;
     }
 
     // Styles généraux des dégradés en fond
@@ -586,6 +590,7 @@
     h1 {
       text-transform: uppercase;
       margin-bottom: 2rem;
+      margin-top: 6rem;
       z-index: 30;
     }
 
@@ -607,6 +612,7 @@
     .zone_evenements {
       width: 95%;
       margin: 0 auto;
+      margin-top: 2rem;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -642,7 +648,7 @@
           width: 10rem;
           height: auto;
           border-radius: 0.4rem;
-          z-index: 20;
+          z-index: 1;
         }
 
         .informations_evenements {
@@ -651,19 +657,19 @@
           h4 {
             text-transform: uppercase;
             margin: 0;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
           }
 
           .date_evenement {
             color: $couleurElmtDeux;
             font-weight: 500;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
           }
 
           .description_evenement {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
           }
         }
       }
@@ -678,9 +684,8 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      right: 8vw;
       bottom: -4rem;
-      z-index: 20;
+      z-index: 1;
 
       h3 {
         text-transform: uppercase;
