@@ -3,7 +3,7 @@
 /// ///////////////////////////////////////////////////
 
 .contenuProf {
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -38,7 +38,7 @@
 }
 .barreBlanc {
   width: 100%;
-  height: 100%;
+  height: 180vh;
   margin-left: 1rem;
   position: absolute;
   top: 5rem;
@@ -63,13 +63,6 @@
   .barreBlanc {
     top: 7rem;
   }
-  .titreProf {
-    writing-mode: vertical-rl;
-    position: absolute;
-    top: 65%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-  }
 }
 ////////////////////////////////////////////////////////
 ///              VERSION GRAND ECRAN                ///
@@ -81,5 +74,12 @@
   }
   .barreBlanc {
     top: 10rem;
+  }
+  .titreProf {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    transform: translate(-50%, -50%);
   }
 }
