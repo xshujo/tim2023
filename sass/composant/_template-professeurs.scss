@@ -39,9 +39,9 @@
 .barreBlanc {
   width: 100%;
   height: 100%;
-  margin-left: 7px;
+  margin-left: 1rem;
   position: absolute;
-  top: 15rem;
+  top: 5rem;
   left: 0;
   border-top: 3px white solid;
   border-left: 3px white solid;
@@ -53,6 +53,25 @@
 }
 
 ////////////////////////////////////////////////////////
+///              VERSION TABLETTE                   ///
+/// ///////////////////////////////////////////////////
+
+@media only screen and (min-width: $largeur__tablette) {
+  .contenuProf {
+    margin: 0 10rem;
+  }
+  .barreBlanc {
+    top: 7rem;
+  }
+  .titreProf {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+}
+////////////////////////////////////////////////////////
 ///              VERSION GRAND ECRAN                ///
 /// ///////////////////////////////////////////////////
 
@@ -60,12 +79,7 @@
   .contenuProf {
     margin: 0 20rem;
   }
-
-  .titreProf {
-    writing-mode: vertical-rl;
-    position: absolute;
-    top: 65%;
-    left: 10%;
-    transform: translate(-50%, -50%);
+  .barreBlanc {
+    top: 10rem;
   }
 }
