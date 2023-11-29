@@ -3926,7 +3926,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 
 @media only screen and (min-width: 768px) {
   .contenuProf {
-    margin: 0 10rem;
+    margin: 0 5rem;
   }
   .barreBlanc {
     top: 7rem;
@@ -3934,7 +3934,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 @media only screen and (min-width: 1024px) {
   .contenuProf {
-    margin: 0 20rem;
+    margin: 0 15rem;
   }
   .barreBlanc {
     top: 10rem;
@@ -3943,7 +3943,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     writing-mode: vertical-rl;
     position: absolute;
     top: 65%;
-    left: 10%;
+    left: 5%;
     transform: translate(-50%, -50%);
   }
 }
