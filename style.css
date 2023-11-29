@@ -373,6 +373,24 @@ body {
   background-color: #051934;
   color: #f7f7f7;
 }
+body main {
+  margin-top: 12vw !important;
+}
+@media only screen and (min-width: 510px) {
+  body main {
+    margin-top: 10vw !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body main {
+    margin-top: 8vw !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body main {
+    margin-top: 6vw !important;
+  }
+}
 
 /* --------------------------------------------- composant */
 header {
@@ -5266,10 +5284,15 @@ footer .sidebar:last-of-type {
 }
 .main_accueil .fp-video {
   width: 100vw;
-  height: clamp(15rem, 4.2857rem + 53.5714vw, 30rem);
+  height: 80vw;
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+@media only screen and (min-width: 510px) {
+  .main_accueil .fp-video {
+    height: 70vw;
+  }
 }
 .main_accueil .fp-video video {
   width: 100%;
@@ -5278,7 +5301,7 @@ footer .sidebar:last-of-type {
 }
 .main_accueil .fp-video::before {
   width: 100vw;
-  height: clamp(16.5rem, 5.7857rem + 53.5714vw, 31.5rem);
+  height: 88vw;
   background-color: transparent;
   content: "";
   border: 2px solid white;
@@ -5286,6 +5309,11 @@ footer .sidebar:last-of-type {
   display: block;
   position: absolute;
   transform: translateX(-1.25rem) translateY(-1rem);
+}
+@media only screen and (min-width: 510px) {
+  .main_accueil .fp-video::before {
+    height: 76vw;
+  }
 }
 .main_accueil .fp-tim-cest:nth-of-type(1) {
   width: 100%;
@@ -5405,10 +5433,10 @@ footer .sidebar:last-of-type {
     padding: 0.5rem 1rem;
   }
   .main_accueil .fp-video {
-    height: clamp(30rem, 9rem + 43.75vw, 37rem);
+    height: 60vw;
   }
   .main_accueil .fp-video::before {
-    height: clamp(33rem, 12rem + 43.75vw, 40rem);
+    height: 66vw;
     border: 4px solid white;
     border-radius: 1.5rem;
     transform: translateX(-1.5rem) translateY(-2rem);
@@ -5536,10 +5564,10 @@ footer .sidebar:last-of-type {
     margin-top: 2rem;
   }
   .main_accueil .fp-video {
-    height: clamp(30rem, 9rem + 43.75vw, 37rem);
+    height: calc(100vh - 6vw);
   }
   .main_accueil .fp-video::before {
-    height: clamp(33rem, 12rem + 43.75vw, 40rem);
+    height: calc(100vh - 1vw);
     border: 0.3rem solid #f7f7f7;
     border-radius: 2rem;
     transform: translateX(-3.3rem) translateY(-2rem);
