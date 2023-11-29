@@ -373,6 +373,24 @@ body {
   background-color: #051934;
   color: #f7f7f7;
 }
+body main {
+  margin-top: 12vw !important;
+}
+@media only screen and (min-width: 510px) {
+  body main {
+    margin-top: 10vw !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body main {
+    margin-top: 8vw !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body main {
+    margin-top: 6vw !important;
+  }
+}
 
 /* --------------------------------------------- composant */
 header {
@@ -554,7 +572,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
     height: 6vw;
   }
   header .menu-burger input,
-header .menu-burger label {
+  header .menu-burger label {
     display: none;
   }
   header .menu-burger .menu-entete-container {
@@ -642,7 +660,7 @@ header .menu-burger label {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 976px) {
+@media only screen and (min-width: 1024px) {
   main {
     width: 100vw;
   }
@@ -664,11 +682,11 @@ header .menu-burger label {
     background: repeating-radial-gradient(farthest-corner at 100% 0%, #0d3a76 0, #051934 50%, #051934 100%);
   }
   main .contenu1,
-main .contenu2,
-main .contenu3,
-main .contenu4,
-main .contenu5,
-main .contenu6 {
+  main .contenu2,
+  main .contenu3,
+  main .contenu4,
+  main .contenu5,
+  main .contenu6 {
     background-clip: content-box;
   }
   main .contenu {
@@ -2276,7 +2294,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse a {
   color: inherit;
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 768px) {
   main.contenu_parcours {
     width: 100%;
     background-color: transparent;
@@ -2879,7 +2897,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse a {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: 976px) {
+@media only screen and (min-width: 1024px) {
   main.contenu_parcours {
     width: 92vw;
     background-color: transparent;
@@ -2928,7 +2946,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse a {
     font-weight: bold;
   }
   main.contenu_parcours .close:hover,
-main.contenu_parcours .close:focus {
+  main.contenu_parcours .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -3952,7 +3970,7 @@ main.contenu_parcours .close:focus {
   }
 }
 .contenuProf {
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -3982,16 +4000,39 @@ main.contenu_parcours .close:focus {
 
 .barreBlanc {
   width: 100%;
-  height: 100%;
-  margin-left: 7px;
+  height: 180vh;
+  margin-left: 1rem;
   position: absolute;
-  top: 15rem;
+  top: 5rem;
   left: 0;
   border-top: 3px white solid;
   border-left: 3px white solid;
   border-radius: 50px 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .contenuProf {
+    margin: 0 5rem;
+  }
+  .barreBlanc {
+    top: 7rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contenuProf {
+    margin: 0 15rem;
+  }
+  .barreBlanc {
+    top: 10rem;
+  }
+  .titreProf {
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+  }
+}
 /************* VERSION MOBILE *************/
 .main_etudiant {
   width: 91vw;
@@ -4137,7 +4178,7 @@ main.contenu_parcours .close:focus {
 }
 
 /************* VERSION TABLETTE *************/
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 768px) {
   .main_etudiant {
     width: 91vw;
     background-color: transparent;
@@ -4281,7 +4322,7 @@ main.contenu_parcours .close:focus {
   }
 }
 /************* VERSION ORDINATEUR *************/
-@media only screen and (min-width: 976px) {
+@media only screen and (min-width: 1024px) {
   .main_etudiant {
     width: 92vw;
     background-color: transparent;
@@ -4750,7 +4791,7 @@ main.contenu_parcours .close:focus {
   left: -10rem;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .text__page__projet {
     position: relative;
     font-size: 3rem;
@@ -4997,7 +5038,7 @@ main.contenu_parcours .close:focus {
     left: -10rem;
   }
 }
-@media screen and (min-width: 976px) {
+@media screen and (min-width: 1024px) {
   .text__page__projet {
     position: relative;
     font-size: 3rem;
@@ -5340,10 +5381,15 @@ main.contenu_parcours .close:focus {
 }
 .main_accueil .fp-video {
   width: 100vw;
-  height: clamp(15rem, 4.2857rem + 53.5714vw, 30rem);
+  height: 80vw;
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+@media only screen and (min-width: 510px) {
+  .main_accueil .fp-video {
+    height: 70vw;
+  }
 }
 .main_accueil .fp-video video {
   width: 100%;
@@ -5352,7 +5398,7 @@ main.contenu_parcours .close:focus {
 }
 .main_accueil .fp-video::before {
   width: 100vw;
-  height: clamp(16.5rem, 5.7857rem + 53.5714vw, 31.5rem);
+  height: 88vw;
   background-color: transparent;
   content: "";
   border: 2px solid white;
@@ -5360,6 +5406,11 @@ main.contenu_parcours .close:focus {
   display: block;
   position: absolute;
   transform: translateX(-1.25rem) translateY(-1rem);
+}
+@media only screen and (min-width: 510px) {
+  .main_accueil .fp-video::before {
+    height: 76vw;
+  }
 }
 .main_accueil .fp-tim-cest:nth-of-type(1) {
   width: 100%;
@@ -5479,10 +5530,10 @@ main.contenu_parcours .close:focus {
     padding: 0.5rem 1rem;
   }
   .main_accueil .fp-video {
-    height: clamp(30rem, 9rem + 43.75vw, 37rem);
+    height: 60vw;
   }
   .main_accueil .fp-video::before {
-    height: clamp(33rem, 12rem + 43.75vw, 40rem);
+    height: 66vw;
     border: 4px solid white;
     border-radius: 1.5rem;
     transform: translateX(-1.5rem) translateY(-2rem);
@@ -5610,10 +5661,10 @@ main.contenu_parcours .close:focus {
     margin-top: 2rem;
   }
   .main_accueil .fp-video {
-    height: clamp(30rem, 9rem + 43.75vw, 37rem);
+    height: calc(100vh - 6vw);
   }
   .main_accueil .fp-video::before {
-    height: clamp(33rem, 12rem + 43.75vw, 40rem);
+    height: calc(100vh - 1vw);
     border: 0.3rem solid #f7f7f7;
     border-radius: 2rem;
     transform: translateX(-3.3rem) translateY(-2rem);
@@ -5653,4 +5704,4 @@ main.contenu_parcours .close:focus {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres */
+/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
