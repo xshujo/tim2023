@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 20rem;
 }
 .bulleBg {
   filter: blur(25rem);
@@ -57,19 +56,16 @@
 ///              VERSION GRAND ECRAN                ///
 /// ///////////////////////////////////////////////////
 
-@media only screen and (min-width: 976px) {
+@media only screen and (min-width: $largeur__bureau) {
   .contenuProf {
     margin: 0 20rem;
   }
-  .titrePageProf {
+
+  .titreProf {
     writing-mode: vertical-rl;
     position: absolute;
     top: 65%;
     left: 10%;
     transform: translate(-50%, -50%);
-  }
-  .titreProf {
-    //   writing-mode: vertical-lr;
-    //white-space: nowrap;
   }
 }

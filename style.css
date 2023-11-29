@@ -642,7 +642,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 976px) {
+@media only screen and (min-width: 1024px) {
   main {
     width: 100vw;
   }
@@ -2154,7 +2154,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   font-size: 1rem;
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 768px) {
   main.contenu_parcours {
     width: 100%;
     background-color: transparent;
@@ -2759,7 +2759,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: 976px) {
+@media only screen and (min-width: 1024px) {
   main.contenu_parcours {
     width: 92vw;
     background-color: transparent;
@@ -3888,7 +3888,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 20rem;
 }
 
 .bulleBg {
@@ -3925,11 +3924,11 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   border-radius: 50px 0;
 }
 
-@media only screen and (min-width: 976px) {
+@media only screen and (min-width: 1024px) {
   .contenuProf {
     margin: 0 20rem;
   }
-  .titrePageProf {
+  .titreProf {
     writing-mode: vertical-rl;
     position: absolute;
     top: 65%;
@@ -4082,7 +4081,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 
 /************* VERSION TABLETTE *************/
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 768px) {
   .main_etudiant {
     width: 91vw;
     background-color: transparent;
@@ -4226,7 +4225,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   }
 }
 /************* VERSION ORDINATEUR *************/
-@media only screen and (min-width: 976px) {
+@media only screen and (min-width: 1024px) {
   .main_etudiant {
     width: 92vw;
     background-color: transparent;
@@ -4695,7 +4694,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   left: -10rem;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 768px) {
   .text__page__projet {
     position: relative;
     font-size: 3rem;
@@ -4942,7 +4941,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     left: -10rem;
   }
 }
-@media screen and (min-width: 976px) {
+@media screen and (min-width: 1024px) {
   .text__page__projet {
     position: relative;
     font-size: 3rem;
