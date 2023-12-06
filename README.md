@@ -49,7 +49,7 @@ Créer les extensions et avanacer l'intégration du thème sur WordPress pour le
 ### Réalisations du sprint 3
 
 - Avancement de l'intégration (adaptabilité)
-- Avancement de la création des extensions du carrousel de la page Professeurs et du générateur de citations
+- Création d'une extension de carrousel pour la page Professeurs et d'un générateur de citations pour la page d'accueil
 - Avancement au niveau du contenu (création de la vidéo promotionnelle, photos, textes)
 
 ## Objectif du sprint 4 (à venir)
