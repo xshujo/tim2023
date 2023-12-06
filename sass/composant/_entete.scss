@@ -25,17 +25,16 @@ header {
 
   // Menu
   .menu-burger {
-
     // Bouton burger
     input {
       display: none;
     }
 
-    input:checked~.menu-entete-container {
+    input:checked ~ .menu-entete-container {
       display: flex;
     }
 
-    input:checked~label {
+    input:checked ~ label {
       .bar:first-child {
         transform: rotate(45deg) translateX(50%);
       }
@@ -94,7 +93,7 @@ header {
         li {
           width: 90%;
           background-color: rgba(5, 25, 52, 0.6);
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-size: 4vw;
           font-weight: 500;
           text-transform: uppercase;
@@ -133,7 +132,6 @@ header {
 
     // Menu
     .menu-burger {
-
       // Bouton burger
       label {
         width: 6vw;
@@ -150,7 +148,6 @@ header {
         top: 10vw;
 
         #menu-entete {
-
           li {
             font-size: 3vw;
             padding: 0 1.5vw;
@@ -188,7 +185,6 @@ header {
 
     // Menu
     .menu-burger {
-
       // Bouton burger
       label {
         width: 5vw;
@@ -205,7 +201,6 @@ header {
         top: 8vw;
 
         #menu-entete {
-
           li {
             font-size: 2vw;
             padding: 0 1vw;
@@ -226,7 +221,6 @@ header {
   }
 }
 
-
 @media only screen and (min-width: 1024px) {
   header {
     height: 6vw;
@@ -243,7 +237,6 @@ header {
 
     // Menu
     .menu-burger {
-
       // Bouton burger
       input,
       label {
@@ -308,12 +301,16 @@ header {
 
             a {
               height: inherit;
-              background: linear-gradient(to right,
+              background: linear-gradient(
+                  to right,
                   rgb(107, 172, 237),
-                  rgb(107, 172, 237)),
-                linear-gradient(to right,
+                  rgb(107, 172, 237)
+                ),
+                linear-gradient(
+                  to right,
                   rgb(182, 211, 240),
-                  rgb(182, 211, 240));
+                  rgb(182, 211, 240)
+                );
               background-size: 100% 0px, 0 0px;
               background-position: 100% 100%, 0 100%;
               background-repeat: no-repeat;
@@ -334,10 +331,8 @@ header {
 
 @media only screen and (min-width: 1440px) {
   header {
-
     // Menu
     .menu-burger {
-
       // Liste du menu
       .menu-entete-container {
         #menu-entete {
