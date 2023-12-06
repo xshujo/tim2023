@@ -3,7 +3,6 @@ footer {
   height: auto;
   background-color: $couleurFond;
   color: white;
-  padding: 5vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -13,13 +12,13 @@ footer {
 
   // Divs "Contacts", "Suivez-nous", crédits
   .sidebar {
+
     // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
     div {
       width: fit-content;
 
       // Titres "Contacts", "Suivez-nous"
       h2 {
-        font-size: 6vw;
         text-transform: uppercase;
         margin: 0;
         padding: 0;
@@ -39,6 +38,7 @@ footer {
 
     // Suivez-nous
     &:nth-of-type(2) {
+
       // Div des logos de médias sociaux; Code HTML écrit dans WordPress
       div:last-child {
         display: flex;
@@ -72,14 +72,15 @@ footer {
 
 @media only screen and (min-width: 575px) {
   footer {
+
     // Divs "Contacts", "Suivez-nous", crédits
     .sidebar {
+
       // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
       div {
+
         // Titres "Contacts", "Suivez-nous"
-        h2 {
-          font-size: 4.5vw;
-        }
+        h2 {}
       }
     }
   }
@@ -87,20 +88,23 @@ footer {
 
 @media only screen and (min-width: 768px) {
   footer {
+
     // Divs "Contacts", "Suivez-nous", crédits
     .sidebar {
+
       // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
       div {
+
         // Titres "Contacts", "Suivez-nous"
-        h2 {
-          font-size: 3.5vw;
-        }
+        h2 {}
       }
 
       // Suivez-nous
       &:nth-of-type(2) {
+
         // Div des logos de médias sociaux; Code HTML écrit dans WordPress
         div:last-child {
+
           // Logos des médias sociaux
           a {
             width: 5vw;
@@ -123,12 +127,12 @@ footer {
 
     // Divs "Contacts", "Suivez-nous", crédits
     .sidebar {
+
       // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
       div {
+
         // Titres "Contacts", "Suivez-nous"
-        h2 {
-          font-size: 3vw;
-        }
+        h2 {}
       }
     }
   }
@@ -136,19 +140,18 @@ footer {
 
 @media only screen and (min-width: 1440px) {
   footer {
+
     // Divs "Contacts", "Suivez-nous", crédits
     .sidebar {
+
       // Divs contenant les titres, les paragraphes et le code HTML qui génère les logos
       div {
+
         // Titres "Contacts", "Suivez-nous"
-        h2 {
-          font-size: 2vw;
-        }
+        h2 {}
 
         // Tous les paragraphes (contacts, crédits)
-        p {
-          font-size: 1vw;
-        }
+        p {}
       }
     }
   }
