@@ -364,8 +364,9 @@ h6 {
 P,
 a,
 li,
-button {
-  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem);
+button,
+figcaption {
+  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
 }
 
 h1,
@@ -598,7 +599,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
     height: 6vw;
   }
   header .menu-burger input,
-header .menu-burger label {
+  header .menu-burger label {
     display: none;
   }
   header .menu-burger .menu-entete-container {
@@ -662,7 +663,7 @@ header .menu-burger label {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 0;
+    padding: 1rem 0 1.5rem 0;
     display: flex;
     justify-content: space-around;
     transition: background-size 400ms;
@@ -680,7 +681,6 @@ header .menu-burger label {
     height: 3px;
   }
 }
-
 footer {
   width: 100vw;
   height: auto;
@@ -2644,7 +2644,7 @@ footer .sidebar:last-of-type {
     font-weight: bold;
   }
   .contenu_parcours .close:hover,
-.contenu_parcours .close:focus {
+  .contenu_parcours .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;

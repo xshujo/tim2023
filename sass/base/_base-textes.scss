@@ -35,8 +35,9 @@ h6 {
 P,
 a,
 li,
-button {
-  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem);
+button,
+figcaption {
+  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
 }
 
 h1,
