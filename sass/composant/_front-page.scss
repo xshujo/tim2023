@@ -106,19 +106,15 @@
 
     // Tous les boutons
     .wp-block-buttons {
-        all: unset;
         margin: 1rem 0;
 
         .wp-block-button {
-            all: unset;
 
             a {
-                all: unset;
                 background: rgb(201, 233, 255);
                 background: linear-gradient(180deg,
                         rgba(201, 233, 255, 1) 0%,
                         rgba(158, 201, 231, 1) 100%);
-                font-family: "Montserrat", sans-serif;
                 font-weight: bold;
                 color: $degradeFondSiteDeux;
                 text-transform: uppercase;
