@@ -239,7 +239,7 @@
         width: 90%;
 
         h3{
-            font-size: 1rem;
+            
         }
 
         svg{
@@ -331,7 +331,7 @@
                     height: 45px;
                     border-radius: 50%;
                     margin: 0.2rem;
-                    font-size: 1rem;
+                   
 
 
                 }
@@ -346,8 +346,8 @@
 
         .liste_cours {
             list-style-type: none;
-            font-size: 1.5rem;
-            line-height: 1;
+            // font-size: 1.5rem;
+            // line-height: 1;
             line-break: auto;
             display: flex;
             flex-direction: column;
@@ -360,7 +360,7 @@
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
-                font-size: 2vw;
+                
             }
 
 
@@ -437,8 +437,8 @@
 
         .liste_cours_deux {
             list-style-type: none;
-            font-size: 1.5rem;
-            line-height: 1;
+            
+            // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
@@ -451,7 +451,7 @@
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
-                font-size: 2vw;
+               
             }
 
 
@@ -527,8 +527,8 @@
 
         .liste_cours_trois {
             list-style-type: none;
-            font-size: 1.5rem;
-            line-height: 1;
+            
+            // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
@@ -541,7 +541,7 @@
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
-                font-size: 2vw;
+                
             }
 
 
@@ -616,8 +616,8 @@
 
         .liste_cours_quatre {
             list-style-type: none;
-            font-size: 1.5rem;
-            line-height: 1;
+            
+            // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
@@ -630,7 +630,7 @@
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
-                font-size: 2vw;
+                
             }
 
 
@@ -720,8 +720,8 @@
 
         .liste_cours_cinq {
             list-style-type: none;
-            font-size: 1.5rem;
-            line-height: 1;
+           
+            // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
@@ -734,7 +734,7 @@
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
-                font-size: 2vw;
+                
             }
 
             .prj_web {
@@ -855,8 +855,8 @@
 
         .liste_cours_six {
             list-style-type: none;
-            font-size: 1.5rem;
-            line-height: 1;
+            
+            // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
@@ -869,7 +869,7 @@
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
-                font-size: 2vw;
+                
             }
 
 
@@ -957,8 +957,8 @@
         .programmation {
 
             list-style-type: none;
-            font-size: 1rem;
-            white-space: nowrap;
+            
+            // white-space: nowrap;
             display: flex;
             flex-direction: column;
             margin-left: -3rem;
@@ -1065,10 +1065,10 @@
         .threeD {
             list-style-type: none;
             /* Remove the default list marker */
-            font-size: 1rem;
-            line-height: 1;
-            white-space: nowrap;
-            line-break: auto;
+            
+            // line-height: 1;
+            // white-space: nowrap;
+            // line-break: auto;
             display: flex;
             flex-direction: column;
             margin-left: -2rem;
@@ -1117,10 +1117,10 @@
         .adobe {
             list-style-type: none;
             /* Remove the default list marker */
-            font-size: 1rem;
-            line-height: 1;
-            white-space: nowrap;
-            line-break: auto;
+            
+            // line-height: 1;
+            // white-space: nowrap;
+            // line-break: auto;
             display: flex;
             flex-direction: column;
             margin-left: -2rem;
@@ -1244,8 +1244,8 @@
         p {
             text-align: left;
             margin: 0 1.5rem;
-            font-size: 1rem;
-            white-space: wrap;
+            
+            // white-space: wrap;
         }
 
     }
@@ -1279,7 +1279,7 @@
             text-align: center;
             border-bottom: 1px solid #9ec9e7;
             padding-bottom: 1rem;
-            white-space: nowrap;
+            // white-space: nowrap;
             margin-top: 1rem;
             color: #9ec9e7;
         }
@@ -1404,7 +1404,7 @@
 
                 figcaption {
                     background: none;
-                    font-size: 1rem;
+                    
                 }
 
 
@@ -1429,7 +1429,7 @@
 
                 figcaption {
                     background: none;
-                    font-size: 1rem;
+                    
                 }
 
 
@@ -1455,7 +1455,7 @@
 
                 figcaption {
                     background: none;
-                    font-size: 1rem;
+                    
                     padding-top: 2rem;
                 }
 
@@ -1481,7 +1481,7 @@
 
                 figcaption {
                     background: none;
-                    font-size: 1rem;
+                    
                 }
 
 
@@ -1521,7 +1521,7 @@
             // position
 
             h4 {
-                font-size: 1rem;
+                
             }
 
         }
@@ -1552,8 +1552,8 @@
 
                 list-style-type: none;
                 /* Remove the default list marker */
-                font-size: 2.5vw;
-                white-space: nowrap;
+                
+                // white-space: nowrap;
                 display: flex;
                 flex-direction: column;
                 margin-left: -3rem;
@@ -1754,7 +1754,7 @@
                 padding: 0.5rem 2rem;
                 border-radius: 25px;
                 margin: 1rem;
-                font-size: 1rem;
+                
 
                 a {
                     text-decoration: none;
@@ -1855,10 +1855,10 @@
 
                 .liste_cours {
                     list-style-type: none;
-                    font-size: 1.5rem;
-                    line-height: 1;
-                    white-space: nowrap;
-                    line-break: auto;
+                    
+                    // line-height: 1;
+                    // white-space: nowrap;
+                    // line-break: auto;
                     display: flex;
                     flex-direction: column;
                     width: 70vw;
@@ -1873,7 +1873,7 @@
                         /* Adjust margin for smaller screens */
                         border-radius: 20px;
                         background-color: #8275c4;
-                        font-size: 2vw;
+                        
                     }
 
                     .creation_video {
@@ -1947,7 +1947,7 @@
                 }
 
                 span {
-                    font-size: 1rem;
+                    
                 }
 
 
@@ -1982,8 +1982,8 @@
             .programmation {
 
                 list-style-type: none;
-                font-size: 1rem;
-                white-space: nowrap;
+                
+                // white-space: nowrap;
                 display: flex;
                 flex-direction: column;
                 margin-left: -3rem;
@@ -2086,10 +2086,10 @@
             .threeD {
                 list-style-type: none;
                 /* Remove the default list marker */
-                font-size: 1rem;
-                line-height: 1;
-                white-space: nowrap;
-                line-break: auto;
+                
+                // line-height: 1;
+                // white-space: nowrap;
+                // line-break: auto;
                 display: flex;
                 flex-direction: column;
                 margin-left: -2rem;
@@ -2136,10 +2136,10 @@
             .adobe {
                 list-style-type: none;
                 /* Remove the default list marker */
-                font-size: 1rem;
-                line-height: 1;
-                white-space: nowrap;
-                line-break: auto;
+                
+                // line-height: 1;
+                // white-space: nowrap;
+                // line-break: auto;
                 display: flex;
                 flex-direction: column;
                 margin-left: -2rem;
@@ -2257,8 +2257,8 @@
             p {
                 text-align: left;
                 margin: 0 1.5rem;
-                font-size: 1rem;
-                white-space: wrap;
+                
+                // white-space: wrap;
             }
 
         }
@@ -2291,7 +2291,7 @@
                 text-align: center;
                 border-bottom: 1px solid #9ec9e7;
                 padding-bottom: 1rem;
-                white-space: nowrap;
+                // white-space: nowrap;
                 margin-top: 1rem;
                 color: #9ec9e7;
             }
@@ -2413,7 +2413,7 @@
 
                     figcaption {
                         background: none;
-                        font-size: 1rem;
+                        
                     }
 
 
@@ -2438,7 +2438,7 @@
 
                     figcaption {
                         background: none;
-                        font-size: 1rem;
+                        
                     }
 
 
@@ -2463,7 +2463,7 @@
 
                     figcaption {
                         background: none;
-                        font-size: 1rem;
+                        
                         padding-top: 2rem;
                     }
 
@@ -2489,7 +2489,7 @@
 
                     figcaption {
                         background: none;
-                        font-size: 1rem;
+                        
                     }
 
 
@@ -2530,7 +2530,7 @@
                 // position
 
                 h4 {
-                    font-size: 1rem;
+                    
                 }
 
             }
@@ -2544,7 +2544,7 @@
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
                 backdrop-filter: brightness(150%) saturate(95%) blur(5px);
                 // font
-                font-size: 2vw;
+                
 
                 // font
 
@@ -2561,8 +2561,8 @@
 
                     list-style-type: none;
                     /* Remove the default list marker */
-                    font-size: 1.5vw;
-                    white-space: nowrap;
+                    
+                    // white-space: nowrap;
                     display: flex;
                     flex-direction: column;
 
@@ -2741,7 +2741,7 @@
                     padding: 0.5rem 2rem;
                     border-radius: 25px;
                     margin: 1rem;
-                    font-size: 1rem;
+                    
 
                 }
 
@@ -2903,10 +2903,10 @@
 
                 .liste_cours {
                     list-style-type: none;
-                    font-size: 2rem;
-                    line-height: 1;
-                    white-space: nowrap;
-                    line-break: auto;
+                    
+                    // line-height: 1;
+                    // white-space: nowrap;
+                    // line-break: auto;
                     display: flex;
                     flex-direction: column;
                     width: 70vw;
@@ -2998,10 +2998,10 @@
 
                 .liste_cours_deux {
                     list-style-type: none;
-                    line-height: 1;
-                    white-space: nowrap;
-                    line-break: auto;
-                    font-size: 2rem;
+                    // line-height: 1;
+                    // white-space: nowrap;
+                    // line-break: auto;
+                    
                     display: none;
                     flex-direction: column;
                     width: 70vw;
@@ -3013,7 +3013,7 @@
                         margin: 1rem 0;
                         border-radius: 20px;
                         background-color: #8275c4;
-                        font-size: 2vw;
+                        
                     }
 
                     li:hover {
@@ -3091,10 +3091,10 @@
 
                 .liste_cours_trois {
                     list-style-type: none;
-                    line-height: 1;
-                    white-space: nowrap;
-                    line-break: auto;
-                    font-size: 2rem;
+                    // line-height: 1;
+                    // white-space: nowrap;
+                    // line-break: auto;
+                    
                     justify-content: space-evenly;
                     display: none;
                     flex-direction: column;
@@ -3107,7 +3107,7 @@
                         margin: 1rem 0;
                         border-radius: 20px;
                         background-color: #8275c4;
-                        font-size: 2vw;
+                        
 
                     }
 
@@ -3184,10 +3184,10 @@
 
                 .liste_cours_quatre {
                     list-style-type: none;
-                    line-height: 1;
-                    white-space: nowrap;
-                    line-break: auto;
-                    font-size: 2rem;
+                    // line-height: 1;
+                    // white-space: nowrap;
+                    // line-break: auto;
+                    
                     display: none;
                     flex-direction: column;
                     width: 70vw;
@@ -3202,7 +3202,7 @@
                         margin: 0.5rem 0;
                         border-radius: 20px;
                         background-color: #8275c4;
-                        font-size: 2vw;
+                        
 
                     }
 
@@ -3293,10 +3293,10 @@
 
                 .liste_cours_cinq {
                     list-style-type: none;
-                    line-height: 1;
-                    white-space: nowrap;
-                    line-break: auto;
-                    font-size: 1rem;
+                    // line-height: 1;
+                    // white-space: nowrap;
+                    // line-break: auto;
+                    
                     display: none;
                     flex-direction: column;
                     width: 70vw;
@@ -3309,7 +3309,7 @@
                         margin: 0.5rem 0;
                         border-radius: 20px;
                         background-color: #8275c4;
-                        font-size: 1.5vw;
+                        
 
                     }
 
@@ -3431,10 +3431,10 @@
 
                 .liste_cours_six {
                     list-style-type: none;
-                    line-height: 1;
-                    white-space: nowrap;
-                    line-break: auto;
-                    font-size: 2rem;
+                    // line-height: 1;
+                    // white-space: nowrap;
+                    // line-break: auto;
+                    
                     display: none;
                     flex-direction: column;
                     width: 70vw;
@@ -3447,7 +3447,7 @@
                         margin: 0.5rem 0;
                         border-radius: 20px;
                         background-color: #8275c4;
-                        font-size: 2vw;
+                        
 
                     }
 
@@ -3494,7 +3494,7 @@
                 }
 
                 span {
-                    font-size: 1.5rem;
+                    
                 }
 
 
@@ -3531,10 +3531,10 @@
 
                 list-style-type: none;
                 /* Remove the default list marker */
-                font-size: 1rem;
-                line-height: 1;
-                white-space: nowrap;
-                line-break: auto;
+                
+                // line-height: 1;
+                // white-space: nowrap;
+                // line-break: auto;
                 display: flex;
                 flex-direction: column;
                 margin-left: -3rem;
@@ -3629,10 +3629,10 @@
             .threeD {
                 list-style-type: none;
                 /* Remove the default list marker */
-                font-size: 1rem;
-                line-height: 1;
-                white-space: nowrap;
-                line-break: auto;
+                
+                // line-height: 1;
+                // white-space: nowrap;
+                // line-break: auto;
                 display: flex;
                 flex-direction: column;
                 margin-left: -2rem;
@@ -3676,10 +3676,10 @@
             .adobe {
                 list-style-type: none;
                 /* Remove the default list marker */
-                font-size: 1rem;
-                line-height: 1;
-                white-space: nowrap;
-                line-break: auto;
+                
+                // line-height: 1;
+                // white-space: nowrap;
+                // line-break: auto;
                 display: flex;
                 flex-direction: column;
                 margin-left: -2rem;
@@ -3789,8 +3789,8 @@
 
             p {
                 text-align: left;
-                font-size: 1rem;
-                white-space: wrap;
+                
+                // white-space: wrap;
 
 
 
@@ -3824,7 +3824,7 @@
                 text-align: center;
                 border-bottom: 1px solid #9ec9e7;
                 padding-bottom: 1rem;
-                white-space: nowrap;
+                // white-space: nowrap;
                 margin-top: 1rem;
                 color: #9ec9e7;
             }
@@ -3945,7 +3945,7 @@
 
                     figcaption {
                         background: none;
-                        font-size: 1rem;
+                        
                     }
 
 
@@ -3969,7 +3969,7 @@
 
                     figcaption {
                         background: none;
-                        font-size: 1rem;
+                        
                     }
 
 
@@ -3993,7 +3993,7 @@
 
                     figcaption {
                         background: none;
-                        font-size: 1rem;
+                        
                     }
 
 
@@ -4017,7 +4017,7 @@
 
                     figcaption {
                         background: none;
-                        font-size: 1rem;
+                        
                     }
 
 
@@ -4045,7 +4045,7 @@
                 backdrop-filter: brightness(150%) saturate(95%) blur(5px);
 
                 // font
-                font-size: 2vw;
+                
                 // structure
                 border-radius: 50px 50px;
                 padding: 1em;
@@ -4056,7 +4056,7 @@
 
                 h4 {
                     padding-left: 2vw;
-                    font-size: 2vw;
+                    
                 }
 
             }
@@ -4073,7 +4073,7 @@
                 backdrop-filter: brightness(150%) saturate(95%) blur(5px);
 
                 // font
-                font-size: 2vw;
+                
 
                 // structure
                 border-radius: 50px 50px;
@@ -4086,17 +4086,17 @@
 
 
                 h4 {
-                    font-size: 2vw;
+                    
                 }
 
                 .entreprises {
 
                     list-style-type: none;
                     /* Remove the default list marker */
-                    font-size: 1.1vw;
-                    line-height: 1;
-                    white-space: nowrap;
-                    line-break: auto;
+                    
+                    // line-height: 1;
+                    // white-space: nowrap;
+                    // line-break: auto;
                     display: flex;
                     flex-direction: column;
                     margin-left: -3rem;
@@ -4211,12 +4211,12 @@
 
                 h4 {
                     padding-left: 2rem;
-                    font-size: 2vw;
+                    
                 }
 
                 li {
                     padding-bottom: 0.5rem;
-                    font-size: 1.2vw;
+                    
                 }
 
             }
@@ -4245,12 +4245,12 @@
 
                 h4 {
                     padding-left: 2rem;
-                    font-size: 2vw;
+                    
                 }
 
                 li {
                     padding-bottom: 0.5rem;
-                    font-size: 1.2vw;
+                    
                 }
 
             }
