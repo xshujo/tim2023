@@ -3875,7 +3875,7 @@ main .texte_a_venir .texte_2 {
 }
 .blockflex__projet .projet__general .carte__categorie img {
   position: relative;
-  width: 13rem;
+  width: 10rem;
   height: 11rem;
   display: flex;
   align-items: center;
