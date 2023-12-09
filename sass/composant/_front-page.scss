@@ -11,7 +11,6 @@
     // Tous les titres
     h2 {
         width: 70vw;
-        font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
         letter-spacing: 0.05rem;
         text-align: center;
         text-transform: uppercase;
@@ -107,20 +106,15 @@
 
     // Tous les boutons
     .wp-block-buttons {
-        all: unset;
         margin: 1rem 0;
 
         .wp-block-button {
-            all: unset;
 
             a {
-                all: unset;
                 background: rgb(201, 233, 255);
                 background: linear-gradient(180deg,
                         rgba(201, 233, 255, 1) 0%,
                         rgba(158, 201, 231, 1) 100%);
-                font-family: "Montserrat", sans-serif;
-                font-size: 0.875rem;
                 font-weight: bold;
                 color: $degradeFondSiteDeux;
                 text-transform: uppercase;
@@ -133,10 +127,14 @@
     // Vidéo promotionnelle
     .fp-video {
         width: 100vw;
-        height: clamp(15rem, 4.2857rem + 53.5714vw, 30rem);
+        height: 80vw;
         overflow: hidden;
         margin: 0;
         padding: 0;
+
+        @media only screen and (min-width:510px) {
+            height: 70vw;
+        }
 
         video {
             width: 100%;
@@ -146,7 +144,7 @@
 
         &::before {
             width: 100vw;
-            height: clamp(16.5rem, 5.7857rem + 53.5714vw, 31.5rem);
+            height: 88vw;
             background-color: transparent;
             content: "";
             border: 2px solid white;
@@ -154,6 +152,10 @@
             display: block;
             position: absolute;
             transform: translateX(-1.25rem) translateY(-1rem);
+
+            @media only screen and (min-width:510px) {
+                height: 76vw;
+            }
         }
     }
 
@@ -161,7 +163,6 @@
     // Titre
     .fp-tim-cest:nth-of-type(1) {
         width: 100%;
-        font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
         letter-spacing: 0.075rem;
         text-align: right;
         margin: 3rem 0 0 0;
@@ -170,7 +171,6 @@
 
     .fp-tim-cest:nth-of-type(2) {
         width: 100%;
-        font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
         text-align: right;
         letter-spacing: 0.075rem;
         margin: 0;
@@ -225,7 +225,6 @@
     // Soumets une demande d’admission dès maintenant.
     // Paragraphe
     .fp-p-admission {
-        font-size: clamp(0.75rem, 0.3929rem + 1.7857vw, 1.25rem);
         font-weight: 500;
         color: $couleurElmtDeux;
         letter-spacing: 0.075rem;
@@ -241,7 +240,6 @@
         // Tous les titres
         h2 {
             width: 60vw;
-            font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
             letter-spacing: 0.1rem;
             margin: 6rem 0 0 0;
         }
@@ -249,7 +247,6 @@
         // Tous les paragraphes
         &>p {
             width: 60vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
             margin: 4rem 0;
 
             // Crochets pour certains paragraphes
@@ -281,9 +278,7 @@
         // Toutes les icônes des cours de la page d'accueil
         .wp-block-gallery {
             .fp-icone-cours {
-                .wp-element-caption {
-                    font-size: 1.1rem;
-                }
+                .wp-element-caption {}
             }
         }
 
@@ -316,7 +311,6 @@
 
             .wp-block-button {
                 a {
-                    font-size: 1rem;
                     border-radius: 2rem;
                     padding: 0.5rem 1rem;
                 }
@@ -325,10 +319,10 @@
 
         // Vidéo promotionnelle
         .fp-video {
-            height: clamp(30rem, 9rem + 43.75vw, 37rem);
+            height: 60vw;
 
             &::before {
-                height: clamp(33rem, 12rem + 43.75vw, 40rem);
+                height: 66vw;
                 border: 4px solid white;
                 border-radius: 1.5rem;
                 transform: translateX(-1.5rem) translateY(-2rem);
@@ -338,14 +332,12 @@
         // Étudier en TIM, c'est [...]
         // Titre
         .fp-tim-cest:nth-of-type(1) {
-            font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
             letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
             margin: 3rem 0 0 0;
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
         }
 
         .fp-tim-cest:nth-of-type(2) {
-            font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
             letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
         }
@@ -371,9 +363,7 @@
             }
         }
 
-        .fp-p-admission {
-            font-size: clamp(1.25rem, 0.6786rem + 1.1905vw, 1.75rem);
-        }
+        .fp-p-admission {}
     }
 }
 
@@ -387,7 +377,6 @@
         // Tous les titres
         h2 {
             width: 90vw;
-            font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
             letter-spacing: 0.1rem;
             margin: 10rem 0 0 0;
         }
@@ -396,7 +385,6 @@
         // .fp-p-droite {
         &>p {
             width: 42vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
             margin: 4rem 0;
 
             // Crochets pour certains paragraphes
@@ -426,7 +414,6 @@
         // Paragraphes centrés
         .fp-p-centre {
             width: 50vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
             margin: 4rem 0;
 
             // Crochets pour certains paragraphes
@@ -460,7 +447,6 @@
         // Paragraphes à gauche
         // .fp-p-gauche {
         //     width: 42vw;
-        //     font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
         //     margin: 4rem 0;
 
         //     // Crochets pour certains paragraphes
@@ -490,9 +476,7 @@
         // Toutes les icônes des cours de la page d'accueil
         .wp-block-gallery {
             .fp-icone-cours {
-                .wp-element-caption {
-                    font-size: 1.3rem;
-                }
+                .wp-element-caption {}
             }
         }
 
@@ -525,7 +509,6 @@
 
             .wp-block-button {
                 a {
-                    font-size: 1rem;
                     border-radius: 2rem;
                     padding: 0.5rem 1rem;
                 }
@@ -538,10 +521,10 @@
 
         // Vidéo promotionnelle
         .fp-video {
-            height: clamp(30rem, 9rem + 43.75vw, 37rem);
+            height: calc(100vh - 6vw);
 
             &::before {
-                height: clamp(33rem, 12rem + 43.75vw, 40rem);
+                height: calc(100vh - 1vw);
                 border: 0.3rem solid $couleurTitreTextes;
                 border-radius: 2rem;
                 transform: translateX(-3.3rem) translateY(-2rem);
@@ -552,7 +535,6 @@
         // Titre
         .fp-tim-cest:nth-of-type(1) {
             width: 80vw;
-            font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
             letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
             margin: 8rem 0 0 0;
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
@@ -560,7 +542,6 @@
 
         .fp-tim-cest:nth-of-type(2) {
             width: 80vw;
-            font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
             letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
         }
