@@ -184,20 +184,20 @@
         h4 {
           text-transform: uppercase;
           margin: 0;
-          font-size: 1rem;
+          // font-size: 1rem;
         }
 
         .date_evenement {
           color: $couleurElmtDeux;
-          font-weight: 500;
-          font-size: 0.8rem;
+          // font-weight: 500;
+          // font-size: 0.8rem;
           padding-top: 0.4rem;
           padding-bottom: 0.4rem;
         }
 
-        .description_evenement {
-          font-size: 0.75rem;
-        }
+        // .description_evenement {
+        //   // font-size: 0.75rem;
+        // }
       }
     }
   }
@@ -223,12 +223,12 @@
 
     .texte_1 {
       color: $couleurElmtDeux;
-      font-size: 1.7rem;
+      // font-size: 1.7rem;
     }
 
-    .texte_2 {
-      font-size: 2.7rem;
-    }
+    // .texte_2 {
+    //   // font-size: 2.7rem;
+    // }
   }
 }
 
@@ -417,20 +417,20 @@
           h4 {
             text-transform: uppercase;
             margin: 0;
-            font-size: 1.4rem;
+            // font-size: 1.4rem;
           }
 
           .date_evenement {
             color: $couleurElmtDeux;
-            font-weight: 500;
-            font-size: 1.2rem;
+            // font-weight: 500;
+            // font-size: 1.2rem;
             padding-top: 0.4rem;
             padding-bottom: 0.4rem;
           }
 
-          .description_evenement {
-            font-size: 1rem;
-          }
+          // .description_evenement {
+          //   // font-size: 1rem;
+          // }
         }
       }
     }
@@ -456,12 +456,12 @@
 
       .texte_1 {
         color: $couleurElmtDeux;
-        font-size: 2.2rem;
+        // font-size: 2.2rem;
       }
 
-      .texte_2 {
-        font-size: 3.2rem;
-      }
+      // .texte_2 {
+      //   // font-size: 3.2rem;
+      // }
     }
   }
 }
@@ -600,11 +600,13 @@
 
     // Styles de la zone où la galerie est affichée
     .zone_galerie {
-      display: flex;
+      // display: flex;
       z-index: 10;
 
-      img {
-        border-radius: 0.4rem;
+      .article_galerie_vie_etudiante {
+        img {
+          border-radius: 0.4rem;
+        }
       }
     }
 
@@ -657,20 +659,20 @@
           h4 {
             text-transform: uppercase;
             margin: 0;
-            font-size: 1.2rem;
+            // font-size: 1.2rem;
           }
 
           .date_evenement {
             color: $couleurElmtDeux;
-            font-weight: 500;
-            font-size: 1.1rem;
+            // font-weight: 500;
+            // font-size: 1.1rem;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
           }
 
-          .description_evenement {
-            font-size: 0.95rem;
-          }
+          // .description_evenement {
+          //   // font-size: 0.95rem;
+          // }
         }
       }
     }
@@ -693,14 +695,14 @@
         margin: 0.3rem;
       }
 
-      .texte_1 {
-        color: $couleurElmtDeux;
-        font-size: 2.7rem;
-      }
+      // .texte_1 {
+      //   color: $couleurElmtDeux;
+      //   // font-size: 2.7rem;
+      // }
 
-      .texte_2 {
-        font-size: 3.7rem;
-      }
+      // .texte_2 {
+      //   // font-size: 3.7rem;
+      // }
     }
   }
 }
