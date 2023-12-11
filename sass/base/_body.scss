@@ -4,20 +4,4 @@ body {
   overflow-x: hidden;
   background-color: $couleurFond;
   color: $couleurTitreTextes;
-
-  main {
-    margin-top: 12vw !important;
-
-    @media only screen and (min-width:510px) {
-      margin-top: 10vw !important;
-    }
-
-    @media only screen and (min-width:768px) {
-      margin-top: 8vw !important;
-    }
-
-    @media only screen and (min-width:1024px) {
-      margin-top: 6vw !important;
-    }
-  }
 }
