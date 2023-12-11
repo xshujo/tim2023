@@ -3,6 +3,10 @@ header {
     padding: 0 5vw;
 }
 
+main {
+    margin-top: clamp(3rem, 2.2857rem + 3.5714vw, 8rem) !important;
+}
+
 footer {
     width: 100vw;
     padding: 3vw 5vw;

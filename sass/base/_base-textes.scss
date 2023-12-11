@@ -19,7 +19,8 @@ figcaption,
 a,
 li,
 input,
-button {
+button,
+blockquote {
   font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -50,11 +51,13 @@ h6 {
 }
 
 P,
-a,
+a.wp-block-button__link,
 li,
 button,
-figcaption {
+figcaption,
+blockquote {
   font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
+  line-height: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
 }
 
 // Attention aux inputs type text...

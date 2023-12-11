@@ -190,29 +190,6 @@
             width: 50vw;
             margin: 4rem 0;
 
-            // Crochets pour certains paragraphes
-            // Top right
-            &::before {
-                width: 2rem;
-                height: 2rem;
-                border-top: 4px solid $couleurElmtUn;
-                border-right: 4px solid $couleurElmtUn;
-                border-top-right-radius: 0.75rem;
-                transform: translateX(calc(-25vw + 2rem)) translateY(-1rem);
-            }
-
-            // Bottom left
-            &::after {
-                width: 2rem;
-                height: 2rem;
-                border-bottom: 4px solid $couleurElmtUn;
-                border-left: 4px solid $couleurElmtUn;
-                border-bottom-left-radius: 0.75rem;
-                left: 0;
-                right: inherit;
-                transform: translateX(calc(25vw - 2rem)) translateY(1rem);
-            }
-
             &:last-of-type {
                 margin: 1rem 0;
             }
@@ -294,10 +271,10 @@
 
         // Vidéo promotionnelle
         .fp-video {
-            height: calc(100vh - 6vw);
+            height: calc(100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem));
 
             &::before {
-                height: calc((100vh - 6vw) + clamp(4.5rem, 3.8333rem + 1.0417vw, 5.5rem));
+                height: calc((100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem)) + clamp(4.5rem, 3.8333rem + 1.0417vw, 5.5rem));
                 // border: 0.3rem solid $couleurTitreTextes;
                 // border-radius: 2rem;
                 transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-3rem);
