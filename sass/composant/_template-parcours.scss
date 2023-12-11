@@ -10,7 +10,7 @@
     width: 100%;
     background-color: transparent;
     z-index: 30;
-    overflow-x: hidden;
+    overflow: hidden;
 
     .bubbles-container {
         position: absolute;
@@ -2777,15 +2777,17 @@
 
 
         .encadre_page {
-            width: 110%;
-            height: 335rem;
+            width: 100%;
+            height: 700vh;
             border: 0.3rem $couleurTitreTextes solid;
             border-radius: 2rem;
             position: absolute;
-            top: 8.2rem;
+            top: 11rem;
             left: 1rem;
             z-index: -1;
         }
+
+        
 
 
         .titrage {

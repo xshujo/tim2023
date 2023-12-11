@@ -1105,7 +1105,7 @@ footer .sidebar:last-of-type {
   width: 100%;
   background-color: transparent;
   z-index: 30;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .contenu_parcours .bubbles-container {
   position: absolute;
@@ -2869,12 +2869,12 @@ footer .sidebar:last-of-type {
     right: 5rem;
   }
   .contenu_parcours .encadre_page {
-    width: 110%;
-    height: 335rem;
+    width: 100%;
+    height: 700vh;
     border: 0.3rem #f7f7f7 solid;
     border-radius: 2rem;
     position: absolute;
-    top: 8.2rem;
+    top: 11rem;
     left: 1rem;
     z-index: -1;
   }
