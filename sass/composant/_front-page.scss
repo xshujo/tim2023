@@ -3,66 +3,106 @@
 .main_accueil {
     width: 100vw;
     margin: 0;
-    padding: 0 0 3rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 
-    // Tous les titres
-    h2 {
-        width: 70vw;
-        font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
-        letter-spacing: 0.05rem;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 5rem 0 0 0;
+    // Vidéo promotionnelle
+    .fp-video {
+        width: 100vw;
+        height: 80vw;
+        overflow: hidden;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::before {
+            width: 100vw;
+            height: calc(80vw + 2rem);
+            background-color: transparent;
+            content: "";
+            border: clamp(0.1875rem, 0.1429rem + 0.2232vw, 0.5rem) solid white;
+            border-radius: 1rem;
+            display: block;
+            position: absolute;
+            transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-1rem);
+        }
     }
 
-    // Tous les paragraphes
-    &>p {
-        width: 70vw;
-        margin: 2rem 0;
+    .fp-section {
+        width: 100%;
+        margin-top: 4rem;
+        padding: 0 5vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
 
-        &:nth-of-type(2) {
-            display: none;
+        h2 {
+            text-align: center;
         }
 
-        // Crochets pour certains paragraphes
-        // Top right
-        &::before {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-top: 2px solid $couleurElmtUn;
-            border-right: 2px solid $couleurElmtUn;
-            border-top-right-radius: 0.5rem;
-            position: absolute;
-            right: 0;
-            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+        .fp-image {
+            width: 65vw;
+            height: 40vw;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0.5rem;
+            }
+
+            &::before {
+                width: 65vw;
+                height: 40vw;
+                background-color: transparent;
+                content: "";
+                border: 2px solid $couleurTitreTextes;
+                border-radius: 0.5rem;
+                display: block;
+                position: absolute;
+                transform: translateX(0.35rem) translateY(-0.65rem);
+            }
         }
 
-        // Bottom left
-        &::after {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-bottom: 2px solid $couleurElmtUn;
-            border-left: 2px solid $couleurElmtUn;
-            border-bottom-left-radius: 0.5rem;
-            position: absolute;
-            left: 0;
-            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
-        }
+        p:not(.fp-p-admission) {
+            width: 85%;
 
-        &:first-of-type,
-        &:nth-of-type(2),
-        &:last-of-type {
+            // Crochets pour certains paragraphes
+            // Top right
+            &::before {
+                width: clamp(1.25rem, 1.0714rem + 0.8929vw, 2.5rem);
+                height: clamp(1.25rem, 1.0714rem + 0.8929vw, 2.5rem);
+                background-color: transparent;
+                content: "";
+                margin-bottom: 1rem;
+                border-top: clamp(0.1875rem, 0.1518rem + 0.1786vw, 0.4375rem) solid $couleurElmtUn;
+                border-right: clamp(0.1875rem, 0.1518rem + 0.1786vw, 0.4375rem) solid $couleurElmtUn;
+                border-top-right-radius: clamp(0.6rem, 0.5571rem + 0.2143vw, 0.9rem);
+                position: absolute;
+                right: 7.5%;
+                transform: translateY(-0.5rem);
+            }
 
-            &::before,
+            // Bottom left
             &::after {
-                display: none;
+                width: clamp(1.25rem, 1.0714rem + 0.8929vw, 2.5rem);
+                height: clamp(1.25rem, 1.0714rem + 0.8929vw, 2.5rem);
+                background-color: transparent;
+                content: "";
+                border-bottom: clamp(0.1875rem, 0.1518rem + 0.1786vw, 0.4375rem) solid $couleurElmtUn;
+                border-left: clamp(0.1875rem, 0.1518rem + 0.1786vw, 0.4375rem) solid $couleurElmtUn;
+                border-bottom-left-radius: clamp(0.6rem, 0.5571rem + 0.2143vw, 0.9rem);
+                position: absolute;
+                left: 7.5%;
+                transform: translateY(0.5rem);
             }
         }
     }
@@ -78,98 +118,12 @@
         }
     }
 
-    // Toutes les images
-    .fp-image {
-        width: 65vw;
-        height: 40vw;
-        overflow: hidden;
-        margin: 1.5rem 0 0 0;
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 0.5rem;
-        }
-
-        &::before {
-            width: 65vw;
-            height: 40vw;
-            background-color: transparent;
-            content: "";
-            border: 2px solid $couleurTitreTextes;
-            border-radius: 0.5rem;
-            display: block;
-            position: absolute;
-            transform: translateX(0.35rem) translateY(0.35rem);
-        }
-    }
-
-    // Tous les boutons
-    .wp-block-buttons {
-        all: unset;
-        margin: 1rem 0;
-
-        .wp-block-button {
-            all: unset;
-
-            a {
-                all: unset;
-                background: rgb(201, 233, 255);
-                background: linear-gradient(180deg,
-                        rgba(201, 233, 255, 1) 0%,
-                        rgba(158, 201, 231, 1) 100%);
-                font-family: "Montserrat", sans-serif;
-                font-size: 0.875rem;
-                font-weight: bold;
-                color: $degradeFondSiteDeux;
-                text-transform: uppercase;
-                border-radius: 2rem;
-                padding: 0.5rem 1rem;
-            }
-        }
-    }
-
-    // Vidéo promotionnelle
-    .fp-video {
-        width: 100vw;
-        height: 80vw;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-
-        @media only screen and (min-width:510px) {
-            height: 70vw;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        &::before {
-            width: 100vw;
-            height: 88vw;
-            background-color: transparent;
-            content: "";
-            border: 2px solid white;
-            border-radius: 1rem;
-            display: block;
-            position: absolute;
-            transform: translateX(-1.25rem) translateY(-1rem);
-
-            @media only screen and (min-width:510px) {
-                height: 76vw;
-            }
-        }
-    }
 
     // Étudier en TIM, c'est [...]
     // Titre
     .fp-tim-cest:nth-of-type(1) {
         width: 100%;
-        font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
         letter-spacing: 0.075rem;
         text-align: right;
         margin: 3rem 0 0 0;
@@ -178,7 +132,6 @@
 
     .fp-tim-cest:nth-of-type(2) {
         width: 100%;
-        font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
         text-align: right;
         letter-spacing: 0.075rem;
         margin: 0;
@@ -202,11 +155,11 @@
         padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
     }
 
-    // Une équipe de professeurs dévoués
-    // Titre
-    .fp-h2-profs {
-        margin-top: 4rem;
-    }
+    // // Une équipe de professeurs dévoués
+    // // Titre
+    // .fp-h2-profs {
+    //     margin-top: 4rem;
+    // }
 
     // Des cours selon vos intérêts
     // Icônes des cours
@@ -233,7 +186,6 @@
     // Soumets une demande d’admission dès maintenant.
     // Paragraphe
     .fp-p-admission {
-        font-size: clamp(0.75rem, 0.3929rem + 1.7857vw, 1.25rem);
         font-weight: 500;
         color: $couleurElmtDeux;
         letter-spacing: 0.075rem;
@@ -246,52 +198,10 @@
 @media only screen and (min-width: 768px) {
     .main_accueil {
 
-        // Tous les titres
-        h2 {
-            width: 60vw;
-            font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
-            letter-spacing: 0.1rem;
-            margin: 6rem 0 0 0;
-        }
-
-        // Tous les paragraphes
-        &>p {
-            width: 60vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
-            margin: 4rem 0;
-
-            // Crochets pour certains paragraphes
-            // Top right
-            &::before {
-                width: 2rem;
-                height: 2rem;
-                border-top: 4px solid $couleurElmtUn;
-                border-right: 4px solid $couleurElmtUn;
-                border-top-right-radius: 0.75rem;
-                transform: translateX(calc(-20vw + 2rem)) translateY(-1.5rem);
-            }
-
-            // Bottom left
-            &::after {
-                width: 2rem;
-                height: 2rem;
-                border-bottom: 4px solid $couleurElmtUn;
-                border-left: 4px solid $couleurElmtUn;
-                border-bottom-left-radius: 0.75rem;
-                transform: translateX(calc(20vw - 2rem)) translateY(1rem);
-            }
-
-            &:last-of-type {
-                margin: 1rem 0;
-            }
-        }
-
         // Toutes les icônes des cours de la page d'accueil
         .wp-block-gallery {
             .fp-icone-cours {
-                .wp-element-caption {
-                    font-size: 1.1rem;
-                }
+                .wp-element-caption {}
             }
         }
 
@@ -300,7 +210,6 @@
             width: 55vw;
             height: 35vw;
             overflow: hidden;
-            margin: 1.5rem 0 0 0;
 
             img {
                 width: 100%;
@@ -320,11 +229,10 @@
 
         // Tous les boutons
         .wp-block-buttons {
-            margin: 2rem 0;
+            // margin: 2rem 0;
 
             .wp-block-button {
                 a {
-                    font-size: 1rem;
                     border-radius: 2rem;
                     padding: 0.5rem 1rem;
                 }
@@ -336,24 +244,22 @@
             height: 60vw;
 
             &::before {
-                height: 66vw;
-                border: 4px solid white;
+                // height: 66vw;
+                // border: 4px solid white;
                 border-radius: 1.5rem;
-                transform: translateX(-1.5rem) translateY(-2rem);
+                // transform: translateX(-1.5rem) translateY(-2rem);
             }
         }
 
         // Étudier en TIM, c'est [...]
         // Titre
         .fp-tim-cest:nth-of-type(1) {
-            font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
             letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
             margin: 3rem 0 0 0;
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
         }
 
         .fp-tim-cest:nth-of-type(2) {
-            font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
             letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
         }
@@ -379,9 +285,7 @@
             }
         }
 
-        .fp-p-admission {
-            font-size: clamp(1.25rem, 0.6786rem + 1.1905vw, 1.75rem);
-        }
+        .fp-p-admission {}
     }
 }
 
@@ -392,49 +296,9 @@
         justify-content: space-around;
         margin-bottom: 10rem;
 
-        // Tous les titres
-        h2 {
-            width: 90vw;
-            font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
-            letter-spacing: 0.1rem;
-            margin: 10rem 0 0 0;
-        }
-
-        // Paragraphes à droite
-        // .fp-p-droite {
-        &>p {
-            width: 42vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
-            margin: 4rem 0;
-
-            // Crochets pour certains paragraphes
-            // Top right
-            &::before {
-                width: 2rem;
-                height: 2rem;
-                border-top: 4px solid $couleurElmtUn;
-                border-right: 4px solid $couleurElmtUn;
-                border-top-right-radius: 0.75rem;
-                transform: translateX(calc((-16vw / 3) + 2rem)) translateY(-1rem);
-            }
-
-            // Bottom left
-            &::after {
-                width: 2rem;
-                height: 2rem;
-                border-bottom: 4px solid $couleurElmtUn;
-                border-left: 4px solid $couleurElmtUn;
-                border-bottom-left-radius: 0.75rem;
-                right: 0;
-                left: inherit;
-                transform: translateX(calc((-42vw + (-16vw / 3)) + 2rem)) translateY(1rem);
-            }
-        }
-
         // Paragraphes centrés
         .fp-p-centre {
             width: 50vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
             margin: 4rem 0;
 
             // Crochets pour certains paragraphes
@@ -468,7 +332,6 @@
         // Paragraphes à gauche
         // .fp-p-gauche {
         //     width: 42vw;
-        //     font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
         //     margin: 4rem 0;
 
         //     // Crochets pour certains paragraphes
@@ -498,9 +361,7 @@
         // Toutes les icônes des cours de la page d'accueil
         .wp-block-gallery {
             .fp-icone-cours {
-                .wp-element-caption {
-                    font-size: 1.3rem;
-                }
+                .wp-element-caption {}
             }
         }
 
@@ -509,7 +370,6 @@
             width: 42vw;
             height: 26vw;
             overflow: hidden;
-            margin: 1.5rem 0 0 0;
 
             img {
                 width: 100%;
@@ -529,11 +389,10 @@
 
         // Tous les boutons
         .wp-block-buttons {
-            margin: 5rem 25vw 0 25vw;
+            // margin: 5rem 25vw 0 25vw;
 
             .wp-block-button {
                 a {
-                    font-size: 1rem;
                     border-radius: 2rem;
                     padding: 0.5rem 1rem;
                 }
@@ -549,10 +408,10 @@
             height: calc(100vh - 6vw);
 
             &::before {
-                height: calc(100vh - 1vw);
-                border: 0.3rem solid $couleurTitreTextes;
+                // height: calc(100vh - 1vw);
+                // border: 0.3rem solid $couleurTitreTextes;
                 border-radius: 2rem;
-                transform: translateX(-3.3rem) translateY(-2rem);
+                // transform: translateX(-3.3rem) translateY(-2rem);
             }
         }
 
@@ -560,7 +419,6 @@
         // Titre
         .fp-tim-cest:nth-of-type(1) {
             width: 80vw;
-            font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
             letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
             margin: 8rem 0 0 0;
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
@@ -568,7 +426,6 @@
 
         .fp-tim-cest:nth-of-type(2) {
             width: 80vw;
-            font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
             letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
         }
@@ -581,11 +438,11 @@
             padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
         }
 
-        // Une équipe de professeurs dévoués
-        // Titre
-        .fp-h2-profs {
-            margin-top: 10rem;
-        }
+        // // Une équipe de professeurs dévoués
+        // // Titre
+        // .fp-h2-profs {
+        //     margin-top: 10rem;
+        // }
 
         // Des cours selon vos intérêts
         // Icônes des cours
