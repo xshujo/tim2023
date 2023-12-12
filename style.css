@@ -5011,7 +5011,6 @@ footer .sidebar:last-of-type {
     margin-bottom: 10rem;
   }
   .main_accueil .fp-section:nth-child(even) {
-    height: 35vw;
     display: grid;
     grid-template-areas: "h2 h2" "img p" "img button";
   }
