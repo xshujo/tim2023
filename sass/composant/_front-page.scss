@@ -2,11 +2,10 @@
 // De 320px à 767px
 .main_accueil {
     width: 100vw;
-    margin-top: 12vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(3rem, 1.1792rem + 9.1038vw, 7rem);
 
     // Vidéo promotionnelle
     .fp-video {
@@ -35,13 +34,12 @@
 
     .fp-section {
         width: 100%;
-        margin-top: 4rem;
         padding: 0 5vw;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: clamp(1.5rem, 1.0448rem + 2.2760vw, 2.5rem);
 
         h2 {
             text-align: center;
@@ -74,21 +72,26 @@
 
         p {
             width: 85%;
+            text-align: justify;
+        }
+
+        .fp-p-admission {
+            font-weight: 500;
+            color: $couleurElmtDeux;
+            letter-spacing: 0.075rem;
+            text-align: center;
+        }
+
+        .wp-block-buttons {
+            width: 100%;
+            border-radius: 2rem;
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
-    // Toutes les icônes des cours de la page d'accueil
-    .wp-block-gallery {
-        .fp-icone-cours {
-            .wp-element-caption {
-                background: transparent;
-                position: relative;
-                font-weight: 500;
-            }
-        }
-    }
-
-    // Des cours selon vos intérêts
     // Icônes des cours
     // !important pour écraser les styles par défaut de WordPress...
     .fp-icones {
@@ -107,16 +110,13 @@
         figure {
             width: clamp(5rem, 1.4206rem + 17.8971vw, 10rem) !important;
             height: inherit !important;
-        }
-    }
 
-    // Soumets une demande d’admission dès maintenant.
-    // Paragraphe
-    .fp-p-admission {
-        font-weight: 500;
-        color: $couleurElmtDeux;
-        letter-spacing: 0.075rem;
-        text-align: center;
+            figcaption {
+                background: transparent !important;
+                position: relative !important;
+                font-weight: 500 !important;
+            }
+        }
     }
 }
 
@@ -147,18 +147,6 @@
             }
         }
 
-        // Tous les boutons
-        .wp-block-buttons {
-            // margin: 2rem 0;
-
-            .wp-block-button {
-                a {
-                    border-radius: 2rem;
-                    padding: 0.5rem 1rem;
-                }
-            }
-        }
-
         // Des cours selon vos intérêts
         // Icônes des cours
         // !important pour écraser les styles par défaut de WordPress...
@@ -173,8 +161,6 @@
                 height: inherit !important;
             }
         }
-
-        .fp-p-admission {}
     }
 }
 
@@ -185,87 +171,77 @@
         justify-content: space-around;
         margin-bottom: 10rem;
 
-        // Paragraphes centrés
-        .fp-p-centre {
-            width: 50vw;
-            margin: 4rem 0;
 
-            &:last-of-type {
-                margin: 1rem 0;
-            }
-        }
+        .fp-section:nth-child(even) {
+            height: 35vw;
+            display: grid;
+            grid-template-areas: "h2 h2"
+                "img p"
+                "img button";
 
-        // Paragraphes à gauche
-        // .fp-p-gauche {
-        //     width: 42vw;
-        //     margin: 4rem 0;
-
-        //     // Crochets pour certains paragraphes
-        //     // Top right
-        //     &::before {
-        //         width: 2rem;
-        //         height: 2rem;
-        //         border-top: 4px solid $couleurElmtUn;
-        //         border-right: 4px solid $couleurElmtUn;
-        //         border-top-right-radius: 0.75rem;
-        //         transform: translateX(calc((-42vw + (-16vw / 3)) + 2rem)) translateY(-1rem);
-        //     }
-
-        //     // Bottom left
-        //     &::after {
-        //         width: 2rem;
-        //         height: 2rem;
-        //         border-bottom: 4px solid $couleurElmtUn;
-        //         border-left: 4px solid $couleurElmtUn;
-        //         border-bottom-left-radius: 0.75rem;
-        //         right: 0;
-        //         left: inherit;
-        //         transform: translateX(calc((-16vw / 3) + 2rem)) translateY(1rem);
-        //     }
-        // }
-
-        // Toutes les icônes des cours de la page d'accueil
-        .wp-block-gallery {
-            .fp-icone-cours {
-                .wp-element-caption {}
-            }
-        }
-
-        // Toutes les images
-        .fp-image {
-            width: 42vw;
-            height: 26vw;
-            overflow: hidden;
-
-            img {
+            h2 {
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 1rem;
+                grid-area: h2;
             }
 
-            &::before {
-                width: 42vw;
-                height: 26vw;
-                border: 0.3rem solid $couleurTitreTextes;
-                border-radius: 1.5rem;
-                transform: translateX(1rem) translateY(1rem);
-            }
-        }
+            .fp-image {
+                width: 40vw;
+                height: 28vw;
+                overflow: hidden;
+                grid-area: img;
 
-        // Tous les boutons
-        .wp-block-buttons {
-            // margin: 5rem 25vw 0 25vw;
-
-            .wp-block-button {
-                a {
-                    border-radius: 2rem;
-                    padding: 0.5rem 1rem;
+                &::before {
+                    width: 40vw;
+                    height: 28vw;
+                    // border: 4px solid white;
+                    // border-radius: 1rem;
+                    // transform: translateX(0.5rem) translateY(0.5rem);
                 }
             }
 
-            &:last-of-type {
-                margin-top: 2rem;
+            p {
+                width: 40vw;
+                padding: 1rem;
+                // text-align: justify;
+                grid-area: p;
+            }
+
+            .fp-p-admission {
+                width: 100%;
+            }
+
+            .wp-block-buttons {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                grid-area: button;
+            }
+        }
+
+        .fp-section:nth-child(odd) {
+            h2 {
+                width: 100%;
+            }
+
+            .fp-image {
+                width: 40vw;
+                height: 28vw;
+                overflow: hidden;
+                grid-area: img;
+
+                &::before {
+                    width: 40vw;
+                    height: 28vw;
+                    // border: 4px solid white;
+                    // border-radius: 1rem;
+                    // transform: translateX(0.5rem) translateY(0.5rem);
+                }
+            }
+
+            p {
+                width: 40vw;
+                padding: 1rem;
             }
         }
 

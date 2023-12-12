@@ -57,7 +57,7 @@ button,
 figcaption,
 blockquote {
   font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
-  line-height: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
+  line-height: clamp(1.25rem, 1.1429rem + 0.5357vw, 2rem);
 }
 
 // Attention aux inputs type text...
@@ -80,8 +80,6 @@ ul {
       font-weight: bold;
       color: #ffffff;
       text-transform: uppercase;
-      border-radius: 2rem;
-      padding: 0.5rem 1rem;
       transform: scale(1);
       transition: ease-in-out 0.2s;
 
