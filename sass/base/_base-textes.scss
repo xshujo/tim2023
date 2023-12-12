@@ -8,12 +8,30 @@ a {
   all: unset;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figcaption,
+a,
+li,
+input,
+button,
+blockquote {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 h1 {
   font-size: clamp(1.875rem, 1.7321rem + 0.7143vw, 2.875rem);
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2.5rem);
+  text-transform: uppercase;
 }
 
 h3 {
@@ -33,25 +51,13 @@ h6 {
 }
 
 P,
-a,
+a.wp-block-button__link,
 li,
-button {
-  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
+button,
 figcaption,
-a,
-li,
-input,
-button {
-  font-family: 'Montserrat', sans-serif !important;
+blockquote {
+  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
+  line-height: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
 }
 
 // Attention aux inputs type text...
@@ -63,4 +69,31 @@ button {
 
 ul {
   list-style: none;
+}
+
+// Boutons WordPress
+.wp-block-buttons {
+  .wp-block-button {
+
+    a {
+      background: rgb(201, 233, 255);
+      background: linear-gradient(180deg,
+          rgba(201, 233, 255, 1) 0%,
+          rgba(158, 201, 231, 1) 100%);
+      font-weight: bold;
+      color: $degradeFondSiteDeux;
+      text-transform: uppercase;
+      border-radius: 2rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+// Parce que WordPress...
+#wpadminbar {
+
+  a,
+  li {
+    font-size: inherit !important;
+  }
 }
