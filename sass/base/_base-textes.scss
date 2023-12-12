@@ -76,15 +76,21 @@ ul {
   .wp-block-button {
 
     a {
-      background: rgb(201, 233, 255);
-      background: linear-gradient(180deg,
-          rgba(201, 233, 255, 1) 0%,
-          rgba(158, 201, 231, 1) 100%);
+      background: $couleurElmtDeux;
       font-weight: bold;
-      color: $degradeFondSiteDeux;
+      color: #ffffff;
       text-transform: uppercase;
       border-radius: 2rem;
       padding: 0.5rem 1rem;
+      transform: scale(1);
+      transition: ease-in-out 0.2s;
+
+      &:hover {
+        background: #ffffff;
+        color: $couleurFond;
+        transform: scale(1.05);
+        transition: ease-in-out 0.2s;
+      }
     }
   }
 }

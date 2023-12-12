@@ -402,13 +402,20 @@ ul {
 }
 
 .wp-block-buttons .wp-block-button a {
-  background: rgb(201, 233, 255);
-  background: linear-gradient(180deg, rgb(201, 233, 255) 0%, rgb(158, 201, 231) 100%);
+  background: #c7afec;
   font-weight: bold;
-  color: #33488e;
+  color: #ffffff;
   text-transform: uppercase;
   border-radius: 2rem;
   padding: 0.5rem 1rem;
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+.wp-block-buttons .wp-block-button a:hover {
+  background: #ffffff;
+  color: #051934;
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
 }
 
 #wpadminbar a,
@@ -605,6 +612,10 @@ header .menu-burger .menu-entete-container #menu-entete li a {
     height: clamp(0.125rem, 0.0833rem + 0.0651vw, 0.1875rem);
     border-radius: 0;
     transition: ease-in-out 0.2s;
+  }
+  header .menu-burger .menu-entete-container #menu-entete li:hover {
+    background: none;
+    font-weight: 500;
   }
   header .menu-burger .menu-entete-container #menu-entete li a {
     height: inherit;
