@@ -200,6 +200,11 @@ header {
               transition: ease-in-out 0.2s;
             }
 
+            &:hover {
+              background: none;
+              font-weight: 500;
+            }
+
             a {
               height: inherit;
               background: linear-gradient(to right,

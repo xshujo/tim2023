@@ -388,7 +388,7 @@ button,
 figcaption,
 blockquote {
   font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
-  line-height: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
+  line-height: clamp(1.25rem, 1.1429rem + 0.5357vw, 2rem);
 }
 
 a,
@@ -402,13 +402,18 @@ ul {
 }
 
 .wp-block-buttons .wp-block-button a {
-  background: rgb(201, 233, 255);
-  background: linear-gradient(180deg, rgb(201, 233, 255) 0%, rgb(158, 201, 231) 100%);
+  background: #c7afec;
   font-weight: bold;
-  color: #33488e;
+  color: #ffffff;
   text-transform: uppercase;
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
+  transform: scale(1);
+  transition: ease-in-out 0.2s;
+}
+.wp-block-buttons .wp-block-button a:hover {
+  background: #ffffff;
+  color: #051934;
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
 }
 
 #wpadminbar a,
@@ -605,6 +610,10 @@ header .menu-burger .menu-entete-container #menu-entete li a {
     height: clamp(0.125rem, 0.0833rem + 0.0651vw, 0.1875rem);
     border-radius: 0;
     transition: ease-in-out 0.2s;
+  }
+  header .menu-burger .menu-entete-container #menu-entete li:hover {
+    background: none;
+    font-weight: 500;
   }
   header .menu-burger .menu-entete-container #menu-entete li a {
     height: inherit;
@@ -4865,11 +4874,10 @@ footer .sidebar:last-of-type {
 }
 .main_accueil {
   width: 100vw;
-  margin-top: 12vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: clamp(3rem, 1.1792rem + 9.1038vw, 7rem);
 }
 .main_accueil .fp-video {
   width: 100vw;
@@ -4894,13 +4902,12 @@ footer .sidebar:last-of-type {
 }
 .main_accueil .fp-section {
   width: 100%;
-  margin-top: 4rem;
   padding: 0 5vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(1.5rem, 1.0448rem + 2.276vw, 2.5rem);
 }
 .main_accueil .fp-section h2 {
   text-align: center;
@@ -4929,11 +4936,21 @@ footer .sidebar:last-of-type {
 }
 .main_accueil .fp-section p {
   width: 85%;
+  text-align: justify;
 }
-.main_accueil .wp-block-gallery .fp-icone-cours .wp-element-caption {
-  background: transparent;
-  position: relative;
+.main_accueil .fp-section .fp-p-admission {
   font-weight: 500;
+  color: #c7afec;
+  letter-spacing: 0.075rem;
+  text-align: center;
+}
+.main_accueil .fp-section .wp-block-buttons {
+  width: 100%;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main_accueil .fp-icones {
   width: 70vw !important;
@@ -4951,11 +4968,10 @@ footer .sidebar:last-of-type {
   width: clamp(5rem, 1.4206rem + 17.8971vw, 10rem) !important;
   height: inherit !important;
 }
-.main_accueil .fp-p-admission {
-  font-weight: 500;
-  color: #c7afec;
-  letter-spacing: 0.075rem;
-  text-align: center;
+.main_accueil .fp-icones figure figcaption {
+  background: transparent !important;
+  position: relative !important;
+  font-weight: 500 !important;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4977,10 +4993,6 @@ footer .sidebar:last-of-type {
     border-radius: 1rem;
     transform: translateX(0.5rem) translateY(0.5rem);
   }
-  .main_accueil .wp-block-buttons .wp-block-button a {
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
-  }
   .main_accueil .fp-icones {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -4998,37 +5010,56 @@ footer .sidebar:last-of-type {
     justify-content: space-around;
     margin-bottom: 10rem;
   }
-  .main_accueil .fp-p-centre {
-    width: 50vw;
-    margin: 4rem 0;
+  .main_accueil .fp-section:nth-child(even) {
+    height: 35vw;
+    display: grid;
+    grid-template-areas: "h2 h2" "img p" "img button";
   }
-  .main_accueil .fp-p-centre:last-of-type {
-    margin: 1rem 0;
-  }
-  .main_accueil .fp-image {
-    width: 42vw;
-    height: 26vw;
-    overflow: hidden;
-  }
-  .main_accueil .fp-image img {
+  .main_accueil .fp-section:nth-child(even) h2 {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
+    grid-area: h2;
   }
-  .main_accueil .fp-image::before {
-    width: 42vw;
-    height: 26vw;
-    border: 0.3rem solid #f7f7f7;
-    border-radius: 1.5rem;
-    transform: translateX(1rem) translateY(1rem);
+  .main_accueil .fp-section:nth-child(even) .fp-image {
+    width: 40vw;
+    height: 28vw;
+    overflow: hidden;
+    grid-area: img;
   }
-  .main_accueil .wp-block-buttons .wp-block-button a {
-    border-radius: 2rem;
-    padding: 0.5rem 1rem;
+  .main_accueil .fp-section:nth-child(even) .fp-image::before {
+    width: 40vw;
+    height: 28vw;
   }
-  .main_accueil .wp-block-buttons:last-of-type {
-    margin-top: 2rem;
+  .main_accueil .fp-section:nth-child(even) p {
+    width: 40vw;
+    padding: 1rem;
+    grid-area: p;
+  }
+  .main_accueil .fp-section:nth-child(even) .fp-p-admission {
+    width: 100%;
+  }
+  .main_accueil .fp-section:nth-child(even) .wp-block-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: button;
+  }
+  .main_accueil .fp-section:nth-child(odd) h2 {
+    width: 100%;
+  }
+  .main_accueil .fp-section:nth-child(odd) .fp-image {
+    width: 40vw;
+    height: 28vw;
+    overflow: hidden;
+    grid-area: img;
+  }
+  .main_accueil .fp-section:nth-child(odd) .fp-image::before {
+    width: 40vw;
+    height: 28vw;
+  }
+  .main_accueil .fp-section:nth-child(odd) p {
+    width: 40vw;
+    padding: 1rem;
   }
   .main_accueil .fp-video {
     height: calc(100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem));
