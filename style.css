@@ -616,7 +616,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
     height: 6vw;
   }
   header .menu-burger input,
-  header .menu-burger label {
+header .menu-burger label {
     display: none;
   }
   header .menu-burger .menu-entete-container {
@@ -861,6 +861,7 @@ footer .sidebar:last-of-type {
 
 .contenu_parcours {
   width: 100%;
+  margin: 0 5vw;
   background-color: transparent;
   z-index: 30;
   overflow: hidden;
@@ -988,12 +989,13 @@ footer .sidebar:last-of-type {
   left: 25rem;
 }
 .contenu_parcours .encadre_page {
-  width: 100%;
-  height: 800vh;
-  border: 0.3rem #f7f7f7 solid;
-  border-radius: 2rem;
+  width: 100vw;
+  height: 1050vh;
+  border-top: 3px white solid;
+  border-left: 3px white solid;
+  border-radius: 50px 0;
   position: absolute;
-  top: 9rem;
+  top: 10.5rem;
   left: 1rem;
   z-index: -1;
 }
@@ -1038,7 +1040,6 @@ footer .sidebar:last-of-type {
   background-color: rgba(0, 0, 0, 0.7);
 }
 .contenu_parcours .modal-content {
-  background-color: rgba(119, 78, 186, 0.7960784314);
   margin: 15% auto;
   padding: 20px;
   border-radius: 20px;
@@ -1073,7 +1074,7 @@ footer .sidebar:last-of-type {
   /* Use 100% width for smaller screens */
   height: auto;
   /* Adjust height to auto for smaller screens */
-  margin: 0 3rem;
+  margin: 0 1.5rem;
   position: relative;
 }
 .contenu_parcours .grille_cours .grille_contenu {
@@ -1106,8 +1107,8 @@ footer .sidebar:last-of-type {
   background-color: #c7afec;
   color: white;
   border: none;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   margin: 0.2rem;
 }
@@ -1116,14 +1117,15 @@ footer .sidebar:last-of-type {
 }
 .contenu_parcours .grille_cours .liste_cours {
   list-style-type: none;
+  padding: 0rem;
   line-break: auto;
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 70vw;
 }
 .contenu_parcours .grille_cours .liste_cours li {
-  padding: 1rem;
-  margin: 0.5rem -1.5rem;
+  padding: 3vw;
+  margin: 0.5vh 2vw;
   /* Adjust margin for smaller screens */
   border-radius: 20px;
   background-color: #8275c4;
@@ -1183,14 +1185,15 @@ footer .sidebar:last-of-type {
 }
 .contenu_parcours .grille_cours .liste_cours_deux {
   list-style-type: none;
+  padding: 0rem;
   line-break: auto;
   display: none;
   flex-direction: column;
-  width: 50vw;
+  width: 70vw;
 }
 .contenu_parcours .grille_cours .liste_cours_deux li {
-  padding: 1rem;
-  margin: 0.5rem -1.5rem;
+  padding: 3vw;
+  margin: 0.5vh 2vw;
   /* Adjust margin for smaller screens */
   border-radius: 20px;
   background-color: #8275c4;
@@ -1253,14 +1256,15 @@ footer .sidebar:last-of-type {
 }
 .contenu_parcours .grille_cours .liste_cours_trois {
   list-style-type: none;
+  padding: 0rem;
   line-break: auto;
   display: none;
   flex-direction: column;
-  width: 50vw;
+  width: 70vw;
 }
 .contenu_parcours .grille_cours .liste_cours_trois li {
-  padding: 1rem;
-  margin: 0.5rem -1.5rem;
+  padding: 3vw;
+  margin: 0.5vh 2vw;
   /* Adjust margin for smaller screens */
   border-radius: 20px;
   background-color: #8275c4;
@@ -1323,14 +1327,15 @@ footer .sidebar:last-of-type {
 }
 .contenu_parcours .grille_cours .liste_cours_quatre {
   list-style-type: none;
+  padding: 0rem;
   line-break: auto;
   display: none;
   flex-direction: column;
-  width: 50vw;
+  width: 70vw;
 }
 .contenu_parcours .grille_cours .liste_cours_quatre li {
-  padding: 1rem;
-  margin: 0.5rem -1.5rem;
+  padding: 3vw;
+  margin: 0.5vh 2vw;
   /* Adjust margin for smaller screens */
   border-radius: 20px;
   background-color: #8275c4;
@@ -1407,14 +1412,15 @@ footer .sidebar:last-of-type {
 }
 .contenu_parcours .grille_cours .liste_cours_cinq {
   list-style-type: none;
+  padding: 0rem;
   line-break: auto;
   display: none;
   flex-direction: column;
-  width: 50vw;
+  width: 70vw;
 }
 .contenu_parcours .grille_cours .liste_cours_cinq li {
-  padding: 1rem;
-  margin: 0.5rem -1.5rem;
+  padding: 3vw;
+  margin: 0.5vh 2vw;
   /* Adjust margin for smaller screens */
   border-radius: 20px;
   background-color: #8275c4;
@@ -1519,14 +1525,15 @@ footer .sidebar:last-of-type {
 }
 .contenu_parcours .grille_cours .liste_cours_six {
   list-style-type: none;
+  padding: 0rem;
   line-break: auto;
   display: none;
   flex-direction: column;
-  width: 50vw;
+  width: 70vw;
 }
 .contenu_parcours .grille_cours .liste_cours_six li {
-  padding: 1rem;
-  margin: 0.5rem -1.5rem;
+  padding: 3vw;
+  margin: 0.5vh 2vw;
   /* Adjust margin for smaller screens */
   border-radius: 20px;
   background-color: #8275c4;
@@ -1576,7 +1583,7 @@ footer .sidebar:last-of-type {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  margin-left: -3rem;
+  margin-left: -4rem;
 }
 .contenu_parcours .environnement .programmation li {
   padding: 1rem;
@@ -1644,13 +1651,12 @@ footer .sidebar:last-of-type {
 }
 .contenu_parcours .environnement .threeD {
   list-style-type: none;
-  /* Remove the default list marker */
   display: flex;
   flex-direction: column;
-  margin-left: -2rem;
+  margin-left: -4rem;
 }
 .contenu_parcours .environnement .threeD li {
-  padding-bottom: 2rem;
+  padding: 1rem;
 }
 .contenu_parcours .environnement .threeD .ico_unity {
   display: flex;
@@ -1682,10 +1688,10 @@ footer .sidebar:last-of-type {
   /* Remove the default list marker */
   display: flex;
   flex-direction: column;
-  margin-left: -2rem;
+  margin-left: -4rem;
 }
 .contenu_parcours .environnement .adobe li {
-  padding-bottom: 2rem;
+  padding: 1rem;
 }
 .contenu_parcours .environnement .adobe .ico_illustrator {
   display: flex;
@@ -1751,7 +1757,6 @@ footer .sidebar:last-of-type {
 .contenu_parcours .colonne1 {
   width: 100%;
   height: auto;
-  padding-left: 2rem;
 }
 .contenu_parcours .colonne1 h4 {
   color: #9ec9e7;
@@ -1762,14 +1767,15 @@ footer .sidebar:last-of-type {
   margin: 0 1.5rem;
 }
 .contenu_parcours .colonne2 {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color: rgba(30, 45, 76, 0.845);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
   backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   border-radius: 50px 50px;
-  padding: 1em;
-  margin: 1rem 6rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 .contenu_parcours .colonne2 h4 {
   text-align: center;
@@ -1779,14 +1785,15 @@ footer .sidebar:last-of-type {
   color: #9ec9e7;
 }
 .contenu_parcours .colonne3 {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color: rgba(30, 45, 76, 0.845);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
   backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   border-radius: 50px 50px;
-  padding: 1em;
-  margin: 1rem 6rem;
+  padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 .contenu_parcours .colonne3 h4 {
   text-align: center;
@@ -1796,14 +1803,15 @@ footer .sidebar:last-of-type {
   color: #9ec9e7;
 }
 .contenu_parcours .colonne4 {
-  width: 100%;
+  width: 100vw;
   height: auto;
   background-color: rgba(30, 45, 76, 0.845);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
   backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   border-radius: 50px 50px;
   padding: 1em;
-  margin: 1rem 6rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 .contenu_parcours .colonne4 h4 {
   text-align: center;
@@ -1816,16 +1824,15 @@ footer .sidebar:last-of-type {
   color: #9ec9e7;
 }
 .contenu_parcours .colonne5 .galerie_materiels {
-  width: 75%;
-  margin: 0 auto;
+  width: 80vw;
+  margin-left: 12vw;
   display: flex;
-  padding-left: 2rem;
   padding-top: 5rem;
   padding-bottom: 10rem;
 }
 .contenu_parcours .colonne5 .galerie_materiels .casque_vr {
-  height: 25vh;
-  width: 10vw;
+  height: 20vh;
+  width: 8vw;
   transform: rotate(-5deg) translateX(2rem) translateY(-3rem);
   border-radius: 30px 30px;
   background-color: rgba(30, 45, 76, 0.845);
@@ -1836,14 +1843,14 @@ footer .sidebar:last-of-type {
   width: 25vw;
   display: flex;
   align-self: center;
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
 }
 .contenu_parcours .colonne5 .galerie_materiels .casque_vr figcaption {
   background: none;
 }
 .contenu_parcours .colonne5 .galerie_materiels .appareil_photo {
-  height: 25vh;
-  width: 10vw;
+  height: 20vh;
+  width: 8vw;
   transform: rotate(5deg);
   border-radius: 30px 30px;
   background-color: rgba(30, 45, 76, 0.845);
@@ -1855,14 +1862,14 @@ footer .sidebar:last-of-type {
   width: 25vw;
   display: flex;
   align-self: center;
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
 }
 .contenu_parcours .colonne5 .galerie_materiels .appareil_photo figcaption {
   background: none;
 }
 .contenu_parcours .colonne5 .galerie_materiels .tablette_graphique {
-  height: 25vh;
-  width: 10vw;
+  height: 20vh;
+  width: 8vw;
   transform: rotate(5deg) translateX(-1.5rem) translateY(-2rem);
   border-radius: 30px 30px;
   background-color: rgba(30, 45, 76, 0.845);
@@ -1874,15 +1881,15 @@ footer .sidebar:last-of-type {
   width: 25vw;
   display: flex;
   align-self: center;
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
 }
 .contenu_parcours .colonne5 .galerie_materiels .tablette_graphique figcaption {
   background: none;
   padding-top: 2rem;
 }
 .contenu_parcours .colonne5 .galerie_materiels .projecteur {
-  height: 25vh;
-  width: 10vw;
+  height: 20vh;
+  width: 8vw;
   transform: rotate(-5deg) translateX(-3rem) translateY(1.5rem);
   border-radius: 30px 30px;
   background-color: rgba(30, 45, 76, 0.845);
@@ -1894,38 +1901,43 @@ footer .sidebar:last-of-type {
   width: 25vw;
   display: flex;
   align-self: center;
-  border-radius: 30px 30px;
+  border-radius: 20px 20px;
 }
 .contenu_parcours .colonne5 .galerie_materiels .projecteur figcaption {
   background: none;
 }
 .contenu_parcours .stages {
-  width: 100%;
+  width: 100vw;
   height: auto;
-  padding: 0 3.5rem;
 }
 .contenu_parcours .stages .stage_un {
-  height: 40vh;
+  width: 100vw;
+  height: auto;
   background-color: rgba(30, 45, 76, 0.845);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
   backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   border-radius: 50px 50px;
   padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 .contenu_parcours .stages .stage_deux {
-  height: 70vh;
+  width: 100vw;
+  height: auto;
   background-color: rgba(30, 45, 76, 0.845);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
   backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   border-radius: 50px 50px;
   padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 .contenu_parcours .stages .stage_deux .entreprises {
   list-style-type: none;
   /* Remove the default list marker */
   display: flex;
   flex-direction: column;
-  margin-left: -3rem;
+  margin-left: -5.5rem;
 }
 .contenu_parcours .stages .stage_deux .entreprises li {
   padding: 1rem;
@@ -1983,16 +1995,19 @@ footer .sidebar:last-of-type {
   padding-top: 10rem;
 }
 .contenu_parcours .futur {
-  height: 90vh;
-  padding: 0 3.5rem;
+  width: 100vw;
+  height: auto;
 }
 .contenu_parcours .futur .etudes {
-  height: 60vh;
+  width: 100vw;
+  height: auto;
   background-color: rgba(30, 45, 76, 0.845);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
   backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   border-radius: 50px 50px;
   padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 .contenu_parcours .futur .etudes h4 {
   padding-left: 2rem;
@@ -2001,12 +2016,15 @@ footer .sidebar:last-of-type {
   padding-bottom: 0.5rem;
 }
 .contenu_parcours .futur .travail {
-  height: 60vh;
+  width: 100vw;
+  height: auto;
   background-color: rgba(30, 45, 76, 0.845);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
   backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   border-radius: 50px 50px;
   padding: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
 }
 .contenu_parcours .futur .travail h4 {
   padding-left: 2rem;
@@ -2015,30 +2033,32 @@ footer .sidebar:last-of-type {
   padding-bottom: 0.5rem;
 }
 .contenu_parcours .titre_bourse {
-  padding-top: 25rem;
+  padding-top: 5rem;
 }
 .contenu_parcours .bourse {
-  height: 75vh;
-  padding: 0 3.5rem;
+  width: 100vw;
+  height: auto;
 }
 .contenu_parcours .bourse .bourse_contenu {
-  height: 45vh;
+  width: 80vw;
+  height: auto;
   background-color: rgba(30, 45, 76, 0.845);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
   backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   border-radius: 50px 50px;
-  padding: 1em;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 3rem;
 }
 .contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   background-color: #c7afec;
   color: white;
   border: none;
-  padding: 0.5rem 2rem;
+  padding: 1rem;
+  transform: translate(25vw, 55%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border-radius: 25px;
-  margin: 1rem;
 }
 .contenu_parcours .bourse .bourse_contenu .bouton_bourse a {
   text-decoration: none;
@@ -2049,31 +2069,28 @@ footer .sidebar:last-of-type {
   .contenu_parcours {
     width: 100%;
     background-color: transparent;
-    margin-top: 2.9rem;
-    margin-bottom: 4rem;
+    margin: 0 6vw;
     z-index: 30;
+  }
+  .contenu_parcours .encadre_page {
+    top: 12rem;
+    height: 700vh;
   }
   .contenu_parcours .titrage {
     color: #9ec9e7;
   }
   .contenu_parcours .grille_cours {
     width: 100%;
-    /* Use 100% width for smaller screens */
     height: auto;
-    /* Adjust height to auto for smaller screens */
-    margin-left: 10vw;
     position: relative;
+    margin: 0 2.5rem;
   }
   .contenu_parcours .grille_cours .grille_contenu {
     height: auto;
-    /* Adjust height to auto for smaller screens */
-    margin-left: 0;
-    /* Remove negative margin for smaller screens */
     background-color: rgba(30, 45, 76, 0.468);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
     backdrop-filter: brightness(150%) saturate(95%) blur(5px);
     border-radius: 20px;
-    /* Adjust border-radius for smaller screens */
     display: flex;
     align-items: center;
     text-align: left;
@@ -2100,12 +2117,11 @@ footer .sidebar:last-of-type {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    width: 70vw;
-    padding-right: 2rem;
+    width: 75vw;
   }
   .contenu_parcours .grille_cours .grille_contenu .liste_cours li {
-    padding: 1rem;
-    margin: 0.5rem 0;
+    padding: 3vw;
+    margin: 0.5vh 2vw;
     /* Adjust margin for smaller screens */
     border-radius: 20px;
     background-color: #8275c4;
@@ -2239,7 +2255,7 @@ footer .sidebar:last-of-type {
     /* Remove the default list marker */
     display: flex;
     flex-direction: column;
-    margin-left: -2rem;
+    margin-left: -3rem;
   }
   .contenu_parcours .environnement .threeD li {
     padding-bottom: 2rem;
@@ -2271,7 +2287,7 @@ footer .sidebar:last-of-type {
     /* Remove the default list marker */
     display: flex;
     flex-direction: column;
-    margin-left: -2rem;
+    margin-left: -3rem;
   }
   .contenu_parcours .environnement .adobe li {
     padding-bottom: 2rem;
@@ -2334,7 +2350,6 @@ footer .sidebar:last-of-type {
   .contenu_parcours .colonne1 {
     width: 100%;
     height: auto;
-    padding-left: 2rem;
   }
   .contenu_parcours .colonne1 h4 {
     color: #9ec9e7;
@@ -2345,14 +2360,13 @@ footer .sidebar:last-of-type {
     margin: 0 1.5rem;
   }
   .contenu_parcours .colonne2 {
-    width: 80%;
+    width: 70vw;
     height: auto;
     background-color: rgba(30, 45, 76, 0.845);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
     backdrop-filter: brightness(150%) saturate(95%) blur(5px);
     border-radius: 50px 50px;
-    padding: 1em;
-    margin: 1rem 6rem;
+    margin: 1rem 5rem;
   }
   .contenu_parcours .colonne2 h4 {
     text-align: center;
@@ -2362,14 +2376,13 @@ footer .sidebar:last-of-type {
     color: #9ec9e7;
   }
   .contenu_parcours .colonne3 {
-    width: 80%;
+    width: 70vw;
     height: auto;
     background-color: rgba(30, 45, 76, 0.845);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
     backdrop-filter: brightness(150%) saturate(95%) blur(5px);
     border-radius: 50px 50px;
-    padding: 1em;
-    margin: 1rem 6rem;
+    margin: 1rem 5rem;
   }
   .contenu_parcours .colonne3 h4 {
     text-align: center;
@@ -2379,14 +2392,13 @@ footer .sidebar:last-of-type {
     color: #9ec9e7;
   }
   .contenu_parcours .colonne4 {
-    width: 80%;
+    width: 70vw;
     height: auto;
     background-color: rgba(30, 45, 76, 0.845);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
     backdrop-filter: brightness(150%) saturate(95%) blur(5px);
     border-radius: 50px 50px;
-    padding: 1em;
-    margin: 1rem 6rem;
+    margin: 1rem 5rem;
   }
   .contenu_parcours .colonne4 h4 {
     text-align: center;
@@ -2399,23 +2411,22 @@ footer .sidebar:last-of-type {
     color: #9ec9e7;
   }
   .contenu_parcours .colonne5 .galerie_materiels {
-    width: 75%;
+    width: 80vw;
     margin: 0 auto;
     display: flex;
-    padding-left: 2rem;
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
   .contenu_parcours .colonne5 .galerie_materiels .casque_vr {
     height: 25vh;
-    width: 10vw;
+    width: 20vw;
     transform: rotate(-5deg) translateX(2rem) translateY(-3rem);
     background-color: rgba(30, 45, 76, 0.845);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
     backdrop-filter: brightness(150%) saturate(95%) blur(5px);
   }
   .contenu_parcours .colonne5 .galerie_materiels .casque_vr img {
-    width: 25vw;
+    width: 15vw;
     display: flex;
     align-self: center;
     border-radius: 30px 30px;
@@ -2425,7 +2436,7 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .colonne5 .galerie_materiels .appareil_photo {
     height: 25vh;
-    width: 10vw;
+    width: 20vw;
     transform: rotate(5deg);
     border-radius: 30px 30px;
     background-color: rgba(30, 45, 76, 0.845);
@@ -2434,7 +2445,7 @@ footer .sidebar:last-of-type {
     z-index: 2;
   }
   .contenu_parcours .colonne5 .galerie_materiels .appareil_photo img {
-    width: 25vw;
+    width: 15vw;
     display: flex;
     align-self: center;
     border-radius: 30px 30px;
@@ -2444,7 +2455,7 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .colonne5 .galerie_materiels .tablette_graphique {
     height: 25vh;
-    width: 10vw;
+    width: 20vw;
     transform: rotate(5deg) translateX(-1.5rem) translateY(-2rem);
     border-radius: 30px 30px;
     background-color: rgba(30, 45, 76, 0.845);
@@ -2453,7 +2464,7 @@ footer .sidebar:last-of-type {
     z-index: 3;
   }
   .contenu_parcours .colonne5 .galerie_materiels .tablette_graphique img {
-    width: 25vw;
+    width: 15vw;
     display: flex;
     align-self: center;
     border-radius: 30px 30px;
@@ -2464,7 +2475,7 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .colonne5 .galerie_materiels .projecteur {
     height: 25vh;
-    width: 10vw;
+    width: 20vw;
     transform: rotate(-5deg) translateX(-3rem) translateY(1.5rem);
     border-radius: 30px 30px;
     background-color: rgba(30, 45, 76, 0.845);
@@ -2473,7 +2484,7 @@ footer .sidebar:last-of-type {
     z-index: 4;
   }
   .contenu_parcours .colonne5 .galerie_materiels .projecteur img {
-    width: 25vw;
+    width: 15vw;
     display: flex;
     align-self: center;
     border-radius: 30px 30px;
@@ -2487,20 +2498,24 @@ footer .sidebar:last-of-type {
     padding: 0 3.5rem;
   }
   .contenu_parcours .stages .stage_un {
-    height: 60vh;
+    width: 70vw;
+    height: auto;
     background-color: rgba(30, 45, 76, 0.845);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
     backdrop-filter: brightness(150%) saturate(95%) blur(5px);
     border-radius: 50px 50px;
-    padding: 1em;
+    margin-left: 4rem;
+    margin-right: 6rem;
   }
   .contenu_parcours .stages .stage_deux {
-    height: 70vh;
+    width: 70vw;
+    height: auto;
     background-color: rgba(30, 45, 76, 0.845);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
     backdrop-filter: brightness(150%) saturate(95%) blur(5px);
     border-radius: 50px 50px;
-    padding: 1em;
+    margin-left: 4rem;
+    margin-right: 6rem;
   }
   .contenu_parcours .stages .stage_deux .entreprises {
     list-style-type: none;
@@ -2627,14 +2642,8 @@ footer .sidebar:last-of-type {
     right: 5rem;
   }
   .contenu_parcours .encadre_page {
-    width: 100%;
+    top: 12rem;
     height: 700vh;
-    border: 0.3rem #f7f7f7 solid;
-    border-radius: 2rem;
-    position: absolute;
-    top: 11rem;
-    left: 1rem;
-    z-index: -1;
   }
   .contenu_parcours .titrage {
     color: #9ec9e7;
@@ -2661,7 +2670,7 @@ footer .sidebar:last-of-type {
     font-weight: bold;
   }
   .contenu_parcours .close:hover,
-  .contenu_parcours .close:focus {
+.contenu_parcours .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -2671,7 +2680,6 @@ footer .sidebar:last-of-type {
     display: block;
     position: relative;
     margin-bottom: 5rem;
-    margin-left: 10vw;
   }
   .contenu_parcours .grille_cours .grille_contenu {
     height: auto;
@@ -2681,9 +2689,6 @@ footer .sidebar:last-of-type {
     backdrop-filter: brightness(150%) saturate(95%) blur(5px);
     border-radius: 20px;
     margin-bottom: 5rem;
-    display: flex;
-    align-items: center;
-    text-align: left;
     display: flex;
     align-items: center;
     text-align: left;

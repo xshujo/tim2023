@@ -8,6 +8,7 @@
 .contenu_parcours {
 
     width: 100%;
+    margin: 0 5vw;
     background-color: transparent;
     z-index: 30;
     overflow: hidden;
@@ -168,12 +169,13 @@
     }
 
     .encadre_page {
-        width: 100%;
-        height: 800vh;
-        border: 0.3rem $couleurTitreTextes solid;
-        border-radius: 2rem;
+        width: 100vw;
+        height: 1050vh;
+        border-top: 3px white solid;
+        border-left: 3px white solid;
+        border-radius: 50px 0;
         position: absolute;
-        top: 9rem;
+        top: 10.5rem;
         left: 1rem;
         z-index: -1;
     }
@@ -229,7 +231,6 @@
     }
 
     .modal-content {
-        background-color: #774ebacb;
         margin: 15% auto;
         padding: 20px;
         border-radius: 20px;
@@ -238,9 +239,6 @@
         backdrop-filter: brightness(150%) saturate(95%) blur(5px);
         width: 90%;
 
-        h3{
-            
-        }
 
         svg{
             max-width: 2rem;
@@ -276,7 +274,7 @@
         /* Use 100% width for smaller screens */
         height: auto;
         /* Adjust height to auto for smaller screens */
-        margin: 0 3rem;
+        margin: 0 1.5rem;
         position: relative;
 
 
@@ -287,7 +285,6 @@
             height: auto;
             width: 80vw;
             max-width: 80vw;
-
             margin: 0 auto;
             // style
             background-color: rgba(30, 45, 76, 0.468);
@@ -327,8 +324,8 @@
                     background-color: $couleurElmtDeux;
                     color: white;
                     border: none;
-                    width: 45px;
-                    height: 45px;
+                    width: 30px;
+                    height: 30px;
                     border-radius: 50%;
                     margin: 0.2rem;
                    
@@ -348,15 +345,16 @@
             list-style-type: none;
             // font-size: 1.5rem;
             // line-height: 1;
+            padding: 0rem;
             line-break: auto;
             display: flex;
             flex-direction: column;
-            width: 50vw;
+            width: 70vw;
 
 
             li {
-                padding: 1rem;
-                margin: 0.5rem -1.5rem;
+                padding: 3vw;
+                margin: 0.5vh 2vw;
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
@@ -437,21 +435,21 @@
 
         .liste_cours_deux {
             list-style-type: none;
-            
+            padding: 0rem;
             // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
-            width: 50vw;
+            width: 70vw;
 
 
             li {
-                padding: 1rem;
-                margin: 0.5rem -1.5rem;
+                padding: 3vw;
+                margin: 0.5vh 2vw;
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
-               
+                
             }
 
 
@@ -527,17 +525,17 @@
 
         .liste_cours_trois {
             list-style-type: none;
-            
+            padding: 0rem;
             // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
-            width: 50vw;
+            width: 70vw;
 
 
             li {
-                padding: 1rem;
-                margin: 0.5rem -1.5rem;
+                padding: 3vw;
+                margin: 0.5vh 2vw;
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
@@ -616,17 +614,17 @@
 
         .liste_cours_quatre {
             list-style-type: none;
-            
+            padding: 0rem;
             // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
-            width: 50vw;
+            width: 70vw;
 
 
             li {
-                padding: 1rem;
-                margin: 0.5rem -1.5rem;
+                padding: 3vw;
+                margin: 0.5vh 2vw;
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
@@ -720,17 +718,17 @@
 
         .liste_cours_cinq {
             list-style-type: none;
-           
+            padding: 0rem;
             // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
-            width: 50vw;
+            width: 70vw;
 
 
             li {
-                padding: 1rem;
-                margin: 0.5rem -1.5rem;
+                padding: 3vw;
+                margin: 0.5vh 2vw;
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
@@ -855,17 +853,17 @@
 
         .liste_cours_six {
             list-style-type: none;
-            
+            padding: 0rem;
             // line-height: 1;
             line-break: auto;
             display: none;
             flex-direction: column;
-            width: 50vw;
+            width: 70vw;
 
 
             li {
-                padding: 1rem;
-                margin: 0.5rem -1.5rem;
+                padding: 3vw;
+                margin: 0.5vh 2vw;
                 /* Adjust margin for smaller screens */
                 border-radius: 20px;
                 background-color: #8275c4;
@@ -925,33 +923,11 @@
 
 
     .environnement {
-        // size
-
-
-        // style
-
-
-        // font
-
-        // structure
+        
         margin-bottom: 5rem;
 
-        // grid-template-columns: repeat(6, 1fr);
-        // grid-template-rows: repeat(4, 1fr);
-        // grid-column-gap: 1rem;
-        // grid-row-gap: 1rem;
-        // padding-left: 5rem;
-
-
-        // display
         display: flexbox;
         justify-content: space-evenly;
-
-
-
-        // position
-
-
 
 
         .programmation {
@@ -961,10 +937,8 @@
             // white-space: nowrap;
             display: flex;
             flex-direction: column;
-            margin-left: -3rem;
-
-
-
+            margin-left: -4rem;
+            
 
             li {
                 padding: 1rem;
@@ -1064,17 +1038,12 @@
 
         .threeD {
             list-style-type: none;
-            /* Remove the default list marker */
-            
-            // line-height: 1;
-            // white-space: nowrap;
-            // line-break: auto;
             display: flex;
             flex-direction: column;
-            margin-left: -2rem;
+            margin-left: -4rem;
 
             li {
-                padding-bottom: 2rem;
+                padding: 1rem;
             }
 
             .ico_unity {
@@ -1123,10 +1092,10 @@
             // line-break: auto;
             display: flex;
             flex-direction: column;
-            margin-left: -2rem;
+            margin-left: -4rem;
 
             li {
-                padding-bottom: 2rem;
+                padding: 1rem;
             }
 
             .ico_illustrator {
@@ -1224,7 +1193,7 @@
         // style//
         width: 100%;
         height: auto;
-        padding-left: 2rem;
+        
 
 
         // font
@@ -1253,7 +1222,7 @@
     .colonne2 {
         // size
 
-        width: 100%;
+        width: 100vw;
         height: auto;
 
 
@@ -1268,8 +1237,9 @@
 
         // structure
         border-radius: 50px 50px;
-        padding: 1em;
-        margin: 1rem 6rem;
+        padding: 1rem;
+        margin-left: 2rem;
+        margin-right: 3rem;
 
         // display
 
@@ -1289,7 +1259,7 @@
     .colonne3 {
         // size
 
-        width: 100%;
+        width: 100vw;
         height: auto;
 
         // style
@@ -1302,8 +1272,9 @@
 
         // structure
         border-radius: 50px 50px;
-        padding: 1em;
-        margin: 1rem 6rem;
+        padding: 1rem;
+        margin-left: 2rem;
+        margin-right: 3rem;
 
         // display
 
@@ -1323,7 +1294,7 @@
 
     .colonne4 {
         // size
-        width: 100%;
+        width: 100vw;
         height: auto;
 
         // style
@@ -1337,7 +1308,8 @@
         // structure
         border-radius: 50px 50px;
         padding: 1em;
-        margin: 1rem 6rem;
+        margin-left: 2rem;
+        margin-right: 3rem;
 
 
 
@@ -1378,16 +1350,15 @@
         }
 
         .galerie_materiels {
-            width: 75%;
-            margin: 0 auto;
+            width: 80vw;
+            margin-left: 12vw;
             display: flex;
-            padding-left: 2rem;
             padding-top: 5rem;
             padding-bottom: 10rem;
 
             .casque_vr {
-                height: 25vh;
-                width: 10vw;
+                height: 20vh;
+                width: 8vw;
                 transform: rotate(-5deg) translateX(2rem) translateY(-3rem);
                 border-radius: 30px 30px;
                 background-color: rgba(30, 45, 76, 0.845);
@@ -1399,7 +1370,7 @@
                     width: 25vw;
                     display: flex;
                     align-self: center;
-                    border-radius: 30px 30px;
+                    border-radius: 20px 20px;
                 }
 
                 figcaption {
@@ -1411,20 +1382,20 @@
             }
 
             .appareil_photo {
-                height: 25vh;
-                width: 10vw;
+                height: 20vh;
+                width: 8vw;
                 transform: rotate(5deg);
                 border-radius: 30px 30px;
                 background-color: rgba(30, 45, 76, 0.845);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
-        backdrop-filter: brightness(150%) saturate(95%) blur(5px);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
+                backdrop-filter: brightness(150%) saturate(95%) blur(5px);
                 z-index: 2;
 
                 img {
                     width: 25vw;
                     display: flex;
                     align-self: center;
-                    border-radius: 30px 30px;
+                    border-radius: 20px 20px;
                 }
 
                 figcaption {
@@ -1436,9 +1407,8 @@
             }
 
             .tablette_graphique {
-                height: 25vh;
-                width: 10vw;
-
+                height: 20vh;
+                width: 8vw;
                 transform: rotate(5deg) translateX(-1.5rem) translateY(-2rem);
                 border-radius: 30px 30px;
                 background-color: rgba(30, 45, 76, 0.845);
@@ -1450,12 +1420,11 @@
                     width: 25vw;
                     display: flex;
                     align-self: center;
-                    border-radius: 30px 30px;
+                    border-radius: 20px 20px;
                 }
 
                 figcaption {
                     background: none;
-                    
                     padding-top: 2rem;
                 }
 
@@ -1463,20 +1432,20 @@
             }
 
             .projecteur {
-                height: 25vh;
-                width: 10vw;
+                height: 20vh;
+                width: 8vw;
                 transform: rotate(-5deg) translateX(-3rem) translateY(1.5rem);
                 border-radius: 30px 30px;
                 background-color: rgba(30, 45, 76, 0.845);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
-        backdrop-filter: brightness(150%) saturate(95%) blur(5px);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
+                backdrop-filter: brightness(150%) saturate(95%) blur(5px);
                 z-index: 4;
 
                 img {
                     width: 25vw;
                     display: flex;
                     align-self: center;
-                    border-radius: 30px 30px;
+                    border-radius: 20px 20px;
                 }
 
                 figcaption {
@@ -1492,75 +1461,41 @@
     }
 
     .stages {
-        width: 100%;
+        width: 100vw;
         height: auto;
 
-        padding: 0 3.5rem;
-
-
-
         .stage_un {
-            // size
-            height: 40vh;
-
-
-
-            // style
+            width: 100vw;
+            height: auto;
             background-color: rgba(30, 45, 76, 0.845);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
             backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-
-            // font
-
-            // structure
             border-radius: 50px 50px;
             padding: 1rem;
+            margin-left: 2rem;
+            margin-right: 3rem;
 
-            // display
-
-            // position
-
-            h4 {
-                
-            }
 
         }
 
         .stage_deux {
-            // size
-            height: 70vh;
-
-
-
-            // style
+            width: 100vw;
+            height: auto;
             background-color: rgba(30, 45, 76, 0.845);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
             backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-
-            // font
-
-            // structure
             border-radius: 50px 50px;
             padding: 1rem;
-
-
-            // display
-
-            // position
+            margin-left: 2rem;
+            margin-right: 3rem;
 
             .entreprises {
 
                 list-style-type: none;
                 /* Remove the default list marker */
-                
-                // white-space: nowrap;
                 display: flex;
                 flex-direction: column;
-                margin-left: -3rem;
-
-
-
-
+                margin-left: -5.5rem;
 
                 li {
                     padding: 1rem;
@@ -1647,28 +1582,19 @@
     }
 
     .futur {
-        height: 90vh;
-        padding: 0 3.5rem;
-
+        width: 100vw;
+        height: auto;
 
         .etudes {
-            // size
-            height: 60vh;
-
-            // style
+            width: 100vw;
+            height: auto;
             background-color: rgba(30, 45, 76, 0.845);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
             backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-
-            // font
-
-            // structure
             border-radius: 50px 50px;
             padding: 1rem;
-
-            // display
-
-            // position
+            margin-left: 2rem;
+            margin-right: 3rem;
 
             h4 {
                 padding-left: 2rem;
@@ -1681,25 +1607,15 @@
         }
 
         .travail {
-            // size
-            height: 60vh;
-
-
-
-
-            // style
+            width: 100vw;
+            height: auto;
             background-color: rgba(30, 45, 76, 0.845);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
             backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-            // font
-
-            // structure
             border-radius: 50px 50px;
             padding: 1rem;
-
-            // display
-
-            // position
+            margin-left: 2rem;
+            margin-right: 3rem;
 
             h4 {
                 padding-left: 2rem;
@@ -1713,47 +1629,36 @@
     }
 
     .titre_bourse {
-        padding-top: 25rem;
+        padding-top: 5rem;
     }
 
 
 
     .bourse {
-        height: 75vh;
-        padding: 0 3.5rem;
+        width: 100vw;
+        height: auto;
 
 
         .bourse_contenu {
-
-            // size
-            height: 45vh;
-
-
-            // style
+            width: 80vw;
+            height: auto;
             background-color: rgba(30, 45, 76, 0.845);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
             backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-
-            // font
-
-            // structure
             border-radius: 50px 50px;
-            padding: 1em;
-
-            // display
-            display: flex;
-            align-items: center;
-            text-align: center;
-
-            // position
+            padding: 1rem;
+            margin-left: 1.5rem;
+            margin-right: 3rem;
 
             .bouton_bourse {
-                background-color: $couleurElmtDeux;
+                background-color: #c7afec;
                 color: white;
                 border: none;
-                padding: 0.5rem 2rem;
+                padding: 1rem;
+                transform: translate(25vw, 55%);
+                margin-top: 2rem;
+                margin-bottom: 2rem;
                 border-radius: 25px;
-                margin: 1rem;
                 
 
                 a {
@@ -1778,13 +1683,16 @@
 /// ///////////////////////////////////////////////////
 @media only screen and (min-width:$largeur__tablette) {
     .contenu_parcours {
-
+        
         width: 100%;
         background-color: transparent;
-        margin-top: 2.9rem;
-        margin-bottom: 4rem;
+        margin: 0 6vw;
         z-index: 30;
 
+        .encadre_page {
+            top: 12rem;
+            height: 700vh;
+        }
 
         .titrage {
             color: #9ec9e7;
@@ -1793,22 +1701,16 @@
         .grille_cours {
 
             width: 100%;
-            /* Use 100% width for smaller screens */
             height: auto;
-            /* Adjust height to auto for smaller screens */
-            margin-left: 10vw;
             position: relative;
+            margin: 0 2.5rem;
 
 
             .grille_contenu {
 
                 // size
                 height: auto;
-                /* Adjust height to auto for smaller screens */
-
-                margin-left: 0;
-                /* Remove negative margin for smaller screens */
-
+    
                 // style
                 background-color: rgba(30, 45, 76, 0.468);
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
@@ -1819,15 +1721,13 @@
 
                 // structure
                 border-radius: 20px;
-                /* Adjust border-radius for smaller screens */
-
 
                 // display
                 display: flex;
                 align-items: center;
                 text-align: left;
 
-                // position
+                
 
                 .bouton_session_mobile {
                     display: flex;
@@ -1861,15 +1761,15 @@
                     // line-break: auto;
                     display: flex;
                     flex-direction: column;
-                    width: 70vw;
-                    padding-right: 2rem;
+                    width: 75vw;
+                    
 
 
 
 
                     li {
-                        padding: 1rem;
-                        margin: 0.5rem 0;
+                        padding: 3vw;
+                        margin: 0.5vh 2vw;
                         /* Adjust margin for smaller screens */
                         border-radius: 20px;
                         background-color: #8275c4;
@@ -1946,9 +1846,7 @@
 
                 }
 
-                span {
-                    
-                }
+                
 
 
             }
@@ -2092,7 +1990,7 @@
                 // line-break: auto;
                 display: flex;
                 flex-direction: column;
-                margin-left: -2rem;
+                margin-left: -3rem;
 
                 li {
 
@@ -2142,7 +2040,7 @@
                 // line-break: auto;
                 display: flex;
                 flex-direction: column;
-                margin-left: -2rem;
+                margin-left: -3rem;
 
                 li {
                     padding-bottom: 2rem;
@@ -2237,7 +2135,7 @@
             // style//
             width: 100%;
             height: auto;
-            padding-left: 2rem;
+            
 
 
             // font
@@ -2264,28 +2162,14 @@
         }
 
         .colonne2 {
-            // size
 
-            width: 80%;
+            width: 70vw;
             height: auto;
-
-
-
-            // style
             background-color: rgba(30, 45, 76, 0.845);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
             backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-
-            // font
-
-            // structure
             border-radius: 50px 50px;
-            padding: 1em;
-            margin: 1rem 6rem;
-
-            // display
-
-            // position
+            margin: 1rem 5rem;
 
             h4 {
                 text-align: center;
@@ -2299,26 +2183,13 @@
         }
 
         .colonne3 {
-            // size
-
-            width: 80%;
+            width: 70vw;
             height: auto;
-
-            // style
             background-color: rgba(30, 45, 76, 0.845);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
             backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-
-            // font
-
-            // structure
             border-radius: 50px 50px;
-            padding: 1em;
-            margin: 1rem 6rem;
-
-            // display
-
-            // position
+            margin: 1rem 5rem;
 
             h4 {
                 text-align: center;
@@ -2333,29 +2204,14 @@
         }
 
         .colonne4 {
-            // size
-            width: 80%;
-            height: auto;
 
-            // style
+            width: 70vw;
+            height: auto;
             background-color: rgba(30, 45, 76, 0.845);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
             backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-
-            // font
-
-            // structure
             border-radius: 50px 50px;
-            padding: 1em;
-            margin: 1rem 6rem;
-
-
-
-            // display
-
-            // position
-
-
+            margin: 1rem 5rem;
 
             h4 {
                 text-align: center;
@@ -2388,16 +2244,15 @@
             }
 
             .galerie_materiels {
-                width: 75%;
+                width: 80vw;
                 margin: 0 auto;
                 display: flex;
-                padding-left: 2rem;
                 padding-top: 5rem;
                 padding-bottom: 10rem;
 
                 .casque_vr {
                     height: 25vh;
-                    width: 10vw;
+                    width: 20vw;
                     transform: rotate(-5deg) translateX(2rem) translateY(-3rem);
                     background-color: rgba(30, 45, 76, 0.845);
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
@@ -2405,7 +2260,7 @@
 
 
                     img {
-                        width: 25vw;
+                        width: 15vw;
                         display: flex;
                         align-self: center;
                         border-radius: 30px 30px;
@@ -2421,7 +2276,7 @@
 
                 .appareil_photo {
                     height: 25vh;
-                    width: 10vw;
+                    width: 20vw;
                     transform: rotate(5deg);
                     border-radius: 30px 30px;
                     background-color: rgba(30, 45, 76, 0.845);
@@ -2430,7 +2285,7 @@
                     z-index: 2;
 
                     img {
-                        width: 25vw;
+                        width: 15vw;
                         display: flex;
                         align-self: center;
                         border-radius: 30px 30px;
@@ -2446,7 +2301,7 @@
 
                 .tablette_graphique {
                     height: 25vh;
-                    width: 10vw;
+                    width: 20vw;
                     transform: rotate(5deg) translateX(-1.5rem) translateY(-2rem);
                     border-radius: 30px 30px;
                     background-color: rgba(30, 45, 76, 0.845);
@@ -2455,7 +2310,7 @@
                     z-index: 3;
 
                     img {
-                        width: 25vw;
+                        width: 15vw;
                         display: flex;
                         align-self: center;
                         border-radius: 30px 30px;
@@ -2472,7 +2327,7 @@
 
                 .projecteur {
                     height: 25vh;
-                    width: 10vw;
+                    width: 20vw;
                     transform: rotate(-5deg) translateX(-3rem) translateY(1.5rem);
                     border-radius: 30px 30px;
                     background-color: rgba(30, 45, 76, 0.845);
@@ -2481,7 +2336,7 @@
                     z-index: 4;
 
                     img {
-                        width: 25vw;
+                        width: 15vw;
                         display: flex;
                         align-self: center;
                         border-radius: 30px 30px;
@@ -2508,54 +2363,27 @@
 
 
             .stage_un {
-                // size
-                height: 60vh;
 
-
-
-                // style
+                width: 70vw;
+                height: auto;
                 background-color: rgba(30, 45, 76, 0.845);
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
                 backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-
-
-                // font
-
-                // structure
                 border-radius: 50px 50px;
-                padding: 1em;
-
-                // display
-
-                // position
-
-                h4 {
-                    
-                }
-
+                margin-left: 4rem;
+                margin-right: 6rem;
             }
 
             .stage_deux {
-                // size
-                height: 70vh;
 
-                // style
+                width: 70vw;
+                height: auto;
                 background-color: rgba(30, 45, 76, 0.845);
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.557);
                 backdrop-filter: brightness(150%) saturate(95%) blur(5px);
-                // font
-                
-
-                // font
-
-                // structure
                 border-radius: 50px 50px;
-                padding: 1em;
-
-
-                // display
-
-                // position
+                margin-left: 4rem;
+                margin-right: 6rem;
 
                 .entreprises {
 
@@ -2777,14 +2605,8 @@
 
 
         .encadre_page {
-            width: 100%;
+            top: 12rem;
             height: 700vh;
-            border: 0.3rem $couleurTitreTextes solid;
-            border-radius: 2rem;
-            position: absolute;
-            top: 11rem;
-            left: 1rem;
-            z-index: -1;
         }
 
         
@@ -2834,7 +2656,8 @@
             display: block;
             position: relative;
             margin-bottom: 5rem;
-            margin-left: 10vw;
+           
+            
 
 
 
@@ -2856,12 +2679,6 @@
                 // structure
                 border-radius: 20px;
                 margin-bottom: 5rem;
-
-
-                // display
-                display: flex;
-                align-items: center;
-                text-align: left;
 
 
                 // display
@@ -3495,9 +3312,7 @@
 
                 }
 
-                span {
-                    
-                }
+                
 
 
             }
@@ -4087,9 +3902,7 @@
                 // position
 
 
-                h4 {
-                    
-                }
+                
 
                 .entreprises {
 
