@@ -680,7 +680,6 @@ header .menu-burger label {
     height: 3px;
   }
 }
-
 footer {
   width: 100vw;
   height: auto;
@@ -3689,7 +3688,7 @@ footer .sidebar:last-of-type {
   height: 230rem;
   border: 0.15rem #f7f7f7 solid;
   border-radius: 1.4rem;
-  position: absolute;
+  position: fixed;
   top: 4.1rem;
   left: 0.3rem;
   z-index: -1;
@@ -3735,8 +3734,11 @@ footer .sidebar:last-of-type {
   display: flex;
   z-index: 10;
 }
-.main_etudiant .zone_galerie img {
-  border-radius: 0.4rem;
+.main_etudiant .zone_galerie .article_galerie_vie_etudiante .wp-block-gallery .wp-block-image {
+  width: 50%;
+}
+.main_etudiant .zone_galerie .article_galerie_vie_etudiante .wp-block-gallery .wp-block-image img {
+  border-radius: 0.6rem;
 }
 .main_etudiant .zone_evenements {
   width: 100%;
@@ -3751,7 +3753,7 @@ footer .sidebar:last-of-type {
 .main_etudiant .zone_evenements .article_vie_etudiante::before {
   content: "";
   width: 100%;
-  height: 14.3rem;
+  height: 19.3rem;
   background-color: #c7afec;
   mix-blend-mode: soft-light;
   border-radius: 1rem;
@@ -3760,22 +3762,23 @@ footer .sidebar:last-of-type {
 }
 .main_etudiant .zone_evenements .article_vie_etudiante {
   width: 100%;
-  height: 14.3rem;
+  height: 19.3rem;
   margin-bottom: 1.4rem;
   margin-top: 0.2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   position: relative;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante img {
-  width: 6.5rem;
+  width: 30%;
   height: auto;
   border-radius: 0.4rem;
   z-index: 1;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
-  width: 54%;
+  width: 90%;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
   text-transform: uppercase;
@@ -3898,6 +3901,7 @@ footer .sidebar:last-of-type {
     margin-bottom: 1.4rem;
     margin-top: 0.2rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     position: relative;
@@ -4058,7 +4062,7 @@ footer .sidebar:last-of-type {
   .main_etudiant .zone_evenements .article_vie_etudiante::before {
     content: "";
     width: 100%;
-    height: 14.3rem;
+    height: 17.3rem;
     background-color: #c7afec;
     mix-blend-mode: soft-light;
     border-radius: 1rem;
@@ -4067,10 +4071,11 @@ footer .sidebar:last-of-type {
   }
   .main_etudiant .zone_evenements .article_vie_etudiante {
     width: 49%;
-    height: 14.3rem;
+    height: 17.3rem;
     margin-bottom: 1.4rem;
     margin-top: 0.2rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
@@ -5279,4 +5284,4 @@ footer .sidebar:last-of-type {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- autres */
