@@ -19,6 +19,7 @@
             object-fit: cover;
         }
 
+        // Encadré de la vidéo
         &::before {
             width: 100vw;
             height: calc(clamp(15rem, 3.6202rem + 56.8990vw, 40rem) + clamp(2.5rem, 2.0448rem + 2.2760vw, 3.5rem));
@@ -32,6 +33,7 @@
         }
     }
 
+    // Paragraphes indésirables...
     .fp-citation {
         display: none;
     }
@@ -40,6 +42,7 @@
         display: none;
     }
 
+    // Les sections de la page d'accueil
     .fp-section {
         width: 100%;
         padding: 0 5vw;
@@ -49,10 +52,12 @@
         align-items: center;
         gap: clamp(1.5rem, 1.0448rem + 2.2760vw, 2.5rem);
 
+        // Les titres
         h2 {
             text-align: center;
         }
 
+        // Les images
         .fp-image {
             width: 65vw;
             height: 40vw;
@@ -71,6 +76,7 @@
                 }
             }
 
+            // Encadré des images
             &::before {
                 width: 65vw;
                 height: 40vw;
@@ -86,11 +92,13 @@
             }
         }
 
+        // Les paragraphes
         p {
             width: 85%;
             text-align: justify;
         }
 
+        // "Soumets une demande d’admission dès maintenant."
         .fp-p-admission {
             font-weight: 500;
             color: $couleurElmtDeux;
@@ -98,13 +106,19 @@
             text-align: center;
         }
 
+        // Les boutons d'action
         .wp-block-buttons {
             width: 100%;
             border-radius: 2rem;
-            padding: 0.5rem 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            .wp-block-button {
+                a {
+                    padding: clamp(0.5rem, 0.4643rem + 0.1786vw, 0.75rem) clamp(1rem, 0.9643rem + 0.1786vw, 1.25rem);
+                }
+            }
         }
     }
 
@@ -155,19 +169,23 @@
         flex-flow: row wrap;
         justify-content: space-around;
 
+        // Les sections paires
         .fp-section:nth-child(even) {
             display: grid;
             grid-template-areas: "h2 h2"
                 "img p"
                 "img button";
             row-gap: 0;
+            column-gap: clamp(2rem, -0.6667rem + 4.1667vw, 6rem);
 
+            // Les titres
             h2 {
                 width: 100%;
                 grid-area: h2;
                 margin-bottom: clamp(2rem, 0.0000rem + 3.1250vw, 5rem);
             }
 
+            // Les images
             .fp-image {
                 width: 40vw;
                 height: 28vw;
@@ -175,6 +193,7 @@
                 grid-area: img;
                 align-self: center;
 
+                // Encadré des images
                 &::before {
                     width: 40vw;
                     height: 28vw;
@@ -182,34 +201,50 @@
                 }
             }
 
+            // Les paragraphes
             p {
                 width: 40vw;
+                // background-color: rgba(158, 201, 231, 0.5);
+                // background-blend-mode: screen;
+                // border-top-right-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
+                // border-top-left-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
                 padding: 1rem;
                 text-align: left;
                 grid-area: p;
                 align-self: flex-end;
             }
 
+            // Les boutons d'action
             .wp-block-buttons {
-                width: 100%;
-                display: flex;
+                // width: 40vw;
+                // background-color: rgba(158, 201, 231, 0.5);
+                // background-blend-mode: screen;
+                // border-top-right-radius: 0;
+                // border-top-left-radius: 0;
+                // border-bottom-right-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
+                // border-bottom-left-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
+                padding: 0 1rem 1rem 1rem;
                 justify-content: flex-start;
-                align-items: center;
                 grid-area: button;
-                align-self: flex-start;
             }
         }
 
+        // Les sections impaires
         .fp-section:nth-child(odd) {
+            column-gap: clamp(2rem, -0.6667rem + 4.1667vw, 6rem);
+
+            // Les titres, s'il y en a
             h2 {
                 width: 100%;
             }
 
+            // Les images, s'il y en a
             .fp-image {
                 width: 40vw;
                 height: 28vw;
                 overflow: hidden;
 
+                // Encadré des images
                 &::before {
                     width: 40vw;
                     height: 28vw;
@@ -217,6 +252,7 @@
                 }
             }
 
+            // Tous les paragraphes sauf celui de demande d'admission
             p:not(.fp-p-admission) {
                 width: 40vw;
                 text-align: left;
@@ -224,10 +260,11 @@
             }
         }
 
-        // Vidéo promotionnelle
+        // La vidéo promotionnelle
         .fp-video {
             height: calc(100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem));
 
+            // Encadré de la vidéo
             &::before {
                 height: calc((100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem)) + clamp(4.5rem, 3.8333rem + 1.0417vw, 5.5rem));
                 transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-3rem);
