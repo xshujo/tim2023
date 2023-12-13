@@ -7,29 +7,63 @@
     align-items: center;
     gap: clamp(3rem, 1.1792rem + 9.1038vw, 7rem);
 
-    // Vidéo promotionnelle
-    .fp-video {
+    .video {
         width: 100vw;
-        height: clamp(15rem, 3.6202rem + 56.8990vw, 40rem);
-        overflow: hidden;
+        position: relative;
 
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .video-caption {
+            // width: 100%;
+            border-top-right-radius: 80%;
+            padding: 0 0 0 5vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: absolute;
+            bottom: 5vw;
+            left: 0;
+            z-index: 4;
+
+            .video-titre {
+                font-size: clamp(1.5rem, 1.1071rem + 1.9643vw, 2.875rem);
+                margin: 0;
+
+                &::after {
+                    width: 40vw;
+                    height: 2px;
+                    background-color: $couleurTitreTextes;
+                    content: "";
+                    margin-top: 1rem;
+                    display: block;
+                }
+            }
+
+            .video-sous-titre {}
         }
 
-        // Encadré de la vidéo
-        &::before {
+        // Vidéo promotionnelle
+        .fp-video {
             width: 100vw;
-            height: calc(clamp(15rem, 3.6202rem + 56.8990vw, 40rem) + clamp(2.5rem, 2.0448rem + 2.2760vw, 3.5rem));
-            background-color: transparent;
-            content: "";
-            border: clamp(0.1875rem, 0.1429rem + 0.2232vw, 0.5rem) solid $couleurTitreTextes;
-            border-radius: clamp(1rem, 0.7143rem + 1.4286vw, 3rem);
-            display: block;
-            position: absolute;
-            transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-2rem);
+            height: clamp(15rem, 3.6202rem + 56.8990vw, 40rem);
+            overflow: hidden;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            // Encadré de la vidéo
+            &::before {
+                width: 100vw;
+                height: calc(clamp(15rem, 3.6202rem + 56.8990vw, 40rem) + clamp(2.5rem, 2.0448rem + 2.2760vw, 3.5rem));
+                background-color: transparent;
+                content: "";
+                border: clamp(0.1875rem, 0.1429rem + 0.2232vw, 0.5rem) solid $couleurTitreTextes;
+                border-radius: clamp(1rem, 0.7143rem + 1.4286vw, 3rem);
+                display: block;
+                position: absolute;
+                transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-2rem);
+            }
         }
     }
 
@@ -169,6 +203,20 @@
         flex-flow: row wrap;
         justify-content: space-around;
 
+        .video {
+
+            // La vidéo promotionnelle
+            .fp-video {
+                height: calc(100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem));
+
+                // Encadré de la vidéo
+                &::before {
+                    height: calc((100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem)) + clamp(4.5rem, 3.8333rem + 1.0417vw, 5.5rem));
+                    transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-3rem);
+                }
+            }
+        }
+
         // Les sections paires
         .fp-section:nth-child(even) {
             display: grid;
@@ -257,17 +305,6 @@
                 width: 40vw;
                 text-align: left;
                 padding: 1rem;
-            }
-        }
-
-        // La vidéo promotionnelle
-        .fp-video {
-            height: calc(100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem));
-
-            // Encadré de la vidéo
-            &::before {
-                height: calc((100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem)) + clamp(4.5rem, 3.8333rem + 1.0417vw, 5.5rem));
-                transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-3rem);
             }
         }
 
