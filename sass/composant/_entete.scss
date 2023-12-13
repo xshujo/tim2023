@@ -177,6 +177,7 @@ header {
             display: flex;
             justify-content: space-around;
             position: relative;
+            user-select: none;
             cursor: pointer;
 
             /* Bullet en mode ordi */
