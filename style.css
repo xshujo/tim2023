@@ -327,6 +327,7 @@ template {
   margin: 0;
   border: none;
   padding: 0;
+  scroll-behavior: smooth;
   outline: none !important;
   -webkit-tap-highlight-color: transparent !important;
 }
@@ -4890,6 +4891,17 @@ footer .sidebar:last-of-type {
   margin-top: 1rem;
   display: block;
 }
+.main_accueil .video .wp-block-buttons {
+  display: none;
+  margin: 0 5vw 5vw 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.main_accueil .video .wp-block-buttons .wp-block-button a {
+  z-index: 6;
+}
 .main_accueil .video .fp-video {
   width: 100vw;
   height: clamp(15rem, 3.6202rem + 56.899vw, 40rem);
@@ -5002,6 +5014,9 @@ footer .sidebar:last-of-type {
 }
 
 @media only screen and (min-width: 768px) {
+  .main_accueil .video .wp-block-buttons {
+    display: block;
+  }
   .main_accueil .fp-icones {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);

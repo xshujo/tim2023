@@ -39,6 +39,21 @@
             }
         }
 
+        .wp-block-buttons {
+            display: none;
+            margin: 0 5vw 5vw 0;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+
+            .wp-block-button {
+                a {
+                    z-index: 6;
+                }
+            }
+        }
+
         // Vidéo promotionnelle
         .fp-video {
             width: 100vw;
@@ -187,6 +202,12 @@
 // 768px et plus
 @media only screen and (min-width: 768px) {
     .main_accueil {
+
+        .video {
+            .wp-block-buttons {
+                display: block;
+            }
+        }
 
         // Icônes des cours
         // !important pour écraser les styles par défaut de WordPress...
