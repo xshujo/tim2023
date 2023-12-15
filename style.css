@@ -451,6 +451,7 @@ main {
 }
 
 main:not(.main_accueil) {
+  padding-top: 3vw;
   padding-left: 5vw;
   padding-right: 5vw;
   position: relative;
@@ -461,9 +462,9 @@ main:not(.main_accueil):before {
   content: "";
   background-color: transparent;
   border: clamp(0.1875rem, 0.1429rem + 0.2232vw, 0.5rem) solid #f7f7f7;
-  border-bottom-left-radius: clamp(1.5rem, 1.1429rem + 1.7857vw, 4rem);
+  border-top-left-radius: clamp(1.5rem, 1.1429rem + 1.7857vw, 4rem);
   position: absolute;
-  top: calc(-1 * (clamp(3rem, 2.2857rem + 3.5714vw, 8rem) + 0.75rem));
+  top: 2rem;
   left: 3vw;
 }
 
