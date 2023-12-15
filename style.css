@@ -439,6 +439,11 @@ main {
   padding-bottom: clamp(3rem, 2.2857rem + 3.5714vw, 8rem);
 }
 
+main:not(.main_accueil) {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 footer {
   width: 100vw;
   padding: 3vw 5vw;

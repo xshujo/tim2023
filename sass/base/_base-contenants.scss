@@ -4,8 +4,13 @@ header {
 }
 
 main {
-    margin-top: clamp(3rem, 2.2857rem + 3.5714vw, 8rem) !important;
-    padding-bottom: clamp(3rem, 2.2857rem + 3.5714vw, 8rem);
+    margin-top: clamp(3rem, 2.2857rem + 3.5714vw, 8rem) !important; // Pour le menu
+    padding-bottom: clamp(3rem, 2.2857rem + 3.5714vw, 8rem); // Un espace avant le footer
+}
+
+main:not(.main_accueil) {
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 footer {
