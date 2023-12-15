@@ -1,7 +1,6 @@
 // Mode mobile
 // De 320px à 767px
 .main_accueil {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,32 +11,32 @@
         position: relative;
 
         .video-caption {
-            // width: 100%;
-            border-top-right-radius: 80%;
-            padding: 0 0 0 5vw;
+            width: 100%;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0) 100%);
+            padding: 5vw;
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
             gap: 1rem;
             position: absolute;
-            bottom: 5vw;
+            bottom: 0;
             left: 0;
-            z-index: 4;
+            z-index: 3;
 
             .video-titre {
                 font-size: clamp(1.5rem, 1.1071rem + 1.9643vw, 2.875rem);
                 margin: 0;
 
                 &::after {
-                    width: 40vw;
-                    height: 2px;
+                    width: clamp(9rem, 8.1429rem + 4.2857vw, 15rem);
+                    height: clamp(0.125rem, 0.1071rem + 0.0893vw, 0.25rem);
                     background-color: $couleurTitreTextes;
                     content: "";
                     margin-top: 1rem;
                     display: block;
                 }
             }
-
-            .video-sous-titre {}
         }
 
         // Vidéo promotionnelle
@@ -63,6 +62,7 @@
                 display: block;
                 position: absolute;
                 transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-2rem);
+                z-index: 4;
             }
         }
     }
@@ -85,6 +85,7 @@
         justify-content: center;
         align-items: center;
         gap: clamp(1.5rem, 1.0448rem + 2.2760vw, 2.5rem);
+        position: relative;
 
         // Les titres
         h2 {

@@ -331,6 +331,10 @@ template {
   -webkit-tap-highlight-color: transparent !important;
 }
 
+html {
+  overflow: hidden;
+}
+
 /*
   CSS font-size clamp generator
   https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTRweCIsIm1heEZvbnRTaXplIjoiNTJweCJ9
@@ -432,21 +436,41 @@ ul {
 header {
   width: 100vw;
   padding: 0 5vw;
+  z-index: 20;
 }
 
 main {
+  width: 100vw;
+  height: fit-content;
+  background-image: url("http: //cidweb38.sg-host.com/wp-content/uploads/2023/12/FondSiteV2_Plan-de-travail-1.png");
+  background-size: contain;
+  background-repeat: repeat;
   margin-top: clamp(3rem, 2.2857rem + 3.5714vw, 8rem) !important;
   padding-bottom: clamp(3rem, 2.2857rem + 3.5714vw, 8rem);
+  z-index: 1;
 }
 
 main:not(.main_accueil) {
   padding-left: 5vw;
   padding-right: 5vw;
+  position: relative;
+}
+main:not(.main_accueil):before {
+  width: 100vw;
+  height: calc(100% + 2rem);
+  content: "";
+  background-color: transparent;
+  border: clamp(0.1875rem, 0.1429rem + 0.2232vw, 0.5rem) solid #f7f7f7;
+  border-bottom-left-radius: clamp(1.5rem, 1.1429rem + 1.7857vw, 4rem);
+  position: absolute;
+  top: calc(-1 * (clamp(3rem, 2.2857rem + 3.5714vw, 8rem) + 0.75rem));
+  left: 3vw;
 }
 
 footer {
   width: 100vw;
   padding: 3vw 5vw;
+  z-index: 2;
 }
 
 body {
@@ -469,7 +493,6 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
 }
 header .custom-logo-link {
   height: clamp(2.5rem, 2rem + 2.5vw, 6rem);
@@ -3624,25 +3647,7 @@ footer .sidebar:last-of-type {
 }
 /************* VERSION MOBILE *************/
 .main_etudiant {
-  width: 91vw;
   background-color: transparent;
-  margin: 0 auto;
-  margin-top: 2.9rem;
-  margin-bottom: 4rem;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
-  z-index: 30;
-}
-.main_etudiant .encadre_page {
-  width: 110%;
-  height: 230rem;
-  border: 0.15rem #f7f7f7 solid;
-  border-radius: 1.4rem;
-  position: absolute;
-  top: 4.1rem;
-  left: 0.3rem;
-  z-index: -1;
-  display: none;
 }
 .main_etudiant .degrades {
   display: none;
@@ -3769,25 +3774,7 @@ footer .sidebar:last-of-type {
 /************* VERSION TABLETTE *************/
 @media only screen and (min-width: 768px) {
   .main_etudiant {
-    width: 91vw;
     background-color: transparent;
-    margin: 0 auto;
-    margin-top: 2.9rem;
-    margin-bottom: 4rem;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-    z-index: 30;
-  }
-  .main_etudiant .encadre_page {
-    width: 110%;
-    height: 230rem;
-    border: 0.15rem #f7f7f7 solid;
-    border-radius: 1.4rem;
-    position: absolute;
-    top: 10.4rem;
-    left: 0.3rem;
-    z-index: -1;
-    display: none;
   }
   .main_etudiant .degrades {
     display: none;
@@ -3913,12 +3900,7 @@ footer .sidebar:last-of-type {
 /************* VERSION ORDINATEUR *************/
 @media only screen and (min-width: 1024px) {
   .main_etudiant {
-    width: 92vw;
     background-color: transparent;
-    margin: 0 auto;
-    margin-top: 2.9rem;
-    margin-bottom: 4rem;
-    z-index: 30;
   }
   .main_etudiant .encadre_page {
     display: block;
@@ -4872,7 +4854,6 @@ footer .sidebar:last-of-type {
   }
 }
 .main_accueil {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4883,23 +4864,26 @@ footer .sidebar:last-of-type {
   position: relative;
 }
 .main_accueil .video .video-caption {
-  border-top-right-radius: 80%;
-  padding: 0 0 0 5vw;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0) 100%);
+  padding: 5vw;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 1rem;
   position: absolute;
-  bottom: 5vw;
+  bottom: 0;
   left: 0;
-  z-index: 4;
+  z-index: 3;
 }
 .main_accueil .video .video-caption .video-titre {
   font-size: clamp(1.5rem, 1.1071rem + 1.9643vw, 2.875rem);
   margin: 0;
 }
 .main_accueil .video .video-caption .video-titre::after {
-  width: 40vw;
-  height: 2px;
+  width: clamp(9rem, 8.1429rem + 4.2857vw, 15rem);
+  height: clamp(0.125rem, 0.1071rem + 0.0893vw, 0.25rem);
   background-color: #f7f7f7;
   content: "";
   margin-top: 1rem;
@@ -4925,6 +4909,7 @@ footer .sidebar:last-of-type {
   display: block;
   position: absolute;
   transform: translateX(calc(-1 * clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem))) translateY(-2rem);
+  z-index: 4;
 }
 .main_accueil .fp-citation {
   display: none;
@@ -4940,6 +4925,7 @@ footer .sidebar:last-of-type {
   justify-content: center;
   align-items: center;
   gap: clamp(1.5rem, 1.0448rem + 2.276vw, 2.5rem);
+  position: relative;
 }
 .main_accueil .fp-section h2 {
   text-align: center;
