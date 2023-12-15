@@ -32,6 +32,11 @@ $background-color_11: white;
 * {
 	box-sizing: border-box;
 }
+
+
+// ////////////////////////////////////////////////////////
+// ///               VERSION MOBILE                    ///
+// /// ///////////////////////////////////////////////////
 .contenu_parcours {
 	width: 100vw;
 	margin: 0 5vw;
@@ -1118,6 +1123,11 @@ $background-color_11: white;
 		}
 	}
 }
+
+
+// ////////////////////////////////////////////////////////
+// ///               VERSION TABLETTE                  ///
+// /// ///////////////////////////////////////////////////
 @media only screen and (min-width: 768px) {
 	.contenu_parcours {
 		width: 100vw;
@@ -1682,6 +1692,11 @@ $background-color_11: white;
 		}
 	}
 }
+
+
+// ////////////////////////////////////////////////////////
+// ///              VERSION GRAND ECRAN                ///
+// /// ///////////////////////////////////////////////////
 @media only screen and (min-width: 1024px) {
 	.contenu_parcours {
 		width: 92vw;
