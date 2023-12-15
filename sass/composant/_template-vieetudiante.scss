@@ -1,26 +1,26 @@
 /************* VERSION MOBILE *************/
 .main_etudiant {
-  width: 91vw;
+  // width: 91vw;
   background-color: transparent;
-  margin: 0 auto;
-  margin-top: 2.9rem;
-  margin-bottom: 4rem;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
-  z-index: 30;
+  // margin: 0 auto;
+  // margin-top: 2.9rem;
+  // margin-bottom: 4rem;
+  // padding-left: 0.4rem;
+  // padding-right: 0.4rem;
+  // z-index: 30;
 
   // Styles du grand encadré sur la page Vie étudiante
-  .encadre_page {
-    width: 110%;
-    height: 230rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
-    border: 0.15rem $couleurTitreTextes solid;
-    border-radius: 1.4rem;
-    position: absolute;
-    top: 4.1rem;
-    left: 0.3rem;
-    z-index: -1;
-    display: none;
-  }
+  // .encadre_page {
+  //   width: 110%;
+  //   height: 230rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
+  //   border: 0.15rem $couleurTitreTextes solid;
+  //   border-radius: 1.4rem;
+  //   position: absolute;
+  //   top: 4.1rem;
+  //   left: 0.3rem;
+  //   z-index: -1;
+  //   display: none;
+  // }
 
   // Styles généraux des dégradés en fond
   .degrades {
@@ -235,27 +235,27 @@
 /************* VERSION TABLETTE *************/
 @media only screen and (min-width: $largeur__tablette) {
   .main_etudiant {
-    width: 91vw;
+    // width: 91vw;
     background-color: transparent;
-    margin: 0 auto;
-    margin-top: 2.9rem;
-    margin-bottom: 4rem;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
-    z-index: 30;
+    // margin: 0 auto;
+    // margin-top: 2.9rem;
+    // margin-bottom: 4rem;
+    // padding-left: 0.4rem;
+    // padding-right: 0.4rem;
+    // z-index: 30;
 
     // Styles du grand encadré sur la page
-    .encadre_page {
-      width: 110%;
-      height: 230rem;  //Il faudrait trouver un moyen que la hauteur suit le contenu
-      border: 0.15rem $couleurTitreTextes solid;
-      border-radius: 1.4rem;
-      position: absolute;
-      top: 10.4rem;
-      left: 0.3rem;
-      z-index: -1;
-      display: none;
-    }
+    // .encadre_page {
+    //   width: 110%;
+    //   height: 230rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
+    //   border: 0.15rem $couleurTitreTextes solid;
+    //   border-radius: 1.4rem;
+    //   position: absolute;
+    //   top: 10.4rem;
+    //   left: 0.3rem;
+    //   z-index: -1;
+    //   display: none;
+    // }
 
     // Styles généraux des dégradés en fond
     .degrades {
@@ -469,12 +469,12 @@
 /************* VERSION ORDINATEUR *************/
 @media only screen and (min-width: $largeur__bureau) {
   .main_etudiant {
-    width: 92vw;
+    // width: 92vw;
     background-color: transparent;
-    margin: 0 auto;
-    margin-top: 2.9rem;
-    margin-bottom: 4rem;
-    z-index: 30;
+    // margin: 0 auto;
+    // margin-top: 2.9rem;
+    // margin-bottom: 4rem;
+    // z-index: 30;
 
     // Styles du grand encadré sur la page
     .encadre_page {
@@ -503,11 +503,9 @@
 
     // Styles du dégradé en fond en haut à droite
     .degrade_1 {
-      background: radial-gradient(
-        circle,
-        rgba(119, 78, 186, 1) 0%,
-        rgba(119, 78, 186, 0) 100%
-      );
+      background: radial-gradient(circle,
+          rgba(119, 78, 186, 1) 0%,
+          rgba(119, 78, 186, 0) 100%);
       right: -5rem;
       top: -40rem;
       transform: rotateZ(295deg);
@@ -515,11 +513,9 @@
 
     // Styles du dégradé en fond au milieu à gauche
     .degrade_2 {
-      background: radial-gradient(
-        circle,
-        rgba(51, 72, 142, 1) 0%,
-        rgba(51, 72, 142, 0) 100%
-      );
+      background: radial-gradient(circle,
+          rgba(51, 72, 142, 1) 0%,
+          rgba(51, 72, 142, 0) 100%);
       left: -25rem;
       top: 30rem;
       transform: rotateZ(35deg);
@@ -529,11 +525,9 @@
     .degrade_3 {
       width: 40rem;
       height: 70rem;
-      background: radial-gradient(
-        circle,
-        rgba(119, 78, 186, 1) 0%,
-        rgba(119, 78, 186, 0) 100%
-      );
+      background: radial-gradient(circle,
+          rgba(119, 78, 186, 1) 0%,
+          rgba(119, 78, 186, 0) 100%);
       right: -20rem;
       top: 70rem;
       transform: rotateZ(295deg);

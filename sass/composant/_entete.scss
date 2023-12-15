@@ -1,7 +1,7 @@
-///////////////////////////////////////////////// ÉCRANS DE 320PX À 509PX
+///////////////////////////////////////////////// ÉCRANS DE 320PX À 1023PX
 header {
   width: 100vw;
-  height: 12vw;
+  height: clamp(3rem, 2.2857rem + 3.5714vw, 8rem);
   background-color: $couleurFond;
   display: flex;
   flex-flow: row nowrap;
@@ -10,15 +10,14 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
 
   // Logo
   .custom-logo-link {
-    height: 10vw;
+    height: clamp(2.5rem, 2.0000rem + 2.5000vw, 6rem);
 
     .custom-logo {
       width: inherit;
-      height: 10vw;
+      height: clamp(2.5rem, 2.0000rem + 2.5000vw, 6rem);
     }
   }
 
@@ -35,33 +34,44 @@ header {
     }
 
     input:checked~label {
-      .bar:first-child {
+      transform: translateX(-25%);
+      transition: transform 0.3s ease-out;
+
+      div:first-of-type {
         transform: rotate(45deg) translateX(50%);
+        transition: transform 0.3s ease-out;
       }
 
-      .bar:nth-child(2) {
+      div:nth-of-type(2) {
         opacity: 0;
+        transform: scaleY(0) translateX(25%);
+        transform-origin: center;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-out;
       }
 
-      .bar:last-child {
+      div:last-of-type {
         transform: rotate(-45deg) translateX(50%);
+        transition: transform 0.3s ease-out;
       }
     }
 
     label {
-      width: 7vw;
-      height: 6vw;
+      width: clamp(2rem, 1.6586rem + 1.707vw, 2.75rem);
+      height: clamp(1.5rem, 1.1586rem + 1.707vw, 2.25rem);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      transform: translateX(0);
+      transition: transform 0.3s ease-out;
+      cursor: pointer;
 
-      .bar {
-        width: 7vw;
-        height: 1vw;
-        background-color: #ffffff;
-        margin: 0 auto;
+      div {
+        width: clamp(2rem, 1.6586rem + 1.707vw, 2.75rem);
+        height: 0.2rem;
+        background-color: $couleurTitreTextes;
         border-radius: 0.5vw;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
       }
     }
 
@@ -73,46 +83,45 @@ header {
       justify-content: center;
       align-items: flex-start;
       position: fixed;
-      top: 12vw;
+      top: clamp(3rem, 2.2857rem + 3.5714vw, 8rem);
       left: 0;
 
       #menu-entete {
         width: 100%;
-        background-color: rgba(0, 0, 0);
+        background-color: $couleurFond;
         list-style: none;
         margin: 0;
-        border-bottom-left-radius: 7vw;
-        border-bottom-right-radius: 7vw;
-        padding: 4vw 0;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        padding: clamp(1rem, 0.5455rem + 2.2727vw, 2rem) 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2.5vw;
+        gap: clamp(0.5rem, 0.0455rem + 2.2727vw, 1.5rem);
 
+        // Éléments du menu
         li {
           width: 90%;
-          background-color: rgba(5, 25, 52);
+          background-color: #07254d;
           font-weight: 500;
           text-transform: uppercase;
           border-radius: 10vw;
-          padding: 0 3vw;
           display: flex;
           flex-flow: row nowrap;
           justify-content: flex-start;
           align-items: center;
 
-          /* Bullet en mode mobile et tablette */
-          &::before {
-            content: "\2022";
-            margin-right: 3vw;
-            padding-bottom: 2vw;
+          &:hover {
+            background-color: $couleurElmtUn;
+            color: $couleurFond;
+            font-weight: bold;
+            transition: ease-in-out 0.2s;
           }
 
           a {
             width: 100%;
-            height: 6vw;
-            padding: 3vw 0 2vw 0;
+            padding: clamp(0.5rem, 0.3864rem + 0.5682vw, 0.75rem) clamp(1rem, 0.8864rem + 0.5682vw, 1.25rem);
             display: block;
           }
         }
@@ -121,112 +130,9 @@ header {
   }
 }
 
-///////////////////////////////////////////////// ÉCRANS DE 510PX À 767PX
-@media only screen and (min-width: 575px) {
-  header {
-    height: 10vw;
-
-    // Menu
-    .menu-burger {
-
-      // Bouton burger
-      label {
-        width: 6vw;
-        height: 5vw;
-
-        .bar {
-          width: 6vw;
-          height: 0.75vw;
-        }
-      }
-
-      // Liste du menu
-      .menu-entete-container {
-        top: 10vw;
-
-        #menu-entete {
-          li {
-            padding: 0 1.5vw;
-
-            /* Bullet en mode mobile et tablette */
-            &::before {
-              padding-bottom: 0.5vw;
-            }
-
-            a {
-              height: 5vw;
-              padding: 2vw 0 0.5vw 0;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-///////////////////////////////////////////////// ÉCRANS DE 768PX À 1023PX
-@media only screen and (min-width: 768px) {
-  header {
-    height: 8vw;
-
-    // Logo
-    .custom-logo-link {
-      height: 8vw;
-
-      .custom-logo {
-        height: 8vw;
-      }
-    }
-
-    // Menu
-    .menu-burger {
-
-      // Bouton burger
-      label {
-        width: 5vw;
-        height: 4vw;
-
-        .bar {
-          width: 5vw;
-          height: 0.5vw;
-        }
-      }
-
-      // Liste du menu
-      .menu-entete-container {
-        top: 8vw;
-
-        #menu-entete {
-          li {
-            padding: 0 1vw;
-
-            /* Bullet en mode mobile et tablette */
-            &::before {}
-
-            a {
-              height: 4.5vw;
-              padding: 2vw 0 0 0;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
+///////////////////////////////////////////////// ÉCRANS DE 1024PX ET PLUS
 @media only screen and (min-width: 1024px) {
   header {
-    height: 6vw;
-
-    // Logo
-    .custom-logo-link {
-      height: 6vw;
-
-      .custom-logo {
-        width: inherit;
-        height: 6vw;
-      }
-    }
 
     // Menu
     .menu-burger {
@@ -264,19 +170,21 @@ header {
           li {
             width: inherit;
             background-color: transparent;
+            font-size: clamp(0.875rem, 0.4583rem + 0.6510vw, 1.5rem);
             border-radius: 0;
             padding: 0;
             display: flex;
             justify-content: space-around;
             position: relative;
+            user-select: none;
             cursor: pointer;
 
             /* Bullet en mode ordi */
             &::before {
               content: "";
-              width: 4px;
-              height: 4px;
-              background-color: #ffffff;
+              width: clamp(0.25rem, 0.1667rem + 0.1302vw, 0.375rem);
+              height: clamp(0.25rem, 0.1667rem + 0.1302vw, 0.375rem);
+              background-color: $couleurTitreTextes;
               margin: 0;
               border-radius: 50%;
               padding: 0;
@@ -287,56 +195,21 @@ header {
 
             &:hover::before {
               width: 100%;
-              height: 2px;
+              height: clamp(0.125rem, 0.0833rem + 0.0651vw, 0.1875rem);
               border-radius: 0;
               transition: ease-in-out 0.2s;
             }
 
+            &:hover {
+              background: none;
+              font-weight: 500;
+            }
+
             a {
               height: inherit;
-              background: linear-gradient(to right,
-                  rgb(107, 172, 237),
-                  rgb(107, 172, 237)),
-                linear-gradient(to right,
-                  rgb(182, 211, 240),
-                  rgb(182, 211, 240));
-              background-size: 100% 0px, 0 0px;
-              background-position: 100% 100%, 0 100%;
-              background-repeat: no-repeat;
-              color: white;
-              text-transform: uppercase;
-              text-decoration: none;
-              padding: 1rem 0 1.5rem 0;
-              display: flex;
-              justify-content: space-around;
-              transition: background-size 400ms;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  header {
-
-    // Menu
-    .menu-burger {
-
-      // Liste du menu
-      .menu-entete-container {
-        #menu-entete {
-          li {
-
-            /* Bullet en mode ordi */
-            &::before {
-              width: 6px;
-              height: 6px;
-            }
-
-            &:hover::before {
-              height: 3px;
+              font-size: clamp(0.875rem, 0.4583rem + 0.6510vw, 1.5rem);
+              color: $couleurTitreTextes;
+              padding: 1rem 0 clamp(1rem, 0.6667rem + 0.5208vw, 1.5rem) 0;
             }
           }
         }
