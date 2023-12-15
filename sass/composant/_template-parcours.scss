@@ -32,18 +32,22 @@ $background-color_11: white;
 * {
 	box-sizing: border-box;
 }
+
+
+// ////////////////////////////////////////////////////////
+// ///               VERSION MOBILE                    ///
+// /// ///////////////////////////////////////////////////
 .contenu_parcours {
-	width: 100vw;
-	margin: 0 5vw;
 	background-color: $background-color_1;
-	z-index: 8;
-	overflow: hidden;
+	
+
 	.bubbles-container {
 		position: relative;
 		width: 100%;
 		height: 100%;
 		opacity: 50%;
 		z-index: -3;
+
 		.bubble {
 			position: fixed;
 			mix-blend-mode: lighten;
@@ -53,6 +57,7 @@ $background-color_11: white;
 			animation: bubbleAnimation 20s linear infinite;
 		}
 	}
+
 	.degrades {
 		filter: blur(7rem);
 		display: none;
@@ -62,18 +67,21 @@ $background-color_11: white;
 		position: absolute;
 		z-index: -6;
 	}
+
 	.degrade_1 {
 		background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
 		right: -5rem;
 		top: -40rem;
 		transform: rotateZ(295deg);
 	}
+
 	.degrade_2 {
 		background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
 		left: -25rem;
 		top: 60rem;
 		transform: rotateZ(35deg);
 	}
+
 	.degrade_3 {
 		width: 40rem;
 		height: 70rem;
@@ -82,6 +90,7 @@ $background-color_11: white;
 		top: 270rem;
 		transform: rotateZ(295deg);
 	}
+
 	.bulle_modele_1 {
 		background-color: $background-color_2;
 		mix-blend-mode: lighten;
@@ -91,12 +100,14 @@ $background-color_11: white;
 		position: absolute;
 		z-index: -4;
 	}
+
 	.bulle_m1_position_1 {
 		width: 10rem;
 		height: 10rem;
 		top: 45rem;
 		right: 5rem;
 	}
+
 	.bulle_m1_position_2 {
 		width: 15rem;
 		background-color: $background-color_3;
@@ -104,6 +115,7 @@ $background-color_11: white;
 		top: 35rem;
 		right: 4rem;
 	}
+
 	.bulle_modele_2 {
 		background-color: $background-color_3;
 		mix-blend-mode: lighten;
@@ -113,18 +125,21 @@ $background-color_11: white;
 		position: absolute;
 		z-index: -4;
 	}
+
 	.bulle_m2_position_1 {
 		width: 20rem;
 		height: 20rem;
 		top: -8rem;
 		left: -5rem;
 	}
+
 	.bulle_m2_position_2 {
 		width: 8rem;
 		height: 8rem;
 		top: 5rem;
 		left: 10rem;
 	}
+
 	.bulle_modele_3 {
 		background-color: $background-color_3;
 		mix-blend-mode: lighten;
@@ -134,23 +149,15 @@ $background-color_11: white;
 		position: absolute;
 		z-index: -4;
 	}
+
 	.bulle_m3_position_1 {
 		width: 10rem;
 		height: 10rem;
 		top: 110rem;
 		left: 10rem;
 	}
-	.encadre_page {
-		width: 100vw;
-		height: 900vh;
-		border-top: 3px white solid;
-		border-left: 3px white solid;
-		border-radius: 50px 0;
-		position: absolute;
-		top: 10.5rem;
-		left: 1rem;
-		z-index: -1;
-	}
+
+	
 	.scroll-to-top-button {
 		display: none;
 		position: fixed;
@@ -1118,6 +1125,11 @@ $background-color_11: white;
 		}
 	}
 }
+
+
+// ////////////////////////////////////////////////////////
+// ///               VERSION TABLETTE                  ///
+// /// ///////////////////////////////////////////////////
 @media only screen and (min-width: 768px) {
 	.contenu_parcours {
 		width: 100vw;
@@ -1682,6 +1694,11 @@ $background-color_11: white;
 		}
 	}
 }
+
+
+// ////////////////////////////////////////////////////////
+// ///              VERSION GRAND ECRAN                ///
+// /// ///////////////////////////////////////////////////
 @media only screen and (min-width: 1024px) {
 	.contenu_parcours {
 		width: 92vw;

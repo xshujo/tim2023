@@ -830,11 +830,7 @@ footer .sidebar:last-of-type {
 }
 
 .contenu_parcours {
-  width: 100vw;
-  margin: 0 5vw;
   background-color: transparent;
-  z-index: 8;
-  overflow: hidden;
 }
 .contenu_parcours .bubbles-container {
   position: relative;
@@ -937,17 +933,6 @@ footer .sidebar:last-of-type {
   height: 10rem;
   top: 110rem;
   left: 10rem;
-}
-.contenu_parcours .encadre_page {
-  width: 100vw;
-  height: 900vh;
-  border-top: 3px white solid;
-  border-left: 3px white solid;
-  border-radius: 50px 0;
-  position: absolute;
-  top: 10.5rem;
-  left: 1rem;
-  z-index: -1;
 }
 .contenu_parcours .scroll-to-top-button {
   display: none;
