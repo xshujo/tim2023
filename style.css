@@ -4882,8 +4882,8 @@ footer .sidebar:last-of-type {
   margin: 0;
 }
 .main_accueil .video .video-caption .video-titre::after {
-  width: 40vw;
-  height: 2px;
+  width: clamp(9rem, 8.1429rem + 4.2857vw, 15rem);
+  height: clamp(0.125rem, 0.1071rem + 0.0893vw, 0.25rem);
   background-color: #f7f7f7;
   content: "";
   margin-top: 1rem;
@@ -4925,6 +4925,7 @@ footer .sidebar:last-of-type {
   justify-content: center;
   align-items: center;
   gap: clamp(1.5rem, 1.0448rem + 2.276vw, 2.5rem);
+  position: relative;
 }
 .main_accueil .fp-section h2 {
   text-align: center;

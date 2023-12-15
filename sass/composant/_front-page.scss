@@ -1,7 +1,6 @@
 // Mode mobile
 // De 320px à 767px
 .main_accueil {
-    // width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +11,6 @@
         position: relative;
 
         .video-caption {
-            // width: 100%;
             width: 100%;
             background: rgb(0, 0, 0);
             background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0) 100%);
@@ -31,16 +29,14 @@
                 margin: 0;
 
                 &::after {
-                    width: 40vw;
-                    height: 2px;
+                    width: clamp(9rem, 8.1429rem + 4.2857vw, 15rem);
+                    height: clamp(0.125rem, 0.1071rem + 0.0893vw, 0.25rem);
                     background-color: $couleurTitreTextes;
                     content: "";
                     margin-top: 1rem;
                     display: block;
                 }
             }
-
-            .video-sous-titre {}
         }
 
         // Vidéo promotionnelle
@@ -89,6 +85,7 @@
         justify-content: center;
         align-items: center;
         gap: clamp(1.5rem, 1.0448rem + 2.2760vw, 2.5rem);
+        position: relative;
 
         // Les titres
         h2 {
