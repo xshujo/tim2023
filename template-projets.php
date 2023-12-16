@@ -16,7 +16,6 @@
 
     <h1 class='jeux'>Jeux Vidéo</h1>
 
-    <div class="projet__jeux">
     <div class="encadre">
 
 
@@ -55,10 +54,9 @@
 
         <?php endwhile; ?>
       <?php endif;
-      wp_reset_postdata(); ?>
+      wp_reset_postdata(); ?>   
     
-           
-    
+      </div>
     </div>
 
 
