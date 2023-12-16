@@ -26,28 +26,34 @@ blockquote {
 
 h1 {
   font-size: clamp(1.875rem, 1.7321rem + 0.7143vw, 2.875rem);
+  color: $couleurTitreTextes;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2.5rem);
+  color: $couleurTitreTextes;
   text-transform: uppercase;
 }
 
 h3 {
   font-size: clamp(1.25rem, 1.1071rem + 0.7143vw, 2.25rem);
+  color: $couleurElmtDeux;
 }
 
 h4 {
   font-size: clamp(1.125rem, 0.9821rem + 0.7143vw, 2.125rem);
+  color: $couleurElmtUn;
 }
 
 h5 {
   font-size: clamp(1rem, 0.8571rem + 0.7143vw, 2rem);
+  color: $couleurElmtUn;
 }
 
 h6 {
   font-size: clamp(0.875rem, 0.7321rem + 0.7143vw, 1.875rem);
+  color: $couleurElmtUn;
 }
 
 P,
@@ -57,7 +63,8 @@ button,
 figcaption,
 blockquote {
   font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
-  line-height: clamp(1.5rem, 1.4286rem + 0.3571vw, 2rem);
+  color: $couleurTitreTextes;
+  line-height: clamp(1.25rem, 1.0714rem + 0.8929vw, 2.5rem);
 }
 
 // Attention aux inputs type text...
@@ -76,15 +83,20 @@ ul {
   .wp-block-button {
 
     a {
-      background: rgb(201, 233, 255);
-      background: linear-gradient(180deg,
-          rgba(201, 233, 255, 1) 0%,
-          rgba(158, 201, 231, 1) 100%);
+      background: $couleurElmtDeux;
       font-weight: bold;
-      color: $degradeFondSiteDeux;
+      color: $couleurTitreTextes;
       text-transform: uppercase;
-      border-radius: 2rem;
-      padding: 0.5rem 1rem;
+      transform: scale(1);
+      transition: ease-in-out 0.2s;
+      user-select: none;
+
+      &:hover {
+        background: $couleurTitreTextes;
+        color: $couleurFond;
+        transform: scale(1.05);
+        transition: ease-in-out 0.2s;
+      }
     }
   }
 }
