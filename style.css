@@ -4626,7 +4626,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 .blockflex__projet .projet__general .carte__categorie img {
   position: relative;
-  width: 10rem;
+  width: 13rem;
   height: 11rem;
   display: flex;
   align-items: center;
@@ -5224,7 +5224,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 .main_accueil h2 {
   width: 70vw;
-  font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
   letter-spacing: 0.05rem;
   text-align: center;
   text-transform: uppercase;
@@ -5304,7 +5303,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   background: rgb(201, 233, 255);
   background: linear-gradient(180deg, rgb(201, 233, 255) 0%, rgb(158, 201, 231) 100%);
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
   font-weight: bold;
   color: #33488e;
   text-transform: uppercase;
@@ -5346,7 +5344,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 .main_accueil .fp-tim-cest:nth-of-type(1) {
   width: 100%;
-  font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
   letter-spacing: 0.075rem;
   text-align: right;
   margin: 3rem 0 0 0;
@@ -5354,7 +5351,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 .main_accueil .fp-tim-cest:nth-of-type(2) {
   width: 100%;
-  font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
   text-align: right;
   letter-spacing: 0.075rem;
   margin: 0;
@@ -5393,7 +5389,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   height: inherit !important;
 }
 .main_accueil .fp-p-admission {
-  font-size: clamp(0.75rem, 0.3929rem + 1.7857vw, 1.25rem);
   font-weight: 500;
   color: #c7afec;
   letter-spacing: 0.075rem;
@@ -5403,13 +5398,11 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 @media only screen and (min-width: 768px) {
   .main_accueil h2 {
     width: 60vw;
-    font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
     letter-spacing: 0.1rem;
     margin: 6rem 0 0 0;
   }
   .main_accueil > p {
     width: 60vw;
-    font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
     margin: 4rem 0;
   }
   .main_accueil > p::before {
@@ -5430,9 +5423,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   }
   .main_accueil > p:last-of-type {
     margin: 1rem 0;
-  }
-  .main_accueil .wp-block-gallery .fp-icone-cours .wp-element-caption {
-    font-size: 1.1rem;
   }
   .main_accueil .fp-image {
     width: 55vw;
@@ -5457,7 +5447,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     margin: 2rem 0;
   }
   .main_accueil .wp-block-buttons .wp-block-button a {
-    font-size: 1rem;
     border-radius: 2rem;
     padding: 0.5rem 1rem;
   }
@@ -5471,13 +5460,11 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     transform: translateX(-1.5rem) translateY(-2rem);
   }
   .main_accueil .fp-tim-cest:nth-of-type(1) {
-    font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
     letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
     margin: 3rem 0 0 0;
     padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
   }
   .main_accueil .fp-tim-cest:nth-of-type(2) {
-    font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
     letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
     padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
   }
@@ -5494,9 +5481,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     width: clamp(6rem, 1.4286rem + 9.5238vw, 10rem) !important;
     height: inherit !important;
   }
-  .main_accueil .fp-p-admission {
-    font-size: clamp(1.25rem, 0.6786rem + 1.1905vw, 1.75rem);
-  }
 }
 @media only screen and (min-width: 1024px) {
   .main_accueil {
@@ -5506,13 +5490,11 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   }
   .main_accueil h2 {
     width: 90vw;
-    font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
     letter-spacing: 0.1rem;
     margin: 10rem 0 0 0;
   }
   .main_accueil > p {
     width: 42vw;
-    font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
     margin: 4rem 0;
   }
   .main_accueil > p::before {
@@ -5535,7 +5517,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   }
   .main_accueil .fp-p-centre {
     width: 50vw;
-    font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
     margin: 4rem 0;
   }
   .main_accueil .fp-p-centre::before {
@@ -5558,9 +5539,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   }
   .main_accueil .fp-p-centre:last-of-type {
     margin: 1rem 0;
-  }
-  .main_accueil .wp-block-gallery .fp-icone-cours .wp-element-caption {
-    font-size: 1.3rem;
   }
   .main_accueil .fp-image {
     width: 42vw;
@@ -5585,7 +5563,6 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     margin: 5rem 25vw 0 25vw;
   }
   .main_accueil .wp-block-buttons .wp-block-button a {
-    font-size: 1rem;
     border-radius: 2rem;
     padding: 0.5rem 1rem;
   }
@@ -5603,14 +5580,12 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   }
   .main_accueil .fp-tim-cest:nth-of-type(1) {
     width: 80vw;
-    font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
     letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
     margin: 8rem 0 0 0;
     padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
   }
   .main_accueil .fp-tim-cest:nth-of-type(2) {
     width: 80vw;
-    font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
     letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
     padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
   }
