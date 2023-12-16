@@ -116,7 +116,8 @@
   h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
     z-index: 30;
   }
 
@@ -132,7 +133,6 @@
     .article_galerie_vie_etudiante {
       .wp-block-gallery {
         .wp-block-image {
-          width: 50%;
           img {
             border-radius: 0.6rem;
           }
@@ -156,7 +156,7 @@
     .article_vie_etudiante::before {
       content: "";
       width: 100%;
-      height: 19.3rem;
+      height: 23.3rem;
       background-color: $couleurElmtDeux;
       // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
       mix-blend-mode: soft-light;
@@ -168,7 +168,7 @@
 
     .article_vie_etudiante {
       width: 100%;
-      height: 19.3rem;
+      height: 23.3rem;
       margin-bottom: 1.4rem;
       margin-top: 0.2rem;
       display: flex;
@@ -180,7 +180,7 @@
 
       img {
         // transform: scale(60%);
-        width: 30%;
+        width: 40%;
         height: auto;
         border-radius: 0.4rem;
         z-index: 1;
@@ -237,6 +237,87 @@
     // .texte_2 {
     //   // font-size: 2.7rem;
     // }
+  }
+}
+
+/************* ENTRE MOBILE ET TABLETTE *************/
+@media only screen and (min-width:500px) {
+  .main_etudiant {
+    .zone_galerie {
+      display: flex;
+      z-index: 10;
+  
+      .article_galerie_vie_etudiante {
+        .wp-block-gallery {
+          .wp-block-image {
+            img {
+              border-radius: 0.6rem;
+            }
+          }
+        }
+      }
+    }
+
+    .zone_evenements {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      z-index: 20;
+
+      // Styles pour chaque article
+      .article_vie_etudiante::before {
+        content: "";
+        width: 100%;
+        height: 28.3rem;
+        background-color: $couleurElmtDeux;
+        // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
+        mix-blend-mode: soft-light;
+        border-radius: 1rem;
+        position: absolute;
+        box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+        // z-index: 10;
+      }
+
+      .article_vie_etudiante {
+        width: 49%;
+        height: 28.3rem;
+        margin-bottom: 1.4rem;
+        margin-top: 0.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        // z-index: 20; En mettant ce z-index, on perd le mode de fusion
+
+        img {
+          width: 50%;
+          height: auto;
+          border-radius: 0.4rem;
+          z-index: 1;
+        }
+
+        .informations_evenements {
+          width: 90%;
+        }
+      }
+    }
+
+    .texte_a_venir {
+      width: 12rem;
+      height: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top: 10rem;
+      z-index: 1;
+    }
   }
 }
 
@@ -486,18 +567,18 @@
     // z-index: 30;
 
     // Styles du grand encadré sur la page
-    .encadre_page {
-      display: block;
-      width: 110%;
-      height: 121rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
-      border: 0.3rem $couleurTitreTextes solid;
-      border-radius: 2rem;
-      position: absolute;
-      top: 6rem;
-      left: 1rem;
-      z-index: -1;
-      display: none;
-    }
+    // .encadre_page {
+    //   display: block;
+    //   width: 110%;
+    //   height: 121rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
+    //   border: 0.3rem $couleurTitreTextes solid;
+    //   border-radius: 2rem;
+    //   position: absolute;
+    //   top: 6rem;
+    //   left: 1rem;
+    //   z-index: -1;
+    //   display: none;
+    // }
 
     // Styles généraux des dégradés en fond
     .degrades {
@@ -593,7 +674,6 @@
     h1 {
       text-transform: uppercase;
       margin-bottom: 2rem;
-      margin-top: 6rem;
       z-index: 30;
     }
 
