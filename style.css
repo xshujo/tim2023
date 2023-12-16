@@ -4555,28 +4555,29 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 .blockflex__projet .encadre::before {
   content: "";
-  width: 100%;
-  height: inherit;
-  background-color: #c7afec;
+  position: absolute;
+  background: #c7afec;
   backdrop-filter: saturate(130%) blur(2rem);
   mix-blend-mode: soft-light;
   border-radius: 1rem;
-  position: absolute;
   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
 }
 .blockflex__projet .encadre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   position: relative;
-  overflow: scroll;
+  object-fit: cover;
+  overflow: hidden;
 }
 .blockflex__projet .projet__general {
-  width: calc(80vw - 1.5rem);
   height: inherit;
-  object-fit: cover;
+  overflow-x: scroll;
   position: relative;
   display: flex;
   flex-direction: row;
