@@ -3799,6 +3799,7 @@ footer .sidebar:last-of-type {
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
     color: #c7afec;
     font-weight: 500;
+    font-size: 1.3rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
