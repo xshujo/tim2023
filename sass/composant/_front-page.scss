@@ -1,607 +1,414 @@
 // Mode mobile
 // De 320px à 767px
 .main_accueil {
-    width: 100vw;
-    margin: 0;
-    padding: 0 0 3rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: clamp(3rem, 1.1792rem + 9.1038vw, 7rem);
 
-    // Tous les titres
-    h2 {
-        width: 70vw;
-        font-size: clamp(1.25rem, 0.625rem + 2vw, 1.75rem);
-        letter-spacing: 0.05rem;
-        text-align: center;
-        text-transform: uppercase;
-        margin: 5rem 0 0 0;
-    }
+    // Bulles en haut de la page
+    .top-bulles-container {
+        position: absolute;
+        top: calc(-1 * clamp(26rem, 24.0000rem + 10.0000vw, 40rem));
+        left: calc(-1 * clamp(3rem, 2.5714rem + 2.1429vw, 6rem));
+        z-index: -1;
 
-    // Tous les paragraphes
-    &>p {
-        width: 70vw;
-        margin: 2rem 0;
-
-        &:nth-of-type(2) {
-            display: none;
+        div:first-of-type {
+            width: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+            height: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+            background-color: $degradeFondSiteDeux;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 0.75;
+            border-radius: 50%;
+            position: absolute;
         }
 
-        // Crochets pour certains paragraphes
-        // Top right
-        &::before {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-top: 2px solid $couleurElmtUn;
-            border-right: 2px solid $couleurElmtUn;
-            border-top-right-radius: 0.5rem;
+        div:last-of-type {
+            width: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+            height: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+            background-color: $degradeFondSiteUn;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 0.6;
+            border-radius: 50%;
+            position: absolute;
+            top: clamp(7rem, 5.4286rem + 7.8571vw, 18rem);
+            left: clamp(8rem, 6.2857rem + 8.5714vw, 20rem);
+        }
+    }
+
+    // Section pour la vidéo promotionnelle
+    .video {
+        width: 100vw;
+        position: relative;
+
+        // Titre et sous-titre de la vidéo
+        .video-caption {
+            width: 100%;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 60%, rgba(0, 0, 0, 0) 100%);
+            padding: 5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 3;
+
+            .video-titre {
+                font-size: clamp(1.5rem, 1.1071rem + 1.9643vw, 2.875rem);
+                margin: 0;
+
+                &::after {
+                    width: clamp(9rem, 8.1429rem + 4.2857vw, 15rem);
+                    height: clamp(0.125rem, 0.1071rem + 0.0893vw, 0.25rem);
+                    background-color: $couleurTitreTextes;
+                    content: "";
+                    margin-top: 1rem;
+                    display: block;
+                }
+            }
+        }
+
+        // Bouton "Voir plus"
+        .wp-block-buttons {
+            display: none;
+            margin: 0 5vw 5vw 0;
             position: absolute;
             right: 0;
-            transform: translateX(calc(-15vw + 1rem)) translateY(-0.5rem);
+            bottom: 0;
+            z-index: 5;
+
+            .wp-block-button {
+                a {
+                    z-index: 6;
+                }
+            }
         }
 
-        // Bottom left
-        &::after {
-            width: 1.5rem;
-            height: 1.5rem;
-            background-color: transparent;
-            content: "";
-            border-bottom: 2px solid $couleurElmtUn;
-            border-left: 2px solid $couleurElmtUn;
-            border-bottom-left-radius: 0.5rem;
-            position: absolute;
-            left: 0;
-            transform: translateX(calc(15vw - 1rem)) translateY(0.5rem);
-        }
+        // Vidéo promotionnelle
+        .fp-video {
+            width: 100vw;
+            height: clamp(15rem, 3.6202rem + 56.8990vw, 40rem);
+            overflow: hidden;
 
-        &:first-of-type,
-        &:nth-of-type(2),
-        &:last-of-type {
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
 
-            &::before,
-            &::after {
-                display: none;
+            // Encadré de la vidéo
+            &::before {
+                width: 100vw;
+                height: calc(clamp(15rem, 3.6202rem + 56.8990vw, 40rem) + clamp(2.5rem, 2.0448rem + 2.2760vw, 3.5rem));
+                background-color: transparent;
+                content: "";
+                border: clamp(0.1875rem, 0.1429rem + 0.2232vw, 0.5rem) solid $couleurTitreTextes;
+                border-radius: clamp(1rem, 0.7143rem + 1.4286vw, 3rem);
+                display: block;
+                position: absolute;
+                transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-2rem);
+                z-index: 4;
             }
         }
     }
 
-    // Toutes les icônes des cours de la page d'accueil
-    .wp-block-gallery {
-        .fp-icone-cours {
-            .wp-element-caption {
-                background: transparent;
-                position: relative;
-                font-weight: 500;
-            }
-        }
+    // Paragraphes indésirables...
+    .fp-citation {
+        display: none;
     }
 
-    // Toutes les images
-    .fp-image {
-        width: 65vw;
-        height: 40vw;
-        overflow: hidden;
-        margin: 1.5rem 0 0 0;
+    &>p:last-of-type {
+        display: none;
+    }
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 0.5rem;
+    // Les sections de la page d'accueil
+    .fp-section {
+        width: 100%;
+        padding: 0 5vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(1.5rem, 1.0448rem + 2.2760vw, 2.5rem);
+        position: relative;
+
+        // Les titres
+        h2 {
+            text-align: center;
         }
 
-        &::before {
+        // Les images
+        .fp-image {
             width: 65vw;
             height: 40vw;
-            background-color: transparent;
-            content: "";
-            border: 2px solid $couleurTitreTextes;
-            border-radius: 0.5rem;
-            display: block;
-            position: absolute;
-            transform: translateX(0.35rem) translateY(0.35rem);
-        }
-    }
+            overflow: hidden;
+            border-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
 
-    // Tous les boutons
-    .wp-block-buttons {
-        all: unset;
-        margin: 1rem 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: scale(1);
+                transition: transform 2s ease-out;
 
-        .wp-block-button {
-            all: unset;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
 
-            a {
-                all: unset;
-                background: rgb(201, 233, 255);
-                background: linear-gradient(180deg,
-                        rgba(201, 233, 255, 1) 0%,
-                        rgba(158, 201, 231, 1) 100%);
-                font-family: "Montserrat", sans-serif;
-                font-size: 0.875rem;
-                font-weight: bold;
-                color: $degradeFondSiteDeux;
-                text-transform: uppercase;
-                border-radius: 2rem;
-                padding: 0.5rem 1rem;
+            // Encadré des images
+            &::before {
+                width: 65vw;
+                height: 40vw;
+                background-color: transparent;
+                content: "";
+                border: clamp(0.125rem, 0.0893rem + 0.1786vw, 0.375rem) solid $couleurTitreTextes;
+                border-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
+                display: block;
+                position: absolute;
+                transform: translateX(clamp(0.35rem, 0.2571rem + 0.4643vw, 1rem)) translateY(calc(-1 * clamp(0.55rem, 0.3455rem + 1.0227vw, 1rem)));
+                pointer-events: none;
+                z-index: 2;
             }
         }
-    }
 
-    // Vidéo promotionnelle
-    .fp-video {
-        width: 100vw;
-        height: 80vw;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-
-        @media only screen and (min-width:510px) {
-            height: 70vw;
+        // Les paragraphes
+        p {
+            width: 85%;
         }
 
-        video {
+        // Paragraphe de la section Parcours
+        .fp-p-parcours {
+            text-align: center;
+        }
+
+        // "Soumets une demande d’admission dès maintenant."
+        .fp-p-admission {
+            font-weight: 500;
+            color: $couleurElmtDeux;
+            letter-spacing: 0.075rem;
+            text-align: center;
+        }
+
+        // Les boutons d'action
+        .wp-block-buttons {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+            border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-        &::before {
-            width: 100vw;
-            height: 88vw;
-            background-color: transparent;
-            content: "";
-            border: 2px solid white;
-            border-radius: 1rem;
-            display: block;
-            position: absolute;
-            transform: translateX(-1.25rem) translateY(-1rem);
-
-            @media only screen and (min-width:510px) {
-                height: 76vw;
+            .wp-block-button {
+                a {
+                    padding: clamp(0.5rem, 0.4643rem + 0.1786vw, 0.75rem) clamp(1rem, 0.9643rem + 0.1786vw, 1.25rem);
+                }
             }
         }
     }
 
-    // Étudier en TIM, c'est [...]
-    // Titre
-    .fp-tim-cest:nth-of-type(1) {
-        width: 100%;
-        font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
-        letter-spacing: 0.075rem;
-        text-align: right;
-        margin: 3rem 0 0 0;
-        padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
-    }
-
-    .fp-tim-cest:nth-of-type(2) {
-        width: 100%;
-        font-size: clamp(1.375rem, 0.5938rem + 2.5vw, 2rem);
-        text-align: right;
-        letter-spacing: 0.075rem;
-        margin: 0;
-        padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
-    }
-
-    // Citation
-    .fp-citation {
-        text-align: center;
-        margin: 2rem 0;
-    }
-
-    // - Nom, cohorte
-    // Paragraphe
-    .fp-nom-cohorte {
-        width: 100%;
-        font-style: italic;
-        color: $couleurElmtUn;
-        text-align: right;
-        margin: 0;
-        padding-right: clamp(3rem, -5.9286rem + 44.6429vw, 15.5rem);
-    }
-
-    // Une équipe de professeurs dévoués
-    // Titre
-    .fp-h2-profs {
-        margin-top: 4rem;
-    }
-
-    // Des cours selon vos intérêts
     // Icônes des cours
     // !important pour écraser les styles par défaut de WordPress...
     .fp-icones {
         width: 70vw !important;
         box-sizing: border-box;
-        margin-top: 2rem;
         display: grid !important;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 2rem !important;
-        grid-row-gap: 2rem !important;
+        grid-column-gap: clamp(2rem, 1.7143rem + 1.4286vw, 4rem) !important;
+        grid-row-gap: clamp(2rem, 1.7143rem + 1.4286vw, 4rem) !important;
         justify-items: center;
         align-items: center;
 
         figure {
-            width: clamp(5rem, 1.4206rem + 17.8971vw, 10rem) !important;
+            width: clamp(5rem, 4.2857rem + 3.5714vw, 10rem) !important;
             height: inherit !important;
+
+            figcaption {
+                background: transparent !important;
+                font-weight: 500 !important;
+                position: relative !important;
+            }
         }
     }
 
-    // Soumets une demande d’admission dès maintenant.
-    // Paragraphe
-    .fp-p-admission {
-        font-size: clamp(0.75rem, 0.3929rem + 1.7857vw, 1.25rem);
-        font-weight: 500;
-        color: $couleurElmtDeux;
-        letter-spacing: 0.075rem;
-        text-align: center;
+    // Bulles en bas de la page
+    .bottom-bulles-container {
+        position: absolute;
+        right: clamp(10rem, 7.7143rem + 11.4286vw, 26rem);
+        bottom: clamp(6rem, 4.5714rem + 7.1429vw, 16rem);
+        z-index: -1;
+
+        div:first-of-type {
+            width: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+            height: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+            background-color: $degradeFondSiteDeux;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 0.75;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        div:last-of-type {
+            width: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+            height: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+            background-color: $degradeFondSiteUn;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 0.6;
+            border-radius: 50%;
+            position: absolute;
+            left: calc(-1 * clamp(2rem, 1.4286rem + 2.8571vw, 6rem));
+        }
     }
 }
 
 // Mode tablette
-// De 768px à 1024px
+// 768px et plus
 @media only screen and (min-width: 768px) {
     .main_accueil {
 
-        // Tous les titres
-        h2 {
-            width: 60vw;
-            font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
-            letter-spacing: 0.1rem;
-            margin: 6rem 0 0 0;
-        }
+        // Section de la vidéo promotionnelle
+        .video {
 
-        // Tous les paragraphes
-        &>p {
-            width: 60vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
-            margin: 4rem 0;
-
-            // Crochets pour certains paragraphes
-            // Top right
-            &::before {
-                width: 2rem;
-                height: 2rem;
-                border-top: 4px solid $couleurElmtUn;
-                border-right: 4px solid $couleurElmtUn;
-                border-top-right-radius: 0.75rem;
-                transform: translateX(calc(-20vw + 2rem)) translateY(-1.5rem);
-            }
-
-            // Bottom left
-            &::after {
-                width: 2rem;
-                height: 2rem;
-                border-bottom: 4px solid $couleurElmtUn;
-                border-left: 4px solid $couleurElmtUn;
-                border-bottom-left-radius: 0.75rem;
-                transform: translateX(calc(20vw - 2rem)) translateY(1rem);
-            }
-
-            &:last-of-type {
-                margin: 1rem 0;
+            // Bouton "Voir plus"
+            .wp-block-buttons {
+                display: block;
             }
         }
 
-        // Toutes les icônes des cours de la page d'accueil
-        .wp-block-gallery {
-            .fp-icone-cours {
-                .wp-element-caption {
-                    font-size: 1.1rem;
-                }
-            }
-        }
-
-        // Toutes les images
-        .fp-image {
-            width: 55vw;
-            height: 35vw;
-            overflow: hidden;
-            margin: 1.5rem 0 0 0;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 1rem;
-            }
-
-            &::before {
-                width: 55vw;
-                height: 35vw;
-                border: 4px solid white;
-                border-radius: 1rem;
-                transform: translateX(0.5rem) translateY(0.5rem);
-            }
-        }
-
-        // Tous les boutons
-        .wp-block-buttons {
-            margin: 2rem 0;
-
-            .wp-block-button {
-                a {
-                    font-size: 1rem;
-                    border-radius: 2rem;
-                    padding: 0.5rem 1rem;
-                }
-            }
-        }
-
-        // Vidéo promotionnelle
-        .fp-video {
-            height: 60vw;
-
-            &::before {
-                height: 66vw;
-                border: 4px solid white;
-                border-radius: 1.5rem;
-                transform: translateX(-1.5rem) translateY(-2rem);
-            }
-        }
-
-        // Étudier en TIM, c'est [...]
-        // Titre
-        .fp-tim-cest:nth-of-type(1) {
-            font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
-            letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
-            margin: 3rem 0 0 0;
-            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
-        }
-
-        .fp-tim-cest:nth-of-type(2) {
-            font-size: clamp(2rem, 1.25rem + 1.5625vw, 2.25rem);
-            letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
-            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
-        }
-
-        // - Nom, cohorte
-        // Paragraphe
-        .fp-nom-cohorte {
-            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
-        }
-
-        // Des cours selon vos intérêts
         // Icônes des cours
         // !important pour écraser les styles par défaut de WordPress...
         .fp-icones {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 4rem !important;
-            grid-row-gap: 4rem !important;
-
-            figure {
-                width: clamp(6rem, 1.4286rem + 9.5238vw, 10rem) !important;
-                height: inherit !important;
-            }
-        }
-
-        .fp-p-admission {
-            font-size: clamp(1.25rem, 0.6786rem + 1.1905vw, 1.75rem);
         }
     }
 }
 
 // Mode ordinateur
+// 1024px et plus
 @media only screen and (min-width: 1024px) {
     .main_accueil {
         flex-flow: row wrap;
         justify-content: space-around;
-        margin-bottom: 10rem;
 
-        // Tous les titres
-        h2 {
-            width: 90vw;
-            font-size: clamp(1.75rem, 1rem + 1.5625vw, 2rem);
-            letter-spacing: 0.1rem;
-            margin: 10rem 0 0 0;
-        }
+        // Section de la vidéo promotionnelle
+        .video {
 
-        // Paragraphes à droite
-        // .fp-p-droite {
-        &>p {
-            width: 42vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
-            margin: 4rem 0;
+            // La vidéo promotionnelle
+            .fp-video {
+                height: calc(100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem));
 
-            // Crochets pour certains paragraphes
-            // Top right
-            &::before {
-                width: 2rem;
-                height: 2rem;
-                border-top: 4px solid $couleurElmtUn;
-                border-right: 4px solid $couleurElmtUn;
-                border-top-right-radius: 0.75rem;
-                transform: translateX(calc((-16vw / 3) + 2rem)) translateY(-1rem);
-            }
-
-            // Bottom left
-            &::after {
-                width: 2rem;
-                height: 2rem;
-                border-bottom: 4px solid $couleurElmtUn;
-                border-left: 4px solid $couleurElmtUn;
-                border-bottom-left-radius: 0.75rem;
-                right: 0;
-                left: inherit;
-                transform: translateX(calc((-42vw + (-16vw / 3)) + 2rem)) translateY(1rem);
-            }
-        }
-
-        // Paragraphes centrés
-        .fp-p-centre {
-            width: 50vw;
-            font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
-            margin: 4rem 0;
-
-            // Crochets pour certains paragraphes
-            // Top right
-            &::before {
-                width: 2rem;
-                height: 2rem;
-                border-top: 4px solid $couleurElmtUn;
-                border-right: 4px solid $couleurElmtUn;
-                border-top-right-radius: 0.75rem;
-                transform: translateX(calc(-25vw + 2rem)) translateY(-1rem);
-            }
-
-            // Bottom left
-            &::after {
-                width: 2rem;
-                height: 2rem;
-                border-bottom: 4px solid $couleurElmtUn;
-                border-left: 4px solid $couleurElmtUn;
-                border-bottom-left-radius: 0.75rem;
-                left: 0;
-                right: inherit;
-                transform: translateX(calc(25vw - 2rem)) translateY(1rem);
-            }
-
-            &:last-of-type {
-                margin: 1rem 0;
-            }
-        }
-
-        // Paragraphes à gauche
-        // .fp-p-gauche {
-        //     width: 42vw;
-        //     font-size: clamp(1rem, 0.25rem + 1.5625vw, 1.25rem);
-        //     margin: 4rem 0;
-
-        //     // Crochets pour certains paragraphes
-        //     // Top right
-        //     &::before {
-        //         width: 2rem;
-        //         height: 2rem;
-        //         border-top: 4px solid $couleurElmtUn;
-        //         border-right: 4px solid $couleurElmtUn;
-        //         border-top-right-radius: 0.75rem;
-        //         transform: translateX(calc((-42vw + (-16vw / 3)) + 2rem)) translateY(-1rem);
-        //     }
-
-        //     // Bottom left
-        //     &::after {
-        //         width: 2rem;
-        //         height: 2rem;
-        //         border-bottom: 4px solid $couleurElmtUn;
-        //         border-left: 4px solid $couleurElmtUn;
-        //         border-bottom-left-radius: 0.75rem;
-        //         right: 0;
-        //         left: inherit;
-        //         transform: translateX(calc((-16vw / 3) + 2rem)) translateY(1rem);
-        //     }
-        // }
-
-        // Toutes les icônes des cours de la page d'accueil
-        .wp-block-gallery {
-            .fp-icone-cours {
-                .wp-element-caption {
-                    font-size: 1.3rem;
+                // Encadré de la vidéo
+                &::before {
+                    height: calc((100vh - clamp(3rem, 2.2857rem + 3.5714vw, 8rem)) + clamp(4.5rem, 3.8333rem + 1.0417vw, 5.5rem));
+                    transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-3rem);
                 }
             }
         }
 
-        // Toutes les images
-        .fp-image {
-            width: 42vw;
-            height: 26vw;
-            overflow: hidden;
-            margin: 1.5rem 0 0 0;
+        // Les sections paires
+        .fp-section:nth-child(even) {
+            display: grid;
+            grid-template-areas: "h2 h2"
+                "img p"
+                "img button";
+            row-gap: 0;
+            column-gap: clamp(2rem, -0.6667rem + 4.1667vw, 6rem);
 
-            img {
+            // Les titres
+            h2 {
                 width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 1rem;
+                grid-area: h2;
+                margin-bottom: clamp(2rem, 0.0000rem + 3.1250vw, 5rem);
             }
 
-            &::before {
-                width: 42vw;
-                height: 26vw;
-                border: 0.3rem solid $couleurTitreTextes;
-                border-radius: 1.5rem;
-                transform: translateX(1rem) translateY(1rem);
-            }
-        }
+            // Les images
+            .fp-image {
+                width: 40vw;
+                height: 28vw;
+                overflow: hidden;
+                grid-area: img;
+                align-self: center;
 
-        // Tous les boutons
-        .wp-block-buttons {
-            margin: 5rem 25vw 0 25vw;
-
-            .wp-block-button {
-                a {
-                    font-size: 1rem;
-                    border-radius: 2rem;
-                    padding: 0.5rem 1rem;
+                // Encadré des images
+                &::before {
+                    width: 40vw;
+                    height: 28vw;
+                    transform: translateX(clamp(0.35rem, 0.2571rem + 0.4643vw, 1rem)) translateY(calc(-1 * clamp(1rem, 0.5000rem + 0.7813vw, 1.75rem)));
                 }
             }
 
-            &:last-of-type {
-                margin-top: 2rem;
+            // Les paragraphes
+            p {
+                width: 40vw;
+                // background-color: rgba(158, 201, 231, 0.5);
+                // background-blend-mode: screen;
+                // border-top-right-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
+                // border-top-left-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
+                padding: 1rem;
+                text-align: left;
+                grid-area: p;
+                align-self: flex-end;
+            }
+
+            // Les boutons d'action
+            .wp-block-buttons {
+                // width: 40vw;
+                // background-color: rgba(158, 201, 231, 0.5);
+                // background-blend-mode: screen;
+                // border-top-right-radius: 0;
+                // border-top-left-radius: 0;
+                // border-bottom-right-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
+                // border-bottom-left-radius: clamp(0.5rem, 0.2143rem + 1.4286vw, 2.5rem);
+                padding: 0 1rem 1rem 1rem;
+                justify-content: flex-start;
+                grid-area: button;
             }
         }
 
-        // Vidéo promotionnelle
-        .fp-video {
-            height: calc(100vh - 6vw);
+        // Les sections impaires
+        .fp-section:nth-child(odd) {
+            column-gap: clamp(2rem, -0.6667rem + 4.1667vw, 6rem);
 
-            &::before {
-                height: calc(100vh - 1vw);
-                border: 0.3rem solid $couleurTitreTextes;
-                border-radius: 2rem;
-                transform: translateX(-3.3rem) translateY(-2rem);
+            // Les titres, s'il y en a
+            h2 {
+                width: 100%;
+            }
+
+            // Les images, s'il y en a
+            .fp-image {
+                width: 40vw;
+                height: 28vw;
+                overflow: hidden;
+
+                // Encadré des images
+                &::before {
+                    width: 40vw;
+                    height: 28vw;
+                    transform: translateX(clamp(0.35rem, 0.2571rem + 0.4643vw, 1rem)) translateY(calc(-1 * clamp(1rem, 0.5000rem + 0.7813vw, 1.75rem)));
+                }
+            }
+
+            // Tous les paragraphes sauf celui de demande d'admission
+            p:not(.fp-p-admission) {
+                width: 40vw;
+                text-align: left;
+                padding: 1rem;
             }
         }
 
-        // Étudier en TIM, c'est [...]
-        // Titre
-        .fp-tim-cest:nth-of-type(1) {
-            width: 80vw;
-            font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
-            letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
-            margin: 8rem 0 0 0;
-            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
-        }
-
-        .fp-tim-cest:nth-of-type(2) {
-            width: 80vw;
-            font-size: clamp(2rem, -0.4699rem + 3.8554vw, 3rem);
-            letter-spacing: clamp(0.075rem, -0.15rem + 0.4688vw, 0.15rem);
-            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
-        }
-
-        // - Nom, cohorte
-        // Paragraphe
-        .fp-nom-cohorte {
-            width: 80vw;
-            margin-bottom: 2rem;
-            padding-right: clamp(15.5rem, -2.5rem + 37.5vw, 21.5rem);
-        }
-
-        // Une équipe de professeurs dévoués
-        // Titre
-        .fp-h2-profs {
-            margin-top: 10rem;
-        }
-
-        // Des cours selon vos intérêts
         // Icônes des cours
         // !important pour écraser les styles par défaut de WordPress...
         .fp-icones {
             max-width: 50vw;
             margin: 0 10vw;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 4rem !important;
-            grid-row-gap: 4rem !important;
-
-            figure {
-                width: clamp(6rem, 1.4286rem + 9.5238vw, 10rem) !important;
-                height: inherit !important;
-            }
         }
     }
 }

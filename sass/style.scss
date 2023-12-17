@@ -19,14 +19,12 @@ Text Domain: tim-2023
 
 /* --------------------------------------------- base */
 @import "base/html";
-@import "base/heading";
+@import "base/base-textes";
+@import "base/base-contenants";
 @import "base/body";
-@import "base/link";
-@import "base/markdown";
 
 /* --------------------------------------------- composant */
 @import "composant/entete";
-@import "composant/main";
 @import "composant/pied_page";
 @import "composant/loader";
 @import "composant/_template-parcours";

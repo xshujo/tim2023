@@ -42,7 +42,7 @@ Finaliser les maquettes suite aux tests utilisateur et continuer l'intégration 
 - Tests utilisateurs
 - Début de la création des extensions
 
-## Objectif du sprint 3 (en cours)
+## Objectif du sprint 3 (complété)
 
 Créer les extensions et avanacer l'intégration du thème sur WordPress pour les tests d'utilisabilités.
 
@@ -51,11 +51,12 @@ Créer les extensions et avanacer l'intégration du thème sur WordPress pour le
 - Avancement de l'intégration (adaptabilité)
 - Création d'une extension de carrousel pour la page Professeurs et d'un générateur de citations pour la page d'accueil
 - Avancement au niveau du contenu (création de la vidéo promotionnelle, photos, textes)
+- Début de la création des pages d'administrateur pour les extensions
 
-## Objectif du sprint 4 (à venir)
+## Objectif du sprint 4 (en cours)
 
 Terminer la création des extensions et l'intégration du thème sur WordPress.
 
 ### Réalisations du sprint 4
 
-- 
+- Homogénéisation des styles

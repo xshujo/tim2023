@@ -8,13 +8,6 @@
 <?php get_header(); ?>
 
 <main>
-  <!-- Création de bulles pour le style -->
-  <div class='bulle_1 bulle_1_position'></div>
-  <div class='bulle_1_1 bulle_1_1_position'></div>
-  <div class='bulle_2 bulle_2_position'></div>
-  <div class='degrades degrade_1'></div>
-  <div class='degrades degrade_2'></div>
-  <div class='degrades degrade_3'></div>
 
   <h1 class="text__page__projet">Projet</h1>
 
@@ -22,8 +15,12 @@
   <div class='blockflex__projet'>
 
     <h1 class='jeux'>Jeux Vidéo</h1>
-    <div class='projet__general div1'>
 
+    <div class="encadre">
+
+
+      <div class='projet__general projet__general1'>
+      
 
       <!-- Intégration de la catégorie Jeux -->
       <?php
@@ -39,20 +36,27 @@
       if ($query->have_posts()) :
         while ($query->have_posts()) : $query->the_post(); ?>
 
-          <div class='carte__categorie'>
+
+          
+          <div class='carte__categorie carte__categorie1'>
+            
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
-            <?php the_content() ?>
+            
+              <?php the_content() ?>
+            
+          </div>  
 
-          </div>
 
         <?php endwhile; ?>
       <?php endif;
-      wp_reset_postdata(); ?>
+      wp_reset_postdata(); ?>   
+    
+      </div>
     </div>
 
 
@@ -61,8 +65,12 @@
 
 
     <h1 class='video'>Vidéo</h1>
+
+    <div class="encadre">
+
     <div class='projet__general'>
 
+    
 
       <!-- Intégration de la catégorie Video -->
       <?php
@@ -81,7 +89,7 @@
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
             <?php the_content() ?>
@@ -93,10 +101,14 @@
       <?php endif;
       wp_reset_postdata(); ?>
     </div>
+    </div>
 
 
 
     <h1 class='troisd'>3D</h1>
+
+    <div class="encadre">
+
     <div class='projet__general'>
 
 
@@ -117,7 +129,7 @@
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
             <?php the_content() ?>
@@ -127,8 +139,12 @@
       <?php endif;
       wp_reset_postdata(); ?>
     </div>
+    </div>
 
     <h1 class='web'>Web</h1>
+
+    <div class="encadre">
+
     <div class='projet__general'>
 
 
@@ -149,7 +165,7 @@
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
             <?php the_content() ?>
@@ -159,8 +175,13 @@
       <?php endif;
       wp_reset_postdata(); ?>
     </div>
+    </div>
 
     <h1 class='design'>Design</h1>
+
+
+    <div class="encadre">
+
     <div class='projet__general'>
 
 
@@ -181,7 +202,7 @@
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
             <?php the_content() ?>
@@ -192,6 +213,7 @@
       wp_reset_postdata(); ?>
     </div>
 
+  </div>
   </div>
 
 

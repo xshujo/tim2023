@@ -9,10 +9,13 @@
 <main class="contenu_parcours">
   <?php get_the_title(); ?>
   <?php the_content(); ?>
-  <div class="encadre_page"></div>
-  <div class="degrades degrade_1"></div>
-  <div class="degrades degrade_2"></div>
-  <div class="degrades degrade_3"></div>
+  
+ 
+
+  <div class="bubbles-container" id="bubbles-container">
+    <!-- Bubbles will be added dynamically using JavaScript -->
+  </div>
+
   <div class="bulle_modele_1 bulle_m1_position_1"></div>
   <div class="bulle_modele_1 bulle_m1_position_2"></div>
   <div class="bulle_modele_2 bulle_m2_position_1"></div>
@@ -21,7 +24,8 @@
   <div class="bulle_modele_3 bulle_m3_position_2"></div>
   <div class="bulle_modele_4 bulle_m4_position_1"></div>
   <div class="bulle_modele_4 bulle_m4_position_2"></div>
-  
+
+
   <button id="scroll-to-top" class="scroll-to-top-button" title="Scroll to Top">↑</button>
 
   <script>
@@ -197,107 +201,107 @@
     // Boîte Modale Session 1
 
     document.getElementById('openModal1').addEventListener('click', function() {
-      document.getElementById('myModal1').style.display = 'block';
+      document.getElementById('myModal1').style.display = 'flex';
     });
 
     document.getElementById('openModal2').addEventListener('click', function() {
-      document.getElementById('myModal2').style.display = 'block';
+      document.getElementById('myModal2').style.display = 'flex';
     });
 
     document.getElementById('openModal3').addEventListener('click', function() {
-      document.getElementById('myModal3').style.display = 'block';
+      document.getElementById('myModal3').style.display = 'flex';
     });
 
     document.getElementById('openModal4').addEventListener('click', function() {
-      document.getElementById('myModal4').style.display = 'block';
+      document.getElementById('myModal4').style.display = 'flex';
     });
 
     document.getElementById('openModal5').addEventListener('click', function() {
-      document.getElementById('myModal5').style.display = 'block';
+      document.getElementById('myModal5').style.display = 'flex';
     });
 
     document.getElementById('openModal6').addEventListener('click', function() {
-      document.getElementById('myModal6').style.display = 'block';
+      document.getElementById('myModal6').style.display = 'flex';
     });
 
     document.getElementById('openModal7').addEventListener('click', function() {
-      document.getElementById('myModal7').style.display = 'block';
+      document.getElementById('myModal7').style.display = 'flex';
     });
 
     document.getElementById('openModal8').addEventListener('click', function() {
-      document.getElementById('myModal8').style.display = 'block';
+      document.getElementById('myModal8').style.display = 'flex';
     });
 
     document.getElementById('openModal9').addEventListener('click', function() {
-      document.getElementById('myModal9').style.display = 'block';
+      document.getElementById('myModal9').style.display = 'flex';
     });
 
     document.getElementById('openModal10').addEventListener('click', function() {
-      document.getElementById('myModal10').style.display = 'block';
+      document.getElementById('myModal10').style.display = 'flex';
     });
 
     document.getElementById('openModal11').addEventListener('click', function() {
-      document.getElementById('myModal11').style.display = 'block';
+      document.getElementById('myModal11').style.display = 'flex';
     });
 
     document.getElementById('openModal12').addEventListener('click', function() {
-      document.getElementById('myModal12').style.display = 'block';
+      document.getElementById('myModal12').style.display = 'flex';
     });
 
     document.getElementById('openModal13').addEventListener('click', function() {
-      document.getElementById('myModal13').style.display = 'block';
+      document.getElementById('myModal13').style.display = 'flex';
     });
 
     document.getElementById('openModal14').addEventListener('click', function() {
-      document.getElementById('myModal14').style.display = 'block';
+      document.getElementById('myModal14').style.display = 'flex';
     });
 
     document.getElementById('openModal15').addEventListener('click', function() {
-      document.getElementById('myModal15').style.display = 'block';
+      document.getElementById('myModal15').style.display = 'flex';
     });
 
     document.getElementById('openModal16').addEventListener('click', function() {
-      document.getElementById('myModal16').style.display = 'block';
+      document.getElementById('myModal16').style.display = 'flex';
     });
 
     document.getElementById('openModal17').addEventListener('click', function() {
-      document.getElementById('myModal17').style.display = 'block';
+      document.getElementById('myModal17').style.display = 'flex';
     });
 
     document.getElementById('openModal18').addEventListener('click', function() {
-      document.getElementById('myModal18').style.display = 'block';
+      document.getElementById('myModal18').style.display = 'flex';
     });
 
     document.getElementById('openModal19').addEventListener('click', function() {
-      document.getElementById('myModal19').style.display = 'block';
+      document.getElementById('myModal19').style.display = 'flex';
     });
 
     document.getElementById('openModal20').addEventListener('click', function() {
-      document.getElementById('myModal20').style.display = 'block';
+      document.getElementById('myModal20').style.display = 'flex';
     });
 
     document.getElementById('openModal21').addEventListener('click', function() {
-      document.getElementById('myModal21').style.display = 'block';
+      document.getElementById('myModal21').style.display = 'flex';
     });
 
     document.getElementById('openModal22').addEventListener('click', function() {
-      document.getElementById('myModal22').style.display = 'block';
+      document.getElementById('myModal22').style.display = 'flex';
     });
 
     document.getElementById('openModal23').addEventListener('click', function() {
-      document.getElementById('myModal23').style.display = 'block';
+      document.getElementById('myModal23').style.display = 'flex';
     });
 
     document.getElementById('openModal24').addEventListener('click', function() {
-      document.getElementById('myModal24').style.display = 'block';
+      document.getElementById('myModal24').style.display = 'flex';
     });
 
     document.getElementById('openModal25').addEventListener('click', function() {
-      document.getElementById('myModal25').style.display = 'block';
+      document.getElementById('myModal25').style.display = 'flex';
     });
 
     document.getElementById('openModal26').addEventListener('click', function() {
-      document.getElementById('myModal26').style.display = 'block';
+      document.getElementById('myModal26').style.display = 'flex';
     });
 
 
@@ -408,16 +412,51 @@
       document.getElementById('myModal26').style.display = 'none';
     });
 
-    
-
-    
-    
 
     window.addEventListener('click', function(event) {
       if (event.target == document.getElementById('myModal')) {
         document.getElementById('myModal').style.display = 'none';
       }
     });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const numBubbles = 10;
+      const bubblesContainer = document.getElementById("bubbles-container");
+
+      const colors = ["#774eba", "#33488e","#3498db"]; // Two colors of your choice
+
+      for (let i = 0; i < numBubbles; i++) {
+        createBubble();
+      }
+
+      function createBubble() {
+        const bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+
+        // Set random size
+        const size = Math.floor(Math.random() * 200) + 10; // Random size between 10 and 40 pixels
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+
+        // Set random position
+        const top = Math.random() * 100;
+        const left = Math.random() * 100;
+        bubble.style.top = `${top}%`;
+        bubble.style.left = `${left}%`;
+
+        // Set random animation delay to create a staggered effect
+        const delay = Math.random() * 10;
+        bubble.style.animationDelay = `-${delay}s`;
+
+        // Assign one of the two colors randomly
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        bubble.style.backgroundColor = randomColor;
+
+        bubblesContainer.appendChild(bubble);
+      }
+    });
+    
   </script>
 
 
