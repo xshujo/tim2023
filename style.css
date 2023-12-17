@@ -398,7 +398,7 @@ li,
 button,
 figcaption,
 blockquote {
-  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
+  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem);
   color: #f7f7f7;
   line-height: clamp(1.25rem, 1.0714rem + 0.8929vw, 2.5rem);
 }
@@ -414,7 +414,7 @@ ul {
 }
 
 .wp-block-buttons .wp-block-button a {
-  background: #c7afec;
+  background: #ad93d4;
   font-weight: bold;
   color: #f7f7f7;
   text-transform: uppercase;
@@ -4575,7 +4575,6 @@ footer .sidebar:last-of-type {
 }
 .main_accueil .fp-section p {
   width: 85%;
-  text-align: justify;
 }
 .main_accueil .fp-section .fp-p-admission {
   font-weight: 500;
