@@ -1,11 +1,8 @@
 // Style de l'ensemble des catégories
 .main__404 {
-  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
-  padding: 10rem;
 }
 
 .texte__404 {
@@ -29,7 +26,7 @@
 }
 
 .blockflex__projet {
-  width: 70vw;
+  width: 90vw;
   margin: 0 auto;
   margin-bottom: 7.5rem;
   display: flex;
@@ -138,45 +135,86 @@
     margin-left: 4rem;
   }
 
-  // Rectangle qui se place derrière chaque catégories
-  .projet__general::before {
-    content: "";
-    width: 80vw;
-    height: inherit;
-    background-color: $couleurElmtDeux;
+  .encadre::before {
+    content: '';
+    position: absolute;
+    background: $couleurElmtDeux;
     backdrop-filter: saturate(130%) blur(2rem);
     mix-blend-mode: soft-light;
     border-radius: 1rem;
-    position: absolute;
     box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
     top: 0;
-    left: 0;
+    left: 0; 
     right: 0;
     bottom: 0;
-    z-index: -1;
   }
+
+  
+    .encadre{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     object-fit: cover;
+   }
+  
+
+  
+
+  // Rectangle qui se place derrière chaque catégories
+  // .projet__general::before {
+  //   content: "";
+  //   width: 80vw;
+  //   height: inherit;
+  //   background-color: $couleurElmtDeux;
+  //   backdrop-filter: saturate(130%) blur(2rem);
+  //   mix-blend-mode: soft-light;
+  //   border-radius: 1rem;
+  //   position: absolute;
+  //   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   z-index: -1;
+  // }
+
+  .projet__general::-webkit-scrollbar{
+    width: 1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 5rem;
+  }
+
+  .projet__general::-webkit-scrollbar-thumb{
+      background-color: $couleurElmtUn;
+      border-radius: 2rem;
+    }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
 
   // Style général des catégories
   .projet__general {
-    width: calc(80vw - 1.5rem);
     height: inherit;
-    // box-sizing: border-box;
-    object-fit: cover;
-    overflow: hidden;
+    // // box-sizing: border-box;
+    // object-fit: cover;
+    overflow-x: scroll;
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     gap: 1rem;
     padding: 1.5rem;
     border-radius: 2rem;
 
     // Style des encadrés des projets
     .carte__categorie {
-      width: 45vw;
+      width: 45rem;
       height: 22rem;
       background-color: #33488e;
-      padding: 10px 10px 0px 10px;
+      padding: 10px 45px 0px 45px;
       border-radius: 1rem;
       display: flex;
       flex-direction: column;
@@ -195,9 +233,25 @@
 
       .titre__date__projet {
         position: relative;
+        flex-wrap: nowrap;
         height: 4rem;
+        width: 10rem;
         bottom: 1rem;
         transition: transform 0.2s;
+      }
+
+      .video__icone{
+        display: none;
+        justify-content: center;
+        background-color: #8a66b8;
+        border-radius: 2rem;
+        padding: 0.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        a{
+          font-size: 0.8rem;
+        }
       }
 
       // Style des titres des encadrés des projets
@@ -217,14 +271,14 @@
         width: 10rem;
         color: $couleurElmtDeux;
         font-family: Montserrat;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-style: italic;
       }
 
       // Style des images des projets
-      img {
+      .img__categorie {
         position: relative;
-        width: 13rem;
+        width: 130%;
         height: 11rem;
         display: flex;
         align-items: center;
@@ -237,7 +291,7 @@
 
       //Style générale de la description des projets
       .desc__projet {
-        width: 13rem;
+        width: 14rem;
         height: 5rem;
         display: none;
         position: absolute;
@@ -248,11 +302,12 @@
         //Style des crédits des projets
         .credits__projet {
           color: $couleurElmtDeux;
-          margin-bottom: 1.2rem;
+          margin-bottom: 0.4rem;
           font-weight: bold;
-          font-size: 0.75rem;
           text-align: left;
+          line-height: 1.3;
           font-family: Montserrat;
+          font-size: 0.72rem;
           transition: transform 0.2s;
         }
 
@@ -260,7 +315,8 @@
         .texte__desc__projet {
           color: white;
           text-align: left;
-          font-size: 0.8rem;
+          font-size: 0.83rem;
+          line-height: 1.3;
           text-transform: initial;
           font-family: Montserrat;
           transition: transform 2s;
@@ -271,13 +327,17 @@
     //Quand on clique sur la carte, la description se dévoile
     .carte__categorie:hover {
       .titre__date__projet {
-        transform: translateY(-210%);
+        transform: translateY(-220%);
       }
 
-      img {
+      .img__categorie {
         height: (9rem);
         filter: blur(2px) brightness(0.5);
         // animation: ;
+      }
+
+      .video__icone{
+        display: flex;
       }
 
       .desc__projet {
@@ -287,59 +347,6 @@
   }
 }
 
-// Style général des bulles de couleur mauve
-.bulle_1 {
-  background-color: $degradeFondSiteUn;
-  mix-blend-mode: lighten;
-  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-  opacity: 75%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -4;
-}
-
-// Style spécifique des bulles de couleur mauve
-.bulle_1_position {
-  width: 25rem;
-  height: 25rem;
-  top: 20rem;
-}
-
-.bulle_1_1 {
-  background-color: $degradeFondSiteUn;
-  mix-blend-mode: lighten;
-  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-  opacity: 75%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -4;
-}
-
-.bulle_1_1_position {
-  width: 25rem;
-  height: 25rem;
-  top: 10rem;
-  right: -1rem;
-}
-
-// Style général des bulles de couleur bleu
-.bulle_2 {
-  background-color: $degradeFondSiteDeux;
-  mix-blend-mode: lighten;
-  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-  opacity: 75%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -4;
-}
-
-// Style spécifique des bulles de couleur bleu
-.bulle_2_position {
-  width: 25rem;
-  height: 25rem;
-  top: 70rem;
-  left: -10rem;
-}
 
 @media screen and (min-width: $largeur__tablette) {
   .text__page__projet {
@@ -460,26 +467,25 @@
     }
 
     // Rectangle qui se place derrière chaque catégories
-    .projet__general::before {
-      content: "";
-      width: 80vw;
-      height: inherit;
-      background-color: $couleurElmtDeux;
-      backdrop-filter: saturate(130%) blur(2rem);
-      mix-blend-mode: soft-light;
-      border-radius: 1rem;
-      position: absolute;
-      box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-    }
+    // .projet__general::before {
+    //   content: "";
+    //   width: 80vw;
+    //   height: inherit;
+    //   background-color: $couleurElmtDeux;
+    //   backdrop-filter: saturate(130%) blur(2rem);
+    //   mix-blend-mode: soft-light;
+    //   border-radius: 1rem;
+    //   position: absolute;
+    //   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   z-index: -1;
+    // }
 
     // Style général des catégories
-    .projet__general {
-      width: calc(70vw - 1.5rem);
+    
       // height: inherit;
       // box-sizing: border-box;
       // object-fit: cover;
@@ -494,16 +500,16 @@
 
       // Style des encadrés des projets
       .carte__categorie {
-        width: 30vw;
+        width: 100vw;
         height: 24rem;
-        background-color: #33488e;
-        padding: 10px 10px 0px 10px;
+        padding: 10px 50px 0px 50px;
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
+
 
         // Style des textes en généraux des encadrés des projets
         p {
@@ -517,7 +523,6 @@
         .titre__date__projet {
           position: relative;
           height: 6rem;
-          top: 0.3rem;
           transition: transform 0.2s;
         }
 
@@ -543,9 +548,9 @@
         }
 
         // Style des images des projets
-        img {
+        .img__categorie {
           position: relative;
-          width: 15rem;
+          width: 130%;
           height: 13rem;
           display: flex;
           align-items: center;
@@ -594,72 +599,21 @@
           transform: translateY(-160%);
         }
 
-        img {
-          height: (11rem);
-          filter: blur(2px) brightness(0.5);
-          // animation: ;
-        }
+        .img__categorie {
+        height: (11rem);
+        filter: blur(2px) brightness(0.5);
+        // animation: ;
+      }
 
         .desc__projet {
           display: block;
         }
       }
-    }
+   
   }
 
-  // Style général des bulles de couleur mauve
-  .bulle_1 {
-    background-color: $degradeFondSiteUn;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
 
-  // Style spécifique des bulles de couleur mauve
-  .bulle_1_position {
-    width: 25rem;
-    height: 25rem;
-    top: 20rem;
-  }
-
-  .bulle_1_1 {
-    background-color: $degradeFondSiteUn;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-
-  .bulle_1_1_position {
-    width: 25rem;
-    height: 25rem;
-    top: 10rem;
-    right: -1rem;
-  }
-
-  // Style général des bulles de couleur bleu
-  .bulle_2 {
-    background-color: $degradeFondSiteDeux;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-
-  // Style spécifique des bulles de couleur bleu
-  .bulle_2_position {
-    width: 25rem;
-    height: 25rem;
-    top: 70rem;
-    left: -10rem;
-  }
+  
 }
 
 @media screen and (min-width: $largeur__bureau) {
@@ -673,12 +627,9 @@
 
   // Style de l'ensemble des catégories
   .blockflex__projet {
-    max-width: 70vw;
+    min-width: 80vw;
     margin: 0 auto;
     margin-bottom: 7.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
     // Titre de chaque catégorie
     h1 {
@@ -781,47 +732,50 @@
     }
 
     // Rectangle qui se place derrière chaque catégories
-    .projet__general::before {
-      content: "";
-      width: 70vw;
-      height: inherit;
-      background-color: $couleurElmtDeux;
-      backdrop-filter: saturate(130%) blur(2rem);
-      mix-blend-mode: soft-light;
-      border-radius: 1rem;
-      position: absolute;
-      box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-    }
+    // .projet__general::before {
+    //   content: "";
+    //   width: 70vw;
+    //   height: inherit;
+    //   background-color: $couleurElmtDeux;
+    //   backdrop-filter: saturate(130%) blur(2rem);
+    //   mix-blend-mode: soft-light;
+    //   border-radius: 1rem;
+    //   position: absolute;
+    //   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   z-index: -1;
+    // }
+
+    
 
     // Style général des catégories
     .projet__general {
-      // width: calc(70vw - 1.5rem);
+      width: 100%;
       // height: inherit;
-      // box-sizing: border-box;
-      // object-fit: cover;
+      box-sizing: content-box;
       // overflow: hidden;
       // position: relative;
       // display: flex;
       // // flex-direction: row;
-      // // flex-wrap: nowrap;
+      flex-wrap: nowrap;
       // gap: 4rem;
       // padding: 1.5rem;
       // border-radius: 2rem;
 
       // Style des encadrés des projets
       .carte__categorie {
-        max-width: 25rem;
+        width: 25rem;
         height: 32rem;
         background-color: #33488e;
         padding: 10px 10px 0px 10px;
         border-radius: 1rem;
         display: flex;
+        flex-grow: 3;
         flex-direction: column;
+        flex: 0 0 auto;
         justify-content: center;
         align-items: center;
         gap: 2rem;
@@ -837,9 +791,25 @@
 
         .titre__date__projet {
           position: relative;
-          top: 0.5rem;
           height: 8rem;
           transition: transform 0.2s;
+
+          a{
+            text-decoration: none;
+          }
+
+          a:visited{
+            color: white;
+          }
+        }
+
+        .video__icone{
+
+          width: 11rem;
+
+          a{
+            font-size: 1.2rem;
+          }
         }
 
         // Style des titres des encadrés des projets
@@ -864,9 +834,9 @@
         }
 
         // Style des images des projets
-        img {
+        .img__categorie {
           position: relative;
-          width: 22rem;
+          width: 90%;
           height: 20rem;
           display: flex;
           align-items: center;
@@ -915,70 +885,16 @@
           transform: translateY(-160%);
         }
 
-        img {
-          height: (18rem);
-          filter: blur(2px) brightness(0.5);
-          // animation: ;
-        }
+        .img__categorie {
+        height: (18rem);
+        filter: blur(2px) brightness(0.5);
+        // animation: ;
+      }
 
         .desc__projet {
           display: block;
         }
       }
     }
-  }
-
-  // Style général des bulles de couleur mauve
-  .bulle_1 {
-    background-color: $degradeFondSiteUn;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-
-  // Style spécifique des bulles de couleur mauve
-  .bulle_1_position {
-    width: 25rem;
-    height: 25rem;
-    top: 20rem;
-  }
-
-  .bulle_1_1 {
-    background-color: $degradeFondSiteUn;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-
-  .bulle_1_1_position {
-    width: 25rem;
-    height: 25rem;
-    top: 10rem;
-    right: -1rem;
-  }
-
-  // Style général des bulles de couleur bleu
-  .bulle_2 {
-    background-color: $degradeFondSiteDeux;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-
-  // Style spécifique des bulles de couleur bleu
-  .bulle_2_position {
-    width: 25rem;
-    height: 25rem;
-    top: 70rem;
-    left: -10rem;
   }
 }

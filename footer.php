@@ -1,4 +1,3 @@
-</div>
 <footer>
     <!-- Contacts -->
     <div class="sidebar">
