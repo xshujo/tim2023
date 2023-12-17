@@ -414,7 +414,7 @@ ul {
 }
 
 .wp-block-buttons .wp-block-button a {
-  background: #c7afec;
+  background: #ad93d4;
   font-weight: bold;
   color: #f7f7f7;
   text-transform: uppercase;
@@ -594,7 +594,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
 
 @media only screen and (min-width: 1024px) {
   header .menu-burger input,
-header .menu-burger label {
+  header .menu-burger label {
     display: none;
   }
   header .menu-burger .menu-entete-container {
@@ -4835,4 +4835,4 @@ footer .sidebar:last-of-type {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres */
+/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
