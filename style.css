@@ -4466,7 +4466,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 
 .blockflex__projet {
-  width: 70vw;
+  width: 90vw;
   margin: 0 auto;
   margin-bottom: 7.5rem;
   display: flex;
@@ -4587,10 +4587,10 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   border-radius: 2rem;
 }
 .blockflex__projet .projet__general .carte__categorie {
-  width: 45vw;
+  width: 45rem;
   height: 22rem;
   background-color: #33488e;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 30px 0px 30px;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -4607,15 +4607,26 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 }
 .blockflex__projet .projet__general .carte__categorie .titre__date__projet {
   position: relative;
+  flex-wrap: nowrap;
   height: 4rem;
+  width: 10rem;
   bottom: 1rem;
   transition: transform 0.2s;
+}
+.blockflex__projet .projet__general .carte__categorie .video__icone {
+  display: none;
+  justify-content: center;
+  background-color: #890a0a;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .blockflex__projet .projet__general .carte__categorie .titre__projet {
   width: 10rem;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   top: 50%;
   -webkit-line-clamp: 2;
@@ -4628,9 +4639,9 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   font-size: 0.9rem;
   font-style: italic;
 }
-.blockflex__projet .projet__general .carte__categorie img {
+.blockflex__projet .projet__general .carte__categorie .img__categorie {
   position: relative;
-  width: 13rem;
+  width: 110%;
   height: 11rem;
   display: flex;
   align-items: center;
@@ -4669,9 +4680,12 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
 .blockflex__projet .projet__general .carte__categorie:hover .titre__date__projet {
   transform: translateY(-210%);
 }
-.blockflex__projet .projet__general .carte__categorie:hover img {
+.blockflex__projet .projet__general .carte__categorie:hover .img__categorie {
   height: 9rem;
   filter: blur(2px) brightness(0.5);
+}
+.blockflex__projet .projet__general .carte__categorie:hover .video__icone {
+  display: flex;
 }
 .blockflex__projet .projet__general .carte__categorie:hover .desc__projet {
   display: block;
@@ -4906,8 +4920,8 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   .blockflex__projet .projet__general .carte__categorie:hover .titre__date__projet {
     transform: translateY(-160%);
   }
-  .blockflex__projet .projet__general .carte__categorie:hover img {
-    height: 11rem;
+  .blockflex__projet .projet__general .carte__categorie:hover .img__categorie {
+    height: 9rem;
     filter: blur(2px) brightness(0.5);
   }
   .blockflex__projet .projet__general .carte__categorie:hover .desc__projet {
@@ -5134,7 +5148,7 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   .blockflex__projet .projet__general .carte__categorie:hover .titre__date__projet {
     transform: translateY(-160%);
   }
-  .blockflex__projet .projet__general .carte__categorie:hover img {
+  .blockflex__projet .projet__general .carte__categorie:hover .img__categorie {
     height: 18rem;
     filter: blur(2px) brightness(0.5);
   }
