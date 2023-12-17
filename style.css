@@ -4437,12 +4437,9 @@ main.contenu_parcours .bourse .bourse_contenu .bouton_bourse {
   }
 }
 .main__404 {
-  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
-  padding: 10rem;
 }
 
 .texte__404 {
