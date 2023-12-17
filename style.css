@@ -4750,6 +4750,9 @@ footer .sidebar:last-of-type {
 .main_accueil .fp-section p {
   width: 85%;
 }
+.main_accueil .fp-section .fp-p-parcours {
+  text-align: center;
+}
 .main_accueil .fp-section .fp-p-admission {
   font-weight: 500;
   color: #c7afec;
