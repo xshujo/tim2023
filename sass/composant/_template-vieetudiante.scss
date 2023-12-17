@@ -454,13 +454,17 @@
           width: 58%;
           padding: 0.6rem;
 
+          h2 {
+            font-size: clamp(1.4rem, 1.133rem + 0.417vw, 1.8rem);
+          }
+
           h4 {
             text-transform: uppercase;
             margin: 0;
           }
 
           p{
-            line-height: 1.4rem;
+            line-height: clamp(1.4rem, 1.2rem + 0.313vw, 1.7rem);
           }
 
           .date_evenement {

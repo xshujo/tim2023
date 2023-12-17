@@ -594,7 +594,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
 
 @media only screen and (min-width: 1024px) {
   header .menu-burger input,
-  header .menu-burger label {
+header .menu-burger label {
     display: none;
   }
   header .menu-burger .menu-entete-container {
@@ -3786,12 +3786,15 @@ footer .sidebar:last-of-type {
     width: 58%;
     padding: 0.6rem;
   }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h2 {
+    font-size: clamp(1.4rem, 1.133rem + 0.417vw, 1.8rem);
+  }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
     text-transform: uppercase;
     margin: 0;
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements p {
-    line-height: 1.4rem;
+    line-height: clamp(1.4rem, 1.2rem + 0.313vw, 1.7rem);
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
     color: #c7afec;
@@ -4841,4 +4844,4 @@ footer .sidebar:last-of-type {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- autres */
