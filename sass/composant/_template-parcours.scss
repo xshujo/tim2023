@@ -163,7 +163,7 @@ $background-color_11: white;
 		position: fixed;
 		bottom: 20px;
 		right: 0.5rem;
-		z-index: 99;
+		z-index: 10;
 		font-size: 24px;
 		border: none;
 		width: 50px;
@@ -1132,10 +1132,10 @@ $background-color_11: white;
 // /// ///////////////////////////////////////////////////
 @media only screen and (min-width: 768px) {
 	.contenu_parcours {
-		width: 100vw;
+		
 		background-color: $background-color_1;
-		margin: 0 6vw;
-		z-index: 30;
+		
+		
 		.bulle_m2_position_1 {
 			width: 35rem;
 			height: 35rem;
@@ -1701,11 +1701,9 @@ $background-color_11: white;
 // /// ///////////////////////////////////////////////////
 @media only screen and (min-width: 1024px) {
 	.contenu_parcours {
-		width: 92vw;
+		
 		background-color: $background-color_1;
-		margin-top: 2.9rem;
-		margin-bottom: 4rem;
-		z-index: 30;
+		
 		.bulle_m1_position_1 {
 			width: 25rem;
 			height: 25rem;
