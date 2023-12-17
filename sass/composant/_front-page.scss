@@ -231,7 +231,7 @@
         }
     }
 
-    // Bulles en haut de la page
+    // Bulles en bas de la page
     .bottom-bulles-container {
         position: absolute;
         right: clamp(10rem, 7.7143rem + 11.4286vw, 26rem);
@@ -258,7 +258,6 @@
             opacity: 0.6;
             border-radius: 50%;
             position: absolute;
-            // top: -1rem;
             left: calc(-1 * clamp(2rem, 1.4286rem + 2.8571vw, 6rem));
         }
     }
