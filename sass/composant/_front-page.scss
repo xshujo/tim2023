@@ -6,10 +6,44 @@
     align-items: center;
     gap: clamp(3rem, 1.1792rem + 9.1038vw, 7rem);
 
+    // Bulles en haut de la page
+    .top-bulles-container {
+        position: absolute;
+        top: calc(-1 * clamp(26rem, 24.0000rem + 10.0000vw, 40rem));
+        left: calc(-1 * clamp(3rem, 2.5714rem + 2.1429vw, 6rem));
+        z-index: -1;
+
+        div:first-of-type {
+            width: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+            height: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+            background-color: $degradeFondSiteDeux;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 0.75;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        div:last-of-type {
+            width: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+            height: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+            background-color: $degradeFondSiteUn;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 0.6;
+            border-radius: 50%;
+            position: absolute;
+            top: clamp(7rem, 5.4286rem + 7.8571vw, 18rem);
+            left: clamp(8rem, 6.2857rem + 8.5714vw, 20rem);
+        }
+    }
+
+    // Section pour la vidéo promotionnelle
     .video {
         width: 100vw;
         position: relative;
 
+        // Titre et sous-titre de la vidéo
         .video-caption {
             width: 100%;
             background: rgb(0, 0, 0);
@@ -39,6 +73,7 @@
             }
         }
 
+        // Bouton "Voir plus"
         .wp-block-buttons {
             display: none;
             margin: 0 5vw 5vw 0;
@@ -195,6 +230,38 @@
             }
         }
     }
+
+    // Bulles en haut de la page
+    .bottom-bulles-container {
+        position: absolute;
+        right: clamp(10rem, 7.7143rem + 11.4286vw, 26rem);
+        bottom: clamp(6rem, 4.5714rem + 7.1429vw, 16rem);
+        z-index: -1;
+
+        div:first-of-type {
+            width: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+            height: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+            background-color: $degradeFondSiteDeux;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 0.75;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        div:last-of-type {
+            width: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+            height: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+            background-color: $degradeFondSiteUn;
+            mix-blend-mode: lighten;
+            backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+            opacity: 0.6;
+            border-radius: 50%;
+            position: absolute;
+            // top: -1rem;
+            left: calc(-1 * clamp(2rem, 1.4286rem + 2.8571vw, 6rem));
+        }
+    }
 }
 
 // Mode tablette
@@ -202,7 +269,10 @@
 @media only screen and (min-width: 768px) {
     .main_accueil {
 
+        // Section de la vidéo promotionnelle
         .video {
+
+            // Bouton "Voir plus"
             .wp-block-buttons {
                 display: block;
             }
@@ -224,6 +294,7 @@
         flex-flow: row wrap;
         justify-content: space-around;
 
+        // Section de la vidéo promotionnelle
         .video {
 
             // La vidéo promotionnelle
