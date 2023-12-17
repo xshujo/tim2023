@@ -1,7 +1,8 @@
 /************* VERSION MOBILE *************/
 .main_etudiant {
   // width: 91vw;
-  background-color: transparent;
+  // background-color: transparent;
+  // background-color: $couleurFond;
   // margin: 0 auto;
   // margin-top: 2.9rem;
   // margin-bottom: 4rem;
@@ -21,46 +22,6 @@
   //   z-index: -1;
   //   display: none;
   // }
-
-  // Styles généraux des dégradés en fond
-  .degrades {
-    // filter: blur(7rem);
-    // width: 70rem;
-    // height: 100rem;
-    // border-radius: 50%;
-    // position: absolute;
-    // z-index: -6;
-    display: none;
-  }
-
-  // Styles du dégradé en fond en haut à droite
-  .degrade_1 {
-    // background: radial-gradient(circle, rgba(119,78,186,1) 0%, rgba(119,78,186,0) 100%);
-    // right: -5rem;
-    // top: -40rem;
-    // transform: rotateZ(295deg);
-    display: none;
-  }
-
-  // Styles du dégradé en fond au milieu à gauche
-  .degrade_2 {
-    // background: radial-gradient(circle, rgba(51,72,142,1) 0%, rgba(51,72,142,0) 100%);
-    // left: -25rem;
-    // top: 30rem;
-    // transform: rotateZ(35deg);
-    display: none;
-  }
-
-  // Styles du dégradé en fond en bas à droite
-  .degrade_3 {
-    // width: 40rem;
-    // height: 70rem;
-    // background: radial-gradient(circle, rgba(119,78,186,1) 0%, rgba(119,78,186,0) 100%);
-    // right: -20rem;
-    // top: 70rem;
-    // transform: rotateZ(295deg);
-    display: none;
-  }
 
   // Styles généraux du modèle de bulles de couleur mauve
   .bulle_modele_1 {
@@ -128,6 +89,7 @@
   // Styles de la zone où la galerie est affichée
   .zone_galerie {
     display: flex;
+    margin-left: 0.8rem;
     z-index: 10;
 
     .article_galerie_vie_etudiante {
@@ -146,6 +108,7 @@
     width: 100%;
     margin: 0 auto;
     margin-top: 1.3rem;
+    margin-left: 0.5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -157,9 +120,12 @@
       content: "";
       width: 100%;
       height: 23.3rem;
-      background-color: $couleurElmtDeux;
+      // background-color: $couleurElmtDeux;
+      background-color: #9375ff;
       // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
-      mix-blend-mode: soft-light;
+      // mix-blend-mode: soft-light;
+      opacity: 20%;
+      backdrop-filter: saturate(170%) brightness(130%) blur(10rem);
       border-radius: 1rem;
       position: absolute;
       box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
@@ -189,7 +155,7 @@
       .informations_evenements {
         width: 90%;
 
-        h4 {
+        h2 {
           text-transform: uppercase;
           margin: 0;
           // font-size: 1rem;
@@ -212,14 +178,14 @@
 
   // Styles pour le texte "Encore plus à venir"
   .texte_a_venir {
-    width: 25rem;
+    width: 13rem;
     height: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    right: 8vw;
+    right: -16vw;
     bottom: -0.8rem;
     z-index: 20;
 
@@ -229,10 +195,10 @@
       margin: 0.3rem;
     }
 
-    .texte_1 {
-      color: $couleurElmtDeux;
-      // font-size: 1.7rem;
-    }
+    // .texte_1 {
+    //   // color: $couleurElmtDeux;
+    //   // font-size: 1.7rem;
+    // }
 
     // .texte_2 {
     //   // font-size: 2.7rem;
@@ -245,6 +211,7 @@
   .main_etudiant {
     .zone_galerie {
       display: flex;
+      margin-left: 1.5rem;
       z-index: 10;
   
       .article_galerie_vie_etudiante {
@@ -259,9 +226,10 @@
     }
 
     .zone_evenements {
-      width: 95%;
+      width: 100%;
       margin: 0 auto;
       margin-top: 2rem;
+      margin-left: 0.8rem;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -272,10 +240,7 @@
       .article_vie_etudiante::before {
         content: "";
         width: 100%;
-        height: 28.3rem;
-        background-color: $couleurElmtDeux;
-        // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
-        mix-blend-mode: soft-light;
+        height: 30.1rem;
         border-radius: 1rem;
         position: absolute;
         box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
@@ -284,7 +249,7 @@
 
       .article_vie_etudiante {
         width: 49%;
-        height: 28.3rem;
+        height: 30.1rem;
         margin-bottom: 1.4rem;
         margin-top: 0.2rem;
         display: flex;
@@ -316,6 +281,7 @@
       justify-content: center;
       position: relative;
       top: 10rem;
+      right: clamp(1rem, -9.714rem + 28.571vw, 4rem);
       z-index: 1;
     }
   }
@@ -345,46 +311,6 @@
     //   z-index: -1;
     //   display: none;
     // }
-
-    // Styles généraux des dégradés en fond
-    .degrades {
-      // filter: blur(7rem);
-      // width: 70rem;
-      // height: 100rem;
-      // border-radius: 50%;
-      // position: absolute;
-      // z-index: -6;
-      display: none;
-    }
-
-    // Styles du dégradé en fond en haut à droite
-    .degrade_1 {
-      // background: radial-gradient(circle, rgba(119,78,186,1) 0%, rgba(119,78,186,0) 100%);
-      // right: -5rem;
-      // top: -40rem;
-      // transform: rotateZ(295deg);
-      display: none;
-    }
-
-    // Styles du dégradé en fond au milieu à gauche
-    .degrade_2 {
-      // background: radial-gradient(circle, rgba(51,72,142,1) 0%, rgba(51,72,142,0) 100%);
-      // left: -25rem;
-      // top: 30rem;
-      // transform: rotateZ(35deg);
-      display: none;
-    }
-
-    // Styles du dégradé en fond en bas à droite
-    .degrade_3 {
-      // width: 40rem;
-      // height: 70rem;
-      // background: radial-gradient(circle, rgba(119,78,186,1) 0%, rgba(119,78,186,0) 100%);
-      // right: -20rem;
-      // top: 70rem;
-      // transform: rotateZ(295deg);
-      display: none;
-    }
 
     // Styles généraux du modèle de bulles de couleur mauve
     .bulle_modele_1 {
@@ -462,6 +388,7 @@
       width: 100%;
       margin: 0 auto;
       margin-top: 1.5rem;
+      margin-left: 0.9rem;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -473,9 +400,6 @@
         content: "";
         width: 100%;
         height: 14.3rem;
-        background-color: $couleurElmtDeux;
-        // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
-        mix-blend-mode: soft-light;
         border-radius: 1rem;
         position: absolute;
         box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
@@ -531,11 +455,10 @@
       height: 8rem;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
       justify-content: center;
       position: relative;
-      right: 0vw;
-      bottom: -0.8rem;
+      right: clamp(-8rem, 16.094rem + -50.196vw, -16rem);
+      top: 0rem;
       z-index: 20;
 
       h3 {
@@ -560,7 +483,7 @@
 @media only screen and (min-width: $largeur__bureau) {
   .main_etudiant {
     // width: 92vw;
-    background-color: transparent;
+    // background-color: transparent;
     // margin: 0 auto;
     // margin-top: 2.9rem;
     // margin-bottom: 4rem;
@@ -580,94 +503,56 @@
     //   display: none;
     // }
 
-    // Styles généraux des dégradés en fond
-    .degrades {
-      display: block;
-      filter: blur(7rem);
-      width: 70rem;
-      height: 100rem;
-      border-radius: 50%;
-      position: absolute;
-      z-index: -6;
-    }
-
-    // Styles du dégradé en fond en haut à droite
-    .degrade_1 {
-      background: radial-gradient(circle,
-          rgba(119, 78, 186, 1) 0%,
-          rgba(119, 78, 186, 0) 100%);
-      right: -5rem;
-      top: -40rem;
-      transform: rotateZ(295deg);
-    }
-
-    // Styles du dégradé en fond au milieu à gauche
-    .degrade_2 {
-      background: radial-gradient(circle,
-          rgba(51, 72, 142, 1) 0%,
-          rgba(51, 72, 142, 0) 100%);
-      left: -25rem;
-      top: 30rem;
-      transform: rotateZ(35deg);
-    }
-
-    // Styles du dégradé en fond en bas à droite
-    .degrade_3 {
-      width: 40rem;
-      height: 70rem;
-      background: radial-gradient(circle,
-          rgba(119, 78, 186, 1) 0%,
-          rgba(119, 78, 186, 0) 100%);
-      right: -20rem;
-      top: 70rem;
-      transform: rotateZ(295deg);
-    }
-
     // Styles généraux du modèle de bulles de couleur mauve
     .bulle_modele_1 {
-      display: block;
-      background-color: $degradeFondSiteUn;
-      mix-blend-mode: lighten;
-      backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-      opacity: 75%;
-      border-radius: 50%;
-      position: absolute;
-      z-index: -4;
+      // display: block;
+      // background-color: $degradeFondSiteUn;
+      // mix-blend-mode: lighten;
+      // backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+      // opacity: 75%;
+      // border-radius: 50%;
+      // position: absolute;
+      // z-index: -4;
+      display: none;
     }
 
     // Styles spécifiques du modèle de bulles de couleur mauve
     .bulle_m1_position_1 {
-      width: 25rem;
-      height: 25rem;
-      top: 20rem;
-      right: -4rem;
+      // width: 25rem;
+      // height: 25rem;
+      // top: 20rem;
+      // right: -4rem;
+      display: none;
     }
 
     // Styles généraux du modèle de bulles de couleur bleu
     .bulle_modele_2 {
-      display: block;
-      background-color: $degradeFondSiteDeux;
-      mix-blend-mode: lighten;
-      backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
-      opacity: 75%;
-      border-radius: 50%;
-      position: absolute;
-      z-index: -4;
+      // display: block;
+      // background-color: $degradeFondSiteDeux;
+      // mix-blend-mode: lighten;
+      // backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+      // opacity: 75%;
+      // border-radius: 50%;
+      // position: absolute;
+      // z-index: -4;
+      display: none;
     }
 
     // Styles spécifiques du modèle de bulles de couleur bleu
     .bulle_m2_position_1 {
-      width: 35rem;
-      height: 35rem;
-      top: -12rem;
-      left: -5rem;
+      // width: 35rem;
+      // height: 35rem;
+      // top: -12rem;
+      // left: -5rem;
+      display: none;
     }
 
     .bulle_m2_position_2 {
-      width: 14rem;
-      height: 14rem;
-      top: 1.3rem;
-      left: 25rem;
+      // width: 14rem;
+      // height: 14rem;
+      // top: 1.3rem;
+      // left: 25rem;
+      display: none;
     }
 
     // Styles du titre "Vie étudiante"
@@ -708,10 +593,7 @@
       .article_vie_etudiante::before {
         content: "";
         width: 100%;
-        height: 17.3rem;
-        background-color: $couleurElmtDeux;
-        // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
-        mix-blend-mode: soft-light;
+        height: 26.3rem;
         border-radius: 1rem;
         position: absolute;
         box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
@@ -720,7 +602,7 @@
 
       .article_vie_etudiante {
         width: 49%;
-        height: 17.3rem;
+        height: 26.3rem;
         margin-bottom: 1.4rem;
         margin-top: 0.2rem;
         display: flex;
@@ -770,7 +652,8 @@
       align-items: center;
       justify-content: center;
       position: relative;
-      bottom: -4rem;
+      top: 9rem;
+      right: clamp(0rem, -13.312rem + 20.82vw, 20rem);
       z-index: 1;
 
       h3 {
@@ -779,14 +662,13 @@
         margin: 0.3rem;
       }
 
-      // .texte_1 {
-      //   color: $couleurElmtDeux;
-      //   // font-size: 2.7rem;
-      // }
+      .texte_1 {
+        font-size: 2.7rem;
+      }
 
-      // .texte_2 {
-      //   // font-size: 3.7rem;
-      // }
+      .texte_2 {
+        font-size: 3.7rem;
+      }
     }
   }
 }
