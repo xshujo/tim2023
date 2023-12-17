@@ -3426,167 +3426,228 @@ footer .sidebar:last-of-type {
   }
 }
 /************* VERSION MOBILE *************/
-.main_etudiant {
-  background-color: transparent;
-}
-.main_etudiant .degrades {
-  display: none;
-}
-.main_etudiant .degrade_1 {
-  display: none;
-}
-.main_etudiant .degrade_2 {
-  display: none;
-}
-.main_etudiant .degrade_3 {
-  display: none;
-}
 .main_etudiant .bulle_modele_1 {
-  display: none;
+  background-color: #774eba;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  opacity: 55%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -4;
 }
 .main_etudiant .bulle_m1_position_1 {
-  display: none;
+  width: 8rem;
+  height: 8rem;
+  top: 1rem;
+  left: 11rem;
+}
+.main_etudiant .bulle_m1_position_2 {
+  width: 10rem;
+  height: 10rem;
+  bottom: -2rem;
+  right: -2rem;
 }
 .main_etudiant .bulle_modele_2 {
-  display: none;
+  background-color: #33488e;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+  opacity: 55%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -4;
 }
 .main_etudiant .bulle_m2_position_1 {
-  display: none;
+  width: 15rem;
+  height: 15rem;
+  top: -2rem;
+  left: -2rem;
 }
 .main_etudiant .bulle_m2_position_2 {
-  display: none;
+  width: 7rem;
+  height: 7rem;
+  bottom: 1.3rem;
+  right: 5rem;
 }
 .main_etudiant h1 {
   text-transform: uppercase;
   margin-bottom: 2rem;
-  margin-top: 5rem;
-  z-index: 30;
+  margin-top: 2rem;
+  padding-left: 0.5rem;
+  z-index: 15;
 }
 .main_etudiant p {
   margin: 0;
 }
 .main_etudiant .zone_galerie {
   display: flex;
+  margin-left: 0.8rem;
   z-index: 10;
 }
-.main_etudiant .zone_galerie img {
-  border-radius: 0.4rem;
+.main_etudiant .zone_galerie .article_galerie_vie_etudiante .wp-block-gallery .wp-block-image img {
+  border-radius: 0.6rem;
 }
 .main_etudiant .zone_evenements {
   width: 100%;
   margin: 0 auto;
   margin-top: 1.3rem;
+  margin-left: 0.5rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  z-index: 20;
+  z-index: 15;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante::before {
   content: "";
   width: 100%;
-  height: 14.3rem;
-  background-color: #c7afec;
-  mix-blend-mode: soft-light;
+  height: 23.3rem;
+  background-color: #9375ff;
+  opacity: 20%;
+  backdrop-filter: saturate(170%) brightness(130%) blur(10rem);
   border-radius: 1rem;
   position: absolute;
   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
 }
 .main_etudiant .zone_evenements .article_vie_etudiante {
   width: 100%;
-  height: 14.3rem;
+  height: 23.3rem;
   margin-bottom: 1.4rem;
   margin-top: 0.2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   position: relative;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante img {
-  width: 6.5rem;
+  width: 40%;
   height: auto;
   border-radius: 0.4rem;
   z-index: 1;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
-  width: 54%;
+  width: 90%;
 }
-.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
+.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h2 {
   text-transform: uppercase;
   margin: 0;
-  font-size: 1rem;
 }
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
   color: #c7afec;
   font-weight: 500;
-  font-size: 0.8rem;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
-.main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
-  font-size: 0.75rem;
-}
 .main_etudiant .texte_a_venir {
-  width: 25rem;
+  width: 13rem;
   height: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  right: 8vw;
+  right: -16vw;
   bottom: -0.8rem;
-  z-index: 20;
+  z-index: 15;
 }
 .main_etudiant .texte_a_venir h3 {
   text-transform: uppercase;
   text-align: center;
   margin: 0.3rem;
 }
-.main_etudiant .texte_a_venir .texte_1 {
-  color: #c7afec;
-  font-size: 1.7rem;
-}
-.main_etudiant .texte_a_venir .texte_2 {
-  font-size: 2.7rem;
-}
 
-/************* VERSION TABLETTE *************/
-@media only screen and (min-width: 768px) {
-  .main_etudiant {
-    background-color: transparent;
-  }
-  .main_etudiant .degrades {
-    display: none;
-  }
-  .main_etudiant .degrade_1 {
-    display: none;
-  }
-  .main_etudiant .degrade_2 {
-    display: none;
-  }
-  .main_etudiant .degrade_3 {
-    display: none;
-  }
-  .main_etudiant .bulle_modele_1 {
-    display: none;
-  }
-  .main_etudiant .bulle_m1_position_1 {
-    display: none;
-  }
-  .main_etudiant .bulle_modele_2 {
-    display: none;
-  }
-  .main_etudiant .bulle_m2_position_1 {
-    display: none;
+/************* ENTRE MOBILE ET TABLETTE *************/
+@media only screen and (min-width: 500px) {
+  .main_etudiant .bulle_m1_position_2 {
+    width: 17rem;
+    height: 17rem;
+    bottom: -3rem;
+    right: -3rem;
   }
   .main_etudiant .bulle_m2_position_2 {
-    display: none;
+    width: 9rem;
+    height: 9rem;
+    bottom: 7.3rem;
+    right: 8rem;
+  }
+  .main_etudiant .zone_galerie {
+    display: flex;
+    margin-left: 1.5rem;
+    z-index: 10;
+  }
+  .main_etudiant .zone_galerie .article_galerie_vie_etudiante .wp-block-gallery .wp-block-image img {
+    border-radius: 0.6rem;
+  }
+  .main_etudiant .zone_evenements {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-left: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 15;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante::before {
+    content: "";
+    width: 100%;
+    height: 30.1rem;
+    border-radius: 1rem;
+    position: absolute;
+    box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante {
+    width: 49%;
+    height: 30.1rem;
+    margin-bottom: 1.4rem;
+    margin-top: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante img {
+    width: 50%;
+    height: auto;
+    border-radius: 0.4rem;
+    z-index: 1;
+  }
+  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements {
+    width: 90%;
+  }
+  .main_etudiant .texte_a_venir {
+    width: 12rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    right: clamp(1rem, -9.714rem + 28.571vw, 4rem);
+    z-index: 1;
+  }
+}
+/************* VERSION TABLETTE *************/
+@media only screen and (min-width: 768px) {
+  .main_etudiant .bulle_m1_position_2 {
+    width: 17rem;
+    height: 17rem;
+    bottom: -7rem;
+    right: -3rem;
+  }
+  .main_etudiant .bulle_m2_position_2 {
+    width: 8rem;
+    height: 8rem;
+    bottom: 3.3rem;
+    right: 9rem;
   }
   .main_etudiant h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
-    z-index: 30;
+    z-index: 15;
   }
   .main_etudiant p {
     margin: 0;
@@ -3602,18 +3663,17 @@ footer .sidebar:last-of-type {
     width: 100%;
     margin: 0 auto;
     margin-top: 1.5rem;
+    margin-left: 0.9rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    z-index: 20;
+    z-index: 15;
   }
   .main_etudiant .zone_evenements .article_vie_etudiante::before {
     content: "";
     width: 100%;
     height: 14.3rem;
-    background-color: #c7afec;
-    mix-blend-mode: soft-light;
     border-radius: 1rem;
     position: absolute;
     box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
@@ -3624,6 +3684,7 @@ footer .sidebar:last-of-type {
     margin-bottom: 1.4rem;
     margin-top: 0.2rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     position: relative;
@@ -3640,29 +3701,23 @@ footer .sidebar:last-of-type {
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
     text-transform: uppercase;
     margin: 0;
-    font-size: 1.4rem;
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
     color: #c7afec;
     font-weight: 500;
-    font-size: 1.2rem;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
-  }
-  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
-    font-size: 1rem;
   }
   .main_etudiant .texte_a_venir {
     width: 25rem;
     height: 8rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
     position: relative;
-    right: 0vw;
-    bottom: -0.8rem;
-    z-index: 20;
+    right: clamp(-8rem, 16.094rem - 50.196vw, -16rem);
+    top: 0rem;
+    z-index: 15;
   }
   .main_etudiant .texte_a_venir h3 {
     text-transform: uppercase;
@@ -3671,110 +3726,22 @@ footer .sidebar:last-of-type {
   }
   .main_etudiant .texte_a_venir .texte_1 {
     color: #c7afec;
-    font-size: 2.2rem;
-  }
-  .main_etudiant .texte_a_venir .texte_2 {
-    font-size: 3.2rem;
   }
 }
 /************* VERSION ORDINATEUR *************/
 @media only screen and (min-width: 1024px) {
-  .main_etudiant {
-    background-color: transparent;
-  }
-  .main_etudiant .encadre_page {
-    display: block;
-    width: 110%;
-    height: 121rem;
-    border: 0.3rem #f7f7f7 solid;
-    border-radius: 2rem;
-    position: absolute;
-    top: 6rem;
-    left: 1rem;
-    z-index: -1;
-    display: none;
-  }
-  .main_etudiant .degrades {
-    display: block;
-    filter: blur(7rem);
-    width: 70rem;
-    height: 100rem;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -6;
-  }
-  .main_etudiant .degrade_1 {
-    background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
-    right: -5rem;
-    top: -40rem;
-    transform: rotateZ(295deg);
-  }
-  .main_etudiant .degrade_2 {
-    background: radial-gradient(circle, rgb(51, 72, 142) 0%, rgba(51, 72, 142, 0) 100%);
-    left: -25rem;
-    top: 30rem;
-    transform: rotateZ(35deg);
-  }
-  .main_etudiant .degrade_3 {
-    width: 40rem;
-    height: 70rem;
-    background: radial-gradient(circle, rgb(119, 78, 186) 0%, rgba(119, 78, 186, 0) 100%);
-    right: -20rem;
-    top: 70rem;
-    transform: rotateZ(295deg);
-  }
-  .main_etudiant .bulle_modele_1 {
-    display: block;
-    background-color: #774eba;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-  .main_etudiant .bulle_m1_position_1 {
-    width: 25rem;
-    height: 25rem;
-    top: 20rem;
-    right: -4rem;
-  }
-  .main_etudiant .bulle_modele_2 {
-    display: block;
-    background-color: #33488e;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-  .main_etudiant .bulle_m2_position_1 {
-    width: 35rem;
-    height: 35rem;
-    top: -12rem;
-    left: -5rem;
-  }
-  .main_etudiant .bulle_m2_position_2 {
-    width: 14rem;
-    height: 14rem;
-    top: 1.3rem;
-    left: 25rem;
-  }
   .main_etudiant h1 {
     text-transform: uppercase;
     margin-bottom: 2rem;
-    margin-top: 6rem;
-    z-index: 30;
+    z-index: 15;
   }
   .main_etudiant p {
     margin: 0;
   }
   .main_etudiant .zone_galerie {
-    display: flex;
     z-index: 10;
   }
-  .main_etudiant .zone_galerie img {
+  .main_etudiant .zone_galerie .article_galerie_vie_etudiante img {
     border-radius: 0.4rem;
   }
   .main_etudiant .zone_evenements {
@@ -3785,24 +3752,23 @@ footer .sidebar:last-of-type {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    z-index: 20;
+    z-index: 15;
   }
   .main_etudiant .zone_evenements .article_vie_etudiante::before {
     content: "";
     width: 100%;
-    height: 14.3rem;
-    background-color: #c7afec;
-    mix-blend-mode: soft-light;
+    height: 26.3rem;
     border-radius: 1rem;
     position: absolute;
     box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
   }
   .main_etudiant .zone_evenements .article_vie_etudiante {
     width: 49%;
-    height: 14.3rem;
+    height: 26.3rem;
     margin-bottom: 1.4rem;
     margin-top: 0.2rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
@@ -3819,17 +3785,12 @@ footer .sidebar:last-of-type {
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements h4 {
     text-transform: uppercase;
     margin: 0;
-    font-size: 1.2rem;
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
     color: #c7afec;
     font-weight: 500;
-    font-size: 1.1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-  }
-  .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .description_evenement {
-    font-size: 0.95rem;
   }
   .main_etudiant .texte_a_venir {
     width: 25rem;
@@ -3839,7 +3800,8 @@ footer .sidebar:last-of-type {
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: -4rem;
+    top: 9rem;
+    right: clamp(0rem, -13.312rem + 20.82vw, 20rem);
     z-index: 1;
   }
   .main_etudiant .texte_a_venir h3 {
@@ -3848,7 +3810,6 @@ footer .sidebar:last-of-type {
     margin: 0.3rem;
   }
   .main_etudiant .texte_a_venir .texte_1 {
-    color: #c7afec;
     font-size: 2.7rem;
   }
   .main_etudiant .texte_a_venir .texte_2 {
@@ -4874,4 +4835,4 @@ footer .sidebar:last-of-type {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- autres */

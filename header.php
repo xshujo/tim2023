@@ -19,7 +19,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="custom-background">
     <header>
         <?php the_custom_logo() ?>
         <div class="menu-burger">
