@@ -7,6 +7,7 @@
 <main class="main_etudiant">
     <div class="encadre_page"></div>
     <div class="bulle_modele_1 bulle_m1_position_1"></div>
+    <div class="bulle_modele_1 bulle_m1_position_2"></div>
     <div class="bulle_modele_2 bulle_m2_position_1"></div>
     <div class="bulle_modele_2 bulle_m2_position_2"></div>
 

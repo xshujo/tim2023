@@ -19,6 +19,13 @@
     left: 11rem;
   }
 
+  .bulle_m1_position_2 {
+    width: 10rem;
+    height: 10rem;
+    bottom: -2rem;
+    right: -2rem;
+  }
+
   // Styles généraux du modèle de bulles de couleur bleu
   .bulle_modele_2 {
     background-color: $degradeFondSiteDeux;
@@ -39,11 +46,10 @@
   }
 
   .bulle_m2_position_2 {
-    // width: 14rem;
-    // height: 14rem;
-    // top: 1.3rem;
-    // left: 25rem;
-    display: none;
+    width: 7rem;
+    height: 7rem;
+    bottom: 1.3rem;
+    right: 5rem;
   }
 
   // Styles du titre "Vie étudiante"
@@ -161,6 +167,21 @@
 /************* ENTRE MOBILE ET TABLETTE *************/
 @media only screen and (min-width:500px) {
   .main_etudiant {
+    // Positionnement des bulles proches du footer
+    .bulle_m1_position_2 {
+      width: 17rem;
+      height: 17rem;
+      bottom: -3rem;
+      right: -3rem;
+    }
+
+    .bulle_m2_position_2 {
+      width: 9rem;
+      height: 9rem;
+      bottom: 7.3rem;
+      right: 8rem;
+    }
+
     .zone_galerie {
       display: flex;
       margin-left: 1.5rem;
@@ -240,54 +261,19 @@
 /************* VERSION TABLETTE *************/
 @media only screen and (min-width: $largeur__tablette) {
   .main_etudiant {
-    // Styles généraux du modèle de bulles de couleur mauve
-    .bulle_modele_1 {
-      // background-color: $degradeFondSiteUn;
-      // mix-blend-mode: lighten;
-      // backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-      // opacity: 75%;
-      // border-radius: 50%;
-      // position: absolute;
-      // z-index: -4;
-      display: none;
-    }
-
-    // Styles spécifiques du modèle de bulles de couleur mauve
-    .bulle_m1_position_1 {
-      // width: 25rem;
-      // height: 25rem;
-      // top: 20rem;
-      // right: -4rem;
-      display: none;
-    }
-
-    // Styles généraux du modèle de bulles de couleur bleu
-    .bulle_modele_2 {
-      // background-color: $degradeFondSiteDeux;
-      // mix-blend-mode: lighten;
-      // backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
-      // opacity: 75%;
-      // border-radius: 50%;
-      // position: absolute;
-      // z-index: -4;
-      display: none;
-    }
-
-    // Styles spécifiques du modèle de bulles de couleur bleu
-    .bulle_m2_position_1 {
-      // width: 35rem;
-      // height: 35rem;
-      // top: -12rem;
-      // left: -5rem;
-      display: none;
+    // Positionnement des bulles proches du footer
+    .bulle_m1_position_2 {
+      width: 17rem;
+      height: 17rem;
+      bottom: -7rem;
+      right: -3rem;
     }
 
     .bulle_m2_position_2 {
-      // width: 14rem;
-      // height: 14rem;
-      // top: 1.3rem;
-      // left: 25rem;
-      display: none;
+      width: 8rem;
+      height: 8rem;
+      bottom: 3.3rem;
+      right: 9rem;
     }
 
     // Styles du titre "Vie étudiante"
@@ -398,58 +384,6 @@
 /************* VERSION ORDINATEUR *************/
 @media only screen and (min-width: $largeur__bureau) {
   .main_etudiant {
-    // Styles généraux du modèle de bulles de couleur mauve
-    .bulle_modele_1 {
-      // display: block;
-      // background-color: $degradeFondSiteUn;
-      // mix-blend-mode: lighten;
-      // backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-      // opacity: 75%;
-      // border-radius: 50%;
-      // position: absolute;
-      // z-index: -4;
-      display: none;
-    }
-
-    // Styles spécifiques du modèle de bulles de couleur mauve
-    .bulle_m1_position_1 {
-      // width: 25rem;
-      // height: 25rem;
-      // top: 20rem;
-      // right: -4rem;
-      display: none;
-    }
-
-    // Styles généraux du modèle de bulles de couleur bleu
-    .bulle_modele_2 {
-      // display: block;
-      // background-color: $degradeFondSiteDeux;
-      // mix-blend-mode: lighten;
-      // backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
-      // opacity: 75%;
-      // border-radius: 50%;
-      // position: absolute;
-      // z-index: -4;
-      display: none;
-    }
-
-    // Styles spécifiques du modèle de bulles de couleur bleu
-    .bulle_m2_position_1 {
-      // width: 35rem;
-      // height: 35rem;
-      // top: -12rem;
-      // left: -5rem;
-      display: none;
-    }
-
-    .bulle_m2_position_2 {
-      // width: 14rem;
-      // height: 14rem;
-      // top: 1.3rem;
-      // left: 25rem;
-      display: none;
-    }
-
     // Styles du titre "Vie étudiante"
     h1 {
       text-transform: uppercase;
