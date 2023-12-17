@@ -182,6 +182,7 @@
       right: 8rem;
     }
 
+    // Styles de la zone où il y a la galerie d'images
     .zone_galerie {
       display: flex;
       margin-left: 1.5rem;
@@ -198,6 +199,7 @@
       }
     }
 
+    // Styles de la zone ou il y a les événements
     .zone_evenements {
       width: 100%;
       margin: 0 auto;
@@ -243,6 +245,7 @@
       }
     }
 
+    // Styles du texte "Encore plus à venir"
     .texte_a_venir {
       width: 12rem;
       height: 8rem;
@@ -343,7 +346,6 @@
           h4 {
             text-transform: uppercase;
             margin: 0;
-            // font-size: 1.4rem;
           }
 
           .date_evenement {
