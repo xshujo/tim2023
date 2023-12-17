@@ -15,26 +15,6 @@ get_header();
 
     <!-----  ZONE DESIGN EN ARRIERE-PLAN ---->
     <div class="barreBlanc"></div>
-    <script>
-    / Get a reference to the button
-    const scrollToTopButton = document.getElementById('scroll-to-top');
-
-    // Show the button when the page is scrolled down
-    window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 30) {
-        scrollToTopButton.style.display = 'block';
-      } else {
-        scrollToTopButton.style.display = 'none';
-      }
-    });
-
-    // Scroll to the top when the button is clicked
-    scrollToTopButton.addEventListener('click', () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth', // Smooth scrolling animation
-      });
-    });
     </script>
 </main>
 
