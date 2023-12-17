@@ -1,69 +1,43 @@
 /************* VERSION MOBILE *************/
 .main_etudiant {
-  // width: 91vw;
-  // background-color: transparent;
-  // background-color: $couleurFond;
-  // margin: 0 auto;
-  // margin-top: 2.9rem;
-  // margin-bottom: 4rem;
-  // padding-left: 0.4rem;
-  // padding-right: 0.4rem;
-  // z-index: 30;
-
-  // Styles du grand encadré sur la page Vie étudiante
-  // .encadre_page {
-  //   width: 110%;
-  //   height: 230rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
-  //   border: 0.15rem $couleurTitreTextes solid;
-  //   border-radius: 1.4rem;
+  // Styles généraux du modèle de bulles de couleur mauve
+  // .bulle_modele_1 {
+  //   background-color: $degradeFondSiteUn;
+  //   mix-blend-mode: lighten;
+  //   backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  //   opacity: 75%;
+  //   border-radius: 50%;
   //   position: absolute;
-  //   top: 4.1rem;
-  //   left: 0.3rem;
-  //   z-index: -1;
-  //   display: none;
+  //   z-index: -4;
   // }
 
-  // Styles généraux du modèle de bulles de couleur mauve
-  .bulle_modele_1 {
-    // background-color: $degradeFondSiteUn;
-    // mix-blend-mode: lighten;
-    // backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    // opacity: 75%;
-    // border-radius: 50%;
-    // position: absolute;
-    // z-index: -4;
-    display: none;
-  }
-
   // Styles spécifiques du modèle de bulles de couleur mauve
-  .bulle_m1_position_1 {
-    // width: 25rem;
-    // height: 25rem;
-    // top: 20rem;
-    // right: -4rem;
-    display: none;
-  }
+  // .bulle_m1_position_1 {
+  //   width: 25rem;
+  //   height: 25rem;
+  //   top: 20rem;
+  //   right: -4rem;
+  // }
 
   // Styles généraux du modèle de bulles de couleur bleu
-  .bulle_modele_2 {
-    // background-color: $degradeFondSiteDeux;
-    // mix-blend-mode: lighten;
-    // backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
-    // opacity: 75%;
-    // border-radius: 50%;
-    // position: absolute;
-    // z-index: -4;
-    display: none;
-  }
+  // .bulle_modele_2 {
+  //   background-color: $degradeFondSiteDeux;
+  //   mix-blend-mode: lighten;
+  //   backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+  //   opacity: 75%;
+  //   border-radius: 50%;
+  //   position: absolute;
+  //   z-index: -4;
+  // }
 
   // Styles spécifiques du modèle de bulles de couleur bleu
-  .bulle_m2_position_1 {
-    // width: 35rem;
-    // height: 35rem;
-    // top: -12rem;
-    // left: -5rem;
-    display: none;
-  }
+  // .bulle_m2_position_1 {
+  //   width: 35rem;
+  //   height: 35rem;
+  //   top: -12rem;
+  //   left: -5rem;
+  //   display: none;
+  // }
 
   .bulle_m2_position_2 {
     // width: 14rem;
@@ -120,16 +94,12 @@
       content: "";
       width: 100%;
       height: 23.3rem;
-      // background-color: $couleurElmtDeux;
       background-color: #9375ff;
-      // backdrop-filter: saturate(130%) blur(2rem); Flou aussi le texte
-      // mix-blend-mode: soft-light;
       opacity: 20%;
       backdrop-filter: saturate(170%) brightness(130%) blur(10rem);
       border-radius: 1rem;
       position: absolute;
       box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
-      // z-index: 10;
     }
 
     .article_vie_etudiante {
@@ -142,10 +112,8 @@
       align-items: center;
       justify-content: space-around;
       position: relative;
-      // z-index: 20; En mettant ce z-index, on perd le mode de fusion
 
       img {
-        // transform: scale(60%);
         width: 40%;
         height: auto;
         border-radius: 0.4rem;
@@ -158,20 +126,14 @@
         h2 {
           text-transform: uppercase;
           margin: 0;
-          // font-size: 1rem;
         }
 
         .date_evenement {
           color: $couleurElmtDeux;
-          // font-weight: 500;
-          // font-size: 0.8rem;
+          font-weight: 500;
           padding-top: 0.4rem;
           padding-bottom: 0.4rem;
         }
-
-        // .description_evenement {
-        //   // font-size: 0.75rem;
-        // }
       }
     }
   }
@@ -194,15 +156,6 @@
       text-align: center;
       margin: 0.3rem;
     }
-
-    // .texte_1 {
-    //   // color: $couleurElmtDeux;
-    //   // font-size: 1.7rem;
-    // }
-
-    // .texte_2 {
-    //   // font-size: 2.7rem;
-    // }
   }
 }
 
@@ -244,7 +197,6 @@
         border-radius: 1rem;
         position: absolute;
         box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
-        // z-index: 10;
       }
 
       .article_vie_etudiante {
@@ -257,7 +209,6 @@
         align-items: center;
         justify-content: space-around;
         position: relative;
-        // z-index: 20; En mettant ce z-index, on perd le mode de fusion
 
         img {
           width: 50%;
@@ -290,28 +241,6 @@
 /************* VERSION TABLETTE *************/
 @media only screen and (min-width: $largeur__tablette) {
   .main_etudiant {
-    // width: 91vw;
-    background-color: transparent;
-    // margin: 0 auto;
-    // margin-top: 2.9rem;
-    // margin-bottom: 4rem;
-    // padding-left: 0.4rem;
-    // padding-right: 0.4rem;
-    // z-index: 30;
-
-    // Styles du grand encadré sur la page
-    // .encadre_page {
-    //   width: 110%;
-    //   height: 230rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
-    //   border: 0.15rem $couleurTitreTextes solid;
-    //   border-radius: 1.4rem;
-    //   position: absolute;
-    //   top: 10.4rem;
-    //   left: 0.3rem;
-    //   z-index: -1;
-    //   display: none;
-    // }
-
     // Styles généraux du modèle de bulles de couleur mauve
     .bulle_modele_1 {
       // background-color: $degradeFondSiteUn;
@@ -403,7 +332,6 @@
         border-radius: 1rem;
         position: absolute;
         box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
-        // z-index: 10;
       }
 
       .article_vie_etudiante {
@@ -416,7 +344,6 @@
         align-items: center;
         justify-content: space-around;
         position: relative;
-        // z-index: 20; En mettant ce z-index, on perd le mode de fusion
 
         img {
           width: 10rem;
@@ -436,15 +363,10 @@
 
           .date_evenement {
             color: $couleurElmtDeux;
-            // font-weight: 500;
-            // font-size: 1.2rem;
+            font-weight: 500;
             padding-top: 0.4rem;
             padding-bottom: 0.4rem;
           }
-
-          // .description_evenement {
-          //   // font-size: 1rem;
-          // }
         }
       }
     }
@@ -469,12 +391,7 @@
 
       .texte_1 {
         color: $couleurElmtDeux;
-        // font-size: 2.2rem;
       }
-
-      // .texte_2 {
-      //   // font-size: 3.2rem;
-      // }
     }
   }
 }
@@ -482,27 +399,6 @@
 /************* VERSION ORDINATEUR *************/
 @media only screen and (min-width: $largeur__bureau) {
   .main_etudiant {
-    // width: 92vw;
-    // background-color: transparent;
-    // margin: 0 auto;
-    // margin-top: 2.9rem;
-    // margin-bottom: 4rem;
-    // z-index: 30;
-
-    // Styles du grand encadré sur la page
-    // .encadre_page {
-    //   display: block;
-    //   width: 110%;
-    //   height: 121rem; //Il faudrait trouver un moyen que la hauteur suit le contenu
-    //   border: 0.3rem $couleurTitreTextes solid;
-    //   border-radius: 2rem;
-    //   position: absolute;
-    //   top: 6rem;
-    //   left: 1rem;
-    //   z-index: -1;
-    //   display: none;
-    // }
-
     // Styles généraux du modèle de bulles de couleur mauve
     .bulle_modele_1 {
       // display: block;
@@ -568,7 +464,6 @@
 
     // Styles de la zone où la galerie est affichée
     .zone_galerie {
-      // display: flex;
       z-index: 10;
 
       .article_galerie_vie_etudiante {
@@ -597,7 +492,6 @@
         border-radius: 1rem;
         position: absolute;
         box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
-        // z-index: 10;
       }
 
       .article_vie_etudiante {
@@ -610,8 +504,7 @@
         align-items: center;
         justify-content: space-evenly;
         position: relative;
-        // z-index: 20; En mettant ce z-index, on perd le mode de fusion
-
+        
         img {
           width: 10rem;
           height: auto;
@@ -625,20 +518,14 @@
           h4 {
             text-transform: uppercase;
             margin: 0;
-            // font-size: 1.2rem;
           }
 
           .date_evenement {
             color: $couleurElmtDeux;
-            // font-weight: 500;
-            // font-size: 1.1rem;
+            font-weight: 500;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
           }
-
-          // .description_evenement {
-          //   // font-size: 0.95rem;
-          // }
         }
       }
     }

@@ -3433,18 +3433,6 @@ footer .sidebar:last-of-type {
   }
 }
 /************* VERSION MOBILE *************/
-.main_etudiant .bulle_modele_1 {
-  display: none;
-}
-.main_etudiant .bulle_m1_position_1 {
-  display: none;
-}
-.main_etudiant .bulle_modele_2 {
-  display: none;
-}
-.main_etudiant .bulle_m2_position_1 {
-  display: none;
-}
 .main_etudiant .bulle_m2_position_2 {
   display: none;
 }
@@ -3514,6 +3502,7 @@ footer .sidebar:last-of-type {
 }
 .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
   color: #c7afec;
+  font-weight: 500;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
 }
@@ -3599,9 +3588,6 @@ footer .sidebar:last-of-type {
 }
 /************* VERSION TABLETTE *************/
 @media only screen and (min-width: 768px) {
-  .main_etudiant {
-    background-color: transparent;
-  }
   .main_etudiant .bulle_modele_1 {
     display: none;
   }
@@ -3677,6 +3663,7 @@ footer .sidebar:last-of-type {
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
     color: #c7afec;
+    font-weight: 500;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
   }
@@ -3775,6 +3762,7 @@ footer .sidebar:last-of-type {
   }
   .main_etudiant .zone_evenements .article_vie_etudiante .informations_evenements .date_evenement {
     color: #c7afec;
+    font-weight: 500;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
