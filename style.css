@@ -443,9 +443,6 @@ header {
 main {
   width: 100vw;
   height: fit-content;
-  background-image: url("http: //cidweb38.sg-host.com/wp-content/uploads/2023/12/FondSiteV2_Plan-de-travail-1.png");
-  background-size: contain;
-  background-repeat: repeat;
   margin-top: clamp(3rem, 2.2857rem + 3.5714vw, 8rem) !important;
   padding-bottom: clamp(3rem, 2.2857rem + 3.5714vw, 8rem);
   z-index: 1;
@@ -4611,6 +4608,34 @@ footer .sidebar:last-of-type {
   align-items: center;
   gap: clamp(3rem, 1.1792rem + 9.1038vw, 7rem);
 }
+.main_accueil .top-bulles-container {
+  position: absolute;
+  top: calc(-1 * clamp(26rem, 24rem + 10vw, 40rem));
+  left: calc(-1 * clamp(3rem, 2.5714rem + 2.1429vw, 6rem));
+  z-index: -1;
+}
+.main_accueil .top-bulles-container div:first-of-type {
+  width: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+  height: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+  background-color: #33488e;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  opacity: 0.75;
+  border-radius: 50%;
+  position: absolute;
+}
+.main_accueil .top-bulles-container div:last-of-type {
+  width: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+  height: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+  background-color: #774eba;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  opacity: 0.6;
+  border-radius: 50%;
+  position: absolute;
+  top: clamp(7rem, 5.4286rem + 7.8571vw, 18rem);
+  left: clamp(8rem, 6.2857rem + 8.5714vw, 20rem);
+}
 .main_accueil .video {
   width: 100vw;
   position: relative;
@@ -4760,6 +4785,33 @@ footer .sidebar:last-of-type {
   background: transparent !important;
   font-weight: 500 !important;
   position: relative !important;
+}
+.main_accueil .bottom-bulles-container {
+  position: absolute;
+  right: clamp(10rem, 7.7143rem + 11.4286vw, 26rem);
+  bottom: clamp(6rem, 4.5714rem + 7.1429vw, 16rem);
+  z-index: -1;
+}
+.main_accueil .bottom-bulles-container div:first-of-type {
+  width: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+  height: clamp(12rem, 9.4286rem + 12.8571vw, 30rem);
+  background-color: #33488e;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  opacity: 0.75;
+  border-radius: 50%;
+  position: absolute;
+}
+.main_accueil .bottom-bulles-container div:last-of-type {
+  width: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+  height: clamp(6rem, 4.7143rem + 6.4286vw, 15rem);
+  background-color: #774eba;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  opacity: 0.6;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(-1 * clamp(2rem, 1.4286rem + 2.8571vw, 6rem));
 }
 
 @media only screen and (min-width: 768px) {
