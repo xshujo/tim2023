@@ -184,7 +184,21 @@
   //   z-index: -1;
   // }
 
-  
+  .projet__general::-webkit-scrollbar{
+    width: 1rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 5rem;
+  }
+
+  .projet__general::-webkit-scrollbar-thumb{
+      background-color: $couleurElmtUn;
+      border-radius: 2rem;
+    }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
 
 
   // Style général des catégories
@@ -247,7 +261,7 @@
         width: 10rem;
         color: rgb(255, 255, 255);
         font-family: Montserrat;
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: bold;
         top: 50%;
         -webkit-line-clamp: 2;
@@ -259,7 +273,7 @@
         width: 10rem;
         color: $couleurElmtDeux;
         font-family: Montserrat;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-style: italic;
       }
 
@@ -333,59 +347,6 @@
   }
 }
 
-// Style général des bulles de couleur mauve
-.bulle_1 {
-  background-color: $degradeFondSiteUn;
-  mix-blend-mode: lighten;
-  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-  opacity: 75%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -4;
-}
-
-// Style spécifique des bulles de couleur mauve
-.bulle_1_position {
-  width: 25rem;
-  height: 25rem;
-  top: 20rem;
-}
-
-.bulle_1_1 {
-  background-color: $degradeFondSiteUn;
-  mix-blend-mode: lighten;
-  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-  opacity: 75%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -4;
-}
-
-.bulle_1_1_position {
-  width: 25rem;
-  height: 25rem;
-  top: 10rem;
-  right: -1rem;
-}
-
-// Style général des bulles de couleur bleu
-.bulle_2 {
-  background-color: $degradeFondSiteDeux;
-  mix-blend-mode: lighten;
-  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-  opacity: 75%;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -4;
-}
-
-// Style spécifique des bulles de couleur bleu
-.bulle_2_position {
-  width: 25rem;
-  height: 25rem;
-  top: 70rem;
-  left: -10rem;
-}
 
 @media screen and (min-width: $largeur__tablette) {
   .text__page__projet {
@@ -540,10 +501,10 @@
 
       // Style des encadrés des projets
       .carte__categorie {
-        width: 30vw;
+        width: 100vw;
         height: 24rem;
         background-color: #33488e;
-        padding: 10px 10px 0px 10px;
+        padding: 10px 50px 0px 50px;
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
@@ -563,7 +524,6 @@
         .titre__date__projet {
           position: relative;
           height: 6rem;
-          top: 0.3rem;
           transition: transform 0.2s;
         }
 
@@ -589,9 +549,9 @@
         }
 
         // Style des images des projets
-        img {
+        .img__categorie {
           position: relative;
-          width: 15rem;
+          width: 130%;
           height: 13rem;
           display: flex;
           align-items: center;
@@ -641,7 +601,7 @@
         }
 
         .img__categorie {
-        height: (9rem);
+        height: (11rem);
         filter: blur(2px) brightness(0.5);
         // animation: ;
       }
@@ -653,59 +613,8 @@
     }
   }
 
-  // Style général des bulles de couleur mauve
-  .bulle_1 {
-    background-color: $degradeFondSiteUn;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
 
-  // Style spécifique des bulles de couleur mauve
-  .bulle_1_position {
-    width: 25rem;
-    height: 25rem;
-    top: 20rem;
-  }
-
-  .bulle_1_1 {
-    background-color: $degradeFondSiteUn;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-
-  .bulle_1_1_position {
-    width: 25rem;
-    height: 25rem;
-    top: 10rem;
-    right: -1rem;
-  }
-
-  // Style général des bulles de couleur bleu
-  .bulle_2 {
-    background-color: $degradeFondSiteDeux;
-    mix-blend-mode: lighten;
-    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-    opacity: 75%;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -4;
-  }
-
-  // Style spécifique des bulles de couleur bleu
-  .bulle_2_position {
-    width: 25rem;
-    height: 25rem;
-    top: 70rem;
-    left: -10rem;
-  }
+  
 }
 
 @media screen and (min-width: $largeur__bureau) {

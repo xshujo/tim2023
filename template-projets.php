@@ -65,8 +65,12 @@
 
 
     <h1 class='video'>Vidéo</h1>
+
+    <div class="encadre">
+
     <div class='projet__general'>
 
+    
 
       <!-- Intégration de la catégorie Video -->
       <?php
@@ -85,7 +89,7 @@
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
             <?php the_content() ?>
@@ -97,10 +101,14 @@
       <?php endif;
       wp_reset_postdata(); ?>
     </div>
+    </div>
 
 
 
     <h1 class='troisd'>3D</h1>
+
+    <div class="encadre">
+
     <div class='projet__general'>
 
 
@@ -121,7 +129,7 @@
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
             <?php the_content() ?>
@@ -131,8 +139,12 @@
       <?php endif;
       wp_reset_postdata(); ?>
     </div>
+    </div>
 
     <h1 class='web'>Web</h1>
+
+    <div class="encadre">
+
     <div class='projet__general'>
 
 
@@ -153,7 +165,7 @@
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
             <?php the_content() ?>
@@ -163,8 +175,13 @@
       <?php endif;
       wp_reset_postdata(); ?>
     </div>
+    </div>
 
     <h1 class='design'>Design</h1>
+
+
+    <div class="encadre">
+
     <div class='projet__general'>
 
 
@@ -185,7 +202,7 @@
 
             <!-- Si la page a une catégorie, la rajouter -->
             <?php if (has_post_thumbnail()) {
-              the_post_thumbnail('thumbnail');
+              the_post_thumbnail('thumbnail', ['class' => 'img__categorie']);
             } ?>
             <!-- Ajouter le contenu des post -->
             <?php the_content() ?>
@@ -196,6 +213,7 @@
       wp_reset_postdata(); ?>
     </div>
 
+  </div>
   </div>
 
 
