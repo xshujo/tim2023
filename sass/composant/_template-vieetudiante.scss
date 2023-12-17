@@ -1,43 +1,42 @@
 /************* VERSION MOBILE *************/
 .main_etudiant {
   // Styles généraux du modèle de bulles de couleur mauve
-  // .bulle_modele_1 {
-  //   background-color: $degradeFondSiteUn;
-  //   mix-blend-mode: lighten;
-  //   backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
-  //   opacity: 75%;
-  //   border-radius: 50%;
-  //   position: absolute;
-  //   z-index: -4;
-  // }
+  .bulle_modele_1 {
+    background-color: $degradeFondSiteUn;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+    opacity: 55%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+  }
 
   // Styles spécifiques du modèle de bulles de couleur mauve
-  // .bulle_m1_position_1 {
-  //   width: 25rem;
-  //   height: 25rem;
-  //   top: 20rem;
-  //   right: -4rem;
-  // }
+  .bulle_m1_position_1 {
+    width: 8rem;
+    height: 8rem;
+    top: 1rem;
+    left: 11rem;
+  }
 
   // Styles généraux du modèle de bulles de couleur bleu
-  // .bulle_modele_2 {
-  //   background-color: $degradeFondSiteDeux;
-  //   mix-blend-mode: lighten;
-  //   backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
-  //   opacity: 75%;
-  //   border-radius: 50%;
-  //   position: absolute;
-  //   z-index: -4;
-  // }
+  .bulle_modele_2 {
+    background-color: $degradeFondSiteDeux;
+    mix-blend-mode: lighten;
+    backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+    opacity: 55%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -4;
+  }
 
   // Styles spécifiques du modèle de bulles de couleur bleu
-  // .bulle_m2_position_1 {
-  //   width: 35rem;
-  //   height: 35rem;
-  //   top: -12rem;
-  //   left: -5rem;
-  //   display: none;
-  // }
+  .bulle_m2_position_1 {
+    width: 15rem;
+    height: 15rem;
+    top: -2rem;
+    left: -2rem;
+  }
 
   .bulle_m2_position_2 {
     // width: 14rem;
@@ -53,7 +52,7 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
     padding-left: 0.5rem;
-    z-index: 30;
+    z-index: 15;
   }
 
   p {
@@ -87,7 +86,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    z-index: 20;
+    z-index: 15;
 
     // Styles pour chaque article
     .article_vie_etudiante::before {
@@ -149,7 +148,7 @@
     position: relative;
     right: -16vw;
     bottom: -0.8rem;
-    z-index: 20;
+    z-index: 15;
 
     h3 {
       text-transform: uppercase;
@@ -187,7 +186,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      z-index: 20;
+      z-index: 15;
 
       // Styles pour chaque article
       .article_vie_etudiante::before {
@@ -295,7 +294,7 @@
     h1 {
       text-transform: uppercase;
       margin-bottom: 2rem;
-      z-index: 30;
+      z-index: 15;
     }
 
     p {
@@ -322,7 +321,7 @@
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: space-between;
-      z-index: 20;
+      z-index: 15;
 
       // Styles pour chaque article
       .article_vie_etudiante::before {
@@ -381,7 +380,7 @@
       position: relative;
       right: clamp(-8rem, 16.094rem + -50.196vw, -16rem);
       top: 0rem;
-      z-index: 20;
+      z-index: 15;
 
       h3 {
         text-transform: uppercase;
@@ -455,7 +454,7 @@
     h1 {
       text-transform: uppercase;
       margin-bottom: 2rem;
-      z-index: 30;
+      z-index: 15;
     }
 
     p {
@@ -482,7 +481,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      z-index: 20;
+      z-index: 15;
 
       // Styles pour chaque article
       .article_vie_etudiante::before {
