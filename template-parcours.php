@@ -9,22 +9,8 @@
 <main class="contenu_parcours">
   <?php get_the_title(); ?>
   <?php the_content(); ?>
-  <div class="encadre_page"></div>
-  <div class="degrades degrade_1"></div>
-  <div class="degrades degrade_2"></div>
-  <div class="degrades degrade_3"></div>
-
-  <!-- <div class="bubbles-container">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-  </div> -->
+  
+ 
 
   <div class="bubbles-container" id="bubbles-container">
     <!-- Bubbles will be added dynamically using JavaScript -->
