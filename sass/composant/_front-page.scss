@@ -112,6 +112,7 @@
                 display: block;
                 position: absolute;
                 transform: translateX(calc(-1 * (clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem)))) translateY(-2rem);
+                pointer-events: none;
                 z-index: 4;
             }
         }
