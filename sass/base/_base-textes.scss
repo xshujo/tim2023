@@ -1,0 +1,111 @@
+/*
+  CSS font-size clamp generator
+  https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTRweCIsIm1heEZvbnRTaXplIjoiNTJweCJ9
+*/
+///// STYLES DE BASE DES TEXTES
+
+a {
+  all: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figcaption,
+a,
+li,
+input,
+button,
+blockquote {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h1 {
+  font-size: clamp(1.875rem, 1.7321rem + 0.7143vw, 2.875rem);
+  color: $couleurTitreTextes;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2.5rem);
+  color: $couleurTitreTextes;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.1071rem + 0.7143vw, 2.25rem);
+  color: $couleurElmtDeux;
+}
+
+h4 {
+  font-size: clamp(1.125rem, 0.9821rem + 0.7143vw, 2.125rem);
+  color: $couleurElmtUn;
+}
+
+h5 {
+  font-size: clamp(1rem, 0.8571rem + 0.7143vw, 2rem);
+  color: $couleurElmtUn;
+}
+
+h6 {
+  font-size: clamp(0.875rem, 0.7321rem + 0.7143vw, 1.875rem);
+  color: $couleurElmtUn;
+}
+
+P,
+a.wp-block-button__link,
+li,
+button,
+figcaption,
+blockquote {
+  font-size: clamp(0.875rem, 0.7857rem + 0.4464vw, 1.5rem) !important;
+  color: $couleurTitreTextes;
+  line-height: clamp(1.25rem, 1.0714rem + 0.8929vw, 2.5rem);
+}
+
+// Attention aux inputs type text...
+a,
+input,
+button {
+  cursor: pointer !important;
+}
+
+ul {
+  list-style: none;
+}
+
+// Boutons WordPress
+.wp-block-buttons {
+  .wp-block-button {
+
+    a {
+      background: $couleurElmtDeux;
+      font-weight: bold;
+      color: $couleurTitreTextes;
+      text-transform: uppercase;
+      transform: scale(1);
+      transition: ease-in-out 0.2s;
+      user-select: none;
+
+      &:hover {
+        background: $couleurTitreTextes;
+        color: $couleurFond;
+        transform: scale(1.05);
+        transition: ease-in-out 0.2s;
+      }
+    }
+  }
+}
+
+// Parce que WordPress...
+#wpadminbar {
+
+  a,
+  li {
+    font-size: inherit !important;
+  }
+}

@@ -19,15 +19,15 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="custom-background">
     <header>
         <?php the_custom_logo() ?>
         <div class="menu-burger">
             <input type="checkbox" id="burger-checkbox">
             <label for="burger-checkbox">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </label>
             <?php wp_nav_menu(array(
                 "menu" => "entete",

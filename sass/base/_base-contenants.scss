@@ -1,0 +1,41 @@
+header {
+    width: 100vw;
+    padding: 0 5vw;
+    z-index: 20;
+}
+
+main {
+    width: 100vw;
+    height: fit-content;
+    background-image: url("http: //cidweb38.sg-host.com/wp-content/uploads/2023/12/FondSiteV2_Plan-de-travail-1.png");
+    background-size: contain;
+    background-repeat: repeat;
+    margin-top: clamp(3rem, 2.2857rem + 3.5714vw, 8rem) !important; // Pour le menu
+    padding-bottom: clamp(3rem, 2.2857rem + 3.5714vw, 8rem); // Un espace avant le footer
+    z-index: 1;
+}
+
+main:not(.main_accueil) {
+    padding-top: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: relative;
+
+    &:before {
+        width: 100vw;
+        height: calc(100% + 2rem);
+        content: "";
+        background-color: transparent;
+        border: clamp(0.1875rem, 0.1429rem + 0.2232vw, 0.5rem) solid $couleurTitreTextes;
+        border-top-left-radius: clamp(1.5rem, 1.1429rem + 1.7857vw, 4rem);
+        position: absolute;
+        top: 2rem;
+        left: 3vw;
+    }
+}
+
+footer {
+    width: 100vw;
+    padding: 3vw 5vw;
+    z-index: 2;
+}

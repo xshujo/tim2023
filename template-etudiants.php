@@ -6,10 +6,8 @@
 <?php get_header(); ?>
 <main class="main_etudiant">
     <div class="encadre_page"></div>
-    <div class="degrades degrade_1"></div>
-    <div class="degrades degrade_2"></div>
-    <div class="degrades degrade_3"></div>
     <div class="bulle_modele_1 bulle_m1_position_1"></div>
+    <div class="bulle_modele_1 bulle_m1_position_2"></div>
     <div class="bulle_modele_2 bulle_m2_position_1"></div>
     <div class="bulle_modele_2 bulle_m2_position_2"></div>
 
@@ -50,7 +48,7 @@
                     } ?>
                     <?php get_the_title(); ?>
                     <div class="informations_evenements">
-                        <h4><?php the_title(); ?></h4>
+                        <h2><?php the_title(); ?></h2>
                         <?php the_content(); ?>
                     </div>
                 </div>
@@ -59,7 +57,7 @@
         wp_reset_postdata();?>
         <div class="texte_a_venir">
             <h3 class="texte_1">Encore plus</h3>
-            <h3 class="texte_2">À venir</h3>
+            <h2 class="texte_2">À venir</h2>
         </div>
     </div>
 </main>
