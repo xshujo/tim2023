@@ -241,6 +241,7 @@ $background-color_11: white;
 		height: auto;
 		margin: 0 1.5rem;
 		position: relative;
+        padding-top: 2rem;
         
 
 		.grille_contenu {
@@ -898,7 +899,7 @@ $background-color_11: white;
 			color: $color_2;
 		}
 		.galerie_materiels {
-			width: 80vw;
+			width: 75vw;
 			margin-left: 12vw;
 			display: flex;
 			padding-top: 5rem;
@@ -919,6 +920,7 @@ $background-color_11: white;
 				}
 				figcaption {
 					background: none;
+                    
 				}
 			}
 			.appareil_photo {
@@ -938,6 +940,7 @@ $background-color_11: white;
 				}
 				figcaption {
 					background: none;
+                   
 				}
 			}
 			.tablette_graphique {
@@ -957,7 +960,8 @@ $background-color_11: white;
 				}
 				figcaption {
 					background: none;
-					padding-top: 2rem;
+                    
+                    
 				}
 			}
 			.projecteur {
@@ -977,6 +981,7 @@ $background-color_11: white;
 				}
 				figcaption {
 					background: none;
+                    
 				}
 			}
 		}
@@ -1651,7 +1656,7 @@ $background-color_11: white;
 						border-radius: 20px 20px;
 						border: none;
 						padding: 0.5rem;
-						width: 6rem;
+						width: 7rem;
 						transition: transform 1s;
 						&:hover {
 							background-color: $background-color_11;
@@ -2249,12 +2254,13 @@ $background-color_11: white;
 			h3 {
 				color: $color_2;
 			}
+            
 			.galerie_materiels {
-				width: 85vw;
+				width: 90vw;
 				padding-top: 5rem;
 				padding-bottom: 10rem;
 				.casque_vr {
-					height: 18rem;
+                    height: 25vh;
 					transform: rotate(-5deg) translateX(2rem) translateY(-3rem);
 
 					img {
@@ -2265,10 +2271,12 @@ $background-color_11: white;
 					}
 					figcaption {
 						background: none;
+                        font-size: 1.5vw;
+                        padding: 0.5vh;
 					}
 				}
 				.appareil_photo {
-					height: 18rem;
+					height: 25vh;
 					transform: rotate(5deg);
 					z-index: 2;
 					img {
@@ -2279,10 +2287,12 @@ $background-color_11: white;
 					}
 					figcaption {
 						background: none;
+                        font-size: 1.5vw;
+                        margin: 0.5vh;
 					}
 				}
 				.tablette_graphique {
-					height: 18rem;
+					height: 25vh;
 					transform: rotate(-5deg) translateX(-1.5rem) translateY(-2rem);
 					z-index: 3;
 					img {
@@ -2293,10 +2303,12 @@ $background-color_11: white;
 					}
 					figcaption {
 						background: none;
+                        font-size: 1.5vw;
+                        margin: 0.5vh;
 					}
 				}
 				.projecteur {
-					height: 18rem;
+					height: 25vh;
 					transform: translateX(-3rem) translateY(1.5rem);
 					z-index: 4;
 					img {
@@ -2307,6 +2319,8 @@ $background-color_11: white;
 					}
 					figcaption {
 						background: none;
+                        font-size: 1.5vw;
+                        margin: 0.5vh;
 					}
 				}
 			}
@@ -2319,6 +2333,7 @@ $background-color_11: white;
 				width: 70vw;
                 height: auto;
 				padding: 2rem;
+                padding-bottom: 3vh;
 
 				h4 {
 					padding-left: 2vw;
@@ -2401,12 +2416,12 @@ $background-color_11: white;
 
         .titres_section {
             padding-top: 15rem;
-            padding-left: 4rem;
+            padding-left: 4.5vw;
             
         }
     
         .titre_bourse {
-            padding-left: 4rem;
+            padding-left: 6vw;
             
         }
 		
@@ -2417,14 +2432,14 @@ $background-color_11: white;
 
 			.bourse_contenu {
                 width:70vw;
-                margin-left: 11rem;
+                margin-left: 13vw;
 				height: auto;
 				padding: 2rem;
                 padding-bottom: 5rem;
 				display: flex;
 				align-items: center;
 				text-align: center;
-                line-height: 15vh;
+                line-height: 10vh;
 
 				.bouton_bourse {
 					transition: transform 1s;
