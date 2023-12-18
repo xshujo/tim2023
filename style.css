@@ -1014,6 +1014,7 @@ footer .sidebar:last-of-type {
   height: auto;
   margin: 0 1.5rem;
   position: relative;
+  padding-top: 2rem;
 }
 .contenu_parcours .grille_cours .grille_contenu {
   height: auto;
@@ -1662,7 +1663,7 @@ footer .sidebar:last-of-type {
   color: #9ec9e7;
 }
 .contenu_parcours .colonne5 .galerie_materiels {
-  width: 80vw;
+  width: 75vw;
   margin-left: 12vw;
   display: flex;
   padding-top: 5rem;
@@ -1723,7 +1724,6 @@ footer .sidebar:last-of-type {
 }
 .contenu_parcours .colonne5 .galerie_materiels .tablette_graphique figcaption {
   background: none;
-  padding-top: 2rem;
 }
 .contenu_parcours .colonne5 .galerie_materiels .projecteur {
   height: 20vh;
@@ -2355,7 +2355,7 @@ footer .sidebar:last-of-type {
     border-radius: 20px 20px;
     border: none;
     padding: 0.5rem;
-    width: 6rem;
+    width: 7rem;
     transition: transform 1s;
   }
   .contenu_parcours .grille_cours .grille_contenu .bouton_session_bureau button:hover {
@@ -2944,12 +2944,12 @@ footer .sidebar:last-of-type {
     color: #9ec9e7;
   }
   .contenu_parcours .colonne5 .galerie_materiels {
-    width: 85vw;
+    width: 90vw;
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
   .contenu_parcours .colonne5 .galerie_materiels .casque_vr {
-    height: 18rem;
+    height: 25vh;
     transform: rotate(-5deg) translateX(2rem) translateY(-3rem);
   }
   .contenu_parcours .colonne5 .galerie_materiels .casque_vr img {
@@ -2960,9 +2960,11 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .colonne5 .galerie_materiels .casque_vr figcaption {
     background: none;
+    font-size: 1.5vw;
+    padding: 0.5vh;
   }
   .contenu_parcours .colonne5 .galerie_materiels .appareil_photo {
-    height: 18rem;
+    height: 25vh;
     transform: rotate(5deg);
     z-index: 2;
   }
@@ -2974,9 +2976,11 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .colonne5 .galerie_materiels .appareil_photo figcaption {
     background: none;
+    font-size: 1.5vw;
+    margin: 0.5vh;
   }
   .contenu_parcours .colonne5 .galerie_materiels .tablette_graphique {
-    height: 18rem;
+    height: 25vh;
     transform: rotate(-5deg) translateX(-1.5rem) translateY(-2rem);
     z-index: 3;
   }
@@ -2988,9 +2992,11 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .colonne5 .galerie_materiels .tablette_graphique figcaption {
     background: none;
+    font-size: 1.5vw;
+    margin: 0.5vh;
   }
   .contenu_parcours .colonne5 .galerie_materiels .projecteur {
-    height: 18rem;
+    height: 25vh;
     transform: translateX(-3rem) translateY(1.5rem);
     z-index: 4;
   }
@@ -3002,6 +3008,8 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .colonne5 .galerie_materiels .projecteur figcaption {
     background: none;
+    font-size: 1.5vw;
+    margin: 0.5vh;
   }
   .contenu_parcours .stages {
     width: 95vw;
@@ -3011,6 +3019,7 @@ footer .sidebar:last-of-type {
     width: 70vw;
     height: auto;
     padding: 2rem;
+    padding-bottom: 3vh;
   }
   .contenu_parcours .stages .stage_un h4 {
     padding-left: 2vw;
@@ -3087,10 +3096,10 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .titres_section {
     padding-top: 15rem;
-    padding-left: 4rem;
+    padding-left: 4.5vw;
   }
   .contenu_parcours .titre_bourse {
-    padding-left: 4rem;
+    padding-left: 6vw;
   }
   .contenu_parcours .bourse {
     width: 100vw;
@@ -3098,14 +3107,14 @@ footer .sidebar:last-of-type {
   }
   .contenu_parcours .bourse .bourse_contenu {
     width: 70vw;
-    margin-left: 11rem;
+    margin-left: 13vw;
     height: auto;
     padding: 2rem;
     padding-bottom: 5rem;
     display: flex;
     align-items: center;
     text-align: center;
-    line-height: 15vh;
+    line-height: 10vh;
   }
   .contenu_parcours .bourse .bourse_contenu .bouton_bourse {
     transition: transform 1s;
@@ -4530,4 +4539,4 @@ footer .sidebar:last-of-type {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres */
+/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
