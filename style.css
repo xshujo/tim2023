@@ -591,7 +591,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
 
 @media only screen and (min-width: 1024px) {
   header .menu-burger input,
-header .menu-burger label {
+  header .menu-burger label {
     display: none;
   }
   header .menu-burger .menu-entete-container {
@@ -4429,6 +4429,7 @@ footer .sidebar:last-of-type {
   display: block;
   position: absolute;
   transform: translateX(calc(-1 * clamp(1.25rem, 0.8929rem + 1.7857vw, 3.75rem))) translateY(-2rem);
+  pointer-events: none;
   z-index: 4;
 }
 .main_accueil .fp-citation {
@@ -4623,7 +4624,6 @@ footer .sidebar:last-of-type {
   }
   .main_accueil .fp-section:nth-child(odd) p:not(.fp-p-admission) {
     width: 40vw;
-    text-align: left;
     padding: 1rem;
   }
   .main_accueil .fp-icones {
