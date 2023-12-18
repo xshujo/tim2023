@@ -591,7 +591,7 @@ header .menu-burger .menu-entete-container #menu-entete li a {
 
 @media only screen and (min-width: 1024px) {
   header .menu-burger input,
-header .menu-burger label {
+  header .menu-burger label {
     display: none;
   }
   header .menu-burger .menu-entete-container {
@@ -4530,7 +4530,6 @@ footer .sidebar:last-of-type {
   }
   .main_accueil .fp-section:nth-child(odd) p:not(.fp-p-admission) {
     width: 40vw;
-    text-align: left;
     padding: 1rem;
   }
   .main_accueil .fp-icones {
