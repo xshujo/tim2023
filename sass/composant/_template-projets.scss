@@ -138,9 +138,9 @@
   .encadre::before {
     content: '';
     position: absolute;
-    background: $couleurElmtDeux;
-    backdrop-filter: saturate(130%) blur(2rem);
-    mix-blend-mode: soft-light;
+    background-color: #9375ff;
+    opacity: 20%;
+    backdrop-filter: saturate(170%) brightness(130%) blur(10rem);
     border-radius: 1rem;
     box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
     top: 0;
