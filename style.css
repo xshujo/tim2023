@@ -3258,11 +3258,11 @@ footer .sidebar:last-of-type {
   content: "";
   width: 100%;
   height: 23.3rem;
+  position: absolute;
   background-color: #9375ff;
   opacity: 20%;
   backdrop-filter: saturate(170%) brightness(130%) blur(10rem);
   border-radius: 1rem;
-  position: absolute;
   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
 }
 .main_etudiant .zone_evenements .article_vie_etudiante {
@@ -3700,9 +3700,9 @@ footer .sidebar:last-of-type {
 .blockflex__projet .encadre::before {
   content: "";
   position: absolute;
-  background: #c7afec;
-  backdrop-filter: saturate(130%) blur(2rem);
-  mix-blend-mode: soft-light;
+  background-color: #9375ff;
+  opacity: 20%;
+  backdrop-filter: saturate(170%) brightness(130%) blur(10rem);
   border-radius: 1rem;
   box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
   top: 0;
@@ -4530,4 +4530,4 @@ footer .sidebar:last-of-type {
   }
 }
 /* --------------------------------------------- layout */
-/* --------------------------------------------- autres *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- autres */
