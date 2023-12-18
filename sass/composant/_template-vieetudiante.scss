@@ -100,11 +100,11 @@
       content: "";
       width: 100%;
       height: 23.3rem;
+      position: absolute;
       background-color: #9375ff;
       opacity: 20%;
       backdrop-filter: saturate(170%) brightness(130%) blur(10rem);
       border-radius: 1rem;
-      position: absolute;
       box-shadow: 1rem 1rem 3rem rgba(5, 25, 52, 0.4);
     }
 
