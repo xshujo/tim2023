@@ -347,6 +347,58 @@
   }
 }
 
+// Styles généraux des bulles
+.bulle_modele_1_projets {
+  background-color: $degradeFondSiteUn;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(150%) saturate(95%) blur(3rem);
+  opacity: 55%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -4;
+}
+
+// Styles spécifiques du modèle de bulles de couleur mauve
+.bulle_m1_projets_position_1 {
+  width: 8rem;
+  height: 8rem;
+  top: 1rem;
+  left: 11rem;
+}
+
+.bulle_m1_projets_position_2 {
+  width: 10rem;
+  height: 10rem;
+  bottom: -2rem;
+  right: -2rem;
+}
+
+// Styles généraux du modèle de bulles de couleur bleu
+.bulle_modele_2_projets {
+  background-color: $degradeFondSiteDeux;
+  mix-blend-mode: lighten;
+  backdrop-filter: brightness(160%) saturate(95%) blur(6rem);
+  opacity: 55%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -4;
+}
+ 
+// Styles spécifiques du modèle de bulles de couleur bleu
+.bulle_m2_projets_position_1 {
+  width: 15rem;
+  height: 15rem;
+  top: -2rem;
+  left: -2rem;
+}
+ 
+.bulle_m2_projets_position_2 {
+  width: 7rem;
+  height: 7rem;
+  bottom: 1.3rem;
+  right: 5rem;
+}
+
 
 @media screen and (min-width: $largeur__tablette) {
   .text__page__projet {
@@ -897,4 +949,29 @@
       }
     }
   }
+
+
+  .bulle_m1_projets_position_1 {
+  width: 15rem;
+  height: 15rem;
+  right: 20rem;
+}
+
+.bulle_m1_projets_position_2 {
+  width: 20rem;
+  height: 20rem;
+  
+}
+
+.bulle_m2_projets_position_1 {
+  width: 20rem;
+  height: 20rem;
+}
+ 
+.bulle_m2_projets_position_2 {
+  width: 15rem;
+  height: 15rem;
+  right: 10rem;
+}
+
 }
