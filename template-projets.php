@@ -9,7 +9,9 @@
 
 <main>
 
-  <h1 class="text__page__projet">Projet</h1>
+  <h1 class="text__page__projet"><?php the_title(); ?></h1>
+  <div class="bulle_modele_1_projets bulle_m1_projets_position_1"></div>
+  <div class="bulle_modele_1_projets bulle_m1_projets_position_2"></div>
 
   <!-- Encadrer tous les sections à l'aide d'une div générale -->
   <div class='blockflex__projet'>
@@ -217,11 +219,13 @@
   </div>
 
 
-
+<div class="bulle_modele_2_projets bulle_m2_projets_position_1"></div>
+<div class="bulle_modele_2_projets bulle_m2_projets_position_2"></div>
 
 </main>
 
 
 
 <!-- Ajouter le footer -->
+
 <?php get_footer(); ?>
